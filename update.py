@@ -34,6 +34,7 @@ TSV_URLS = [
     "https://www.netflix.com/tudum/top10/data/all-weeks-global.tsv",
 ]
 
+# GitHub Actions regenerates global.json from this script on the weekly schedule.
 USER_AGENTS = [
     "NetflixGlobalMirror/1.0 (+https://github.com/KimsaiKwa/Netflix_Global)",
     "python-urllib/3 NetflixGlobalMirror",
