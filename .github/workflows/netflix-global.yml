@@ -2,7 +2,7 @@ name: Update Netflix Global Top 10
 
 on:
   schedule:
-    - cron: "30 16 * * 2"   # Tuesdays 16:30 UTC, after Netflix weekly publication
+    - cron: "30 16 * * 2"
   workflow_dispatch:
   push:
     branches:
@@ -31,21 +31,58 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Generate global.json
-        id: generate
+      - name: Download Netflix global TSV
+        id: download
         shell: bash
         run: |
           set +e
-          python3 update.py > update.log 2>&1
+
+          URL="https://top10.netflix.com/data/all-weeks-global.tsv"
+
+          curl             --fail             --location             --retry 8             --retry-delay 2             --retry-all-errors             --connect-timeout 20             --max-time 300             --user-agent "NetflixGlobalMirror/1.0 (+https://github.com/KimsaiKwa/Netflix_Global)"             --header "Accept: text/tab-separated-values,text/plain,*/*"             --output netflix-global.tsv             "$URL"             > curl.log 2>&1
+
+          CODE=$?
+
+          echo "curl exit code: $CODE"
+          cat curl.log || true
+
+          if [ "$CODE" -eq 0 ]; then
+            BYTES=$(wc -c < netflix-global.tsv | tr -d ' ')
+            echo "Downloaded bytes: $BYTES"
+            head -n 1 netflix-global.tsv || true
+
+            if [ "$BYTES" -lt 500000 ]; then
+              echo "Downloaded TSV is unexpectedly small."
+              CODE=90
+            elif ! head -n 1 netflix-global.tsv | grep -q "show_title"; then
+              echo "Downloaded file does not look like Netflix Top 10 TSV."
+              CODE=91
+            fi
+          fi
+
+          echo "exit_code=$CODE" >> "$GITHUB_OUTPUT"
+          exit 0
+
+      - name: Generate global.json
+        id: generate
+        if: steps.download.outputs.exit_code == '0'
+        shell: bash
+        run: |
+          set +e
+          NETFLIX_TSV_FILE=netflix-global.tsv python3 update.py > update.log 2>&1
           CODE=$?
           cat update.log
           echo "exit_code=$CODE" >> "$GITHUB_OUTPUT"
           exit 0
 
       - name: Validate generated file
-        if: steps.generate.outputs.exit_code == '0'
+        id: validate
+        if: steps.download.outputs.exit_code == '0' && steps.generate.outputs.exit_code == '0'
+        shell: bash
         run: |
-          python3 - <<'PY'
+          set +e
+
+          python3 - <<'PY' > validate.log 2>&1
           import json
           from pathlib import Path
 
@@ -57,8 +94,10 @@ jobs:
 
           if not data.get("week"):
               raise SystemExit("global.json has no week")
+
           if len(data.get("films", [])) != 10:
               raise SystemExit("global.json films must contain 10 rows")
+
           if len(data.get("tv", [])) != 10:
               raise SystemExit("global.json tv must contain 10 rows")
 
@@ -69,6 +108,7 @@ jobs:
               "TV (English)",
               "TV (Non-English)",
           ]
+
           for name in required:
               if len(official.get(name, [])) != 10:
                   raise SystemExit(f"{name} must contain 10 rows")
@@ -79,10 +119,25 @@ jobs:
           )
           PY
 
+          CODE=$?
+          cat validate.log
+          echo "exit_code=$CODE" >> "$GITHUB_OUTPUT"
+          exit 0
+
       - name: Prepare diagnostics
         if: always()
+        shell: bash
         run: |
-          if [ "${{ steps.generate.outputs.exit_code }}" = "0" ]; then
+          DOWNLOAD_CODE="${{ steps.download.outputs.exit_code }}"
+          GENERATE_CODE="${{ steps.generate.outputs.exit_code }}"
+          VALIDATE_CODE="${{ steps.validate.outputs.exit_code }}"
+
+          SUCCESS=false
+          if [ "$DOWNLOAD_CODE" = "0" ] && [ "$GENERATE_CODE" = "0" ] && [ "$VALIDATE_CODE" = "0" ]; then
+            SUCCESS=true
+          fi
+
+          if [ "$SUCCESS" = "true" ]; then
             rm -f diagnostics.txt
           else
             {
@@ -90,26 +145,47 @@ jobs:
               echo "UTC: $(date -u '+%Y-%m-%dT%H:%M:%SZ')"
               echo "Runner: ${{ runner.os }}"
               echo "Python: $(python3 --version)"
+              echo "download_exit=$DOWNLOAD_CODE"
+              echo "generate_exit=$GENERATE_CODE"
+              echo "validate_exit=$VALIDATE_CODE"
               echo
+
+              echo "---- curl output ----"
+              cat curl.log 2>/dev/null || true
+              echo
+
               echo "---- update.py output ----"
               cat update.log 2>/dev/null || true
+              echo
+
+              echo "---- validation output ----"
+              cat validate.log 2>/dev/null || true
             } > diagnostics.txt
           fi
 
       - name: Commit generated data or diagnostics
         if: always()
+        shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add -A global.json diagnostics.txt 2>/dev/null || true
+          if [ -f global.json ]; then
+            git add global.json
+          fi
+
+          if [ -f diagnostics.txt ]; then
+            git add diagnostics.txt
+          else
+            git rm --ignore-unmatch diagnostics.txt >/dev/null 2>&1 || true
+          fi
 
           if git diff --cached --quiet; then
             echo "No generated changes to commit."
             exit 0
           fi
 
-          if [ -f global.json ] && [ "${{ steps.generate.outputs.exit_code }}" = "0" ]; then
+          if [ -f global.json ] && [ ! -f diagnostics.txt ]; then
             WEEK=$(python3 -c 'import json; print(json.load(open("global.json", encoding="utf-8"))["week"])')
             git commit -m "Update Netflix global Top 10: week $WEEK [skip ci]"
           else
@@ -118,8 +194,17 @@ jobs:
 
           git push
 
-      - name: Fail workflow when generator failed
-        if: steps.generate.outputs.exit_code != '0'
+      - name: Fail workflow when update failed
+        if: always()
+        shell: bash
         run: |
-          echo "Generator failed. diagnostics.txt has been committed for inspection."
-          exit 1
+          DOWNLOAD_CODE="${{ steps.download.outputs.exit_code }}"
+          GENERATE_CODE="${{ steps.generate.outputs.exit_code }}"
+          VALIDATE_CODE="${{ steps.validate.outputs.exit_code }}"
+
+          if [ "$DOWNLOAD_CODE" != "0" ] || [ "$GENERATE_CODE" != "0" ] || [ "$VALIDATE_CODE" != "0" ]; then
+            echo "Netflix global update failed. Check diagnostics.txt."
+            exit 1
+          fi
+
+          echo "Netflix global update completed successfully."
