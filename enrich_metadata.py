@@ -91,6 +91,11 @@ query SearchMeta(
 """.strip()
 
 _print_lock = threading.Lock()
+_jw_rate_lock = threading.Lock()
+_jw_last_request_at = 0.0
+JW_MIN_INTERVAL_SECONDS = float(
+    os.environ.get("JUSTWATCH_MIN_INTERVAL_SECONDS", "0.75")
+)
 
 
 def log(message: str) -> None:
@@ -219,8 +224,22 @@ def request_json(
             json.JSONDecodeError,
         ) as exc:
             last_error = exc
+
             if attempt < attempts:
-                time.sleep(0.8 * attempt)
+                if isinstance(exc, urllib.error.HTTPError) and exc.code == 429:
+                    retry_after = exc.headers.get("Retry-After") if exc.headers else None
+                    try:
+                        delay = max(float(retry_after), 2.0)
+                    except (TypeError, ValueError):
+                        delay = min(4.0 * attempt, 15.0)
+
+                    log(
+                        f"WARN HTTP 429; backing off {delay:.1f}s "
+                        f"(attempt {attempt}/{attempts})"
+                    )
+                    time.sleep(delay)
+                else:
+                    time.sleep(0.8 * attempt)
 
     raise RuntimeError(
         f"{method} {url} failed: {type(last_error).__name__}: {last_error}"
@@ -471,6 +490,19 @@ def score_justwatch_node(
     return score
 
 
+def wait_for_justwatch_slot() -> None:
+    global _jw_last_request_at
+
+    with _jw_rate_lock:
+        now = time.monotonic()
+        wait = JW_MIN_INTERVAL_SECONDS - (now - _jw_last_request_at)
+
+        if wait > 0:
+            time.sleep(wait)
+
+        _jw_last_request_at = time.monotonic()
+
+
 def search_justwatch(
     title: str,
     media_type: str,
@@ -492,6 +524,8 @@ def search_justwatch(
         },
     }
 
+    wait_for_justwatch_slot()
+
     data = request_json(
         JUSTWATCH_GRAPHQL,
         method="POST",
@@ -502,6 +536,7 @@ def search_justwatch(
             "X-Platform": "WEB",
         },
         body=payload,
+        attempts=5,
     )
 
     if not isinstance(data, dict):
@@ -677,29 +712,55 @@ def resolve_fresh_meta(
     year_hint: str = "",
 ) -> dict[str, Any]:
     direct_candidates: list[dict[str, Any]] = []
-    jw: dict[str, Any] | None = None
 
     try:
         direct_candidates = search_douban(title)
     except Exception as exc:
         log(f"WARN douban direct {media_type} {title!r}: {exc}")
 
-    try:
-        jw = search_justwatch(title, media_type, year_hint)
-    except Exception as exc:
-        log(f"WARN justwatch {media_type} {title!r}: {exc}")
-
     best_douban = select_douban_candidate(
         direct_candidates,
         title,
         media_type,
         title,
-        (jw or {}).get("year") or year_hint,
+        year_hint,
     )
+
+    db: dict[str, Any] | None = None
+
+    if best_douban:
+        db = build_douban_meta(best_douban[0], media_type, title)
+
+    # Only spend a JustWatch request when it can materially improve the
+    # browser-facing record. This reduces API pressure substantially.
+    needs_jw = (
+        db is None
+        or not db.get("poster")
+        or not db.get("cn_title")
+        or not db.get("year")
+    )
+
+    jw: dict[str, Any] | None = None
+
+    if needs_jw:
+        try:
+            jw = search_justwatch(
+                title,
+                media_type,
+                clean((db or {}).get("year"), 8) or year_hint,
+            )
+        except Exception as exc:
+            log(f"WARN justwatch {media_type} {title!r}: {exc}")
 
     localized_alias = clean((jw or {}).get("localized_alias"), 220)
 
-    if localized_alias and normalize_text(localized_alias) != normalize_text(title):
+    # A localized JustWatch title is only a search bridge back into Douban.
+    # It is never displayed directly as the Chinese title.
+    if (
+        localized_alias
+        and normalize_text(localized_alias) != normalize_text(title)
+        and (db is None or not db.get("cn_title"))
+    ):
         try:
             second_candidates = search_douban(localized_alias)
             second_best = select_douban_candidate(
@@ -707,19 +768,18 @@ def resolve_fresh_meta(
                 title,
                 media_type,
                 localized_alias,
-                (jw or {}).get("year") or year_hint,
+                (jw or {}).get("year")
+                or clean((db or {}).get("year"), 8)
+                or year_hint,
             )
 
             if second_best and (
                 best_douban is None or second_best[1] > best_douban[1]
             ):
                 best_douban = second_best
+                db = build_douban_meta(best_douban[0], media_type, title)
         except Exception as exc:
             log(f"WARN douban alias {media_type} {title!r}: {exc}")
-
-    db: dict[str, Any] | None = None
-    if best_douban:
-        db = build_douban_meta(best_douban[0], media_type, title)
 
     douban_poster = normalize_image_url((db or {}).get("poster"))
     justwatch_poster = normalize_image_url((jw or {}).get("poster"))
