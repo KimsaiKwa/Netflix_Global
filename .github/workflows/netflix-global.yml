@@ -11,6 +11,7 @@ on:
       - "update.py"
       - "update_countries.py"
       - "enrich_metadata.py"
+      - "health_check.py"
       - ".github/workflows/netflix-global.yml"
 
 permissions:
@@ -357,6 +358,7 @@ jobs:
 
             WEEK=$(python3 -c 'import json; print(json.load(open("global.json", encoding="utf-8"))["week"])')
             git commit -m "Update Netflix browser-ready Top 10: week $WEEK [skip ci]"
+            git pull --rebase origin main
             git push
             exit 0
           fi
@@ -378,6 +380,7 @@ jobs:
           fi
 
           git commit -m "Record Netflix Top 10 update diagnostics [skip ci]"
+          git pull --rebase origin main
           git push
 
       - name: Fail workflow when update failed
