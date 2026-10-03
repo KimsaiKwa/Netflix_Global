@@ -1,4 +1,4 @@
-name: Update Netflix Global Top 10
+name: Update Netflix Top 10 Data
 
 on:
   schedule:
@@ -9,13 +9,14 @@ on:
       - main
     paths:
       - "update.py"
+      - "update_countries.py"
       - ".github/workflows/netflix-global.yml"
 
 permissions:
   contents: write
 
 concurrency:
-  group: netflix-global-update
+  group: netflix-top10-update
   cancel-in-progress: true
 
 jobs:
@@ -32,19 +33,31 @@ jobs:
           python-version: "3.12"
 
       - name: Download Netflix global TSV
-        id: download
+        id: download_global
         shell: bash
         run: |
           set +e
 
           URL="https://top10.netflix.com/data/all-weeks-global.tsv"
 
-          curl             --fail             --location             --retry 8             --retry-delay 2             --retry-all-errors             --connect-timeout 20             --max-time 300             --user-agent "NetflixGlobalMirror/1.0 (+https://github.com/KimsaiKwa/Netflix_Global)"             --header "Accept: text/tab-separated-values,text/plain,*/*"             --output netflix-global.tsv             "$URL"             > curl.log 2>&1
+          curl \
+            --fail \
+            --location \
+            --retry 8 \
+            --retry-delay 2 \
+            --retry-all-errors \
+            --connect-timeout 20 \
+            --max-time 300 \
+            --user-agent "NetflixGlobalMirror/1.0 (+https://github.com/KimsaiKwa/Netflix_Global)" \
+            --header "Accept: text/tab-separated-values,text/plain,*/*" \
+            --output netflix-global.tsv \
+            "$URL" \
+            > curl-global.log 2>&1
 
           CODE=$?
 
           echo "curl exit code: $CODE"
-          cat curl.log || true
+          cat curl-global.log || true
 
           if [ "$CODE" -eq 0 ]; then
             BYTES=$(wc -c < netflix-global.tsv | tr -d ' ')
@@ -52,10 +65,10 @@ jobs:
             head -n 1 netflix-global.tsv || true
 
             if [ "$BYTES" -lt 500000 ]; then
-              echo "Downloaded TSV is unexpectedly small."
+              echo "Downloaded global TSV is unexpectedly small."
               CODE=90
             elif ! head -n 1 netflix-global.tsv | grep -q "show_title"; then
-              echo "Downloaded file does not look like Netflix Top 10 TSV."
+              echo "Downloaded global file does not look like Netflix Top 10 TSV."
               CODE=91
             fi
           fi
@@ -63,26 +76,82 @@ jobs:
           echo "exit_code=$CODE" >> "$GITHUB_OUTPUT"
           exit 0
 
-      - name: Generate global.json
-        id: generate
-        if: steps.download.outputs.exit_code == '0'
+      - name: Download Netflix country TSV
+        id: download_countries
         shell: bash
         run: |
           set +e
-          NETFLIX_TSV_FILE=netflix-global.tsv python3 update.py > update.log 2>&1
+
+          URL="https://top10.netflix.com/data/all-weeks-countries.tsv"
+
+          curl \
+            --fail \
+            --location \
+            --retry 8 \
+            --retry-delay 3 \
+            --retry-all-errors \
+            --connect-timeout 20 \
+            --max-time 600 \
+            --user-agent "NetflixGlobalMirror/1.0 (+https://github.com/KimsaiKwa/Netflix_Global)" \
+            --header "Accept: text/tab-separated-values,text/plain,*/*" \
+            --output netflix-countries.tsv \
+            "$URL" \
+            > curl-countries.log 2>&1
+
           CODE=$?
-          cat update.log
+
+          echo "curl exit code: $CODE"
+          cat curl-countries.log || true
+
+          if [ "$CODE" -eq 0 ]; then
+            BYTES=$(wc -c < netflix-countries.tsv | tr -d ' ')
+            echo "Downloaded bytes: $BYTES"
+            head -n 1 netflix-countries.tsv || true
+
+            if [ "$BYTES" -lt 5000000 ]; then
+              echo "Downloaded country TSV is unexpectedly small."
+              CODE=92
+            elif ! head -n 1 netflix-countries.tsv | grep -q "country_iso2"; then
+              echo "Downloaded country file does not look like Netflix Top 10 TSV."
+              CODE=93
+            fi
+          fi
+
           echo "exit_code=$CODE" >> "$GITHUB_OUTPUT"
           exit 0
 
-      - name: Validate generated file
-        id: validate
-        if: steps.download.outputs.exit_code == '0' && steps.generate.outputs.exit_code == '0'
+      - name: Generate global.json
+        id: generate_global
+        if: steps.download_global.outputs.exit_code == '0'
+        shell: bash
+        run: |
+          set +e
+          NETFLIX_TSV_FILE=netflix-global.tsv python3 update.py > update-global.log 2>&1
+          CODE=$?
+          cat update-global.log
+          echo "exit_code=$CODE" >> "$GITHUB_OUTPUT"
+          exit 0
+
+      - name: Generate country JSONs
+        id: generate_countries
+        if: steps.download_countries.outputs.exit_code == '0'
+        shell: bash
+        run: |
+          set +e
+          NETFLIX_COUNTRIES_TSV_FILE=netflix-countries.tsv python3 update_countries.py > update-countries.log 2>&1
+          CODE=$?
+          cat update-countries.log
+          echo "exit_code=$CODE" >> "$GITHUB_OUTPUT"
+          exit 0
+
+      - name: Validate global.json
+        id: validate_global
+        if: steps.download_global.outputs.exit_code == '0' && steps.generate_global.outputs.exit_code == '0'
         shell: bash
         run: |
           set +e
 
-          python3 - <<'PY' > validate.log 2>&1
+          python3 - <<'PY' > validate-global.log 2>&1
           import json
           from pathlib import Path
 
@@ -114,13 +183,72 @@ jobs:
                   raise SystemExit(f"{name} must contain 10 rows")
 
           print(
-              f"Validated Netflix week {data['week']}: "
+              f"Validated global week {data['week']}: "
               f"{len(data['films'])} films / {len(data['tv'])} TV"
           )
           PY
 
           CODE=$?
-          cat validate.log
+          cat validate-global.log
+          echo "exit_code=$CODE" >> "$GITHUB_OUTPUT"
+          exit 0
+
+      - name: Validate country JSONs
+        id: validate_countries
+        if: steps.download_countries.outputs.exit_code == '0' && steps.generate_countries.outputs.exit_code == '0'
+        shell: bash
+        run: |
+          set +e
+
+          python3 - <<'PY' > validate-countries.log 2>&1
+          import json
+          from pathlib import Path
+
+          required = [
+              "us", "kr", "jp",
+              "gb", "fr", "de", "es", "it", "nl", "pl",
+              "se", "no", "dk", "fi", "be", "at", "ch",
+              "pt", "ie", "cz", "gr", "hu", "ro",
+          ]
+
+          weeks = {}
+
+          for code in required:
+              path = Path("countries") / f"{code}.json"
+
+              if not path.exists():
+                  raise SystemExit(f"Missing {path}")
+
+              data = json.loads(path.read_text(encoding="utf-8"))
+
+              week = data.get("week")
+              if not week:
+                  raise SystemExit(f"{code}: missing week")
+
+              if len(data.get("films", [])) != 10:
+                  raise SystemExit(
+                      f"{code}: films={len(data.get('films', []))}, expected 10"
+                  )
+
+              if len(data.get("tv", [])) != 10:
+                  raise SystemExit(
+                      f"{code}: tv={len(data.get('tv', []))}, expected 10"
+                  )
+
+              weeks.setdefault(week, []).append(code)
+
+          if len(weeks) != 1:
+              raise SystemExit(f"Country files are not on one week: {weeks}")
+
+          week = next(iter(weeks))
+          print(
+              f"Validated {len(required)} country files for week {week}: "
+              "US/KR/JP + 20 European markets"
+          )
+          PY
+
+          CODE=$?
+          cat validate-countries.log
           echo "exit_code=$CODE" >> "$GITHUB_OUTPUT"
           exit 0
 
@@ -128,12 +256,18 @@ jobs:
         if: always()
         shell: bash
         run: |
-          DOWNLOAD_CODE="${{ steps.download.outputs.exit_code }}"
-          GENERATE_CODE="${{ steps.generate.outputs.exit_code }}"
-          VALIDATE_CODE="${{ steps.validate.outputs.exit_code }}"
+          DG="${{ steps.download_global.outputs.exit_code }}"
+          DC="${{ steps.download_countries.outputs.exit_code }}"
+          GG="${{ steps.generate_global.outputs.exit_code }}"
+          GC="${{ steps.generate_countries.outputs.exit_code }}"
+          VG="${{ steps.validate_global.outputs.exit_code }}"
+          VC="${{ steps.validate_countries.outputs.exit_code }}"
 
           SUCCESS=false
-          if [ "$DOWNLOAD_CODE" = "0" ] && [ "$GENERATE_CODE" = "0" ] && [ "$VALIDATE_CODE" = "0" ]; then
+
+          if [ "$DG" = "0" ] && [ "$DC" = "0" ] && \
+             [ "$GG" = "0" ] && [ "$GC" = "0" ] && \
+             [ "$VG" = "0" ] && [ "$VC" = "0" ]; then
             SUCCESS=true
           fi
 
@@ -141,25 +275,40 @@ jobs:
             rm -f diagnostics.txt
           else
             {
-              echo "Netflix global update failed"
+              echo "Netflix Top 10 update failed"
               echo "UTC: $(date -u '+%Y-%m-%dT%H:%M:%SZ')"
               echo "Runner: ${{ runner.os }}"
               echo "Python: $(python3 --version)"
-              echo "download_exit=$DOWNLOAD_CODE"
-              echo "generate_exit=$GENERATE_CODE"
-              echo "validate_exit=$VALIDATE_CODE"
+              echo "download_global=$DG"
+              echo "download_countries=$DC"
+              echo "generate_global=$GG"
+              echo "generate_countries=$GC"
+              echo "validate_global=$VG"
+              echo "validate_countries=$VC"
               echo
 
-              echo "---- curl output ----"
-              cat curl.log 2>/dev/null || true
+              echo "---- global curl ----"
+              cat curl-global.log 2>/dev/null || true
               echo
 
-              echo "---- update.py output ----"
-              cat update.log 2>/dev/null || true
+              echo "---- countries curl ----"
+              cat curl-countries.log 2>/dev/null || true
               echo
 
-              echo "---- validation output ----"
-              cat validate.log 2>/dev/null || true
+              echo "---- global generator ----"
+              cat update-global.log 2>/dev/null || true
+              echo
+
+              echo "---- country generator ----"
+              cat update-countries.log 2>/dev/null || true
+              echo
+
+              echo "---- global validation ----"
+              cat validate-global.log 2>/dev/null || true
+              echo
+
+              echo "---- country validation ----"
+              cat validate-countries.log 2>/dev/null || true
             } > diagnostics.txt
           fi
 
@@ -174,6 +323,10 @@ jobs:
             git add global.json
           fi
 
+          if [ -d countries ]; then
+            git add countries
+          fi
+
           if [ -f diagnostics.txt ]; then
             git add diagnostics.txt
           else
@@ -185,11 +338,11 @@ jobs:
             exit 0
           fi
 
-          if [ -f global.json ] && [ ! -f diagnostics.txt ]; then
+          if [ -f global.json ] && [ -d countries ] && [ ! -f diagnostics.txt ]; then
             WEEK=$(python3 -c 'import json; print(json.load(open("global.json", encoding="utf-8"))["week"])')
-            git commit -m "Update Netflix global Top 10: week $WEEK [skip ci]"
+            git commit -m "Update Netflix Top 10 data: week $WEEK [skip ci]"
           else
-            git commit -m "Record Netflix global update diagnostics [skip ci]"
+            git commit -m "Record Netflix Top 10 update diagnostics [skip ci]"
           fi
 
           git push
@@ -198,13 +351,18 @@ jobs:
         if: always()
         shell: bash
         run: |
-          DOWNLOAD_CODE="${{ steps.download.outputs.exit_code }}"
-          GENERATE_CODE="${{ steps.generate.outputs.exit_code }}"
-          VALIDATE_CODE="${{ steps.validate.outputs.exit_code }}"
+          DG="${{ steps.download_global.outputs.exit_code }}"
+          DC="${{ steps.download_countries.outputs.exit_code }}"
+          GG="${{ steps.generate_global.outputs.exit_code }}"
+          GC="${{ steps.generate_countries.outputs.exit_code }}"
+          VG="${{ steps.validate_global.outputs.exit_code }}"
+          VC="${{ steps.validate_countries.outputs.exit_code }}"
 
-          if [ "$DOWNLOAD_CODE" != "0" ] || [ "$GENERATE_CODE" != "0" ] || [ "$VALIDATE_CODE" != "0" ]; then
-            echo "Netflix global update failed. Check diagnostics.txt."
+          if [ "$DG" != "0" ] || [ "$DC" != "0" ] || \
+             [ "$GG" != "0" ] || [ "$GC" != "0" ] || \
+             [ "$VG" != "0" ] || [ "$VC" != "0" ]; then
+            echo "Netflix Top 10 update failed. Check diagnostics.txt."
             exit 1
           fi
 
-          echo "Netflix global update completed successfully."
+          echo "Netflix global and country Top 10 data updated successfully."
