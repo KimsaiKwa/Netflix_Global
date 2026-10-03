@@ -67,6 +67,42 @@ Generators:
 
 No API key or secret is required.
 
+## Independent health check
+
+A separate health workflow validates the committed mirror independently from the weekly updater.
+
+Files:
+
+- `health_check.py`
+- `.github/workflows/netflix-health.yml`
+
+The health check runs every day at 18:45 UTC, can be triggered manually, and also runs when health-check or mirror JSON files are changed outside a skipped-CI update commit.
+
+It verifies:
+
+- `global.json` exists and is valid JSON
+- the derived global Films and TV lists each contain ranks 1–10
+- all four official global categories contain 10 rows
+- all 23 required country JSON files exist
+- every country has Films Top 10 and TV Top 10 with ranks 1–10
+- all country files use one reporting week
+- the country reporting week matches `global.json`
+- all 20 European aggregate inputs are available
+- the reporting week and `generated_at` timestamp are not stale
+
+Default freshness limits:
+
+- reporting week: no more than 10 days old
+- `global.json generated_at`: no more than 192 hours old
+
+The limits can be overridden with `MAX_WEEK_AGE_DAYS` and `MAX_GENERATED_AGE_HOURS`.
+
+If the check fails, the workflow fails and automatically opens or refreshes one repository issue titled:
+
+`[Health Check] Netflix Top 10 mirror unhealthy`
+
+When the mirror becomes healthy again, the workflow closes that issue automatically.
+
 ## Data sources
 
 Netflix Tudum Top 10 public weekly datasets:
@@ -74,7 +110,7 @@ Netflix Tudum Top 10 public weekly datasets:
 - `https://top10.netflix.com/data/all-weeks-global.tsv`
 - `https://top10.netflix.com/data/all-weeks-countries.tsv`
 
-The workflow downloads the TSV files with retry handling, validates the generated JSON, and commits the latest data back to the repository.
+The weekly update workflow downloads the TSV files with retry handling, validates the generated JSON, and commits the latest data back to the repository.
 
 ## Intended use
 
