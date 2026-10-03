@@ -67,6 +67,16 @@ Generators:
 
 No API key or secret is required.
 
+## Douban userscript
+
+Canonical userscript:
+
+- `douban-hot.user.js`
+
+Version 1.6.0 reads browser-ready metadata directly from this repository. For Netflix markets it no longer calls Douban `subject_suggest` or JustWatch from the browser. During migration it may reuse the user's existing local metadata cache only as a non-network fallback until the backend-enriched JSON has propagated.
+
+The small “详情” control also suppresses the browser's default blue focus outline.
+
 ## Backend display metadata
 
 The mirror JSON is enriched in GitHub Actions before publication so the Douban userscript does not need to query Douban or JustWatch at page-load time.
