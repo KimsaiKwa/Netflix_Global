@@ -1,0 +1,86 @@
+name: Update Netflix Global Top 10
+
+on:
+  schedule:
+    - cron: "30 16 * * 2"   # Tuesdays 16:30 UTC, after Netflix weekly publication
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "update.py"
+      - ".github/workflows/netflix-global.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: netflix-global-update
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate global.json
+        run: python3 update.py
+
+      - name: Validate generated file
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          path = Path("global.json")
+          if not path.exists():
+              raise SystemExit("global.json was not generated")
+
+          data = json.loads(path.read_text(encoding="utf-8"))
+
+          if not data.get("week"):
+              raise SystemExit("global.json has no week")
+          if len(data.get("films", [])) != 10:
+              raise SystemExit("global.json films must contain 10 rows")
+          if len(data.get("tv", [])) != 10:
+              raise SystemExit("global.json tv must contain 10 rows")
+
+          official = data.get("official_categories", {})
+          required = [
+              "Films (English)",
+              "Films (Non-English)",
+              "TV (English)",
+              "TV (Non-English)",
+          ]
+          for name in required:
+              if len(official.get(name, [])) != 10:
+                  raise SystemExit(f"{name} must contain 10 rows")
+
+          print(
+              f"Validated Netflix week {data['week']}: "
+              f"{len(data['films'])} films / {len(data['tv'])} TV"
+          )
+          PY
+
+      - name: Commit updated data
+        run: |
+          if git diff --quiet -- global.json; then
+            echo "global.json is already current."
+            exit 0
+          fi
+
+          WEEK=$(python3 -c 'import json; print(json.load(open("global.json", encoding="utf-8"))["week"])')
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add global.json
+          git commit -m "Update Netflix global Top 10: week $WEEK [skip ci]"
+          git push
