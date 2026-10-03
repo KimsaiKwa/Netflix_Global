@@ -73,7 +73,7 @@ Canonical userscript:
 
 - `douban-hot.user.js`
 
-Version 1.6.1 reads browser-ready metadata only from this repository. For Netflix markets it does not call Douban `subject_suggest`, JustWatch, or IMDb from the browser, and it no longer reads the legacy local metadata cache. The browser is now a pure display client for GitHub-enriched Netflix JSON.
+Version 1.6.2 reads browser-ready metadata only from this repository. For Netflix markets it does not call Douban `subject_suggest`, JustWatch, or IMDb from the browser, and it does not read the legacy local metadata cache. The browser is a pure display client for GitHub-enriched Netflix JSON. v1.6.2 also exposes strict-match confidence counts in diagnostics.
 
 The small “详情” control also suppresses the browser's default blue focus outline.
 
@@ -101,6 +101,23 @@ Browser-facing ranking rows include:
 
 Ranking order and Netflix metrics are never changed by metadata enrichment.
 
+### Metadata anti-mismatch protection
+
+Metadata match version 2 is deliberately conservative: a missing poster is preferred over a wrong poster.
+
+The backend now:
+
+- rejects substring/prefix-only title matches
+- treats meaningful subtitle/part tokens such as `Final` and `Stay Alive` as significant
+- ignores only edition-style tokens such as `4K` / `remastered` when comparing titles
+- rejects provider candidates whose known year differs by more than one year
+- cross-checks JustWatch IMDb IDs against IMDb when possible
+- rejects ambiguous JustWatch/IMDb matches when their strict-title years conflict
+- keeps Chinese display titles Douban-only
+- records `metadata_match_version`, `metadata_confidence`, and `metadata_evidence` on browser-facing rows
+- invalidates pre-v2 fuzzy-match cache entries instead of carrying them forward
+
+
 The weekly update pipeline is now:
 
 1. download official Netflix TSV files
@@ -110,7 +127,7 @@ The weekly update pipeline is now:
 5. validate the final browser-ready mirror
 6. publish all files in one Git commit
 
-Successful metadata is cached for 30 days. Empty lookups are retried after 6 hours. Existing successful metadata is preserved when an upstream metadata request fails.
+Successful v2 metadata is cached for 30 days, partial metadata for 7 days, and empty lookups are retried after 6 hours. Only cache entries produced by the current strict match version are eligible for reuse.
 
 A separate daily workflow retries incomplete metadata without regenerating Netflix rankings:
 
