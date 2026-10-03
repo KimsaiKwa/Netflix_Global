@@ -44,6 +44,7 @@ CACHE_VERSION = 1
 METADATA_VERSION = 1
 
 META_TTL_SECONDS = 30 * 24 * 60 * 60
+PARTIAL_TTL_SECONDS = 7 * 24 * 60 * 60
 NEGATIVE_TTL_SECONDS = 6 * 60 * 60
 REQUEST_TIMEOUT = 20
 WORKERS = max(1, min(int(os.environ.get("METADATA_WORKERS", "4")), 8))
@@ -831,17 +832,10 @@ def resolve_fresh_meta(
     douban_poster = normalize_image_url((db or {}).get("poster"))
     justwatch_poster = normalize_image_url((jw or {}).get("poster"))
 
-    # Prefer Douban-confirmed Chinese titles. If Douban is unavailable from
-    # the GitHub runner, JustWatch's zh localization is a display fallback.
-    jw_cn_title = (
-        localized_alias
-        if localized_alias and has_han(localized_alias)
-        else ""
-    )
-
+    # Display Chinese titles must come from Douban only.
+    # JustWatch's zh localization is used only as a second Douban search term.
     return {
-        "cn_title": clean((db or {}).get("cn_title"), 220)
-        or clean(jw_cn_title, 220),
+        "cn_title": clean((db or {}).get("cn_title"), 220),
         "year": clean((db or {}).get("year"), 8)
         or clean((jw or {}).get("year"), 8)
         or clean(year_hint, 8),
@@ -914,11 +908,15 @@ def get_stable_meta(
     except (TypeError, ValueError):
         saved_at_value = 0.0
 
-    ttl = (
-        META_TTL_SECONDS
-        if existing.get("poster_candidates")
-        else NEGATIVE_TTL_SECONDS
-    )
+    has_poster = bool(existing.get("poster_candidates"))
+    has_cn_title = bool(existing.get("cn_title"))
+
+    if has_poster and has_cn_title:
+        ttl = META_TTL_SECONDS
+    elif has_poster or has_cn_title:
+        ttl = PARTIAL_TTL_SECONDS
+    else:
+        ttl = NEGATIVE_TTL_SECONDS
     age = now_ts() - saved_at_value if saved_at_value else float("inf")
 
     if not FORCE and saved_at_value and age < ttl:
