@@ -49,9 +49,9 @@ jobs:
           {
             echo "## Netflix Mirror Health Check"
             echo
-            echo '\`\`\`text'
+            echo "~~~text"
             cat health-check.log 2>/dev/null || echo "health-check.log was not created"
-            echo '\`\`\`'
+            echo "~~~"
           } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Open or refresh health issue
@@ -71,26 +71,27 @@ jobs:
             } catch (_) {}
 
             if (log.length > 50000) {
-              log = log.slice(0, 50000) + '\\n... log truncated ...';
+              log = log.slice(0, 50000) + '\n... log truncated ...';
             }
 
             const runUrl =
-              \`\${context.serverUrl}/\${owner}/\${repo}/actions/runs/\${context.runId}\`;
+              context.serverUrl + '/' + owner + '/' + repo +
+              '/actions/runs/' + context.runId;
 
             const body = [
               'The independent Netflix mirror health check is failing.',
               '',
-              \`Workflow run: \${runUrl}\`,
-              \`Checked at: \${new Date().toISOString()}\`,
+              'Workflow run: ' + runUrl,
+              'Checked at: ' + new Date().toISOString(),
               '',
               '### Health check output',
               '',
-              '\`\`\`text',
+              '~~~text',
               log,
-              '\`\`\`',
+              '~~~',
               '',
               '_This issue is managed automatically by the health-check workflow._'
-            ].join('\\n');
+            ].join('\n');
 
             const { data: issues } = await github.rest.issues.listForRepo({
               owner,
@@ -140,13 +141,17 @@ jobs:
             );
 
             if (existing) {
+              const runUrl =
+                context.serverUrl + '/' + owner + '/' + repo +
+                '/actions/runs/' + context.runId;
+
               await github.rest.issues.createComment({
                 owner,
                 repo,
                 issue_number: existing.number,
                 body:
                   'Health check has recovered and is passing again. ' +
-                  \`Recovery run: \${context.serverUrl}/\${owner}/\${repo}/actions/runs/\${context.runId}\`
+                  'Recovery run: ' + runUrl
               });
 
               await github.rest.issues.update({
