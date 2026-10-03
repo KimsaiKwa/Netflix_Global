@@ -10,6 +10,7 @@ on:
     paths:
       - "update.py"
       - "update_countries.py"
+      - "enrich_metadata.py"
       - ".github/workflows/netflix-global.yml"
 
 permissions:
@@ -144,67 +145,45 @@ jobs:
           echo "exit_code=$CODE" >> "$GITHUB_OUTPUT"
           exit 0
 
-      - name: Validate global.json
-        id: validate_global
-        if: steps.download_global.outputs.exit_code == '0' && steps.generate_global.outputs.exit_code == '0'
+      - name: Validate ranking data
+        id: validate_base
+        if: >
+          steps.download_global.outputs.exit_code == '0' &&
+          steps.download_countries.outputs.exit_code == '0' &&
+          steps.generate_global.outputs.exit_code == '0' &&
+          steps.generate_countries.outputs.exit_code == '0'
         shell: bash
         run: |
           set +e
 
-          python3 - <<'PY' > validate-global.log 2>&1
+          python3 - <<'PY' > validate-base.log 2>&1
           import json
           from pathlib import Path
 
-          path = Path("global.json")
-          if not path.exists():
-              raise SystemExit("global.json was not generated")
+          global_data = json.loads(Path("global.json").read_text(encoding="utf-8"))
 
-          data = json.loads(path.read_text(encoding="utf-8"))
-
-          if not data.get("week"):
+          if not global_data.get("week"):
               raise SystemExit("global.json has no week")
 
-          if len(data.get("films", [])) != 10:
+          if len(global_data.get("films", [])) != 10:
               raise SystemExit("global.json films must contain 10 rows")
 
-          if len(data.get("tv", [])) != 10:
+          if len(global_data.get("tv", [])) != 10:
               raise SystemExit("global.json tv must contain 10 rows")
 
-          official = data.get("official_categories", {})
-          required = [
+          official = global_data.get("official_categories", {})
+          required_categories = [
               "Films (English)",
               "Films (Non-English)",
               "TV (English)",
               "TV (Non-English)",
           ]
 
-          for name in required:
+          for name in required_categories:
               if len(official.get(name, [])) != 10:
                   raise SystemExit(f"{name} must contain 10 rows")
 
-          print(
-              f"Validated global week {data['week']}: "
-              f"{len(data['films'])} films / {len(data['tv'])} TV"
-          )
-          PY
-
-          CODE=$?
-          cat validate-global.log
-          echo "exit_code=$CODE" >> "$GITHUB_OUTPUT"
-          exit 0
-
-      - name: Validate country JSONs
-        id: validate_countries
-        if: steps.download_countries.outputs.exit_code == '0' && steps.generate_countries.outputs.exit_code == '0'
-        shell: bash
-        run: |
-          set +e
-
-          python3 - <<'PY' > validate-countries.log 2>&1
-          import json
-          from pathlib import Path
-
-          required = [
+          required_countries = [
               "us", "kr", "jp",
               "gb", "fr", "de", "es", "it", "nl", "pl",
               "se", "no", "dk", "fi", "be", "at", "ch",
@@ -213,7 +192,7 @@ jobs:
 
           weeks = {}
 
-          for code in required:
+          for code in required_countries:
               path = Path("countries") / f"{code}.json"
 
               if not path.exists():
@@ -240,15 +219,51 @@ jobs:
           if len(weeks) != 1:
               raise SystemExit(f"Country files are not on one week: {weeks}")
 
-          week = next(iter(weeks))
+          country_week = next(iter(weeks))
+          global_week = global_data["week"]
+
+          if country_week != global_week:
+              raise SystemExit(
+                  f"Global/country week mismatch: "
+                  f"global={global_week}, countries={country_week}"
+              )
+
           print(
-              f"Validated {len(required)} country files for week {week}: "
-              "US/KR/JP + 20 European markets"
+              f"Validated base ranking data for week {global_week}: "
+              f"global 10+10, {len(required_countries)} countries 10+10"
           )
           PY
 
           CODE=$?
-          cat validate-countries.log
+          cat validate-base.log
+          echo "exit_code=$CODE" >> "$GITHUB_OUTPUT"
+          exit 0
+
+      - name: Enrich browser metadata
+        id: enrich
+        if: steps.validate_base.outputs.exit_code == '0'
+        shell: bash
+        run: |
+          set +e
+
+          METADATA_WORKERS=4 python3 enrich_metadata.py > enrich.log 2>&1
+          CODE=$?
+
+          cat enrich.log
+          echo "exit_code=$CODE" >> "$GITHUB_OUTPUT"
+          exit 0
+
+      - name: Validate final browser-ready mirror
+        id: validate_final
+        if: steps.enrich.outputs.exit_code == '0'
+        shell: bash
+        run: |
+          set +e
+
+          python3 health_check.py > validate-final.log 2>&1
+          CODE=$?
+
+          cat validate-final.log
           echo "exit_code=$CODE" >> "$GITHUB_OUTPUT"
           exit 0
 
@@ -256,20 +271,23 @@ jobs:
         if: always()
         shell: bash
         run: |
-          DG="${{ steps.download_global.outputs.exit_code }}"
-          DC="${{ steps.download_countries.outputs.exit_code }}"
-          GG="${{ steps.generate_global.outputs.exit_code }}"
-          GC="${{ steps.generate_countries.outputs.exit_code }}"
-          VG="${{ steps.validate_global.outputs.exit_code }}"
-          VC="${{ steps.validate_countries.outputs.exit_code }}"
+          DG="\${{ steps.download_global.outputs.exit_code }}"
+          DC="\${{ steps.download_countries.outputs.exit_code }}"
+          GG="\${{ steps.generate_global.outputs.exit_code }}"
+          GC="\${{ steps.generate_countries.outputs.exit_code }}"
+          VB="\${{ steps.validate_base.outputs.exit_code }}"
+          EN="\${{ steps.enrich.outputs.exit_code }}"
+          VF="\${{ steps.validate_final.outputs.exit_code }}"
 
           SUCCESS=false
 
           if [ "$DG" = "0" ] && [ "$DC" = "0" ] && \
              [ "$GG" = "0" ] && [ "$GC" = "0" ] && \
-             [ "$VG" = "0" ] && [ "$VC" = "0" ]; then
+             [ "$VB" = "0" ] && [ "$EN" = "0" ] && [ "$VF" = "0" ]; then
             SUCCESS=true
           fi
+
+          echo "success=$SUCCESS" >> "$GITHUB_ENV"
 
           if [ "$SUCCESS" = "true" ]; then
             rm -f diagnostics.txt
@@ -277,14 +295,15 @@ jobs:
             {
               echo "Netflix Top 10 update failed"
               echo "UTC: $(date -u '+%Y-%m-%dT%H:%M:%SZ')"
-              echo "Runner: ${{ runner.os }}"
+              echo "Runner: \${{ runner.os }}"
               echo "Python: $(python3 --version)"
               echo "download_global=$DG"
               echo "download_countries=$DC"
               echo "generate_global=$GG"
               echo "generate_countries=$GC"
-              echo "validate_global=$VG"
-              echo "validate_countries=$VC"
+              echo "validate_base=$VB"
+              echo "enrich_metadata=$EN"
+              echo "validate_final=$VF"
               echo
 
               echo "---- global curl ----"
@@ -303,12 +322,16 @@ jobs:
               cat update-countries.log 2>/dev/null || true
               echo
 
-              echo "---- global validation ----"
-              cat validate-global.log 2>/dev/null || true
+              echo "---- base validation ----"
+              cat validate-base.log 2>/dev/null || true
               echo
 
-              echo "---- country validation ----"
-              cat validate-countries.log 2>/dev/null || true
+              echo "---- metadata enrichment ----"
+              cat enrich.log 2>/dev/null || true
+              echo
+
+              echo "---- final health validation ----"
+              cat validate-final.log 2>/dev/null || true
             } > diagnostics.txt
           fi
 
@@ -319,50 +342,44 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          if [ -f global.json ]; then
-            git add global.json
-          fi
+          if [ "$success" = "true" ]; then
+            git add global.json countries metadata_cache.json
 
-          if [ -d countries ]; then
-            git add countries
+            if [ -f diagnostics.txt ]; then
+              rm -f diagnostics.txt
+            fi
+            git rm --ignore-unmatch diagnostics.txt >/dev/null 2>&1 || true
+
+            if git diff --cached --quiet; then
+              echo "No generated changes to commit."
+              exit 0
+            fi
+
+            WEEK=$(python3 -c 'import json; print(json.load(open("global.json", encoding="utf-8"))["week"])')
+            git commit -m "Update Netflix browser-ready Top 10: week $WEEK [skip ci]"
+            git push
+            exit 0
           fi
 
           if [ -f diagnostics.txt ]; then
             git add diagnostics.txt
-          else
-            git rm --ignore-unmatch diagnostics.txt >/dev/null 2>&1 || true
           fi
 
           if git diff --cached --quiet; then
-            echo "No generated changes to commit."
+            echo "No diagnostics changes to commit."
             exit 0
           fi
 
-          if [ -f global.json ] && [ -d countries ] && [ ! -f diagnostics.txt ]; then
-            WEEK=$(python3 -c 'import json; print(json.load(open("global.json", encoding="utf-8"))["week"])')
-            git commit -m "Update Netflix Top 10 data: week $WEEK [skip ci]"
-          else
-            git commit -m "Record Netflix Top 10 update diagnostics [skip ci]"
-          fi
-
+          git commit -m "Record Netflix Top 10 update diagnostics [skip ci]"
           git push
 
       - name: Fail workflow when update failed
         if: always()
         shell: bash
         run: |
-          DG="${{ steps.download_global.outputs.exit_code }}"
-          DC="${{ steps.download_countries.outputs.exit_code }}"
-          GG="${{ steps.generate_global.outputs.exit_code }}"
-          GC="${{ steps.generate_countries.outputs.exit_code }}"
-          VG="${{ steps.validate_global.outputs.exit_code }}"
-          VC="${{ steps.validate_countries.outputs.exit_code }}"
-
-          if [ "$DG" != "0" ] || [ "$DC" != "0" ] || \
-             [ "$GG" != "0" ] || [ "$GC" != "0" ] || \
-             [ "$VG" != "0" ] || [ "$VC" != "0" ]; then
+          if [ "$success" != "true" ]; then
             echo "Netflix Top 10 update failed. Check diagnostics.txt."
             exit 1
           fi
 
-          echo "Netflix global and country Top 10 data updated successfully."
+          echo "Netflix browser-ready Top 10 update completed successfully."
