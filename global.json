@@ -1,6 +1,6 @@
 {
   "week": "2026-09-27",
-  "generated_at": "2026-10-03T15:27:04.543157+00:00",
+  "generated_at": "2026-10-03T17:35:11.590452+00:00",
   "source": "Netflix Tudum Top 10",
   "source_url": "https://top10.netflix.com/data/all-weeks-global.tsv",
   "derived": true,
@@ -385,7 +385,16 @@
       "hours_viewed": 27400000,
       "runtime_hours": 1.6667,
       "weeks_in_top_10": 1,
-      "source_category": "Films (English)"
+      "source_category": "Films (English)",
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/354976659/s332/yunabameo-bimil-silheom.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt6933238",
+      "tmdb_id": "1492640"
     },
     {
       "rank": 2,
@@ -396,7 +405,16 @@
       "hours_viewed": 13600000,
       "runtime_hours": 1.8667,
       "weeks_in_top_10": 2,
-      "source_category": "Films (English)"
+      "source_category": "Films (English)",
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/354777535/s332/best-of-the-best.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt16478058",
+      "tmdb_id": "1514863"
     },
     {
       "rank": 3,
@@ -407,7 +425,16 @@
       "hours_viewed": 11800000,
       "runtime_hours": 1.6833,
       "weeks_in_top_10": 2,
-      "source_category": "Films (English)"
+      "source_category": "Films (English)",
+      "cn_title": "",
+      "year": "2025",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/326379892/s332/a-minecraft-movie-2025.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt3566834",
+      "tmdb_id": "950387"
     },
     {
       "rank": 4,
@@ -418,7 +445,16 @@
       "hours_viewed": 6400000,
       "runtime_hours": 1.45,
       "weeks_in_top_10": 2,
-      "source_category": "Films (English)"
+      "source_category": "Films (English)",
+      "cn_title": "",
+      "year": "2015",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/330698511/s332/riot-2015.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt4642044",
+      "tmdb_id": "360055"
     },
     {
       "rank": 5,
@@ -429,7 +465,16 @@
       "hours_viewed": 7600000,
       "runtime_hours": 1.9,
       "weeks_in_top_10": 5,
-      "source_category": "Films (English)"
+      "source_category": "Films (English)",
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/354521042/s332/der-kinderfluesterer.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt11561116",
+      "tmdb_id": "860508"
     },
     {
       "rank": 6,
@@ -440,7 +485,16 @@
       "hours_viewed": 7200000,
       "runtime_hours": 2.0833,
       "weeks_in_top_10": 2,
-      "source_category": "Films (English)"
+      "source_category": "Films (English)",
+      "cn_title": "",
+      "year": "2022",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/301729932/s332/black-adam.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt6443346",
+      "tmdb_id": "436270"
     },
     {
       "rank": 7,
@@ -451,7 +505,16 @@
       "hours_viewed": 8100000,
       "runtime_hours": 2.3667,
       "weeks_in_top_10": 2,
-      "source_category": "Films (Non-English)"
+      "source_category": "Films (Non-English)",
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://m.media-amazon.com/images/M/MV5BMjZlMDBhYzktYTY4OS00ZGU3LWEwNzQtOTBiY2M0MTVjMmIyXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt39108319",
+      "tmdb_id": ""
     },
     {
       "rank": 8,
@@ -462,7 +525,16 @@
       "hours_viewed": 6700000,
       "runtime_hours": 2.0,
       "weeks_in_top_10": 2,
-      "source_category": "Films (English)"
+      "source_category": "Films (English)",
+      "cn_title": "",
+      "year": "2024",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/313383451/s332/the-ministry-of-ungentlemanly-warfare.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt5177120",
+      "tmdb_id": "799583"
     },
     {
       "rank": 9,
@@ -473,7 +545,16 @@
       "hours_viewed": 5800000,
       "runtime_hours": 1.85,
       "weeks_in_top_10": 3,
-      "source_category": "Films (English)"
+      "source_category": "Films (English)",
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/354562957/s332/miert-is-hazasodtam-meg.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt38061210",
+      "tmdb_id": "1522689"
     },
     {
       "rank": 10,
@@ -484,7 +565,14 @@
       "hours_viewed": 6900000,
       "runtime_hours": 2.3667,
       "weeks_in_top_10": 2,
-      "source_category": "Films (Non-English)"
+      "source_category": "Films (Non-English)",
+      "cn_title": "",
+      "year": "2007",
+      "poster_candidates": [],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "",
+      "tmdb_id": "322285"
     }
   ],
   "tv": [
@@ -497,7 +585,16 @@
       "hours_viewed": 95900000,
       "runtime_hours": 6.6333,
       "weeks_in_top_10": 2,
-      "source_category": "TV (English)"
+      "source_category": "TV (English)",
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/354782112/s332/goemul-riji-bodeun-iyagi.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "",
+      "tmdb_id": "299939"
     },
     {
       "rank": 2,
@@ -508,7 +605,16 @@
       "hours_viewed": 65700000,
       "runtime_hours": 6.7833,
       "weeks_in_top_10": 2,
-      "source_category": "TV (Non-English)"
+      "source_category": "TV (Non-English)",
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://m.media-amazon.com/images/M/MV5BYWNjNzcxYzctZGM4Zi00OWUwLTkyODctNzc1Y2U4MjZiZDY0XkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt39397536",
+      "tmdb_id": ""
     },
     {
       "rank": 3,
@@ -519,7 +625,16 @@
       "hours_viewed": 46500000,
       "runtime_hours": 9.1667,
       "weeks_in_top_10": 2,
-      "source_category": "TV (Non-English)"
+      "source_category": "TV (Non-English)",
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://m.media-amazon.com/images/M/MV5BYTg4YWY0NmYtYTI4NC00ZWQ1LWFlZTMtMTk2N2RjZmU2YTc4XkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt37884325",
+      "tmdb_id": ""
     },
     {
       "rank": 4,
@@ -530,7 +645,16 @@
       "hours_viewed": 28300000,
       "runtime_hours": 6.1167,
       "weeks_in_top_10": 1,
-      "source_category": "TV (English)"
+      "source_category": "TV (English)",
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/350868666/s332/wonkas-the-golden-ticket.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt36258621",
+      "tmdb_id": "286940"
     },
     {
       "rank": 5,
@@ -541,7 +665,16 @@
       "hours_viewed": 28100000,
       "runtime_hours": 6.2,
       "weeks_in_top_10": 3,
-      "source_category": "TV (English)"
+      "source_category": "TV (English)",
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/354594032/s332/crew-girl.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt38218082",
+      "tmdb_id": "300507"
     },
     {
       "rank": 6,
@@ -552,7 +685,16 @@
       "hours_viewed": 31000000,
       "runtime_hours": 7.4333,
       "weeks_in_top_10": 4,
-      "source_category": "TV (English)"
+      "source_category": "TV (English)",
+      "cn_title": "",
+      "year": "2024",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/354137615/s332/The-Gentlemen.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt13210838",
+      "tmdb_id": "236235"
     },
     {
       "rank": 7,
@@ -563,7 +705,16 @@
       "hours_viewed": 23000000,
       "runtime_hours": 5.45,
       "weeks_in_top_10": 1,
-      "source_category": "TV (English)"
+      "source_category": "TV (English)",
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/355071095/s332/a-different-world-1.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt33081352",
+      "tmdb_id": "305357"
     },
     {
       "rank": 8,
@@ -574,7 +725,16 @@
       "hours_viewed": 21900000,
       "runtime_hours": 7.7667,
       "weeks_in_top_10": 2,
-      "source_category": "TV (Non-English)"
+      "source_category": "TV (Non-English)",
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/354912099/s332/seukaendeul-2026.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt36347588",
+      "tmdb_id": "275102"
     },
     {
       "rank": 9,
@@ -585,7 +745,16 @@
       "hours_viewed": 11800000,
       "runtime_hours": 4.45,
       "weeks_in_top_10": 1,
-      "source_category": "TV (Non-English)"
+      "source_category": "TV (Non-English)",
+      "cn_title": "",
+      "year": "2025",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/328703427/s332/.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "",
+      "tmdb_id": "281907"
     },
     {
       "rank": 10,
@@ -596,7 +765,18 @@
       "hours_viewed": 4400000,
       "runtime_hours": 1.6167,
       "weeks_in_top_10": 2,
-      "source_category": "TV (English)"
+      "source_category": "TV (English)",
+      "cn_title": "",
+      "year": "2021",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/327296475/s332/gabinin-kouzelny-domek.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt9165438",
+      "tmdb_id": "111474"
     }
-  ]
+  ],
+  "metadata_version": 1,
+  "metadata_enriched_at": "2026-10-03T17:35:13.556098+00:00"
 }

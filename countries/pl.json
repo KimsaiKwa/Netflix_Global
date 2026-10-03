@@ -6,52 +6,140 @@
     {
       "rank": 1,
       "title": "UNABOMBER",
-      "weeks_in_top_10": 1
+      "weeks_in_top_10": 1,
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/354976659/s332/yunabameo-bimil-silheom.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt6933238",
+      "tmdb_id": "1492640"
     },
     {
       "rank": 2,
       "title": "The Judge",
-      "weeks_in_top_10": 2
+      "weeks_in_top_10": 2,
+      "cn_title": "",
+      "year": "2014",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/311745770/s332/the-judge.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt1872194",
+      "tmdb_id": "205587"
     },
     {
       "rank": 3,
       "title": "The Little Things",
-      "weeks_in_top_10": 3
+      "weeks_in_top_10": 3,
+      "cn_title": "",
+      "year": "2021",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/347774442/s332/the-little-things-2021.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt10016180",
+      "tmdb_id": "602269"
     },
     {
       "rank": 4,
       "title": "The Whisper Man",
-      "weeks_in_top_10": 5
+      "weeks_in_top_10": 5,
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/354521042/s332/der-kinderfluesterer.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt11561116",
+      "tmdb_id": "860508"
     },
     {
       "rank": 5,
       "title": "Best of the Best",
-      "weeks_in_top_10": 2
+      "weeks_in_top_10": 2,
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/354777535/s332/best-of-the-best.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt16478058",
+      "tmdb_id": "1514863"
     },
     {
       "rank": 6,
       "title": "Superman",
-      "weeks_in_top_10": 2
+      "weeks_in_top_10": 2,
+      "cn_title": "",
+      "year": "2025",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/332807110/s332/superman-2025.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt5950044",
+      "tmdb_id": "1061474"
     },
     {
       "rank": 7,
       "title": "The Secret Woman",
-      "weeks_in_top_10": 5
+      "weeks_in_top_10": 5,
+      "cn_title": "",
+      "year": "1918",
+      "poster_candidates": [],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt0009595",
+      "tmdb_id": ""
     },
     {
       "rank": 8,
       "title": "Space Jam: A New Legacy",
-      "weeks_in_top_10": 1
+      "weeks_in_top_10": 1,
+      "cn_title": "",
+      "year": "2021",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/335815276/s332/space-jam-a-new-legacy.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt3554046",
+      "tmdb_id": "379686"
     },
     {
       "rank": 9,
       "title": "Bad Boy",
-      "weeks_in_top_10": 1
+      "weeks_in_top_10": 1,
+      "cn_title": "",
+      "year": "1935",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/172151032/s332/.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt0026093",
+      "tmdb_id": "281756"
     },
     {
       "rank": 10,
       "title": "Shrek",
-      "weeks_in_top_10": 8
+      "weeks_in_top_10": 8,
+      "cn_title": "",
+      "year": "2001",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/305340157/s332/shrek.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt0126029",
+      "tmdb_id": "808"
     }
   ],
   "tv": [
@@ -59,61 +147,153 @@
       "rank": 1,
       "title": "The Doll",
       "weeks_in_top_10": 2,
-      "season": "The Doll: Limited Series"
+      "season": "The Doll: Limited Series",
+      "cn_title": "",
+      "year": "1978",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/138475823/s332/.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt0127384",
+      "tmdb_id": "47878"
     },
     {
       "rank": 2,
       "title": "Monster: The Lizzie Borden Story",
       "weeks_in_top_10": 2,
-      "season": "Monster: The Lizzie Borden Story: Season 1"
+      "season": "Monster: The Lizzie Borden Story: Season 1",
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/354782112/s332/goemul-riji-bodeun-iyagi.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "",
+      "tmdb_id": "299939"
     },
     {
       "rank": 3,
       "title": "Not a Stranger",
       "weeks_in_top_10": 2,
-      "season": "Not a Stranger: Season 1"
+      "season": "Not a Stranger: Season 1",
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://m.media-amazon.com/images/M/MV5BYWNjNzcxYzctZGM4Zi00OWUwLTkyODctNzc1Y2U4MjZiZDY0XkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt39397536",
+      "tmdb_id": ""
     },
     {
       "rank": 4,
       "title": "The Perfect Lie",
       "weeks_in_top_10": 3,
-      "season": "The Perfect Lie: Season 1"
+      "season": "The Perfect Lie: Season 1",
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://m.media-amazon.com/images/M/MV5BNTc5M2Q3NWItYjE5MS00ZDdiLTgyNWMtZjQ2YmQxYjExZTE5XkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt47657141",
+      "tmdb_id": ""
     },
     {
       "rank": 5,
       "title": "The Final Problem",
       "weeks_in_top_10": 1,
-      "season": "The Final Problem: Limited Series"
+      "season": "The Final Problem: Limited Series",
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://m.media-amazon.com/images/M/MV5BZDI1YTE5ZDEtNDBlNS00MWRlLWJjY2UtYjhiMjhkMDlhMjk5XkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt36832679",
+      "tmdb_id": ""
     },
     {
       "rank": 6,
       "title": "Gabby's Dollhouse",
       "weeks_in_top_10": 2,
-      "season": "Gabby's Dollhouse: Season 14"
+      "season": "Gabby's Dollhouse: Season 14",
+      "cn_title": "",
+      "year": "2021",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/327296475/s332/gabinin-kouzelny-domek.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt9165438",
+      "tmdb_id": "111474"
     },
     {
       "rank": 7,
       "title": "The Gentlemen",
       "weeks_in_top_10": 4,
-      "season": "The Gentlemen: Season 2"
+      "season": "The Gentlemen: Season 2",
+      "cn_title": "",
+      "year": "2024",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/354137615/s332/The-Gentlemen.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt13210838",
+      "tmdb_id": "236235"
     },
     {
       "rank": 8,
       "title": "Minerva Academy",
       "weeks_in_top_10": 1,
-      "season": "Minerva Academy: Season 1"
+      "season": "Minerva Academy: Season 1",
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://m.media-amazon.com/images/M/MV5BZDI2YTkzYjItZWIzZi00MWFkLWI3MzctYmU3OWVhODUwNjM5XkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt28765828",
+      "tmdb_id": ""
     },
     {
       "rank": 9,
       "title": "Crew Girl",
       "weeks_in_top_10": 3,
-      "season": "Crew Girl: Season 1"
+      "season": "Crew Girl: Season 1",
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/354594032/s332/crew-girl.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt38218082",
+      "tmdb_id": "300507"
     },
     {
       "rank": 10,
       "title": "Bad Exorcist",
       "weeks_in_top_10": 3,
-      "season": "Bad Exorcist: Season 7"
+      "season": "Bad Exorcist: Season 7",
+      "cn_title": "",
+      "year": "2020",
+      "poster_candidates": [
+        "https://m.media-amazon.com/images/M/MV5BZjIxYmI4MDQtNTc1Ny00NDQ4LThlZjItY2E3ZTgyNDRiMzcwXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt13624584",
+      "tmdb_id": ""
     }
-  ]
+  ],
+  "metadata_version": 1,
+  "metadata_enriched_at": "2026-10-03T17:35:13.556098+00:00"
 }
