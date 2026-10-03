@@ -19,6 +19,7 @@ from __future__ import annotations
 
 import csv
 import io
+import http.client
 import json
 import os
 import sys
@@ -102,7 +103,7 @@ def fetch_tsv() -> tuple[str, str]:
 
                     return text, final_url
 
-                except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError) as exc:
+                except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError, http.client.IncompleteRead) as exc:
                     errors.append(
                         f"attempt={attempt} url={url} ua={ua!r}: "
                         f"{type(exc).__name__}: {exc}"
