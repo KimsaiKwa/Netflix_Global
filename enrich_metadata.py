@@ -366,6 +366,69 @@ def search_douban(query: str) -> list[dict[str, Any]]:
     return data if isinstance(data, list) else []
 
 
+
+def ordered_justwatch_countries(country_hints: set[str]) -> list[str]:
+    hints = {
+        clean(code, 2).upper()
+        for code in country_hints
+        if clean(code, 2)
+    }
+
+    ordered: list[str] = []
+
+    # Local catalog first for Asian markets where the US search index often
+    # misses local titles; otherwise prefer the first market where Netflix
+    # actually ranked the title.
+    for code in ("KR", "JP"):
+        if code in hints and code not in ordered:
+            ordered.append(code)
+
+    for code in sorted(hints):
+        if code not in ordered:
+            ordered.append(code)
+
+    for fallback in ("US", "GB", "KR", "JP"):
+        if fallback not in ordered:
+            ordered.append(fallback)
+
+    return ordered[:4]
+
+
+def search_justwatch_multi(
+    title: str,
+    media_type: str,
+    year_hint: str,
+    country_hints: set[str],
+) -> dict[str, Any] | None:
+    best_without_poster: dict[str, Any] | None = None
+
+    for country in ordered_justwatch_countries(country_hints):
+        try:
+            result = search_justwatch(
+                title,
+                media_type,
+                year_hint,
+                country=country,
+            )
+        except Exception as exc:
+            log(
+                f"WARN justwatch {country} {media_type} {title!r}: {exc}"
+            )
+            continue
+
+        if not result:
+            continue
+
+        result["country"] = country
+
+        if result.get("poster"):
+            return result
+
+        if best_without_poster is None:
+            best_without_poster = result
+
+    return best_without_poster
+
 def fetch_douban_detail_poster(douban_id: str, media_type: str) -> str:
     if not douban_id:
         return ""
@@ -507,6 +570,7 @@ def search_justwatch(
     title: str,
     media_type: str,
     year_hint: str = "",
+    country: str = "US",
 ) -> dict[str, Any] | None:
     object_type = "MOVIE" if media_type == "movie" else "SHOW"
 
@@ -518,7 +582,7 @@ def search_justwatch(
                 "objectTypes": [object_type],
                 "includeTitlesWithoutUrl": True,
             },
-            "c": "US",
+            "c": country.upper(),
             "l": "zh",
             "n": 8,
         },
@@ -710,6 +774,7 @@ def resolve_fresh_meta(
     title: str,
     media_type: str,
     year_hint: str = "",
+    country_hints: set[str] | None = None,
 ) -> dict[str, Any]:
     direct_candidates: list[dict[str, Any]] = []
 
@@ -718,49 +783,29 @@ def resolve_fresh_meta(
     except Exception as exc:
         log(f"WARN douban direct {media_type} {title!r}: {exc}")
 
+    jw: dict[str, Any] | None = None
+
+    try:
+        jw = search_justwatch_multi(
+            title,
+            media_type,
+            year_hint,
+            country_hints or {"US"},
+        )
+    except Exception as exc:
+        log(f"WARN justwatch multi {media_type} {title!r}: {exc}")
+
     best_douban = select_douban_candidate(
         direct_candidates,
         title,
         media_type,
         title,
-        year_hint,
+        (jw or {}).get("year") or year_hint,
     )
-
-    db: dict[str, Any] | None = None
-
-    if best_douban:
-        db = build_douban_meta(best_douban[0], media_type, title)
-
-    # Only spend a JustWatch request when it can materially improve the
-    # browser-facing record. This reduces API pressure substantially.
-    needs_jw = (
-        db is None
-        or not db.get("poster")
-        or not db.get("cn_title")
-        or not db.get("year")
-    )
-
-    jw: dict[str, Any] | None = None
-
-    if needs_jw:
-        try:
-            jw = search_justwatch(
-                title,
-                media_type,
-                clean((db or {}).get("year"), 8) or year_hint,
-            )
-        except Exception as exc:
-            log(f"WARN justwatch {media_type} {title!r}: {exc}")
 
     localized_alias = clean((jw or {}).get("localized_alias"), 220)
 
-    # A localized JustWatch title is only a search bridge back into Douban.
-    # It is never displayed directly as the Chinese title.
-    if (
-        localized_alias
-        and normalize_text(localized_alias) != normalize_text(title)
-        and (db is None or not db.get("cn_title"))
-    ):
+    if localized_alias and normalize_text(localized_alias) != normalize_text(title):
         try:
             second_candidates = search_douban(localized_alias)
             second_best = select_douban_candidate(
@@ -768,24 +813,35 @@ def resolve_fresh_meta(
                 title,
                 media_type,
                 localized_alias,
-                (jw or {}).get("year")
-                or clean((db or {}).get("year"), 8)
-                or year_hint,
+                (jw or {}).get("year") or year_hint,
             )
 
             if second_best and (
                 best_douban is None or second_best[1] > best_douban[1]
             ):
                 best_douban = second_best
-                db = build_douban_meta(best_douban[0], media_type, title)
         except Exception as exc:
             log(f"WARN douban alias {media_type} {title!r}: {exc}")
+
+    db: dict[str, Any] | None = None
+
+    if best_douban:
+        db = build_douban_meta(best_douban[0], media_type, title)
 
     douban_poster = normalize_image_url((db or {}).get("poster"))
     justwatch_poster = normalize_image_url((jw or {}).get("poster"))
 
+    # Prefer Douban-confirmed Chinese titles. If Douban is unavailable from
+    # the GitHub runner, JustWatch's zh localization is a display fallback.
+    jw_cn_title = (
+        localized_alias
+        if localized_alias and has_han(localized_alias)
+        else ""
+    )
+
     return {
-        "cn_title": clean((db or {}).get("cn_title"), 220),
+        "cn_title": clean((db or {}).get("cn_title"), 220)
+        or clean(jw_cn_title, 220),
         "year": clean((db or {}).get("year"), 8)
         or clean((jw or {}).get("year"), 8)
         or clean(year_hint, 8),
@@ -842,6 +898,7 @@ def get_stable_meta(
     media_type: str,
     title: str,
     year_hint: str,
+    country_hints: set[str],
 ) -> tuple[dict[str, Any], bool]:
     key = cache_key(media_type, title)
     items = cache["items"]
@@ -857,7 +914,11 @@ def get_stable_meta(
     except (TypeError, ValueError):
         saved_at_value = 0.0
 
-    ttl = META_TTL_SECONDS if meta_useful(existing) else NEGATIVE_TTL_SECONDS
+    ttl = (
+        META_TTL_SECONDS
+        if existing.get("poster_candidates")
+        else NEGATIVE_TTL_SECONDS
+    )
     age = now_ts() - saved_at_value if saved_at_value else float("inf")
 
     if not FORCE and saved_at_value and age < ttl:
@@ -866,7 +927,12 @@ def get_stable_meta(
     fresh = empty_meta()
 
     try:
-        fresh = resolve_fresh_meta(title, media_type, year_hint)
+        fresh = resolve_fresh_meta(
+            title,
+            media_type,
+            year_hint,
+            country_hints,
+        )
     except Exception as exc:
         log(f"WARN metadata resolve {media_type} {title!r}: {exc}")
 
@@ -897,11 +963,14 @@ def get_stable_meta(
 def iter_unique_titles(
     global_data: dict[str, Any],
     country_data: dict[Path, dict[str, Any]],
-) -> list[tuple[str, str, str]]:
-    seen: set[str] = set()
-    output: list[tuple[str, str, str]] = []
+) -> list[tuple[str, str, str, set[str]]]:
+    items: dict[str, dict[str, Any]] = {}
 
-    def add(media_type: str, row: Any) -> None:
+    def add(
+        media_type: str,
+        row: Any,
+        country_hint: str,
+    ) -> None:
         if not isinstance(row, dict):
             return
 
@@ -910,30 +979,47 @@ def iter_unique_titles(
             return
 
         key = cache_key(media_type, title)
-        if key in seen:
-            return
 
-        seen.add(key)
-        output.append(
-            (
-                media_type,
-                title,
-                clean(row.get("year"), 8),
-            )
+        item = items.setdefault(
+            key,
+            {
+                "media_type": media_type,
+                "title": title,
+                "year_hint": clean(row.get("year"), 8),
+                "country_hints": set(),
+            },
         )
 
+        if not item["year_hint"]:
+            item["year_hint"] = clean(row.get("year"), 8)
+
+        if country_hint:
+            item["country_hints"].add(country_hint.upper())
+
     for row in global_data.get("films") or []:
-        add("movie", row)
+        add("movie", row, "US")
+
     for row in global_data.get("tv") or []:
-        add("tv", row)
+        add("tv", row, "US")
 
     for data in country_data.values():
-        for row in data.get("films") or []:
-            add("movie", row)
-        for row in data.get("tv") or []:
-            add("tv", row)
+        code = clean(data.get("country_iso2"), 2).upper()
 
-    return output
+        for row in data.get("films") or []:
+            add("movie", row, code)
+
+        for row in data.get("tv") or []:
+            add("tv", row, code)
+
+    return [
+        (
+            item["media_type"],
+            item["title"],
+            item["year_hint"],
+            set(item["country_hints"]),
+        )
+        for item in items.values()
+    ]
 
 
 def apply_meta_to_rows(
@@ -1021,13 +1107,16 @@ def main() -> int:
     resolved: dict[str, dict[str, Any]] = {}
     resolved_lock = threading.Lock()
 
-    def work(item: tuple[str, str, str]) -> tuple[str, dict[str, Any], bool]:
-        media_type, title, year_hint = item
+    def work(
+        item: tuple[str, str, str, set[str]],
+    ) -> tuple[str, dict[str, Any], bool]:
+        media_type, title, year_hint, country_hints = item
         meta, cached = get_stable_meta(
             cache,
             media_type,
             title,
             year_hint,
+            country_hints,
         )
         return cache_key(media_type, title), meta, cached
 
