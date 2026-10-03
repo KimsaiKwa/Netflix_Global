@@ -271,13 +271,13 @@ jobs:
         if: always()
         shell: bash
         run: |
-          DG="\${{ steps.download_global.outputs.exit_code }}"
-          DC="\${{ steps.download_countries.outputs.exit_code }}"
-          GG="\${{ steps.generate_global.outputs.exit_code }}"
-          GC="\${{ steps.generate_countries.outputs.exit_code }}"
-          VB="\${{ steps.validate_base.outputs.exit_code }}"
-          EN="\${{ steps.enrich.outputs.exit_code }}"
-          VF="\${{ steps.validate_final.outputs.exit_code }}"
+          DG="${{ steps.download_global.outputs.exit_code }}"
+          DC="${{ steps.download_countries.outputs.exit_code }}"
+          GG="${{ steps.generate_global.outputs.exit_code }}"
+          GC="${{ steps.generate_countries.outputs.exit_code }}"
+          VB="${{ steps.validate_base.outputs.exit_code }}"
+          EN="${{ steps.enrich.outputs.exit_code }}"
+          VF="${{ steps.validate_final.outputs.exit_code }}"
 
           SUCCESS=false
 
@@ -295,7 +295,7 @@ jobs:
             {
               echo "Netflix Top 10 update failed"
               echo "UTC: $(date -u '+%Y-%m-%dT%H:%M:%SZ')"
-              echo "Runner: \${{ runner.os }}"
+              echo "Runner: ${{ runner.os }}"
               echo "Python: $(python3 --version)"
               echo "download_global=$DG"
               echo "download_countries=$DC"
