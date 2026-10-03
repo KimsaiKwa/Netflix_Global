@@ -72,7 +72,7 @@ MAX_METADATA_AGE_HOURS = int(
     os.environ.get("MAX_METADATA_AGE_HOURS", str(8 * 24))
 )
 MIN_PRIORITY_POSTER_COVERAGE = float(
-    os.environ.get("MIN_PRIORITY_POSTER_COVERAGE", "0.80")
+    os.environ.get("MIN_PRIORITY_POSTER_COVERAGE", "0.70")
 )
 PREFERRED_POSTER_COVERAGE = float(
     os.environ.get("PREFERRED_POSTER_COVERAGE", "0.90")
