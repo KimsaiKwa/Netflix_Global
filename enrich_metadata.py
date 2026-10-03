@@ -994,6 +994,11 @@ def main() -> int:
         raise RuntimeError("global.json is missing")
 
     global_data = load_json(GLOBAL_PATH)
+    existing_metadata_enriched_at = clean(
+        global_data.get("metadata_enriched_at"),
+        80,
+    )
+    existing_metadata_version = global_data.get("metadata_version")
 
     country_paths = sorted(COUNTRIES_DIR.glob("*.json"))
     if not country_paths:
@@ -1055,7 +1060,16 @@ def main() -> int:
     apply_meta_to_rows(global_data.get("films"), "movie", resolved)
     apply_meta_to_rows(global_data.get("tv"), "tv", resolved)
 
-    enriched_at = now_iso()
+    did_query = cached_count < len(titles)
+
+    if (
+        not did_query
+        and existing_metadata_version == METADATA_VERSION
+        and existing_metadata_enriched_at
+    ):
+        enriched_at = existing_metadata_enriched_at
+    else:
+        enriched_at = now_iso()
 
     global_data["metadata_version"] = METADATA_VERSION
     global_data["metadata_enriched_at"] = enriched_at
