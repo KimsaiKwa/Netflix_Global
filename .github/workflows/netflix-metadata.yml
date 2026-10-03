@@ -4,6 +4,12 @@ on:
   schedule:
     - cron: "15 19 * * *"
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "enrich_metadata.py"
+      - ".github/workflows/netflix-metadata.yml"
 
 permissions:
   contents: write
