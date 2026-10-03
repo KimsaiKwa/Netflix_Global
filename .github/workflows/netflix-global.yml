@@ -32,9 +32,18 @@ jobs:
           python-version: "3.12"
 
       - name: Generate global.json
-        run: python3 update.py
+        id: generate
+        shell: bash
+        run: |
+          set +e
+          python3 update.py > update.log 2>&1
+          CODE=$?
+          cat update.log
+          echo "exit_code=$CODE" >> "$GITHUB_OUTPUT"
+          exit 0
 
       - name: Validate generated file
+        if: steps.generate.outputs.exit_code == '0'
         run: |
           python3 - <<'PY'
           import json
@@ -70,17 +79,47 @@ jobs:
           )
           PY
 
-      - name: Commit updated data
+      - name: Prepare diagnostics
+        if: always()
         run: |
-          if git diff --quiet -- global.json; then
-            echo "global.json is already current."
+          if [ "${{ steps.generate.outputs.exit_code }}" = "0" ]; then
+            rm -f diagnostics.txt
+          else
+            {
+              echo "Netflix global update failed"
+              echo "UTC: $(date -u '+%Y-%m-%dT%H:%M:%SZ')"
+              echo "Runner: ${{ runner.os }}"
+              echo "Python: $(python3 --version)"
+              echo
+              echo "---- update.py output ----"
+              cat update.log 2>/dev/null || true
+            } > diagnostics.txt
+          fi
+
+      - name: Commit generated data or diagnostics
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A global.json diagnostics.txt 2>/dev/null || true
+
+          if git diff --cached --quiet; then
+            echo "No generated changes to commit."
             exit 0
           fi
 
-          WEEK=$(python3 -c 'import json; print(json.load(open("global.json", encoding="utf-8"))["week"])')
+          if [ -f global.json ] && [ "${{ steps.generate.outputs.exit_code }}" = "0" ]; then
+            WEEK=$(python3 -c 'import json; print(json.load(open("global.json", encoding="utf-8"))["week"])')
+            git commit -m "Update Netflix global Top 10: week $WEEK [skip ci]"
+          else
+            git commit -m "Record Netflix global update diagnostics [skip ci]"
+          fi
 
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add global.json
-          git commit -m "Update Netflix global Top 10: week $WEEK [skip ci]"
           git push
+
+      - name: Fail workflow when generator failed
+        if: steps.generate.outputs.exit_code != '0'
+        run: |
+          echo "Generator failed. diagnostics.txt has been committed for inspection."
+          exit 1
