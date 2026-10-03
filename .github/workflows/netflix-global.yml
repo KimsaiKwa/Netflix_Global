@@ -246,7 +246,7 @@ jobs:
         run: |
           set +e
 
-          METADATA_WORKERS=4 python3 enrich_metadata.py > enrich.log 2>&1
+          METADATA_WORKERS=2 JUSTWATCH_MIN_INTERVAL_SECONDS=0.75 python3 enrich_metadata.py > enrich.log 2>&1
           CODE=$?
 
           cat enrich.log
@@ -363,6 +363,13 @@ jobs:
 
           if [ -f diagnostics.txt ]; then
             git add diagnostics.txt
+          fi
+
+          # Preserve successful metadata cache progress even if final poster
+          # coverage has not yet crossed the publish threshold. The browser
+          # JSON itself is not staged on failure.
+          if [ -f metadata_cache.json ]; then
+            git add metadata_cache.json
           fi
 
           if git diff --cached --quiet; then
