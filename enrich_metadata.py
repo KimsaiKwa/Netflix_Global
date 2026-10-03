@@ -40,8 +40,9 @@ GLOBAL_PATH = ROOT / "global.json"
 COUNTRIES_DIR = ROOT / "countries"
 CACHE_PATH = ROOT / "metadata_cache.json"
 
-CACHE_VERSION = 1
-METADATA_VERSION = 1
+CACHE_VERSION = 2
+METADATA_VERSION = 2
+MATCH_VERSION = 2
 
 META_TTL_SECONDS = 30 * 24 * 60 * 60
 PARTIAL_TTL_SECONDS = 7 * 24 * 60 * 60
@@ -248,34 +249,93 @@ def request_json(
     )
 
 
-def score_title(candidate_title: str, candidate_subtitle: str, target: str) -> int:
-    a = normalize_text(candidate_title)
-    b = normalize_text(candidate_subtitle)
-    q = normalize_text(target)
+TITLE_ARTICLES = {"a", "an", "the"}
+EDITION_TOKENS = {
+    "4k", "uhd", "hdr", "remaster", "remastered",
+    "restore", "restored", "restoration", "edition",
+}
 
-    if not q:
+
+def canonical_title(value: Any) -> str:
+    tokens = [
+        token
+        for token in normalize_text(value).split()
+        if token not in EDITION_TOKENS
+    ]
+    return " ".join(tokens)
+
+
+def significant_title_tokens(value: Any) -> list[str]:
+    return [
+        token
+        for token in canonical_title(value).split()
+        if token not in TITLE_ARTICLES
+    ]
+
+
+def strict_title_score(candidate: Any, target: Any) -> int:
+    """Return a score only for high-confidence title equivalence.
+
+    Substring/prefix-only matching is intentionally rejected. Edition-only
+    tokens such as 4K/remastered may differ, but meaningful subtitle/franchise
+    tokens (Final, Stay Alive, part names, etc.) must be preserved.
+    """
+    candidate_norm = normalize_text(candidate)
+    target_norm = normalize_text(target)
+
+    if not candidate_norm or not target_norm:
         return 0
 
-    if a == q or b == q:
-        return 110
+    if candidate_norm == target_norm:
+        return 140
 
-    if (
-        (a and a.startswith(q))
-        or (b and b.startswith(q))
-        or (a and q.startswith(a))
-        or (b and q.startswith(b))
-    ):
-        return 70
+    candidate_canonical = canonical_title(candidate_norm)
+    target_canonical = canonical_title(target_norm)
 
-    if (
-        (a and q in a)
-        or (b and q in b)
-        or (a and a in q)
-        or (b and b in q)
-    ):
-        return 45
+    if candidate_canonical and candidate_canonical == target_canonical:
+        return 132
 
-    return 0
+    candidate_tokens = significant_title_tokens(candidate_canonical)
+    target_tokens = significant_title_tokens(target_canonical)
+
+    if not candidate_tokens or not target_tokens:
+        return 0
+
+    candidate_set = set(candidate_tokens)
+    target_set = set(target_tokens)
+
+    # Every meaningful token from the Netflix title must be present.
+    if target_set - candidate_set:
+        return 0
+
+    # Do not silently accept a different subtitle/part name from the candidate.
+    extra = candidate_set - target_set
+    harmless_extra = {"movie", "film"}
+
+    if extra and not extra.issubset(harmless_extra):
+        return 0
+
+    if len(target_set) < 3:
+        return 0
+
+    return 118
+
+
+def score_title(candidate_title: str, candidate_subtitle: str, target: str) -> int:
+    return max(
+        strict_title_score(candidate_title, target),
+        strict_title_score(candidate_subtitle, target),
+    )
+
+
+def years_compatible(first: Any, second: Any) -> bool:
+    a = parse_year(first)
+    b = parse_year(second)
+
+    if not a or not b:
+        return True
+
+    return abs(int(a) - int(b)) <= 1
 
 
 def douban_type_score(candidate: dict[str, Any], media_type: str) -> int:
@@ -315,25 +375,36 @@ def select_douban_candidate(
         if not candidate_title and not subtitle:
             continue
 
-        score = douban_type_score(candidate, media_type)
-        score += max(
-            score_title(candidate_title, subtitle, title),
-            score_title(candidate_title, subtitle, search_term),
+        type_score = douban_type_score(candidate, media_type)
+        if type_score < 0:
+            continue
+
+        title_score = max(
+            strict_title_score(candidate_title, title),
+            strict_title_score(subtitle, title),
+            strict_title_score(candidate_title, search_term),
+            strict_title_score(subtitle, search_term),
         )
+
+        if title_score <= 0:
+            continue
 
         candidate_year = parse_year(
             candidate.get("year") or candidate.get("card_subtitle") or ""
         )
         expected_year = parse_year(year_hint)
 
+        if (
+            candidate_year
+            and expected_year
+            and abs(int(candidate_year) - int(expected_year)) > 1
+        ):
+            continue
+
+        score = title_score + type_score
+
         if candidate_year and expected_year:
-            delta = abs(int(candidate_year) - int(expected_year))
-            if delta == 0:
-                score += 14
-            elif delta == 1:
-                score += 7
-            elif delta >= 3:
-                score -= 12
+            score += 14 if candidate_year == expected_year else 7
 
         if candidate.get("id"):
             score += 5
@@ -344,7 +415,7 @@ def select_douban_candidate(
             best_score = score
             best = candidate
 
-    if best is None or best_score < 40:
+    if best is None or best_score < 118:
         return None
 
     return best, best_score
@@ -524,22 +595,28 @@ def score_justwatch_node(
     localized = clean(content.get("title"), 220)
     original = clean(content.get("originalTitle"), 220)
 
-    score = max(
-        score_title(original, "", title),
-        score_title(localized, "", title),
+    title_score = max(
+        strict_title_score(original, title),
+        strict_title_score(localized, title),
     )
+
+    if title_score <= 0:
+        return -1000
 
     year = parse_year(content.get("originalReleaseYear"))
     expected_year = parse_year(year_hint)
 
+    if (
+        year
+        and expected_year
+        and abs(int(year) - int(expected_year)) > 1
+    ):
+        return -1000
+
+    score = title_score
+
     if year and expected_year:
-        delta = abs(int(year) - int(expected_year))
-        if delta == 0:
-            score += 14
-        elif delta == 1:
-            score += 6
-        elif delta >= 3:
-            score -= 10
+        score += 14 if year == expected_year else 7
 
     if content.get("posterUrl"):
         score += 4
@@ -633,7 +710,7 @@ def search_justwatch(
             best_score = score
             best = node
 
-    if best is None or best_score < 45:
+    if best is None or best_score < 118:
         return None
 
     content = best.get("content")
@@ -733,21 +810,30 @@ def search_imdb(
         item_id = clean(item.get("id"), 40)
         item_title = clean(item.get("l"), 220)
 
-        if exact_id and item_id == exact_id:
-            score = 500
-        else:
-            score = score_title(item_title, "", title)
-            score += imdb_type_score(item, media_type)
+        title_score = strict_title_score(item_title, title)
+        if title_score <= 0:
+            continue
+
+        type_score = imdb_type_score(item, media_type)
+        if type_score < 0:
+            continue
 
         item_year = parse_year(item.get("y"))
+
+        if (
+            item_year
+            and expected_year
+            and abs(int(item_year) - int(expected_year)) > 1
+        ):
+            continue
+
+        score = title_score + type_score
+
+        if exact_id and item_id == exact_id:
+            score += 50
+
         if item_year and expected_year:
-            delta = abs(int(item_year) - int(expected_year))
-            if delta == 0:
-                score += 14
-            elif delta == 1:
-                score += 6
-            elif delta >= 3:
-                score -= 10
+            score += 14 if item_year == expected_year else 7
 
         image = item.get("i")
         image = image if isinstance(image, dict) else {}
@@ -760,7 +846,7 @@ def search_imdb(
             best_score = score
             best = item
 
-    if best is None or best_score < 45:
+    if best is None or best_score < 118:
         return None
 
     image = best.get("i")
@@ -769,10 +855,12 @@ def search_imdb(
     return {
         "matched": True,
         "score": best_score,
+        "matched_title": clean(best.get("l"), 220),
         "imdb_id": clean(best.get("id"), 40),
         "year": parse_year(best.get("y")),
         "poster": normalize_image_url(image.get("imageUrl")),
     }
+
 
 
 def empty_meta() -> dict[str, Any]:
@@ -791,6 +879,8 @@ def empty_meta() -> dict[str, Any]:
         "justwatch_poster": "",
         "imdb_poster": "",
         "localized_alias": "",
+        "confidence": "none",
+        "evidence": [],
     }
 
 
@@ -823,6 +913,16 @@ def sanitize_meta(meta: Any) -> dict[str, Any]:
         + [douban_poster, justwatch_poster, imdb_poster]
     )
 
+    confidence = clean(meta.get("confidence"), 20).lower()
+    if confidence not in {"high", "medium", "none"}:
+        confidence = "none"
+
+    evidence = [
+        clean(item, 80)
+        for item in (meta.get("evidence") or [])
+        if clean(item, 80)
+    ]
+
     return {
         "cn_title": cn_title,
         "year": clean(meta.get("year"), 8),
@@ -852,6 +952,8 @@ def sanitize_meta(meta: Any) -> dict[str, Any]:
         "localized_alias": clean(
             meta.get("localized_alias") or meta.get("localizedAlias"), 220
         ),
+        "confidence": confidence,
+        "evidence": unique_strings(evidence),
     }
 
 
@@ -861,6 +963,7 @@ def meta_useful(meta: dict[str, Any]) -> bool:
         or meta.get("year")
         or meta.get("douban_matched")
         or meta.get("justwatch_matched")
+        or meta.get("imdb_matched")
         or meta.get("poster_candidates")
     )
 
@@ -868,6 +971,14 @@ def meta_useful(meta: dict[str, Any]) -> bool:
 def merge_meta(old: Any, fresh: Any) -> dict[str, Any]:
     old_meta = sanitize_meta(old)
     fresh_meta = sanitize_meta(fresh)
+
+    confidence_order = {"none": 0, "medium": 1, "high": 2}
+    confidence = (
+        fresh_meta["confidence"]
+        if confidence_order[fresh_meta["confidence"]]
+        >= confidence_order[old_meta["confidence"]]
+        else old_meta["confidence"]
+    )
 
     return {
         "cn_title": fresh_meta["cn_title"] or old_meta["cn_title"],
@@ -899,6 +1010,10 @@ def merge_meta(old: Any, fresh: Any) -> dict[str, Any]:
         "localized_alias": (
             fresh_meta["localized_alias"] or old_meta["localized_alias"]
         ),
+        "confidence": confidence,
+        "evidence": unique_strings(
+            fresh_meta["evidence"] + old_meta["evidence"]
+        ),
     }
 
 
@@ -908,6 +1023,8 @@ def resolve_fresh_meta(
     year_hint: str = "",
     country_hints: set[str] | None = None,
 ) -> dict[str, Any]:
+    # Existing enriched years are not treated as authoritative during v2
+    # revalidation. Provider-to-provider agreement is preferred instead.
     direct_candidates: list[dict[str, Any]] = []
 
     try:
@@ -921,7 +1038,7 @@ def resolve_fresh_meta(
         jw = search_justwatch_multi(
             title,
             media_type,
-            year_hint,
+            "",
             country_hints or {"US"},
         )
     except Exception as exc:
@@ -932,7 +1049,7 @@ def resolve_fresh_meta(
         title,
         media_type,
         title,
-        (jw or {}).get("year") or year_hint,
+        (jw or {}).get("year") or "",
     )
 
     localized_alias = clean((jw or {}).get("localized_alias"), 220)
@@ -945,7 +1062,7 @@ def resolve_fresh_meta(
                 title,
                 media_type,
                 localized_alias,
-                (jw or {}).get("year") or year_hint,
+                (jw or {}).get("year") or "",
             )
 
             if second_best and (
@@ -960,35 +1077,94 @@ def resolve_fresh_meta(
     if best_douban:
         db = build_douban_meta(best_douban[0], media_type, title)
 
+    imdb: dict[str, Any] | None = None
+    imdb_lookup_failed = False
+
+    try:
+        imdb = search_imdb(
+            title,
+            media_type,
+            (jw or {}).get("year") or "",
+            clean((jw or {}).get("imdb_id"), 40),
+        )
+    except Exception as exc:
+        imdb_lookup_failed = True
+        log(f"WARN imdb {media_type} {title!r}: {exc}")
+
+    # If JustWatch supplied an IMDb ID but IMDb can positively state that the
+    # linked title is not equivalent to the Netflix title, reject JustWatch.
+    if (
+        jw
+        and clean(jw.get("imdb_id"), 40)
+        and not imdb
+        and not imdb_lookup_failed
+    ):
+        log(
+            f"REJECT justwatch {media_type} {title!r}: "
+            "IMDb ID failed strict title/year validation"
+        )
+        jw = None
+
+    # Two strict-title providers disagreeing by >1 year means the title is
+    # ambiguous (often a remake or same-name work). Prefer no external poster.
+    if jw and imdb and not years_compatible(jw.get("year"), imdb.get("year")):
+        log(
+            f"REJECT external ambiguity {media_type} {title!r}: "
+            f"JustWatch year={jw.get('year')} IMDb year={imdb.get('year')}"
+        )
+        jw = None
+        imdb = None
+
+    if db and jw and not years_compatible(db.get("year"), jw.get("year")):
+        log(
+            f"REJECT justwatch year conflict {media_type} {title!r}: "
+            f"Douban year={db.get('year')} JustWatch year={jw.get('year')}"
+        )
+        jw = None
+
+    if db and imdb and not years_compatible(db.get("year"), imdb.get("year")):
+        log(
+            f"REJECT imdb year conflict {media_type} {title!r}: "
+            f"Douban year={db.get('year')} IMDb year={imdb.get('year')}"
+        )
+        imdb = None
+
     douban_poster = normalize_image_url((db or {}).get("poster"))
     justwatch_poster = normalize_image_url((jw or {}).get("poster"))
-
-    imdb: dict[str, Any] | None = None
-
-    # IMDb suggestion is a poster-only fallback. It never supplies Chinese titles.
-    if not douban_poster and not justwatch_poster:
-        try:
-            imdb = search_imdb(
-                title,
-                media_type,
-                (db or {}).get("year")
-                or (jw or {}).get("year")
-                or year_hint,
-                clean((jw or {}).get("imdb_id"), 40),
-            )
-        except Exception as exc:
-            log(f"WARN imdb {media_type} {title!r}: {exc}")
-
     imdb_poster = normalize_image_url((imdb or {}).get("poster"))
 
-    # Display Chinese titles must come from Douban only.
-    # JustWatch's zh localization is used only as a second Douban search term.
+    evidence: list[str] = []
+
+    if db:
+        evidence.append("douban_strict_title")
+    if jw:
+        evidence.append("justwatch_strict_title")
+    if imdb:
+        evidence.append("imdb_strict_title")
+
+    accepted_years = [
+        parse_year(provider.get("year"))
+        for provider in (db, jw, imdb)
+        if provider and parse_year(provider.get("year"))
+    ]
+
+    if len(accepted_years) >= 2:
+        compatible_pairs = all(
+            abs(int(a) - int(b)) <= 1
+            for index, a in enumerate(accepted_years)
+            for b in accepted_years[index + 1:]
+        )
+        if compatible_pairs:
+            evidence.append("year_consensus")
+
+    provider_count = sum(bool(provider) for provider in (db, jw, imdb))
+    confidence = "high" if provider_count >= 2 else ("medium" if provider_count == 1 else "none")
+
     return {
         "cn_title": clean((db or {}).get("cn_title"), 220),
         "year": clean((db or {}).get("year"), 8)
         or clean((jw or {}).get("year"), 8)
-        or clean((imdb or {}).get("year"), 8)
-        or clean(year_hint, 8),
+        or clean((imdb or {}).get("year"), 8),
         "poster_candidates": unique_strings(
             [douban_poster, justwatch_poster, imdb_poster]
         ),
@@ -997,14 +1173,17 @@ def resolve_fresh_meta(
         "imdb_matched": bool((imdb or {}).get("matched")),
         "douban_id": clean((db or {}).get("douban_id"), 30),
         "douban_url": clean((db or {}).get("douban_url"), 1000),
-        "imdb_id": clean((jw or {}).get("imdb_id"), 40)
-        or clean((imdb or {}).get("imdb_id"), 40),
+        "imdb_id": clean((imdb or {}).get("imdb_id"), 40)
+        or clean((jw or {}).get("imdb_id"), 40),
         "tmdb_id": clean((jw or {}).get("tmdb_id"), 40),
         "douban_poster": douban_poster,
         "justwatch_poster": justwatch_poster,
         "imdb_poster": imdb_poster,
-        "localized_alias": localized_alias,
+        "localized_alias": clean((jw or {}).get("localized_alias"), 220),
+        "confidence": confidence,
+        "evidence": evidence,
     }
+
 
 
 def load_cache() -> dict[str, Any]:
@@ -1053,7 +1232,14 @@ def get_stable_meta(
     record = items.get(key)
     record = record if isinstance(record, dict) else {}
 
+    record_match_version = int(record.get("match_version") or 0)
     existing = sanitize_meta(record.get("meta"))
+    trusted_existing = (
+        existing
+        if record_match_version == MATCH_VERSION
+        else empty_meta()
+    )
+
     saved_at = record.get("saved_at")
 
     try:
@@ -1061,8 +1247,8 @@ def get_stable_meta(
     except (TypeError, ValueError):
         saved_at_value = 0.0
 
-    has_poster = bool(existing.get("poster_candidates"))
-    has_cn_title = bool(existing.get("cn_title"))
+    has_poster = bool(trusted_existing.get("poster_candidates"))
+    has_cn_title = bool(trusted_existing.get("cn_title"))
 
     if has_poster and has_cn_title:
         ttl = META_TTL_SECONDS
@@ -1070,22 +1256,16 @@ def get_stable_meta(
         ttl = PARTIAL_TTL_SECONDS
     else:
         ttl = NEGATIVE_TTL_SECONDS
+
     age = now_ts() - saved_at_value if saved_at_value else float("inf")
 
-    # Existing cache created before the IMDb poster fallback should immediately
-    # retry rows that still have no poster, instead of waiting for negative TTL.
-    needs_imdb_bootstrap = (
-        not existing.get("poster_candidates")
-        and not bool(record.get("imdb_checked"))
-    )
-
     if (
-        not FORCE
+        record_match_version == MATCH_VERSION
+        and not FORCE
         and saved_at_value
         and age < ttl
-        and not needs_imdb_bootstrap
     ):
-        return existing, True
+        return trusted_existing, True
 
     fresh = empty_meta()
 
@@ -1093,36 +1273,30 @@ def get_stable_meta(
         fresh = resolve_fresh_meta(
             title,
             media_type,
-            year_hint,
+            "",
             country_hints,
         )
     except Exception as exc:
         log(f"WARN metadata resolve {media_type} {title!r}: {exc}")
 
-    merged = merge_meta(existing, fresh)
-
-    if meta_useful(merged):
-        items[key] = {
-            "saved_at": now_ts(),
-            "title": title,
-            "media_type": media_type,
-            "imdb_checked": True,
-            "meta": merged,
-        }
-        return merged, False
-
-    if meta_useful(existing):
-        return existing, True
+    # v1 matches are intentionally not merged into v2. This is the key cleanup
+    # that removes previously cached fuzzy-title false positives.
+    merged = (
+        merge_meta(trusted_existing, fresh)
+        if record_match_version == MATCH_VERSION
+        else sanitize_meta(fresh)
+    )
 
     items[key] = {
         "saved_at": now_ts(),
         "title": title,
         "media_type": media_type,
-        "imdb_checked": True,
-        "meta": empty_meta(),
+        "match_version": MATCH_VERSION,
+        "meta": merged if meta_useful(merged) else empty_meta(),
     }
 
-    return empty_meta(), False
+    return items[key]["meta"], False
+
 
 
 def iter_unique_titles(
@@ -1209,6 +1383,9 @@ def apply_meta_to_rows(
         row["douban_url"] = meta["douban_url"]
         row["imdb_id"] = meta["imdb_id"]
         row["tmdb_id"] = meta["tmdb_id"]
+        row["metadata_match_version"] = MATCH_VERSION
+        row["metadata_confidence"] = meta["confidence"]
+        row["metadata_evidence"] = meta["evidence"]
 
 
 def metadata_stats(
