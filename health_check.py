@@ -67,6 +67,13 @@ MAX_WEEK_AGE_DAYS = int(os.environ.get("MAX_WEEK_AGE_DAYS", "10"))
 MAX_GENERATED_AGE_HOURS = int(
     os.environ.get("MAX_GENERATED_AGE_HOURS", str(8 * 24))
 )
+MAX_METADATA_AGE_HOURS = int(
+    os.environ.get("MAX_METADATA_AGE_HOURS", str(8 * 24))
+)
+MIN_POSTER_COVERAGE = float(
+    os.environ.get("MIN_POSTER_COVERAGE", "0.80")
+)
+EXPECTED_METADATA_VERSION = 1
 
 
 class Report:
@@ -140,6 +147,8 @@ def validate_top10(
     *,
     rank_key: str = "rank",
     require_views: bool = False,
+    require_metadata: bool = False,
+    metadata_counter: dict[str, int] | None = None,
 ) -> None:
     if not isinstance(rows, list):
         report.error(f"{label}: expected a list")
@@ -180,6 +189,37 @@ def validate_top10(
             if not isinstance(views, int) or isinstance(views, bool) or views <= 0:
                 report.error(f"{item_label}: views must be a positive integer")
 
+        if require_metadata:
+            if metadata_counter is not None:
+                metadata_counter["rows"] = metadata_counter.get("rows", 0) + 1
+
+            cn_title = item.get("cn_title")
+            if not isinstance(cn_title, str):
+                report.error(f"{item_label}: cn_title must be a string")
+
+            year = item.get("year")
+            if not isinstance(year, str):
+                report.error(f"{item_label}: year must be a string")
+
+            posters = item.get("poster_candidates")
+            if not isinstance(posters, list):
+                report.error(f"{item_label}: poster_candidates must be a list")
+            else:
+                if metadata_counter is not None and posters:
+                    metadata_counter["with_poster"] = (
+                        metadata_counter.get("with_poster", 0) + 1
+                    )
+                for poster_index, poster in enumerate(posters, start=1):
+                    if not isinstance(poster, str) or not poster.strip():
+                        report.error(
+                            f"{item_label}: poster_candidates[{poster_index}] "
+                            "must be a non-empty string"
+                        )
+
+            for key in ("douban_id", "douban_url", "imdb_id", "tmdb_id"):
+                if not isinstance(item.get(key), str):
+                    report.error(f"{item_label}: {key} must be a string")
+
     if len(ranks) == len(rows):
         expected = list(range(1, len(rows) + 1))
         if sorted(ranks) != expected:
@@ -189,10 +229,56 @@ def validate_top10(
             )
 
 
+def validate_metadata_header(
+    label: str,
+    data: dict[str, Any],
+    report: Report,
+) -> None:
+    version = data.get("metadata_version")
+    if version != EXPECTED_METADATA_VERSION:
+        report.error(
+            f"{label}: metadata_version={version!r}, "
+            f"expected {EXPECTED_METADATA_VERSION}"
+        )
+
+    value = data.get("metadata_enriched_at")
+    if not isinstance(value, str) or not value.strip():
+        report.error(f"{label}: missing metadata_enriched_at")
+        return
+
+    text = value.strip().replace("Z", "+00:00")
+
+    try:
+        parsed = datetime.fromisoformat(text)
+    except ValueError:
+        report.error(f"{label}: invalid metadata_enriched_at {value!r}")
+        return
+
+    if parsed.tzinfo is None:
+        parsed = parsed.replace(tzinfo=timezone.utc)
+
+    parsed = parsed.astimezone(timezone.utc)
+    age_hours = (datetime.now(timezone.utc) - parsed).total_seconds() / 3600
+
+    if age_hours < -1:
+        report.error(
+            f"{label}: metadata_enriched_at is "
+            f"{abs(age_hours):.1f} hours in the future"
+        )
+    elif age_hours > MAX_METADATA_AGE_HOURS:
+        report.error(
+            f"{label}: metadata is stale: {age_hours:.1f} hours old "
+            f"(limit {MAX_METADATA_AGE_HOURS}h)"
+        )
+
+
 def validate_global(
     data: dict[str, Any],
     report: Report,
+    metadata_counter: dict[str, int],
 ) -> tuple[str | None, date | None]:
+    validate_metadata_header("global.json", data, report)
+
     week_text = data.get("week")
     week_date = parse_week("global.json", week_text, report)
     week = week_text.strip() if isinstance(week_text, str) else None
@@ -202,12 +288,16 @@ def validate_global(
         data.get("films"),
         report,
         require_views=True,
+        require_metadata=True,
+        metadata_counter=metadata_counter,
     )
     validate_top10(
         "global.json tv",
         data.get("tv"),
         report,
         require_views=True,
+        require_metadata=True,
+        metadata_counter=metadata_counter,
     )
 
     official = data.get("official_categories")
@@ -265,8 +355,11 @@ def validate_country(
     expected_name: str,
     data: dict[str, Any],
     report: Report,
+    metadata_counter: dict[str, int],
 ) -> str | None:
     label = f"countries/{code.lower()}.json"
+
+    validate_metadata_header(label, data, report)
 
     actual_code = data.get("country_iso2")
     if actual_code != code:
@@ -290,11 +383,15 @@ def validate_country(
         f"{label} films",
         data.get("films"),
         report,
+        require_metadata=True,
+        metadata_counter=metadata_counter,
     )
     validate_top10(
         f"{label} tv",
         data.get("tv"),
         report,
+        require_metadata=True,
+        metadata_counter=metadata_counter,
     )
 
     return week
@@ -303,11 +400,20 @@ def validate_country(
 def main() -> int:
     report = Report()
 
+    metadata_counter: dict[str, int] = {
+        "rows": 0,
+        "with_poster": 0,
+    }
+
     global_data = load_json(GLOBAL_FILE, report)
     global_week: str | None = None
 
     if global_data is not None:
-        global_week, _ = validate_global(global_data, report)
+        global_week, _ = validate_global(
+            global_data,
+            report,
+            metadata_counter,
+        )
 
     country_weeks: dict[str, str] = {}
 
@@ -318,7 +424,13 @@ def main() -> int:
         if data is None:
             continue
 
-        week = validate_country(code, expected_name, data, report)
+        week = validate_country(
+            code,
+            expected_name,
+            data,
+            report,
+            metadata_counter,
+        )
         if week:
             country_weeks[code] = week
 
@@ -365,6 +477,27 @@ def main() -> int:
             "Europe aggregate inputs missing: " + ", ".join(europe_missing)
         )
 
+    metadata_rows = metadata_counter.get("rows", 0)
+    metadata_with_poster = metadata_counter.get("with_poster", 0)
+    poster_coverage = (
+        metadata_with_poster / metadata_rows
+        if metadata_rows
+        else 0.0
+    )
+
+    if metadata_rows == 0:
+        report.error("No browser-facing rows were checked for metadata")
+    elif poster_coverage < MIN_POSTER_COVERAGE:
+        report.error(
+            f"Poster coverage too low: {metadata_with_poster}/{metadata_rows} "
+            f"({poster_coverage:.1%}), minimum {MIN_POSTER_COVERAGE:.0%}"
+        )
+    elif poster_coverage < 0.90:
+        report.warning(
+            f"Poster coverage below preferred 90%: "
+            f"{metadata_with_poster}/{metadata_rows} ({poster_coverage:.1%})"
+        )
+
     print("# Netflix Top 10 Mirror Health Check")
     print()
     print(f"- Global week: {global_week or 'UNKNOWN'}")
@@ -381,8 +514,13 @@ def main() -> int:
         f"{len(EUROPE_CODES - set(europe_missing))}/{len(EUROPE_CODES)}"
     )
     print(
+        f"- Browser metadata posters: "
+        f"{metadata_with_poster}/{metadata_rows} ({poster_coverage:.1%})"
+    )
+    print(
         f"- Freshness limits: week <= {MAX_WEEK_AGE_DAYS} days, "
-        f"generated_at <= {MAX_GENERATED_AGE_HOURS} hours"
+        f"generated_at <= {MAX_GENERATED_AGE_HOURS} hours, "
+        f"metadata <= {MAX_METADATA_AGE_HOURS} hours"
     )
 
     if report.warnings:
@@ -407,7 +545,9 @@ def main() -> int:
     print("- all required country JSON files are valid")
     print("- global and country data weeks are consistent")
     print("- all 20 Europe aggregate inputs are available")
-    print("- data freshness is within the configured limits")
+    print("- browser-facing metadata is present in committed JSON")
+    print("- poster coverage is within the configured minimum")
+    print("- data and metadata freshness are within the configured limits")
     print()
     print("Result: HEALTHY")
 
