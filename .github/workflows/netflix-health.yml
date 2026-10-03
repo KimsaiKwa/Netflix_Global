@@ -1,0 +1,165 @@
+name: Netflix Mirror Health Check
+
+on:
+  schedule:
+    - cron: "45 18 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "health_check.py"
+      - ".github/workflows/netflix-health.yml"
+      - "global.json"
+      - "countries/**"
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: netflix-mirror-health
+  cancel-in-progress: true
+
+jobs:
+  health:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run independent health check
+        id: health
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          python3 health_check.py 2>&1 | tee health-check.log
+
+      - name: Publish health summary
+        if: always()
+        shell: bash
+        run: |
+          {
+            echo "## Netflix Mirror Health Check"
+            echo
+            echo '\`\`\`text'
+            cat health-check.log 2>/dev/null || echo "health-check.log was not created"
+            echo '\`\`\`'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Open or refresh health issue
+        if: steps.health.outcome == 'failure'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const title = '[Health Check] Netflix Top 10 mirror unhealthy';
+
+            let log = 'Health check failed, but no log was available.';
+            try {
+              log = fs.readFileSync('health-check.log', 'utf8');
+            } catch (_) {}
+
+            if (log.length > 50000) {
+              log = log.slice(0, 50000) + '\\n... log truncated ...';
+            }
+
+            const runUrl =
+              \`\${context.serverUrl}/\${owner}/\${repo}/actions/runs/\${context.runId}\`;
+
+            const body = [
+              'The independent Netflix mirror health check is failing.',
+              '',
+              \`Workflow run: \${runUrl}\`,
+              \`Checked at: \${new Date().toISOString()}\`,
+              '',
+              '### Health check output',
+              '',
+              '\`\`\`text',
+              log,
+              '\`\`\`',
+              '',
+              '_This issue is managed automatically by the health-check workflow._'
+            ].join('\\n');
+
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner,
+              repo,
+              state: 'open',
+              per_page: 100
+            });
+
+            const existing = issues.find(
+              issue => !issue.pull_request && issue.title === title
+            );
+
+            if (existing) {
+              await github.rest.issues.update({
+                owner,
+                repo,
+                issue_number: existing.number,
+                body
+              });
+            } else {
+              await github.rest.issues.create({
+                owner,
+                repo,
+                title,
+                body
+              });
+            }
+
+      - name: Close recovered health issue
+        if: steps.health.outcome == 'success'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const title = '[Health Check] Netflix Top 10 mirror unhealthy';
+
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner,
+              repo,
+              state: 'open',
+              per_page: 100
+            });
+
+            const existing = issues.find(
+              issue => !issue.pull_request && issue.title === title
+            );
+
+            if (existing) {
+              await github.rest.issues.createComment({
+                owner,
+                repo,
+                issue_number: existing.number,
+                body:
+                  'Health check has recovered and is passing again. ' +
+                  \`Recovery run: \${context.serverUrl}/\${owner}/\${repo}/actions/runs/\${context.runId}\`
+              });
+
+              await github.rest.issues.update({
+                owner,
+                repo,
+                issue_number: existing.number,
+                state: 'closed'
+              });
+            }
+
+      - name: Fail workflow when unhealthy
+        if: steps.health.outcome == 'failure'
+        shell: bash
+        run: |
+          echo "Netflix mirror health check failed. See the workflow summary and health issue."
+          exit 1
