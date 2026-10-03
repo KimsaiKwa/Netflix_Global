@@ -1,0 +1,602 @@
+{
+  "week": "2026-09-27",
+  "generated_at": "2026-10-03T13:54:54.909829+00:00",
+  "source": "Netflix Tudum Top 10",
+  "source_url": "https://top10.netflix.com/data/all-weeks-global.tsv",
+  "derived": true,
+  "methodology": "Netflix publishes four official global weekly charts: Films (English), Films (Non-English), TV (English), and TV (Non-English). The films and tv arrays merge the two language charts within each medium and rank candidates by Netflix weekly_views descending. hours_viewed, source_rank, and title are deterministic tie-breakers.",
+  "official_categories": {
+    "Films (English)": [
+      {
+        "source_rank": 1,
+        "title": "UNABOMBER",
+        "season": null,
+        "views": 16400000,
+        "hours_viewed": 27400000,
+        "runtime_hours": 1.6667,
+        "weeks_in_top_10": 1
+      },
+      {
+        "source_rank": 2,
+        "title": "Best of the Best",
+        "season": null,
+        "views": 7300000,
+        "hours_viewed": 13600000,
+        "runtime_hours": 1.8667,
+        "weeks_in_top_10": 2
+      },
+      {
+        "source_rank": 3,
+        "title": "A Minecraft Movie",
+        "season": null,
+        "views": 7000000,
+        "hours_viewed": 11800000,
+        "runtime_hours": 1.6833,
+        "weeks_in_top_10": 2
+      },
+      {
+        "source_rank": 4,
+        "title": "Riot",
+        "season": null,
+        "views": 4400000,
+        "hours_viewed": 6400000,
+        "runtime_hours": 1.45,
+        "weeks_in_top_10": 2
+      },
+      {
+        "source_rank": 5,
+        "title": "The Whisper Man",
+        "season": null,
+        "views": 4000000,
+        "hours_viewed": 7600000,
+        "runtime_hours": 1.9,
+        "weeks_in_top_10": 5
+      },
+      {
+        "source_rank": 6,
+        "title": "Black Adam",
+        "season": null,
+        "views": 3500000,
+        "hours_viewed": 7200000,
+        "runtime_hours": 2.0833,
+        "weeks_in_top_10": 2
+      },
+      {
+        "source_rank": 7,
+        "title": "The Ministry of Ungentlemanly Warfare",
+        "season": null,
+        "views": 3400000,
+        "hours_viewed": 6700000,
+        "runtime_hours": 2.0,
+        "weeks_in_top_10": 2
+      },
+      {
+        "source_rank": 8,
+        "title": "Why Did I Get Married Again?",
+        "season": null,
+        "views": 3100000,
+        "hours_viewed": 5800000,
+        "runtime_hours": 1.85,
+        "weeks_in_top_10": 3
+      },
+      {
+        "source_rank": 9,
+        "title": "KPop Demon Hunters",
+        "season": null,
+        "views": 2500000,
+        "hours_viewed": 4200000,
+        "runtime_hours": 1.6667,
+        "weeks_in_top_10": 66
+      },
+      {
+        "source_rank": 10,
+        "title": "Top Gun: Maverick",
+        "season": null,
+        "views": 2500000,
+        "hours_viewed": 5400000,
+        "runtime_hours": 2.1667,
+        "weeks_in_top_10": 3
+      }
+    ],
+    "Films (Non-English)": [
+      {
+        "source_rank": 1,
+        "title": "Irumudi",
+        "season": null,
+        "views": 3400000,
+        "hours_viewed": 8100000,
+        "runtime_hours": 2.3667,
+        "weeks_in_top_10": 2
+      },
+      {
+        "source_rank": 2,
+        "title": "Modha Rathri",
+        "season": null,
+        "views": 2900000,
+        "hours_viewed": 6900000,
+        "runtime_hours": 2.3667,
+        "weeks_in_top_10": 2
+      },
+      {
+        "source_rank": 3,
+        "title": "Facing El Chapo",
+        "season": null,
+        "views": 2300000,
+        "hours_viewed": 3600000,
+        "runtime_hours": 1.55,
+        "weeks_in_top_10": 6
+      },
+      {
+        "source_rank": 4,
+        "title": "The Secret Woman",
+        "season": null,
+        "views": 2200000,
+        "hours_viewed": 4400000,
+        "runtime_hours": 1.9833,
+        "weeks_in_top_10": 5
+      },
+      {
+        "source_rank": 5,
+        "title": "Vishwanath & Sons",
+        "season": null,
+        "views": 2100000,
+        "hours_viewed": 5700000,
+        "runtime_hours": 2.6667,
+        "weeks_in_top_10": 3
+      },
+      {
+        "source_rank": 6,
+        "title": "Lust Stories 3",
+        "season": null,
+        "views": 2000000,
+        "hours_viewed": 5400000,
+        "runtime_hours": 2.75,
+        "weeks_in_top_10": 2
+      },
+      {
+        "source_rank": 7,
+        "title": "Baby Do Die Do",
+        "season": null,
+        "views": 1600000,
+        "hours_viewed": 3300000,
+        "runtime_hours": 2.0333,
+        "weeks_in_top_10": 1
+      },
+      {
+        "source_rank": 8,
+        "title": "The Ultimate Duo",
+        "season": null,
+        "views": 1100000,
+        "hours_viewed": 1800000,
+        "runtime_hours": 1.6333,
+        "weeks_in_top_10": 1
+      },
+      {
+        "source_rank": 9,
+        "title": "Gandhari",
+        "season": null,
+        "views": 1100000,
+        "hours_viewed": 2100000,
+        "runtime_hours": 1.95,
+        "weeks_in_top_10": 4
+      },
+      {
+        "source_rank": 10,
+        "title": "General Mayhem: The Killing of Brigadier J",
+        "season": null,
+        "views": 1100000,
+        "hours_viewed": 1600000,
+        "runtime_hours": 1.5,
+        "weeks_in_top_10": 1
+      }
+    ],
+    "TV (English)": [
+      {
+        "source_rank": 1,
+        "title": "Monster: The Lizzie Borden Story",
+        "season": "Monster: The Lizzie Borden Story: Season 1",
+        "views": 14500000,
+        "hours_viewed": 95900000,
+        "runtime_hours": 6.6333,
+        "weeks_in_top_10": 2
+      },
+      {
+        "source_rank": 2,
+        "title": "Wonka's The Golden Ticket",
+        "season": "Wonka's The Golden Ticket: Season 1",
+        "views": 4600000,
+        "hours_viewed": 28300000,
+        "runtime_hours": 6.1167,
+        "weeks_in_top_10": 1
+      },
+      {
+        "source_rank": 3,
+        "title": "Crew Girl",
+        "season": "Crew Girl: Season 1",
+        "views": 4500000,
+        "hours_viewed": 28100000,
+        "runtime_hours": 6.2,
+        "weeks_in_top_10": 3
+      },
+      {
+        "source_rank": 4,
+        "title": "A Different World",
+        "season": "A Different World: Season 1",
+        "views": 4200000,
+        "hours_viewed": 23000000,
+        "runtime_hours": 5.45,
+        "weeks_in_top_10": 1
+      },
+      {
+        "source_rank": 5,
+        "title": "The Gentlemen",
+        "season": "The Gentlemen: Season 2",
+        "views": 4200000,
+        "hours_viewed": 31000000,
+        "runtime_hours": 7.4333,
+        "weeks_in_top_10": 4
+      },
+      {
+        "source_rank": 6,
+        "title": "Gabby's Dollhouse",
+        "season": "Gabby's Dollhouse: Season 14",
+        "views": 2700000,
+        "hours_viewed": 4400000,
+        "runtime_hours": 1.6167,
+        "weeks_in_top_10": 2
+      },
+      {
+        "source_rank": 7,
+        "title": "Raw",
+        "season": "Raw: September 21, 2026",
+        "views": 2500000,
+        "hours_viewed": 4800000,
+        "runtime_hours": 1.8,
+        "weeks_in_top_10": 1
+      },
+      {
+        "source_rank": 8,
+        "title": "The Gentlemen",
+        "season": "The Gentlemen: Season 1",
+        "views": 2400000,
+        "hours_viewed": 16000000,
+        "runtime_hours": 6.6833,
+        "weeks_in_top_10": 14
+      },
+      {
+        "source_rank": 9,
+        "title": "The Great British Baking Show",
+        "season": "The Great British Baking Show: Collection 14",
+        "views": 1700000,
+        "hours_viewed": 2000000,
+        "runtime_hours": 1.15,
+        "weeks_in_top_10": 1
+      },
+      {
+        "source_rank": 10,
+        "title": "Danny Go!",
+        "season": "Danny Go!: Season 2",
+        "views": 1700000,
+        "hours_viewed": 2600000,
+        "runtime_hours": 1.5333,
+        "weeks_in_top_10": 4
+      }
+    ],
+    "TV (Non-English)": [
+      {
+        "source_rank": 1,
+        "title": "Not a Stranger",
+        "season": "Not a Stranger: Season 1",
+        "views": 9700000,
+        "hours_viewed": 65700000,
+        "runtime_hours": 6.7833,
+        "weeks_in_top_10": 2
+      },
+      {
+        "source_rank": 2,
+        "title": "Plastic Beauty",
+        "season": "Plastic Beauty: Season 1",
+        "views": 5100000,
+        "hours_viewed": 46500000,
+        "runtime_hours": 9.1667,
+        "weeks_in_top_10": 2
+      },
+      {
+        "source_rank": 3,
+        "title": "The Scandal",
+        "season": "The Scandal: Limited Series",
+        "views": 2800000,
+        "hours_viewed": 21900000,
+        "runtime_hours": 7.7667,
+        "weeks_in_top_10": 2
+      },
+      {
+        "source_rank": 4,
+        "title": "Shaque: Trust No One",
+        "season": "Shaque: Trust No One: Season 1",
+        "views": 2700000,
+        "hours_viewed": 11800000,
+        "runtime_hours": 4.45,
+        "weeks_in_top_10": 1
+      },
+      {
+        "source_rank": 5,
+        "title": "The Final Problem",
+        "season": "The Final Problem: Limited Series",
+        "views": 2600000,
+        "hours_viewed": 7900000,
+        "runtime_hours": 3.05,
+        "weeks_in_top_10": 1
+      },
+      {
+        "source_rank": 6,
+        "title": "The Perfect Lie",
+        "season": "The Perfect Lie: Season 1",
+        "views": 2500000,
+        "hours_viewed": 15400000,
+        "runtime_hours": 6.1,
+        "weeks_in_top_10": 3
+      },
+      {
+        "source_rank": 7,
+        "title": "The Doll",
+        "season": "The Doll: Limited Series",
+        "views": 2400000,
+        "hours_viewed": 16300000,
+        "runtime_hours": 6.7,
+        "weeks_in_top_10": 2
+      },
+      {
+        "source_rank": 8,
+        "title": "Minerva Academy",
+        "season": "Minerva Academy: Season 1",
+        "views": 2400000,
+        "hours_viewed": 16900000,
+        "runtime_hours": 6.9833,
+        "weeks_in_top_10": 1
+      },
+      {
+        "source_rank": 9,
+        "title": "Physical 100: Mexico",
+        "season": "Physical 100: Mexico: Season 1",
+        "views": 2200000,
+        "hours_viewed": 16900000,
+        "runtime_hours": 7.7667,
+        "weeks_in_top_10": 2
+      },
+      {
+        "source_rank": 10,
+        "title": "Habeas Corpus",
+        "season": "Habeas Corpus: Season 1",
+        "views": 1600000,
+        "hours_viewed": 13700000,
+        "runtime_hours": 8.5833,
+        "weeks_in_top_10": 1
+      }
+    ]
+  },
+  "films": [
+    {
+      "rank": 1,
+      "source_rank": 1,
+      "title": "UNABOMBER",
+      "season": null,
+      "views": 16400000,
+      "hours_viewed": 27400000,
+      "runtime_hours": 1.6667,
+      "weeks_in_top_10": 1,
+      "source_category": "Films (English)"
+    },
+    {
+      "rank": 2,
+      "source_rank": 2,
+      "title": "Best of the Best",
+      "season": null,
+      "views": 7300000,
+      "hours_viewed": 13600000,
+      "runtime_hours": 1.8667,
+      "weeks_in_top_10": 2,
+      "source_category": "Films (English)"
+    },
+    {
+      "rank": 3,
+      "source_rank": 3,
+      "title": "A Minecraft Movie",
+      "season": null,
+      "views": 7000000,
+      "hours_viewed": 11800000,
+      "runtime_hours": 1.6833,
+      "weeks_in_top_10": 2,
+      "source_category": "Films (English)"
+    },
+    {
+      "rank": 4,
+      "source_rank": 4,
+      "title": "Riot",
+      "season": null,
+      "views": 4400000,
+      "hours_viewed": 6400000,
+      "runtime_hours": 1.45,
+      "weeks_in_top_10": 2,
+      "source_category": "Films (English)"
+    },
+    {
+      "rank": 5,
+      "source_rank": 5,
+      "title": "The Whisper Man",
+      "season": null,
+      "views": 4000000,
+      "hours_viewed": 7600000,
+      "runtime_hours": 1.9,
+      "weeks_in_top_10": 5,
+      "source_category": "Films (English)"
+    },
+    {
+      "rank": 6,
+      "source_rank": 6,
+      "title": "Black Adam",
+      "season": null,
+      "views": 3500000,
+      "hours_viewed": 7200000,
+      "runtime_hours": 2.0833,
+      "weeks_in_top_10": 2,
+      "source_category": "Films (English)"
+    },
+    {
+      "rank": 7,
+      "source_rank": 1,
+      "title": "Irumudi",
+      "season": null,
+      "views": 3400000,
+      "hours_viewed": 8100000,
+      "runtime_hours": 2.3667,
+      "weeks_in_top_10": 2,
+      "source_category": "Films (Non-English)"
+    },
+    {
+      "rank": 8,
+      "source_rank": 7,
+      "title": "The Ministry of Ungentlemanly Warfare",
+      "season": null,
+      "views": 3400000,
+      "hours_viewed": 6700000,
+      "runtime_hours": 2.0,
+      "weeks_in_top_10": 2,
+      "source_category": "Films (English)"
+    },
+    {
+      "rank": 9,
+      "source_rank": 8,
+      "title": "Why Did I Get Married Again?",
+      "season": null,
+      "views": 3100000,
+      "hours_viewed": 5800000,
+      "runtime_hours": 1.85,
+      "weeks_in_top_10": 3,
+      "source_category": "Films (English)"
+    },
+    {
+      "rank": 10,
+      "source_rank": 2,
+      "title": "Modha Rathri",
+      "season": null,
+      "views": 2900000,
+      "hours_viewed": 6900000,
+      "runtime_hours": 2.3667,
+      "weeks_in_top_10": 2,
+      "source_category": "Films (Non-English)"
+    }
+  ],
+  "tv": [
+    {
+      "rank": 1,
+      "source_rank": 1,
+      "title": "Monster: The Lizzie Borden Story",
+      "season": "Monster: The Lizzie Borden Story: Season 1",
+      "views": 14500000,
+      "hours_viewed": 95900000,
+      "runtime_hours": 6.6333,
+      "weeks_in_top_10": 2,
+      "source_category": "TV (English)"
+    },
+    {
+      "rank": 2,
+      "source_rank": 1,
+      "title": "Not a Stranger",
+      "season": "Not a Stranger: Season 1",
+      "views": 9700000,
+      "hours_viewed": 65700000,
+      "runtime_hours": 6.7833,
+      "weeks_in_top_10": 2,
+      "source_category": "TV (Non-English)"
+    },
+    {
+      "rank": 3,
+      "source_rank": 2,
+      "title": "Plastic Beauty",
+      "season": "Plastic Beauty: Season 1",
+      "views": 5100000,
+      "hours_viewed": 46500000,
+      "runtime_hours": 9.1667,
+      "weeks_in_top_10": 2,
+      "source_category": "TV (Non-English)"
+    },
+    {
+      "rank": 4,
+      "source_rank": 2,
+      "title": "Wonka's The Golden Ticket",
+      "season": "Wonka's The Golden Ticket: Season 1",
+      "views": 4600000,
+      "hours_viewed": 28300000,
+      "runtime_hours": 6.1167,
+      "weeks_in_top_10": 1,
+      "source_category": "TV (English)"
+    },
+    {
+      "rank": 5,
+      "source_rank": 3,
+      "title": "Crew Girl",
+      "season": "Crew Girl: Season 1",
+      "views": 4500000,
+      "hours_viewed": 28100000,
+      "runtime_hours": 6.2,
+      "weeks_in_top_10": 3,
+      "source_category": "TV (English)"
+    },
+    {
+      "rank": 6,
+      "source_rank": 5,
+      "title": "The Gentlemen",
+      "season": "The Gentlemen: Season 2",
+      "views": 4200000,
+      "hours_viewed": 31000000,
+      "runtime_hours": 7.4333,
+      "weeks_in_top_10": 4,
+      "source_category": "TV (English)"
+    },
+    {
+      "rank": 7,
+      "source_rank": 4,
+      "title": "A Different World",
+      "season": "A Different World: Season 1",
+      "views": 4200000,
+      "hours_viewed": 23000000,
+      "runtime_hours": 5.45,
+      "weeks_in_top_10": 1,
+      "source_category": "TV (English)"
+    },
+    {
+      "rank": 8,
+      "source_rank": 3,
+      "title": "The Scandal",
+      "season": "The Scandal: Limited Series",
+      "views": 2800000,
+      "hours_viewed": 21900000,
+      "runtime_hours": 7.7667,
+      "weeks_in_top_10": 2,
+      "source_category": "TV (Non-English)"
+    },
+    {
+      "rank": 9,
+      "source_rank": 4,
+      "title": "Shaque: Trust No One",
+      "season": "Shaque: Trust No One: Season 1",
+      "views": 2700000,
+      "hours_viewed": 11800000,
+      "runtime_hours": 4.45,
+      "weeks_in_top_10": 1,
+      "source_category": "TV (Non-English)"
+    },
+    {
+      "rank": 10,
+      "source_rank": 6,
+      "title": "Gabby's Dollhouse",
+      "season": "Gabby's Dollhouse: Season 14",
+      "views": 2700000,
+      "hours_viewed": 4400000,
+      "runtime_hours": 1.6167,
+      "weeks_in_top_10": 2,
+      "source_category": "TV (English)"
+    }
+  ]
+}
