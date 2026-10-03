@@ -73,7 +73,7 @@ Canonical userscript:
 
 - `douban-hot.user.js`
 
-Version 1.6.0 reads browser-ready metadata directly from this repository. For Netflix markets it no longer calls Douban `subject_suggest` or JustWatch from the browser. During migration it may reuse the user's existing local metadata cache only as a non-network fallback until the backend-enriched JSON has propagated.
+Version 1.6.1 reads browser-ready metadata only from this repository. For Netflix markets it does not call Douban `subject_suggest`, JustWatch, or IMDb from the browser, and it no longer reads the legacy local metadata cache. The browser is now a pure display client for GitHub-enriched Netflix JSON.
 
 The small “详情” control also suppresses the browser's default blue focus outline.
 
@@ -93,7 +93,7 @@ Browser-facing ranking rows include:
 
 - `cn_title` — only a Chinese title confirmed through Douban; otherwise an empty string
 - `year`
-- `poster_candidates` — ordered fallback list, normally Douban first and JustWatch second
+- `poster_candidates` — ordered fallback list, normally Douban first, JustWatch second, and IMDb as a final poster fallback
 - `douban_id`
 - `douban_url`
 - `imdb_id`
@@ -106,7 +106,7 @@ The weekly update pipeline is now:
 1. download official Netflix TSV files
 2. generate global and country ranking JSON
 3. validate ranking data and reporting-week consistency
-4. enrich display metadata from the persistent cache / Douban / JustWatch
+4. enrich display metadata from the persistent cache / Douban / JustWatch / IMDb
 5. validate the final browser-ready mirror
 6. publish all files in one Git commit
 
