@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         豆瓣影视热榜 · 中国 + 全球/地区
 // @namespace    https://movie.douban.com/
-// @version      1.6.1
-// @description  豆瓣个人电影主页右侧热榜：中国豆瓣热榜 + Netflix 全球/美国/韩国/日本/欧洲周榜。Netflix 元数据完全由 GitHub 后台预处理。
+// @version      1.6.2
+// @description  豆瓣个人电影主页右侧热榜：中国豆瓣热榜 + Netflix 全球/美国/韩国/日本/欧洲周榜。Netflix 元数据由 GitHub 后台严格匹配预处理。
 // @match        https://movie.douban.com/mine*
 // @match        https://movie.douban.com/people/*
 // @run-at       document-idle
@@ -18,10 +18,10 @@
 (() => {
   'use strict';
 
-  const VERSION = '1.6.1';
-  const ROOT_ID = 'db-stream-rank-v161';
+  const VERSION = '1.6.2';
+  const ROOT_ID = 'db-stream-rank-v162';
   const STYLE_ID = ROOT_ID + '-style';
-  const STORE = 'db-stream-rank:v161:';
+  const STORE = 'db-stream-rank:v162:';
 
   const CACHE_TTL = 3 * 60 * 60 * 1000;
   const WEEK_REF_TTL = 10 * 60 * 1000;
@@ -259,6 +259,8 @@
   function migrateRegionPreference() {
     const oldStores = [
       STORE,
+      'db-stream-rank:v161:',
+      'db-stream-rank:v160:',
       'db-stream-rank:v150:',
       'db-stream-rank:v140:',
       'db-stream-rank:v131:',
@@ -316,6 +318,8 @@
   function migrateTypePreference() {
     const oldStores = [
       STORE,
+      'db-stream-rank:v161:',
+      'db-stream-rank:v160:',
       'db-stream-rank:v150:',
       'db-stream-rank:v140:',
       'db-stream-rank:v131:',
@@ -782,6 +786,25 @@
       tmdbId:
         meta.tmdbId,
 
+      metadataConfidence:
+        clean(
+          row.metadata_confidence,
+          20
+        ) ||
+        'none',
+
+      metadataEvidence:
+        Array.isArray(
+          row.metadata_evidence
+        )
+          ? row.metadata_evidence
+              .map(
+                value =>
+                  clean(value, 80)
+              )
+              .filter(Boolean)
+          : [],
+
       views:
         Number(row.views) ||
         0,
@@ -1083,6 +1106,14 @@
               row.imdbId || '',
             tmdbId:
               row.tmdbId || '',
+
+            metadataConfidence:
+              row.metadataConfidence ||
+              'none',
+
+            metadataEvidence:
+              row.metadataEvidence ||
+              [],
           };
 
           map.set(key, item);
@@ -1193,6 +1224,15 @@
           item.imdbId || '',
         tmdbId:
           item.tmdbId || '',
+
+        metadataConfidence:
+          item.metadataConfidence ||
+          'none',
+
+        metadataEvidence:
+          item.metadataEvidence ||
+          [],
+
         views: 0,
         weeksInTop10: 0,
         countryCount:
@@ -2458,6 +2498,27 @@
                 item.tmdbId
               )
           ).length,
+
+        metadataHighConfidence:
+          items.filter(
+            item =>
+              item.metadataConfidence ===
+              'high'
+          ).length,
+
+        metadataMediumConfidence:
+          items.filter(
+            item =>
+              item.metadataConfidence ===
+              'medium'
+          ).length,
+
+        metadataUnmatchedConfidence:
+          items.filter(
+            item =>
+              item.metadataConfidence ===
+              'none'
+          ).length,
       };
 
       board.innerHTML =
@@ -2591,6 +2652,7 @@
 
   function cleanupLegacy() {
     [
+      'db-stream-rank-v161',
       'db-stream-rank-v160',
       'db-stream-rank-v150',
       'db-stream-rank-v140',
@@ -2611,6 +2673,7 @@
     });
 
     [
+      'db-stream-rank-v161-style',
       'db-stream-rank-v160-style',
       'db-stream-rank-v150-style',
       'db-stream-rank-v140-style',
@@ -3043,7 +3106,7 @@
         color: #758499;
       }
 
-      /* v1.6.1: remove the browser's default blue focus rectangle. */
+      /* v1.6.2: remove the browser's default blue focus rectangle. */
       #${ROOT_ID} details summary:focus,
       #${ROOT_ID} details summary:focus-visible {
         outline: none !important;
