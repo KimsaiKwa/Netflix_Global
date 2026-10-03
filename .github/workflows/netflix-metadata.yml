@@ -1,0 +1,106 @@
+name: Refresh Netflix Display Metadata
+
+on:
+  schedule:
+    - cron: "15 19 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: netflix-display-metadata
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Refresh cached display metadata
+        id: enrich
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          METADATA_WORKERS=2 JUSTWATCH_MIN_INTERVAL_SECONDS=0.75             python3 enrich_metadata.py 2>&1 | tee metadata-refresh.log
+
+      - name: Validate browser-ready mirror
+        id: validate
+        if: steps.enrich.outcome == 'success'
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          python3 health_check.py 2>&1 | tee metadata-health.log
+
+      - name: Publish workflow summary
+        if: always()
+        shell: bash
+        run: |
+          {
+            echo "## Netflix Display Metadata Refresh"
+            echo
+            echo "### Enrichment"
+            echo
+            echo "~~~text"
+            cat metadata-refresh.log 2>/dev/null || echo "No enrichment log."
+            echo "~~~"
+            echo
+            echo "### Validation"
+            echo
+            echo "~~~text"
+            cat metadata-health.log 2>/dev/null || echo "Validation did not run."
+            echo "~~~"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit healthy metadata changes
+        if: steps.enrich.outcome == 'success' && steps.validate.outcome == 'success'
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add global.json countries metadata_cache.json
+
+          if git diff --cached --quiet; then
+            echo "No metadata changes to commit."
+            exit 0
+          fi
+
+          git commit -m "Refresh Netflix display metadata [skip ci]"
+          git push
+
+      - name: Preserve metadata cache progress after incomplete refresh
+        if: steps.enrich.outcome == 'success' && steps.validate.outcome == 'failure'
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if [ -f metadata_cache.json ]; then
+            git add metadata_cache.json
+          fi
+
+          if git diff --cached --quiet; then
+            echo "No cache progress to preserve."
+            exit 0
+          fi
+
+          git commit -m "Preserve Netflix metadata cache progress [skip ci]"
+          git push
+
+      - name: Fail when metadata refresh is unhealthy
+        if: steps.enrich.outcome == 'failure' || steps.validate.outcome == 'failure'
+        shell: bash
+        run: |
+          echo "Display metadata refresh is not healthy yet."
+          exit 1
