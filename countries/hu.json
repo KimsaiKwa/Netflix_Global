@@ -1,0 +1,119 @@
+{
+  "week": "2026-09-27",
+  "country_iso2": "HU",
+  "country_name": "Hungary",
+  "films": [
+    {
+      "rank": 1,
+      "title": "UNABOMBER",
+      "weeks_in_top_10": 1
+    },
+    {
+      "rank": 2,
+      "title": "Best of the Best",
+      "weeks_in_top_10": 2
+    },
+    {
+      "rank": 3,
+      "title": "The Whisper Man",
+      "weeks_in_top_10": 5
+    },
+    {
+      "rank": 4,
+      "title": "The Secret Woman",
+      "weeks_in_top_10": 5
+    },
+    {
+      "rank": 5,
+      "title": "Dog Man",
+      "weeks_in_top_10": 1
+    },
+    {
+      "rank": 6,
+      "title": "Ted",
+      "weeks_in_top_10": 2
+    },
+    {
+      "rank": 7,
+      "title": "Shrek",
+      "weeks_in_top_10": 10
+    },
+    {
+      "rank": 8,
+      "title": "Aileen: Queen of the Serial Killers",
+      "weeks_in_top_10": 3
+    },
+    {
+      "rank": 9,
+      "title": "Shrek 2",
+      "weeks_in_top_10": 6
+    },
+    {
+      "rank": 10,
+      "title": "Why Did I Get Married Again?",
+      "weeks_in_top_10": 3
+    }
+  ],
+  "tv": [
+    {
+      "rank": 1,
+      "title": "Monster: The Lizzie Borden Story",
+      "weeks_in_top_10": 2,
+      "season": "Monster: The Lizzie Borden Story: Season 1"
+    },
+    {
+      "rank": 2,
+      "title": "Not a Stranger",
+      "weeks_in_top_10": 2,
+      "season": "Not a Stranger: Season 1"
+    },
+    {
+      "rank": 3,
+      "title": "The Final Problem",
+      "weeks_in_top_10": 1,
+      "season": "The Final Problem: Limited Series"
+    },
+    {
+      "rank": 4,
+      "title": "The Gentlemen",
+      "weeks_in_top_10": 4,
+      "season": "The Gentlemen: Season 2"
+    },
+    {
+      "rank": 5,
+      "title": "Minerva Academy",
+      "weeks_in_top_10": 1,
+      "season": "Minerva Academy: Season 1"
+    },
+    {
+      "rank": 6,
+      "title": "Crew Girl",
+      "weeks_in_top_10": 3,
+      "season": "Crew Girl: Season 1"
+    },
+    {
+      "rank": 7,
+      "title": "The Perfect Lie",
+      "weeks_in_top_10": 3,
+      "season": "The Perfect Lie: Season 1"
+    },
+    {
+      "rank": 8,
+      "title": "The Gentlemen",
+      "weeks_in_top_10": 14,
+      "season": "The Gentlemen: Season 1"
+    },
+    {
+      "rank": 9,
+      "title": "The Doll",
+      "weeks_in_top_10": 2,
+      "season": "The Doll: Limited Series"
+    },
+    {
+      "rank": 10,
+      "title": "Habeas Corpus",
+      "weeks_in_top_10": 1,
+      "season": "Habeas Corpus: Season 1"
+    }
+  ]
+}

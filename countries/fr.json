@@ -1,0 +1,119 @@
+{
+  "week": "2026-09-27",
+  "country_iso2": "FR",
+  "country_name": "France",
+  "films": [
+    {
+      "rank": 1,
+      "title": "Hungry",
+      "weeks_in_top_10": 1
+    },
+    {
+      "rank": 2,
+      "title": "UNABOMBER",
+      "weeks_in_top_10": 1
+    },
+    {
+      "rank": 3,
+      "title": "Rescapé : L'épisode final",
+      "weeks_in_top_10": 1
+    },
+    {
+      "rank": 4,
+      "title": "Coexister",
+      "weeks_in_top_10": 1
+    },
+    {
+      "rank": 5,
+      "title": "The Judge",
+      "weeks_in_top_10": 1
+    },
+    {
+      "rank": 6,
+      "title": "Best of the Best",
+      "weeks_in_top_10": 2
+    },
+    {
+      "rank": 7,
+      "title": "M3GAN 2.0",
+      "weeks_in_top_10": 1
+    },
+    {
+      "rank": 8,
+      "title": "Call My Agent! The Movie",
+      "weeks_in_top_10": 3
+    },
+    {
+      "rank": 9,
+      "title": "The Whisper Man",
+      "weeks_in_top_10": 5
+    },
+    {
+      "rank": 10,
+      "title": "Le grand déplacement",
+      "weeks_in_top_10": 1
+    }
+  ],
+  "tv": [
+    {
+      "rank": 1,
+      "title": "Monster: The Lizzie Borden Story",
+      "weeks_in_top_10": 2,
+      "season": "Monster: The Lizzie Borden Story: Season 1"
+    },
+    {
+      "rank": 2,
+      "title": "Not a Stranger",
+      "weeks_in_top_10": 2,
+      "season": "Not a Stranger: Season 1"
+    },
+    {
+      "rank": 3,
+      "title": "Rescapé : La série",
+      "weeks_in_top_10": 2,
+      "season": "Rescapé : La série: Season 1"
+    },
+    {
+      "rank": 4,
+      "title": "Crew Girl",
+      "weeks_in_top_10": 3,
+      "season": "Crew Girl: Season 1"
+    },
+    {
+      "rank": 5,
+      "title": "The Gentlemen",
+      "weeks_in_top_10": 4,
+      "season": "The Gentlemen: Season 2"
+    },
+    {
+      "rank": 6,
+      "title": "Minerva Academy",
+      "weeks_in_top_10": 1,
+      "season": "Minerva Academy: Season 1"
+    },
+    {
+      "rank": 7,
+      "title": "The Doll",
+      "weeks_in_top_10": 2,
+      "season": "The Doll: Limited Series"
+    },
+    {
+      "rank": 8,
+      "title": "The Perfect Lie",
+      "weeks_in_top_10": 3,
+      "season": "The Perfect Lie: Season 1"
+    },
+    {
+      "rank": 9,
+      "title": "The Final Problem",
+      "weeks_in_top_10": 1,
+      "season": "The Final Problem: Limited Series"
+    },
+    {
+      "rank": 10,
+      "title": "Gabby's Dollhouse",
+      "weeks_in_top_10": 2,
+      "season": "Gabby's Dollhouse: Season 14"
+    }
+  ]
+}

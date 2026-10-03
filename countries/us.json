@@ -1,0 +1,118 @@
+{
+  "week": "2026-09-27",
+  "country_iso2": "US",
+  "country_name": "United States",
+  "films": [
+    {
+      "rank": 1,
+      "title": "UNABOMBER",
+      "weeks_in_top_10": 1
+    },
+    {
+      "rank": 2,
+      "title": "The Ministry of Ungentlemanly Warfare",
+      "weeks_in_top_10": 2
+    },
+    {
+      "rank": 3,
+      "title": "Top Gun: Maverick",
+      "weeks_in_top_10": 1
+    },
+    {
+      "rank": 4,
+      "title": "Best of the Best",
+      "weeks_in_top_10": 2
+    },
+    {
+      "rank": 5,
+      "title": "The Breadwinner",
+      "weeks_in_top_10": 1
+    },
+    {
+      "rank": 6,
+      "title": "Why Did I Get Married Again?",
+      "weeks_in_top_10": 3
+    },
+    {
+      "rank": 7,
+      "title": "The Seemingly Perfect Family",
+      "weeks_in_top_10": 2
+    },
+    {
+      "rank": 8,
+      "title": "Puss in Boots: The Last Wish",
+      "weeks_in_top_10": 6
+    },
+    {
+      "rank": 9,
+      "title": "Knock at the Cabin",
+      "weeks_in_top_10": 1
+    },
+    {
+      "rank": 10,
+      "title": "The Matchmaker's Playbook",
+      "weeks_in_top_10": 1
+    }
+  ],
+  "tv": [
+    {
+      "rank": 1,
+      "title": "Monster: The Lizzie Borden Story",
+      "weeks_in_top_10": 2,
+      "season": "Monster: The Lizzie Borden Story: Season 1"
+    },
+    {
+      "rank": 2,
+      "title": "A Different World",
+      "weeks_in_top_10": 1,
+      "season": "A Different World: Season 1"
+    },
+    {
+      "rank": 3,
+      "title": "Wonka's The Golden Ticket",
+      "weeks_in_top_10": 1,
+      "season": "Wonka's The Golden Ticket: Season 1"
+    },
+    {
+      "rank": 4,
+      "title": "The Great British Baking Show",
+      "weeks_in_top_10": 1,
+      "season": "The Great British Baking Show: Collection 14"
+    },
+    {
+      "rank": 5,
+      "title": "Raw",
+      "weeks_in_top_10": 1,
+      "season": "Raw: September 21, 2026"
+    },
+    {
+      "rank": 6,
+      "title": "Not a Stranger",
+      "weeks_in_top_10": 1,
+      "season": "Not a Stranger: Season 1"
+    },
+    {
+      "rank": 7,
+      "title": "Jo Koy: Blue in the Face",
+      "weeks_in_top_10": 2
+    },
+    {
+      "rank": 8,
+      "title": "Crew Girl",
+      "weeks_in_top_10": 3,
+      "season": "Crew Girl: Season 1"
+    },
+    {
+      "rank": 9,
+      "title": "Ms. Rachel",
+      "weeks_in_top_10": 65,
+      "season": "Ms. Rachel: Season 1"
+    },
+    {
+      "rank": 10,
+      "title": "Danny Go!",
+      "weeks_in_top_10": 5,
+      "season": "Danny Go!: Season 2"
+    }
+  ]
+}
