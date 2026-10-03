@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "sources": {
+    "global": {
+      "url": "https://top10.netflix.com/data/all-weeks-global.tsv",
+      "columns": [
+        "week",
+        "category",
+        "weekly_rank",
+        "show_title",
+        "season_title",
+        "weekly_hours_viewed",
+        "runtime",
+        "weekly_views",
+        "cumulative_weeks_in_top_10"
+      ],
+      "required_nonempty": [
+        "week",
+        "category",
+        "weekly_rank",
+        "show_title",
+        "weekly_hours_viewed",
+        "cumulative_weeks_in_top_10"
+      ],
+      "allowed_categories": [
+        "Films (English)",
+        "Films (Non-English)",
+        "TV (English)",
+        "TV (Non-English)"
+      ]
+    },
+    "countries": {
+      "url": "https://top10.netflix.com/data/all-weeks-countries.tsv",
+      "columns": [
+        "country_name",
+        "country_iso2",
+        "week",
+        "category",
+        "weekly_rank",
+        "show_title",
+        "season_title",
+        "cumulative_weeks_in_top_10"
+      ],
+      "required_nonempty": [
+        "country_name",
+        "country_iso2",
+        "week",
+        "category",
+        "weekly_rank",
+        "show_title",
+        "cumulative_weeks_in_top_10"
+      ],
+      "allowed_categories": [
+        "Films",
+        "TV"
+      ]
+    }
+  }
+}
