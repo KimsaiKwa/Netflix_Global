@@ -74,6 +74,19 @@ def to_float(value: str | None) -> float | None:
 
 
 def fetch_tsv() -> tuple[str, str]:
+    local_file = os.environ.get("NETFLIX_TSV_FILE", "").strip()
+    if local_file:
+        path = Path(local_file)
+        if not path.exists():
+            raise RuntimeError(f"NETFLIX_TSV_FILE does not exist: {path}")
+        text = path.read_text(encoding="utf-8-sig", errors="replace")
+        first_line = text.splitlines()[0] if text else ""
+        if "show_title" not in first_line or "weekly_rank" not in first_line:
+            raise RuntimeError(
+                f"Local Netflix TSV has unexpected header: {first_line[:160]!r}"
+            )
+        return text, TSV_URLS[0]
+
     errors: list[str] = []
 
     for attempt in range(1, 4):
