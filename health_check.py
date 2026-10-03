@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import sys
 from datetime import date, datetime, timezone
 from pathlib import Path
@@ -70,8 +71,11 @@ MAX_GENERATED_AGE_HOURS = int(
 MAX_METADATA_AGE_HOURS = int(
     os.environ.get("MAX_METADATA_AGE_HOURS", str(8 * 24))
 )
-MIN_POSTER_COVERAGE = float(
-    os.environ.get("MIN_POSTER_COVERAGE", "0.80")
+MIN_PRIORITY_POSTER_COVERAGE = float(
+    os.environ.get("MIN_PRIORITY_POSTER_COVERAGE", "0.80")
+)
+PREFERRED_POSTER_COVERAGE = float(
+    os.environ.get("PREFERRED_POSTER_COVERAGE", "0.90")
 )
 EXPECTED_METADATA_VERSION = 1
 
@@ -397,6 +401,183 @@ def validate_country(
     return week
 
 
+
+def row_has_poster(row: Any) -> bool:
+    return (
+        isinstance(row, dict)
+        and isinstance(row.get("poster_candidates"), list)
+        and any(
+            isinstance(value, str) and value.strip()
+            for value in row["poster_candidates"]
+        )
+    )
+
+
+def normalize_key(value: Any) -> str:
+    return re.sub(r"[^\w]+", " ", str(value or "").casefold()).strip()
+
+
+def build_europe_top10(
+    country_payloads: dict[str, dict[str, Any]],
+    media_key: str,
+) -> list[dict[str, Any]]:
+    grouped: dict[str, dict[str, Any]] = {}
+
+    for code in sorted(EUROPE_CODES):
+        payload = country_payloads.get(code)
+        if not isinstance(payload, dict):
+            continue
+
+        rows = payload.get(media_key)
+        if not isinstance(rows, list):
+            continue
+
+        for row in rows:
+            if not isinstance(row, dict):
+                continue
+
+            title = str(row.get("title") or "").strip()
+            season = (
+                str(row.get("season") or "").strip()
+                if media_key == "tv"
+                else ""
+            )
+
+            rank = row.get("rank")
+
+            if not title or not isinstance(rank, int) or not (1 <= rank <= 10):
+                continue
+
+            key = f"{normalize_key(title)}|{normalize_key(season)}"
+
+            item = grouped.setdefault(
+                key,
+                {
+                    "title": title,
+                    "season": season,
+                    "country_count": 0,
+                    "total_points": 0,
+                    "rank_sum": 0,
+                    "metadata_row": row,
+                },
+            )
+
+            item["country_count"] += 1
+            item["total_points"] += 11 - rank
+            item["rank_sum"] += rank
+
+            if (
+                not row_has_poster(item["metadata_row"])
+                and row_has_poster(row)
+            ):
+                item["metadata_row"] = row
+
+    ranked = list(grouped.values())
+
+    ranked.sort(
+        key=lambda item: (
+            -item["country_count"],
+            -item["total_points"],
+            item["rank_sum"] / item["country_count"],
+            item["title"].casefold(),
+        )
+    )
+
+    return [
+        item["metadata_row"]
+        for item in ranked[:10]
+    ]
+
+
+def validate_priority_poster_coverage(
+    global_data: dict[str, Any] | None,
+    country_payloads: dict[str, dict[str, Any]],
+    report: Report,
+) -> list[tuple[str, int, int, float]]:
+    checks: list[tuple[str, list[dict[str, Any]]]] = []
+
+    if isinstance(global_data, dict):
+        checks.append(
+            (
+                "global films",
+                [
+                    row
+                    for row in (global_data.get("films") or [])
+                    if isinstance(row, dict)
+                ],
+            )
+        )
+        checks.append(
+            (
+                "global tv",
+                [
+                    row
+                    for row in (global_data.get("tv") or [])
+                    if isinstance(row, dict)
+                ],
+            )
+        )
+
+    for code in ("US", "KR", "JP"):
+        payload = country_payloads.get(code)
+        if not isinstance(payload, dict):
+            continue
+
+        for media_key in ("films", "tv"):
+            checks.append(
+                (
+                    f"{code} {media_key}",
+                    [
+                        row
+                        for row in (payload.get(media_key) or [])
+                        if isinstance(row, dict)
+                    ],
+                )
+            )
+
+    checks.append(
+        (
+            "Europe aggregate films",
+            build_europe_top10(country_payloads, "films"),
+        )
+    )
+    checks.append(
+        (
+            "Europe aggregate tv",
+            build_europe_top10(country_payloads, "tv"),
+        )
+    )
+
+    results: list[tuple[str, int, int, float]] = []
+
+    for label, rows in checks:
+        total = len(rows)
+        with_poster = sum(1 for row in rows if row_has_poster(row))
+        coverage = with_poster / total if total else 0.0
+
+        results.append((label, with_poster, total, coverage))
+
+        if total != 10:
+            report.error(
+                f"{label}: expected 10 browser-facing rows, found {total}"
+            )
+            continue
+
+        if coverage < MIN_PRIORITY_POSTER_COVERAGE:
+            report.error(
+                f"{label}: poster coverage {with_poster}/{total} "
+                f"({coverage:.1%}) is below minimum "
+                f"{MIN_PRIORITY_POSTER_COVERAGE:.0%}"
+            )
+        elif coverage < PREFERRED_POSTER_COVERAGE:
+            report.warning(
+                f"{label}: poster coverage is {with_poster}/{total} "
+                f"({coverage:.1%}); preferred is "
+                f"{PREFERRED_POSTER_COVERAGE:.0%}"
+            )
+
+    return results
+
 def main() -> int:
     report = Report()
 
@@ -416,6 +597,7 @@ def main() -> int:
         )
 
     country_weeks: dict[str, str] = {}
+    country_payloads: dict[str, dict[str, Any]] = {}
 
     for code, expected_name in EXPECTED_COUNTRIES.items():
         path = COUNTRIES_DIR / f"{code.lower()}.json"
@@ -423,6 +605,8 @@ def main() -> int:
 
         if data is None:
             continue
+
+        country_payloads[code] = data
 
         week = validate_country(
             code,
@@ -487,16 +671,17 @@ def main() -> int:
 
     if metadata_rows == 0:
         report.error("No browser-facing rows were checked for metadata")
-    elif poster_coverage < MIN_POSTER_COVERAGE:
-        report.error(
-            f"Poster coverage too low: {metadata_with_poster}/{metadata_rows} "
-            f"({poster_coverage:.1%}), minimum {MIN_POSTER_COVERAGE:.0%}"
-        )
-    elif poster_coverage < 0.90:
+    elif poster_coverage < 0.70:
         report.warning(
-            f"Poster coverage below preferred 90%: "
+            f"Overall poster coverage is low across all country rows: "
             f"{metadata_with_poster}/{metadata_rows} ({poster_coverage:.1%})"
         )
+
+    priority_results = validate_priority_poster_coverage(
+        global_data,
+        country_payloads,
+        report,
+    )
 
     print("# Netflix Top 10 Mirror Health Check")
     print()
@@ -514,9 +699,14 @@ def main() -> int:
         f"{len(EUROPE_CODES - set(europe_missing))}/{len(EUROPE_CODES)}"
     )
     print(
-        f"- Browser metadata posters: "
+        f"- Browser metadata posters across all rows: "
         f"{metadata_with_poster}/{metadata_rows} ({poster_coverage:.1%})"
     )
+    for label, with_poster, total, coverage in priority_results:
+        print(
+            f"- Priority poster coverage {label}: "
+            f"{with_poster}/{total} ({coverage:.1%})"
+        )
     print(
         f"- Freshness limits: week <= {MAX_WEEK_AGE_DAYS} days, "
         f"generated_at <= {MAX_GENERATED_AGE_HOURS} hours, "
@@ -546,7 +736,7 @@ def main() -> int:
     print("- global and country data weeks are consistent")
     print("- all 20 Europe aggregate inputs are available")
     print("- browser-facing metadata is present in committed JSON")
-    print("- poster coverage is within the configured minimum")
+    print("- priority user-facing poster coverage is within the configured minimum")
     print("- data and metadata freshness are within the configured limits")
     print()
     print("Result: HEALTHY")
