@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         豆瓣影视热榜 · 中国 + 全球/地区
 // @namespace    https://movie.douban.com/
-// @version      1.6.0
-// @description  豆瓣个人电影主页右侧热榜：中国豆瓣热榜 + Netflix 全球/美国/韩国/日本/欧洲周榜。Netflix 元数据由 GitHub 后台预处理。
+// @version      1.6.1
+// @description  豆瓣个人电影主页右侧热榜：中国豆瓣热榜 + Netflix 全球/美国/韩国/日本/欧洲周榜。Netflix 元数据完全由 GitHub 后台预处理。
 // @match        https://movie.douban.com/mine*
 // @match        https://movie.douban.com/people/*
 // @run-at       document-idle
@@ -18,11 +18,10 @@
 (() => {
   'use strict';
 
-  const VERSION = '1.6.0';
-  const ROOT_ID = 'db-stream-rank-v160';
+  const VERSION = '1.6.1';
+  const ROOT_ID = 'db-stream-rank-v161';
   const STYLE_ID = ROOT_ID + '-style';
-  const STORE = 'db-stream-rank:v160:';
-  const LEGACY_META_STORE = 'db-stream-meta:v1:';
+  const STORE = 'db-stream-rank:v161:';
 
   const CACHE_TTL = 3 * 60 * 60 * 1000;
   const WEEK_REF_TTL = 10 * 60 * 1000;
@@ -511,123 +510,19 @@
   }
 
   /*
-   * Transition only:
-   * old v1.3-v1.5 local metadata cache can fill gaps if a backend-enriched
-   * JSON has not reached GitHub yet. It performs no network requests.
+   * Netflix metadata is read only from GitHub-enriched JSON.
+   * No legacy local metadata cache and no live metadata lookup are used.
    */
-  function loadLegacyMeta(title, mediaType) {
-    const key =
-      mediaType +
-      ':' +
-      normalizeText(title);
-
-    try {
-      const raw =
-        GM_getValue(
-          LEGACY_META_STORE + key,
-          ''
-        );
-
-      if (!raw) {
-        return {};
-      }
-
-      const record =
-        typeof raw === 'string'
-          ? JSON.parse(raw)
-          : raw;
-
-      const payload =
-        record?.payload || {};
-
-      const cn =
-        clean(
-          payload.cnTitle ||
-          payload.cn_title,
-          220
-        );
-
-      return {
-        cnTitle:
-          cn === '暂无中文译名'
-            ? ''
-            : cn,
-
-        year:
-          clean(
-            payload.year,
-            8
-          ),
-
-        posterCandidates:
-          uniqueStrings([
-            ...(
-              payload.posterCandidates ||
-              payload.poster_candidates ||
-              []
-            ),
-            payload.doubanPoster,
-            payload.douban_poster,
-            payload.justWatchPoster,
-            payload.justwatch_poster,
-            payload.poster,
-          ]),
-
-        doubanId:
-          clean(
-            payload.doubanId ||
-            payload.douban_id,
-            40
-          ),
-
-        imdbId:
-          clean(
-            payload.imdbId ||
-            payload.imdb_id,
-            40
-          ),
-
-        tmdbId:
-          clean(
-            payload.tmdbId ||
-            payload.tmdb_id,
-            40
-          ),
-      };
-    } catch {
-      return {};
-    }
-  }
-
   function metadataFromRow(
     row,
     mediaType
   ) {
-    const legacy =
-      loadLegacyMeta(
-        row.title,
-        mediaType
-      );
-
-    const backendPosters =
-      uniqueStrings([
-        ...(
-          Array.isArray(
-            row.poster_candidates
-          )
-            ? row.poster_candidates
-            : []
-        ),
-        row.poster,
-      ]);
-
     return {
       cnTitle:
         clean(
           row.cn_title,
           220
         ) ||
-        legacy.cnTitle ||
         '',
 
       year:
@@ -635,16 +530,18 @@
           row.year,
           8
         ) ||
-        legacy.year ||
         '',
 
       posterCandidates:
         uniqueStrings([
-          ...backendPosters,
           ...(
-            legacy.posterCandidates ||
-            []
+            Array.isArray(
+              row.poster_candidates
+            )
+              ? row.poster_candidates
+              : []
           ),
+          row.poster,
         ]),
 
       doubanId:
@@ -652,7 +549,6 @@
           row.douban_id,
           40
         ) ||
-        legacy.doubanId ||
         '',
 
       imdbId:
@@ -660,7 +556,6 @@
           row.imdb_id,
           40
         ) ||
-        legacy.imdbId ||
         '',
 
       tmdbId:
@@ -668,7 +563,6 @@
           row.tmdb_id,
           40
         ) ||
-        legacy.tmdbId ||
         '',
     };
   }
@@ -972,7 +866,7 @@
       metadataMode:
         json.metadata_version
           ? 'github-preenriched'
-          : 'legacy-cache-fallback',
+          : 'github-unenriched',
 
       items:
         rows
@@ -1067,7 +961,7 @@
       metadataMode:
         json.metadata_version
           ? 'github-preenriched'
-          : 'legacy-cache-fallback',
+          : 'github-unenriched',
 
       items:
         rows
@@ -1514,7 +1408,7 @@
       metadataMode:
         metadataVersions.length
           ? 'github-preenriched'
-          : 'legacy-cache-fallback',
+          : 'github-unenriched',
 
       validCountryCount:
         sameWeek.length,
@@ -2697,6 +2591,7 @@
 
   function cleanupLegacy() {
     [
+      'db-stream-rank-v160',
       'db-stream-rank-v150',
       'db-stream-rank-v140',
       'db-stream-rank-v131',
@@ -2716,6 +2611,7 @@
     });
 
     [
+      'db-stream-rank-v160-style',
       'db-stream-rank-v150-style',
       'db-stream-rank-v140-style',
       'db-stream-rank-v131-style',
@@ -3147,7 +3043,7 @@
         color: #758499;
       }
 
-      /* v1.6: remove the browser's default blue focus rectangle. */
+      /* v1.6.1: remove the browser's default blue focus rectangle. */
       #${ROOT_ID} details summary:focus,
       #${ROOT_ID} details summary:focus-visible {
         outline: none !important;
