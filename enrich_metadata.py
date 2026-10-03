@@ -56,6 +56,7 @@ DOUBAN_DETAIL = {
     "tv": "https://m.douban.com/rexxar/api/v2/tv/{id}",
 }
 JUSTWATCH_GRAPHQL = "https://apis.justwatch.com/graphql"
+IMDB_SUGGEST = "https://v2.sg.media-imdb.com/suggestion/{bucket}/{query}.json"
 
 JUSTWATCH_QUERY = """
 query SearchMeta(
@@ -663,6 +664,117 @@ def search_justwatch(
     }
 
 
+def imdb_type_score(item: dict[str, Any], media_type: str) -> int:
+    q = clean(item.get("q") or item.get("qid"), 80).lower()
+
+    if not q:
+        return 0
+
+    if media_type == "movie":
+        if any(token in q for token in ("feature", "movie", "film")):
+            return 18
+        if any(token in q for token in ("tv", "series", "episode")):
+            return -25
+    else:
+        if any(token in q for token in ("tv", "series", "episode")):
+            return 18
+        if any(token in q for token in ("feature", "movie", "film")):
+            return -20
+
+    return 0
+
+
+def search_imdb(
+    title: str,
+    media_type: str,
+    year_hint: str = "",
+    imdb_id_hint: str = "",
+) -> dict[str, Any] | None:
+    query = clean(imdb_id_hint, 40) or clean(title, 220)
+    if not query:
+        return None
+
+    bucket = (
+        "t"
+        if query.lower().startswith("tt")
+        else (query[0].lower() if query[0].isalnum() else "x")
+    )
+
+    url = IMDB_SUGGEST.format(
+        bucket=urllib.parse.quote(bucket, safe=""),
+        query=urllib.parse.quote(query, safe=""),
+    )
+
+    data = request_json(
+        url,
+        headers={
+            "Referer": "https://www.imdb.com/",
+        },
+        attempts=3,
+    )
+
+    if not isinstance(data, dict):
+        return None
+
+    items = data.get("d")
+    if not isinstance(items, list):
+        return None
+
+    expected_year = parse_year(year_hint)
+    exact_id = clean(imdb_id_hint, 40)
+
+    best: dict[str, Any] | None = None
+    best_score = -10_000
+
+    for item in items:
+        if not isinstance(item, dict):
+            continue
+
+        item_id = clean(item.get("id"), 40)
+        item_title = clean(item.get("l"), 220)
+
+        if exact_id and item_id == exact_id:
+            score = 500
+        else:
+            score = score_title(item_title, "", title)
+            score += imdb_type_score(item, media_type)
+
+        item_year = parse_year(item.get("y"))
+        if item_year and expected_year:
+            delta = abs(int(item_year) - int(expected_year))
+            if delta == 0:
+                score += 14
+            elif delta == 1:
+                score += 6
+            elif delta >= 3:
+                score -= 10
+
+        image = item.get("i")
+        image = image if isinstance(image, dict) else {}
+        image_url = normalize_image_url(image.get("imageUrl"))
+
+        if image_url:
+            score += 5
+
+        if score > best_score:
+            best_score = score
+            best = item
+
+    if best is None or best_score < 45:
+        return None
+
+    image = best.get("i")
+    image = image if isinstance(image, dict) else {}
+
+    return {
+        "matched": True,
+        "score": best_score,
+        "imdb_id": clean(best.get("id"), 40),
+        "year": parse_year(best.get("y")),
+        "poster": normalize_image_url(image.get("imageUrl")),
+    }
+
+
 def empty_meta() -> dict[str, Any]:
     return {
         "cn_title": "",
@@ -670,12 +782,14 @@ def empty_meta() -> dict[str, Any]:
         "poster_candidates": [],
         "douban_matched": False,
         "justwatch_matched": False,
+        "imdb_matched": False,
         "douban_id": "",
         "douban_url": "",
         "imdb_id": "",
         "tmdb_id": "",
         "douban_poster": "",
         "justwatch_poster": "",
+        "imdb_poster": "",
         "localized_alias": "",
     }
 
@@ -698,10 +812,15 @@ def sanitize_meta(meta: Any) -> dict[str, Any]:
         or meta.get("justWatchPoster")
         or ""
     )
+    imdb_poster = normalize_image_url(
+        meta.get("imdb_poster")
+        or meta.get("imdbPoster")
+        or ""
+    )
 
     posters = unique_strings(
         list(meta.get("poster_candidates") or meta.get("posterCandidates") or [])
-        + [douban_poster, justwatch_poster]
+        + [douban_poster, justwatch_poster, imdb_poster]
     )
 
     return {
@@ -718,12 +837,18 @@ def sanitize_meta(meta: Any) -> dict[str, Any]:
             if "justwatch_matched" in meta
             else meta.get("justWatchMatched")
         ),
+        "imdb_matched": bool(
+            meta.get("imdb_matched")
+            if "imdb_matched" in meta
+            else meta.get("imdbMatched")
+        ),
         "douban_id": clean(meta.get("douban_id") or meta.get("doubanId"), 30),
         "douban_url": clean(meta.get("douban_url") or meta.get("doubanUrl"), 1000),
         "imdb_id": clean(meta.get("imdb_id") or meta.get("imdbId"), 40),
         "tmdb_id": clean(meta.get("tmdb_id") or meta.get("tmdbId"), 40),
         "douban_poster": douban_poster,
         "justwatch_poster": justwatch_poster,
+        "imdb_poster": imdb_poster,
         "localized_alias": clean(
             meta.get("localized_alias") or meta.get("localizedAlias"), 220
         ),
@@ -757,6 +882,9 @@ def merge_meta(old: Any, fresh: Any) -> dict[str, Any]:
         "justwatch_matched": bool(
             fresh_meta["justwatch_matched"] or old_meta["justwatch_matched"]
         ),
+        "imdb_matched": bool(
+            fresh_meta["imdb_matched"] or old_meta["imdb_matched"]
+        ),
         "douban_id": fresh_meta["douban_id"] or old_meta["douban_id"],
         "douban_url": fresh_meta["douban_url"] or old_meta["douban_url"],
         "imdb_id": fresh_meta["imdb_id"] or old_meta["imdb_id"],
@@ -764,6 +892,9 @@ def merge_meta(old: Any, fresh: Any) -> dict[str, Any]:
         "douban_poster": fresh_meta["douban_poster"] or old_meta["douban_poster"],
         "justwatch_poster": (
             fresh_meta["justwatch_poster"] or old_meta["justwatch_poster"]
+        ),
+        "imdb_poster": (
+            fresh_meta["imdb_poster"] or old_meta["imdb_poster"]
         ),
         "localized_alias": (
             fresh_meta["localized_alias"] or old_meta["localized_alias"]
@@ -832,24 +963,46 @@ def resolve_fresh_meta(
     douban_poster = normalize_image_url((db or {}).get("poster"))
     justwatch_poster = normalize_image_url((jw or {}).get("poster"))
 
+    imdb: dict[str, Any] | None = None
+
+    # IMDb suggestion is a poster-only fallback. It never supplies Chinese titles.
+    if not douban_poster and not justwatch_poster:
+        try:
+            imdb = search_imdb(
+                title,
+                media_type,
+                (db or {}).get("year")
+                or (jw or {}).get("year")
+                or year_hint,
+                clean((jw or {}).get("imdb_id"), 40),
+            )
+        except Exception as exc:
+            log(f"WARN imdb {media_type} {title!r}: {exc}")
+
+    imdb_poster = normalize_image_url((imdb or {}).get("poster"))
+
     # Display Chinese titles must come from Douban only.
     # JustWatch's zh localization is used only as a second Douban search term.
     return {
         "cn_title": clean((db or {}).get("cn_title"), 220),
         "year": clean((db or {}).get("year"), 8)
         or clean((jw or {}).get("year"), 8)
+        or clean((imdb or {}).get("year"), 8)
         or clean(year_hint, 8),
         "poster_candidates": unique_strings(
-            [douban_poster, justwatch_poster]
+            [douban_poster, justwatch_poster, imdb_poster]
         ),
         "douban_matched": bool((db or {}).get("matched")),
         "justwatch_matched": bool((jw or {}).get("matched")),
+        "imdb_matched": bool((imdb or {}).get("matched")),
         "douban_id": clean((db or {}).get("douban_id"), 30),
         "douban_url": clean((db or {}).get("douban_url"), 1000),
-        "imdb_id": clean((jw or {}).get("imdb_id"), 40),
+        "imdb_id": clean((jw or {}).get("imdb_id"), 40)
+        or clean((imdb or {}).get("imdb_id"), 40),
         "tmdb_id": clean((jw or {}).get("tmdb_id"), 40),
         "douban_poster": douban_poster,
         "justwatch_poster": justwatch_poster,
+        "imdb_poster": imdb_poster,
         "localized_alias": localized_alias,
     }
 
@@ -919,7 +1072,19 @@ def get_stable_meta(
         ttl = NEGATIVE_TTL_SECONDS
     age = now_ts() - saved_at_value if saved_at_value else float("inf")
 
-    if not FORCE and saved_at_value and age < ttl:
+    # Existing cache created before the IMDb poster fallback should immediately
+    # retry rows that still have no poster, instead of waiting for negative TTL.
+    needs_imdb_bootstrap = (
+        not existing.get("poster_candidates")
+        and not bool(record.get("imdb_checked"))
+    )
+
+    if (
+        not FORCE
+        and saved_at_value
+        and age < ttl
+        and not needs_imdb_bootstrap
+    ):
         return existing, True
 
     fresh = empty_meta()
@@ -941,6 +1106,7 @@ def get_stable_meta(
             "saved_at": now_ts(),
             "title": title,
             "media_type": media_type,
+            "imdb_checked": True,
             "meta": merged,
         }
         return merged, False
@@ -952,6 +1118,7 @@ def get_stable_meta(
         "saved_at": now_ts(),
         "title": title,
         "media_type": media_type,
+        "imdb_checked": True,
         "meta": empty_meta(),
     }
 
