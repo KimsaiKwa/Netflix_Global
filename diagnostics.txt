@@ -1,0 +1,114 @@
+Netflix Top 10 update failed
+UTC: 2026-10-03T16:43:56Z
+Runner: \Linux
+Python: Python 3.12.14
+download_global=\0
+download_countries=\0
+generate_global=\0
+generate_countries=\0
+validate_base=\0
+enrich_metadata=\0
+validate_final=\1
+
+---- global curl ----
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    96  100    96    0     0    397      0 --:--:-- --:--:-- --:--:--   398
+100  879k  100  879k    0     0  1023k      0 --:--:-- --:--:-- --:--:-- 1023k
+
+---- countries curl ----
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    99  100    99    0     0   2084      0 --:--:-- --:--:-- --:--:--  2062
+  6 30.9M    6 2080k    0     0  2065k      0  0:00:15  0:00:01  0:00:14 2065k 14 30.9M   14 4544k    0     0  2262k      0  0:00:14  0:00:02  0:00:12 2463k 22 30.9M   22 7024k    0     0  2336k      0  0:00:13  0:00:03  0:00:10 2471k 30 30.9M   30 9520k    0     0  2375k      0  0:00:13  0:00:04  0:00:09 2480k 37 30.9M   37 11.7M    0     0  2399k      0  0:00:13  0:00:05  0:00:08 2483k 45 30.9M   45 14.1M    0     0  2413k      0  0:00:13  0:00:06  0:00:07 2483k 53 30.9M   53 16.5M    0     0  2418k      0  0:00:13  0:00:07  0:00:06 2480k 61 30.9M   61 19.0M    0     0  2429k      0  0:00:13  0:00:08  0:00:05 2486k 69 30.9M   69 21.3M    0     0  2431k      0  0:00:13  0:00:09  0:00:04 2476k 76 30.9M   76 23.8M    0     0  2436k      0  0:00:13  0:00:10  0:00:03 2473k 84 30.9M   84 26.2M    0     0  2440k      0  0:00:12  0:00:11  0:00:01 2473k 92 30.9M   92 28.6M    0     0  2444k      0  0:00:12  0:00:12 --:--:-- 2482k100 30.9M  100 30.9M    0     0  2447k      0  0:00:12  0:00:12 --:--:-- 2476k
+
+---- global generator ----
+Netflix global Top 10 updated: week=2026-09-27 films=10 tv=10
+
+---- country generator ----
+Netflix country Top 10 updated: week=2026-09-27 countries=23
+AT: Austria films=10 tv=10
+BE: Belgium films=10 tv=10
+CH: Switzerland films=10 tv=10
+CZ: Czech Republic films=10 tv=10
+DE: Germany films=10 tv=10
+DK: Denmark films=10 tv=10
+ES: Spain films=10 tv=10
+FI: Finland films=10 tv=10
+FR: France films=10 tv=10
+GB: United Kingdom films=10 tv=10
+GR: Greece films=10 tv=10
+HU: Hungary films=10 tv=10
+IE: Ireland films=10 tv=10
+IT: Italy films=10 tv=10
+JP: Japan films=10 tv=10
+KR: South Korea films=10 tv=10
+NL: Netherlands films=10 tv=10
+NO: Norway films=10 tv=10
+PL: Poland films=10 tv=10
+PT: Portugal films=10 tv=10
+RO: Romania films=10 tv=10
+SE: Sweden films=10 tv=10
+US: United States films=10 tv=10
+
+---- base validation ----
+Validated base ranking data for week 2026-09-27: global 10+10, 23 countries 10+10
+
+---- metadata enrichment ----
+Metadata enrichment start: unique_titles=134 workers=4 force=False
+Metadata progress: 25/134 cache_hits=0
+Metadata progress: 50/134 cache_hits=0
+Metadata progress: 75/134 cache_hits=0
+Metadata progress: 100/134 cache_hits=0
+WARN justwatch movie 'Troy': POST https://apis.justwatch.com/graphql failed: HTTPError: HTTP Error 429: Too Many Requests
+WARN justwatch movie 'Clash of the Titans': POST https://apis.justwatch.com/graphql failed: HTTPError: HTTP Error 429: Too Many Requests
+WARN justwatch movie 'Demon Slayer: Kimetsu no Yaiba Infinity Castle I': POST https://apis.justwatch.com/graphql failed: HTTPError: HTTP Error 429: Too Many Requests
+WARN justwatch tv 'Kian’s Bizarre B&B': POST https://apis.justwatch.com/graphql failed: HTTPError: HTTP Error 429: Too Many Requests
+WARN justwatch movie 'The Warriors': POST https://apis.justwatch.com/graphql failed: HTTPError: HTTP Error 429: Too Many Requests
+WARN justwatch tv 'Four Hands, Two Sonatas': POST https://apis.justwatch.com/graphql failed: HTTPError: HTTP Error 429: Too Many Requests
+WARN justwatch tv 'Mousetrap': POST https://apis.justwatch.com/graphql failed: HTTPError: HTTP Error 429: Too Many Requests
+WARN justwatch tv 'I am Solo': POST https://apis.justwatch.com/graphql failed: HTTPError: HTTP Error 429: Too Many Requests
+WARN justwatch tv "I'm SOLO, Love goes on": POST https://apis.justwatch.com/graphql failed: HTTPError: HTTP Error 429: Too Many Requests
+WARN justwatch tv 'Teach You a Lesson': POST https://apis.justwatch.com/graphql failed: HTTPError: HTTP Error 429: Too Many Requests
+WARN justwatch tv 'K-Shaman: True Horror Stories': POST https://apis.justwatch.com/graphql failed: HTTPError: HTTP Error 429: Too Many Requests
+WARN justwatch movie 'Tummy Tom: A New Friend for Tummy Tom': POST https://apis.justwatch.com/graphql failed: HTTPError: HTTP Error 429: Too Many Requests
+WARN justwatch movie 'Tummy Tom and the Lost Teddy Bear': POST https://apis.justwatch.com/graphql failed: HTTPError: HTTP Error 429: Too Many Requests
+WARN justwatch movie 'Alpha': POST https://apis.justwatch.com/graphql failed: HTTPError: HTTP Error 429: Too Many Requests
+WARN justwatch tv 'Fauda': POST https://apis.justwatch.com/graphql failed: HTTPError: HTTP Error 429: Too Many Requests
+WARN justwatch tv "Death of the Pastor's Wife": POST https://apis.justwatch.com/graphql failed: HTTPError: HTTP Error 429: Too Many Requests
+WARN justwatch movie 'Space Jam: A New Legacy': POST https://apis.justwatch.com/graphql failed: HTTPError: HTTP Error 429: Too Many Requests
+WARN justwatch movie 'Three Robbers and a Lion': POST https://apis.justwatch.com/graphql failed: HTTPError: HTTP Error 429: Too Many Requests
+WARN justwatch tv 'Bad Exorcist': POST https://apis.justwatch.com/graphql failed: HTTPError: HTTP Error 429: Too Many Requests
+WARN justwatch movie 'Bad Boy': POST https://apis.justwatch.com/graphql failed: HTTPError: HTTP Error 429: Too Many Requests
+WARN justwatch movie 'Despicable Me 4': POST https://apis.justwatch.com/graphql failed: HTTPError: HTTP Error 429: Too Many Requests
+WARN justwatch movie 'Last Vegas': POST https://apis.justwatch.com/graphql failed: HTTPError: HTTP Error 429: Too Many Requests
+WARN justwatch movie 'Crazy Rich Asians': POST https://apis.justwatch.com/graphql failed: HTTPError: HTTP Error 429: Too Many Requests
+WARN justwatch movie 'Venom: The Last Dance': POST https://apis.justwatch.com/graphql failed: HTTPError: HTTP Error 429: Too Many Requests
+WARN justwatch movie 'Bamse and the World’s Smallest Adventure': POST https://apis.justwatch.com/graphql failed: HTTPError: HTTP Error 429: Too Many Requests
+Metadata progress: 125/134 cache_hits=0
+WARN justwatch movie 'Top Gun: Maverick': POST https://apis.justwatch.com/graphql failed: HTTPError: HTTP Error 429: Too Many Requests
+WARN justwatch movie 'The Breadwinner': POST https://apis.justwatch.com/graphql failed: HTTPError: HTTP Error 429: Too Many Requests
+WARN justwatch movie 'The Seemingly Perfect Family': POST https://apis.justwatch.com/graphql failed: HTTPError: HTTP Error 429: Too Many Requests
+WARN justwatch movie 'Puss in Boots: The Last Wish': POST https://apis.justwatch.com/graphql failed: HTTPError: HTTP Error 429: Too Many Requests
+WARN justwatch movie "The Matchmaker's Playbook": POST https://apis.justwatch.com/graphql failed: HTTPError: HTTP Error 429: Too Many Requests
+WARN justwatch movie 'Knock at the Cabin': POST https://apis.justwatch.com/graphql failed: HTTPError: HTTP Error 429: Too Many Requests
+WARN justwatch tv 'The Great British Baking Show': POST https://apis.justwatch.com/graphql failed: HTTPError: HTTP Error 429: Too Many Requests
+WARN justwatch tv 'Jo Koy: Blue in the Face': POST https://apis.justwatch.com/graphql failed: HTTPError: HTTP Error 429: Too Many Requests
+WARN justwatch tv 'Danny Go!': POST https://apis.justwatch.com/graphql failed: HTTPError: HTTP Error 429: Too Many Requests
+Metadata progress: 134/134 cache_hits=0
+Metadata enrichment complete: rows=480 poster=348 cn_title=48 douban=48 tmdb=349 cache_hits=0/134
+
+---- final health validation ----
+# Netflix Top 10 Mirror Health Check
+
+- Global week: 2026-09-27
+- Country files valid: 23/23
+- Country week(s): 2026-09-27
+- Europe inputs valid: 20/20
+- Browser metadata posters: 348/480 (72.5%)
+- Freshness limits: week <= 10 days, generated_at <= 192 hours, metadata <= 192 hours
+
+## FAILED
+- Poster coverage too low: 348/480 (72.5%), minimum 80%
+
+Result: UNHEALTHY (1 error(s))
