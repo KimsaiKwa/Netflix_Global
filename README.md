@@ -103,6 +103,69 @@ If the check fails, the workflow fails and automatically opens or refreshes one 
 
 When the mirror becomes healthy again, the workflow closes that issue automatically.
 
+## Official TSV schema monitor
+
+A second independent workflow watches Netflix's official TSV structure itself, before the mirror generator depends on it.
+
+Files:
+
+- `schema_baseline.json` — the accepted Netflix TSV schema
+- `schema_check.py` — structural/semantic schema validator
+- `.github/workflows/netflix-schema.yml` — scheduled schema monitor
+
+Current accepted schemas:
+
+- `all-weeks-global.tsv`: 9 columns
+  - `week`
+  - `category`
+  - `weekly_rank`
+  - `show_title`
+  - `season_title`
+  - `weekly_hours_viewed`
+  - `runtime`
+  - `weekly_views`
+  - `cumulative_weeks_in_top_10`
+- `all-weeks-countries.tsv`: 8 columns
+  - `country_name`
+  - `country_iso2`
+  - `week`
+  - `category`
+  - `weekly_rank`
+  - `show_title`
+  - `season_title`
+  - `cumulative_weeks_in_top_10`
+
+The monitor checks:
+
+- exact column names
+- exact column order
+- added or removed columns
+- malformed tab-separated rows
+- global category values:
+  - Films (English)
+  - Films (Non-English)
+  - TV (English)
+  - TV (Non-English)
+- country category values:
+  - Films
+  - TV
+- required non-empty fields
+- date, rank, country-code and numeric field formats used by the generators
+
+Schedule:
+
+- Monday 15:15 UTC — preflight check
+- Tuesday 15:15 UTC — final schema check before the 16:30 UTC mirror update
+- manual `workflow_dispatch` is also available
+
+If the schema check fails, the workflow automatically opens or refreshes:
+
+`[Schema Check] Netflix Tudum TSV schema changed`
+
+When the schema becomes healthy again, the issue is closed automatically.
+
+A schema alert must be reviewed before editing `schema_baseline.json`. The baseline should not be updated automatically, because an added or renamed field may require changes to `update.py` or `update_countries.py`.
+
 ## Data sources
 
 Netflix Tudum Top 10 public weekly datasets:
