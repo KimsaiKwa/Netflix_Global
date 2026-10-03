@@ -77,7 +77,7 @@ MIN_PRIORITY_POSTER_COVERAGE = float(
 PREFERRED_POSTER_COVERAGE = float(
     os.environ.get("PREFERRED_POSTER_COVERAGE", "0.90")
 )
-EXPECTED_METADATA_VERSION = 1
+EXPECTED_METADATA_VERSION = 2
 
 
 class Report:
@@ -223,6 +223,43 @@ def validate_top10(
             for key in ("douban_id", "douban_url", "imdb_id", "tmdb_id"):
                 if not isinstance(item.get(key), str):
                     report.error(f"{item_label}: {key} must be a string")
+
+            match_version = item.get("metadata_match_version")
+            if match_version != EXPECTED_METADATA_VERSION:
+                report.error(
+                    f"{item_label}: metadata_match_version={match_version!r}, "
+                    f"expected {EXPECTED_METADATA_VERSION}"
+                )
+
+            confidence = item.get("metadata_confidence")
+            if confidence not in {"high", "medium", "none"}:
+                report.error(
+                    f"{item_label}: invalid metadata_confidence={confidence!r}"
+                )
+
+            evidence = item.get("metadata_evidence")
+            if not isinstance(evidence, list) or not all(
+                isinstance(value, str) and value.strip()
+                for value in evidence
+            ):
+                report.error(
+                    f"{item_label}: metadata_evidence must be a list of strings"
+                )
+
+            if isinstance(posters, list) and posters and confidence == "none":
+                report.error(
+                    f"{item_label}: poster exists with metadata_confidence='none'"
+                )
+
+            if metadata_counter is not None:
+                if confidence == "high":
+                    metadata_counter["high_confidence"] = (
+                        metadata_counter.get("high_confidence", 0) + 1
+                    )
+                elif confidence == "medium":
+                    metadata_counter["medium_confidence"] = (
+                        metadata_counter.get("medium_confidence", 0) + 1
+                    )
 
     if len(ranks) == len(rows):
         expected = list(range(1, len(rows) + 1))
@@ -702,6 +739,11 @@ def main() -> int:
         f"- Browser metadata posters across all rows: "
         f"{metadata_with_poster}/{metadata_rows} ({poster_coverage:.1%})"
     )
+    print(
+        f"- Metadata confidence: "
+        f"high={metadata_counter.get('high_confidence', 0)} "
+        f"medium={metadata_counter.get('medium_confidence', 0)}"
+    )
     for label, with_poster, total, coverage in priority_results:
         print(
             f"- Priority poster coverage {label}: "
@@ -736,6 +778,7 @@ def main() -> int:
     print("- global and country data weeks are consistent")
     print("- all 20 Europe aggregate inputs are available")
     print("- browser-facing metadata is present in committed JSON")
+    print("- metadata rows passed strict-match version and confidence validation")
     print("- priority user-facing poster coverage is within the configured minimum")
     print("- data and metadata freshness are within the configured limits")
     print()
