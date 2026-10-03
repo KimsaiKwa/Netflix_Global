@@ -1,0 +1,255 @@
+name: Netflix Tudum Schema Monitor
+
+on:
+  schedule:
+    # Monday preflight + Tuesday check before the 16:30 UTC mirror updater.
+    - cron: "15 15 * * 1"
+    - cron: "15 15 * * 2"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "schema_baseline.json"
+      - "schema_check.py"
+      - ".github/workflows/netflix-schema.yml"
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: netflix-tudum-schema-monitor
+  cancel-in-progress: true
+
+jobs:
+  schema:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Download official TSVs and check schema
+        id: schema
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+
+          : > schema-check.log
+
+          download_tsv() {
+            local output="$1"
+            local primary="$2"
+            local fallback="$3"
+            local min_bytes="$4"
+
+            for url in "$primary" "$fallback"; do
+              echo "Downloading $url" | tee -a schema-check.log
+
+              if curl \
+                --fail \
+                --location \
+                --retry 5 \
+                --retry-delay 2 \
+                --retry-all-errors \
+                --connect-timeout 20 \
+                --max-time 600 \
+                --user-agent "NetflixSchemaMonitor/1.0 (+https://github.com/KimsaiKwa/Netflix_Global)" \
+                --header "Accept: text/tab-separated-values,text/plain,*/*" \
+                --output "$output" \
+                "$url" \
+                >> schema-check.log 2>&1; then
+
+                local bytes
+                bytes=$(wc -c < "$output" | tr -d ' ')
+
+                echo "Downloaded bytes: $bytes" | tee -a schema-check.log
+                head -n 1 "$output" | tee -a schema-check.log
+
+                if [ "$bytes" -lt "$min_bytes" ]; then
+                  echo "Downloaded file is unexpectedly small: $bytes < $min_bytes" \
+                    | tee -a schema-check.log
+                  continue
+                fi
+
+                if ! head -n 1 "$output" | grep -q $'\t'; then
+                  echo "Downloaded file does not look tab-separated." \
+                    | tee -a schema-check.log
+                  continue
+                fi
+
+                return 0
+              fi
+
+              echo "Download failed from $url" | tee -a schema-check.log
+            done
+
+            return 1
+          }
+
+          if ! download_tsv \
+            netflix-global.tsv \
+            "https://top10.netflix.com/data/all-weeks-global.tsv" \
+            "https://www.netflix.com/tudum/top10/data/all-weeks-global.tsv" \
+            500000; then
+            echo "ERROR: unable to obtain Netflix global TSV" | tee -a schema-check.log
+            exit 1
+          fi
+
+          if ! download_tsv \
+            netflix-countries.tsv \
+            "https://top10.netflix.com/data/all-weeks-countries.tsv" \
+            "https://www.netflix.com/tudum/top10/data/all-weeks-countries.tsv" \
+            5000000; then
+            echo "ERROR: unable to obtain Netflix countries TSV" | tee -a schema-check.log
+            exit 1
+          fi
+
+          echo | tee -a schema-check.log
+          echo "Running schema_check.py..." | tee -a schema-check.log
+
+          python3 schema_check.py \
+            --baseline schema_baseline.json \
+            --global-file netflix-global.tsv \
+            --countries-file netflix-countries.tsv \
+            2>&1 | tee -a schema-check.log
+
+      - name: Publish schema summary
+        if: always()
+        shell: bash
+        run: |
+          {
+            echo "## Netflix Tudum Schema Monitor"
+            echo
+            echo "~~~text"
+            cat schema-check.log 2>/dev/null || echo "schema-check.log was not created"
+            echo "~~~"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Open or refresh schema-change issue
+        if: steps.schema.outcome == 'failure'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const title = '[Schema Check] Netflix Tudum TSV schema changed';
+
+            let log = 'Schema monitor failed, but no log was available.';
+            try {
+              log = fs.readFileSync('schema-check.log', 'utf8');
+            } catch (_) {}
+
+            if (log.length > 50000) {
+              log = log.slice(0, 50000) + '\n... log truncated ...';
+            }
+
+            const runUrl =
+              context.serverUrl + '/' + owner + '/' + repo +
+              '/actions/runs/' + context.runId;
+
+            const body = [
+              'The independent Netflix Tudum TSV schema monitor is failing.',
+              '',
+              'This may mean Netflix changed a column name/order, category value,',
+              'basic field type, or the official TSV endpoint is unavailable.',
+              '',
+              'Workflow run: ' + runUrl,
+              'Checked at: ' + new Date().toISOString(),
+              '',
+              '### Schema monitor output',
+              '',
+              '~~~text',
+              log,
+              '~~~',
+              '',
+              'Review schema_baseline.json and the generator assumptions before',
+              'changing the baseline. Do not automatically accept a new schema.',
+              '',
+              '_This issue is managed automatically by the schema-monitor workflow._'
+            ].join('\n');
+
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner,
+              repo,
+              state: 'open',
+              per_page: 100
+            });
+
+            const existing = issues.find(
+              issue => !issue.pull_request && issue.title === title
+            );
+
+            if (existing) {
+              await github.rest.issues.update({
+                owner,
+                repo,
+                issue_number: existing.number,
+                body
+              });
+            } else {
+              await github.rest.issues.create({
+                owner,
+                repo,
+                title,
+                body
+              });
+            }
+
+      - name: Close recovered schema-change issue
+        if: steps.schema.outcome == 'success'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const title = '[Schema Check] Netflix Tudum TSV schema changed';
+
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner,
+              repo,
+              state: 'open',
+              per_page: 100
+            });
+
+            const existing = issues.find(
+              issue => !issue.pull_request && issue.title === title
+            );
+
+            if (existing) {
+              const runUrl =
+                context.serverUrl + '/' + owner + '/' + repo +
+                '/actions/runs/' + context.runId;
+
+              await github.rest.issues.createComment({
+                owner,
+                repo,
+                issue_number: existing.number,
+                body:
+                  'The Netflix Tudum TSV schema monitor is passing again. ' +
+                  'Recovery run: ' + runUrl
+              });
+
+              await github.rest.issues.update({
+                owner,
+                repo,
+                issue_number: existing.number,
+                state: 'closed'
+              });
+            }
+
+      - name: Fail workflow when schema monitor fails
+        if: steps.schema.outcome == 'failure'
+        shell: bash
+        run: |
+          echo "Netflix Tudum schema monitor failed. Check the workflow summary and schema issue."
+          exit 1
