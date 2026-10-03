@@ -67,6 +67,47 @@ Generators:
 
 No API key or secret is required.
 
+## Backend display metadata
+
+The mirror JSON is enriched in GitHub Actions before publication so the Douban userscript does not need to query Douban or JustWatch at page-load time.
+
+Generator:
+
+- `enrich_metadata.py`
+
+Persistent cache:
+
+- `metadata_cache.json`
+
+Browser-facing ranking rows include:
+
+- `cn_title` — only a Chinese title confirmed through Douban; otherwise an empty string
+- `year`
+- `poster_candidates` — ordered fallback list, normally Douban first and JustWatch second
+- `douban_id`
+- `douban_url`
+- `imdb_id`
+- `tmdb_id`
+
+Ranking order and Netflix metrics are never changed by metadata enrichment.
+
+The weekly update pipeline is now:
+
+1. download official Netflix TSV files
+2. generate global and country ranking JSON
+3. validate ranking data and reporting-week consistency
+4. enrich display metadata from the persistent cache / Douban / JustWatch
+5. validate the final browser-ready mirror
+6. publish all files in one Git commit
+
+Successful metadata is cached for 30 days. Empty lookups are retried after 6 hours. Existing successful metadata is preserved when an upstream metadata request fails.
+
+A separate daily workflow retries incomplete metadata without regenerating Netflix rankings:
+
+`.github/workflows/netflix-metadata.yml`
+
+It runs daily at 19:15 UTC. If the final mirror is not healthy enough to publish, only cache progress is preserved; the committed browser-facing JSON remains unchanged.
+
 ## Independent health check
 
 A separate health workflow validates the committed mirror independently from the weekly updater.
