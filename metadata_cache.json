@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-03T17:27:00.102360+00:00",
+  "updated_at": "2026-10-03T17:33:52.281250+00:00",
   "items": {
     "movie|unabomber": {
       "saved_at": 1791048208.9908214,
@@ -129,21 +129,26 @@
       }
     },
     "movie|irumudi": {
-      "saved_at": 1791048217.8088415,
+      "saved_at": 1791048750.300877,
       "title": "Irumudi",
       "media_type": "movie",
+      "imdb_checked": true,
       "meta": {
         "cn_title": "",
-        "year": "",
-        "poster_candidates": [],
+        "year": "2026",
+        "poster_candidates": [
+          "https://m.media-amazon.com/images/M/MV5BMjZlMDBhYzktYTY4OS00ZGU3LWEwNzQtOTBiY2M0MTVjMmIyXkEyXkFqcGc@._V1_.jpg"
+        ],
         "douban_matched": false,
         "justwatch_matched": false,
+        "imdb_matched": true,
         "douban_id": "",
         "douban_url": "",
-        "imdb_id": "",
+        "imdb_id": "tt39108319",
         "tmdb_id": "",
         "douban_poster": "",
         "justwatch_poster": "",
+        "imdb_poster": "https://m.media-amazon.com/images/M/MV5BMjZlMDBhYzktYTY4OS00ZGU3LWEwNzQtOTBiY2M0MTVjMmIyXkEyXkFqcGc@._V1_.jpg",
         "localized_alias": ""
       }
     },
@@ -211,59 +216,72 @@
       }
     },
     "movie|modha rathri": {
-      "saved_at": 1791048224.717035,
+      "saved_at": 1791048750.8106577,
       "title": "Modha Rathri",
       "media_type": "movie",
+      "imdb_checked": true,
       "meta": {
         "cn_title": "",
         "year": "2007",
         "poster_candidates": [],
         "douban_matched": false,
         "justwatch_matched": true,
+        "imdb_matched": false,
         "douban_id": "",
         "douban_url": "",
         "imdb_id": "",
         "tmdb_id": "322285",
         "douban_poster": "",
         "justwatch_poster": "",
+        "imdb_poster": "",
         "localized_alias": ""
       }
     },
     "tv|not a stranger": {
-      "saved_at": 1791048229.1765678,
+      "saved_at": 1791048755.4252665,
       "title": "Not a Stranger",
       "media_type": "tv",
+      "imdb_checked": true,
       "meta": {
         "cn_title": "",
-        "year": "",
-        "poster_candidates": [],
+        "year": "2026",
+        "poster_candidates": [
+          "https://m.media-amazon.com/images/M/MV5BYWNjNzcxYzctZGM4Zi00OWUwLTkyODctNzc1Y2U4MjZiZDY0XkEyXkFqcGc@._V1_.jpg"
+        ],
         "douban_matched": false,
         "justwatch_matched": false,
+        "imdb_matched": true,
         "douban_id": "",
         "douban_url": "",
-        "imdb_id": "",
+        "imdb_id": "tt39397536",
         "tmdb_id": "",
         "douban_poster": "",
         "justwatch_poster": "",
+        "imdb_poster": "https://m.media-amazon.com/images/M/MV5BYWNjNzcxYzctZGM4Zi00OWUwLTkyODctNzc1Y2U4MjZiZDY0XkEyXkFqcGc@._V1_.jpg",
         "localized_alias": ""
       }
     },
     "tv|plastic beauty": {
-      "saved_at": 1791048230.811513,
+      "saved_at": 1791048757.4284163,
       "title": "Plastic Beauty",
       "media_type": "tv",
+      "imdb_checked": true,
       "meta": {
         "cn_title": "",
-        "year": "",
-        "poster_candidates": [],
+        "year": "2026",
+        "poster_candidates": [
+          "https://m.media-amazon.com/images/M/MV5BYTg4YWY0NmYtYTI4NC00ZWQ1LWFlZTMtMTk2N2RjZmU2YTc4XkEyXkFqcGc@._V1_.jpg"
+        ],
         "douban_matched": false,
         "justwatch_matched": false,
+        "imdb_matched": true,
         "douban_id": "",
         "douban_url": "",
-        "imdb_id": "",
+        "imdb_id": "tt37884325",
         "tmdb_id": "",
         "douban_poster": "",
         "justwatch_poster": "",
+        "imdb_poster": "https://m.media-amazon.com/images/M/MV5BYTg4YWY0NmYtYTI4NC00ZWQ1LWFlZTMtMTk2N2RjZmU2YTc4XkEyXkFqcGc@._V1_.jpg",
         "localized_alias": ""
       }
     },
@@ -520,21 +538,24 @@
       }
     },
     "movie|the secret woman": {
-      "saved_at": 1791048248.1346343,
+      "saved_at": 1791048760.878652,
       "title": "The Secret Woman",
       "media_type": "movie",
+      "imdb_checked": true,
       "meta": {
         "cn_title": "",
         "year": "1918",
         "poster_candidates": [],
         "douban_matched": false,
         "justwatch_matched": true,
+        "imdb_matched": true,
         "douban_id": "",
         "douban_url": "",
         "imdb_id": "tt0009595",
         "tmdb_id": "",
         "douban_poster": "",
         "justwatch_poster": "",
+        "imdb_poster": "",
         "localized_alias": ""
       }
     },
@@ -560,40 +581,50 @@
       }
     },
     "tv|the perfect lie": {
-      "saved_at": 1791048252.993244,
+      "saved_at": 1791048763.854839,
       "title": "The Perfect Lie",
       "media_type": "tv",
+      "imdb_checked": true,
       "meta": {
         "cn_title": "",
         "year": "2026",
-        "poster_candidates": [],
+        "poster_candidates": [
+          "https://m.media-amazon.com/images/M/MV5BNTc5M2Q3NWItYjE5MS00ZDdiLTgyNWMtZjQ2YmQxYjExZTE5XkEyXkFqcGc@._V1_.jpg"
+        ],
         "douban_matched": false,
         "justwatch_matched": true,
+        "imdb_matched": true,
         "douban_id": "",
         "douban_url": "",
         "imdb_id": "tt47657141",
         "tmdb_id": "",
         "douban_poster": "",
         "justwatch_poster": "",
+        "imdb_poster": "https://m.media-amazon.com/images/M/MV5BNTc5M2Q3NWItYjE5MS00ZDdiLTgyNWMtZjQ2YmQxYjExZTE5XkEyXkFqcGc@._V1_.jpg",
         "localized_alias": ""
       }
     },
     "tv|the final problem": {
-      "saved_at": 1791048256.0932753,
+      "saved_at": 1791048766.722957,
       "title": "The Final Problem",
       "media_type": "tv",
+      "imdb_checked": true,
       "meta": {
         "cn_title": "",
-        "year": "",
-        "poster_candidates": [],
+        "year": "2026",
+        "poster_candidates": [
+          "https://m.media-amazon.com/images/M/MV5BZDI1YTE5ZDEtNDBlNS00MWRlLWJjY2UtYjhiMjhkMDlhMjk5XkEyXkFqcGc@._V1_.jpg"
+        ],
         "douban_matched": false,
         "justwatch_matched": false,
+        "imdb_matched": true,
         "douban_id": "",
         "douban_url": "",
-        "imdb_id": "",
+        "imdb_id": "tt36832679",
         "tmdb_id": "",
         "douban_poster": "",
         "justwatch_poster": "",
+        "imdb_poster": "https://m.media-amazon.com/images/M/MV5BZDI1YTE5ZDEtNDBlNS00MWRlLWJjY2UtYjhiMjhkMDlhMjk5XkEyXkFqcGc@._V1_.jpg",
         "localized_alias": ""
       }
     },
@@ -619,21 +650,26 @@
       }
     },
     "tv|minerva academy": {
-      "saved_at": 1791048258.9749875,
+      "saved_at": 1791048769.6179814,
       "title": "Minerva Academy",
       "media_type": "tv",
+      "imdb_checked": true,
       "meta": {
         "cn_title": "",
-        "year": "",
-        "poster_candidates": [],
+        "year": "2026",
+        "poster_candidates": [
+          "https://m.media-amazon.com/images/M/MV5BZDI2YTkzYjItZWIzZi00MWFkLWI3MzctYmU3OWVhODUwNjM5XkEyXkFqcGc@._V1_.jpg"
+        ],
         "douban_matched": false,
         "justwatch_matched": false,
+        "imdb_matched": true,
         "douban_id": "",
         "douban_url": "",
-        "imdb_id": "",
+        "imdb_id": "tt28765828",
         "tmdb_id": "",
         "douban_poster": "",
         "justwatch_poster": "",
+        "imdb_poster": "https://m.media-amazon.com/images/M/MV5BZDI2YTkzYjItZWIzZi00MWFkLWI3MzctYmU3OWVhODUwNjM5XkEyXkFqcGc@._V1_.jpg",
         "localized_alias": ""
       }
     },
@@ -764,21 +800,26 @@
       }
     },
     "movie|facing el chapo": {
-      "saved_at": 1791048268.3718598,
+      "saved_at": 1791048772.6031868,
       "title": "Facing El Chapo",
       "media_type": "movie",
+      "imdb_checked": true,
       "meta": {
         "cn_title": "",
-        "year": "",
-        "poster_candidates": [],
+        "year": "2026",
+        "poster_candidates": [
+          "https://m.media-amazon.com/images/M/MV5BOGJkNjBkNTUtYWM2OC00MDJiLWE0ZjctMmMxMjE1ODMxMzQxXkEyXkFqcGc@._V1_.jpg"
+        ],
         "douban_matched": false,
         "justwatch_matched": false,
+        "imdb_matched": true,
         "douban_id": "",
         "douban_url": "",
-        "imdb_id": "",
+        "imdb_id": "tt39390497",
         "tmdb_id": "",
         "douban_poster": "",
         "justwatch_poster": "",
+        "imdb_poster": "https://m.media-amazon.com/images/M/MV5BOGJkNjBkNTUtYWM2OC00MDJiLWE0ZjctMmMxMjE1ODMxMzQxXkEyXkFqcGc@._V1_.jpg",
         "localized_alias": ""
       }
     },
@@ -1161,21 +1202,26 @@
       }
     },
     "movie|call my agent the movie": {
-      "saved_at": 1791048293.1472974,
+      "saved_at": 1791048775.6042445,
       "title": "Call My Agent! The Movie",
       "media_type": "movie",
+      "imdb_checked": true,
       "meta": {
         "cn_title": "",
-        "year": "",
-        "poster_candidates": [],
+        "year": "2026",
+        "poster_candidates": [
+          "https://m.media-amazon.com/images/M/MV5BYWNkMTE5ZjItYTY1NS00Yjc4LWExNmItZGEwMThjODQwYjZiXkEyXkFqcGc@._V1_.jpg"
+        ],
         "douban_matched": false,
         "justwatch_matched": false,
+        "imdb_matched": true,
         "douban_id": "",
         "douban_url": "",
-        "imdb_id": "",
+        "imdb_id": "tt38267923",
         "tmdb_id": "",
         "douban_poster": "",
         "justwatch_poster": "",
+        "imdb_poster": "https://m.media-amazon.com/images/M/MV5BYWNkMTE5ZjItYTY1NS00Yjc4LWExNmItZGEwMThjODQwYjZiXkEyXkFqcGc@._V1_.jpg",
         "localized_alias": ""
       }
     },
@@ -1621,21 +1667,24 @@
       }
     },
     "movie|detective conan the counterfeit case of ultra 30": {
-      "saved_at": 1791048320.6760225,
+      "saved_at": 1791048778.9822443,
       "title": "Detective Conan the Counterfeit Case of Ultra 30",
       "media_type": "movie",
+      "imdb_checked": true,
       "meta": {
         "cn_title": "",
         "year": "",
         "poster_candidates": [],
         "douban_matched": false,
         "justwatch_matched": false,
+        "imdb_matched": false,
         "douban_id": "",
         "douban_url": "",
         "imdb_id": "",
         "tmdb_id": "",
         "douban_poster": "",
         "justwatch_poster": "",
+        "imdb_poster": "",
         "localized_alias": ""
       }
     },
@@ -1682,21 +1731,24 @@
       }
     },
     "movie|golden kamuy the abashiri prison raid": {
-      "saved_at": 1791048325.1869917,
+      "saved_at": 1791048781.0818863,
       "title": "Golden Kamuy -The Abashiri Prison Raid-",
       "media_type": "movie",
+      "imdb_checked": true,
       "meta": {
         "cn_title": "",
         "year": "",
         "poster_candidates": [],
         "douban_matched": false,
         "justwatch_matched": false,
+        "imdb_matched": false,
         "douban_id": "",
         "douban_url": "",
         "imdb_id": "",
         "tmdb_id": "",
         "douban_poster": "",
         "justwatch_poster": "",
+        "imdb_poster": "",
         "localized_alias": ""
       }
     },
@@ -1722,21 +1774,24 @@
       }
     },
     "movie|muroi shinji not defeated": {
-      "saved_at": 1791048330.2873135,
+      "saved_at": 1791048785.6333768,
       "title": "Muroi Shinji: Not Defeated",
       "media_type": "movie",
+      "imdb_checked": true,
       "meta": {
         "cn_title": "",
         "year": "",
         "poster_candidates": [],
         "douban_matched": false,
         "justwatch_matched": false,
+        "imdb_matched": false,
         "douban_id": "",
         "douban_url": "",
         "imdb_id": "",
         "tmdb_id": "",
         "douban_poster": "",
         "justwatch_poster": "",
+        "imdb_poster": "",
         "localized_alias": ""
       }
     },
@@ -1783,21 +1838,26 @@
       }
     },
     "movie|bayside shakedown": {
-      "saved_at": 1791048334.6184459,
+      "saved_at": 1791048787.4930453,
       "title": "Bayside Shakedown",
       "media_type": "movie",
+      "imdb_checked": true,
       "meta": {
         "cn_title": "",
-        "year": "",
-        "poster_candidates": [],
+        "year": "1998",
+        "poster_candidates": [
+          "https://m.media-amazon.com/images/M/MV5BY2FjZGZiYzYtNTUyOS00NGJhLTkzYjgtNTczZjI1YjM0MDlkXkEyXkFqcGc@._V1_.jpg"
+        ],
         "douban_matched": false,
         "justwatch_matched": false,
+        "imdb_matched": true,
         "douban_id": "",
         "douban_url": "",
-        "imdb_id": "",
+        "imdb_id": "tt0210199",
         "tmdb_id": "",
         "douban_poster": "",
         "justwatch_poster": "",
+        "imdb_poster": "https://m.media-amazon.com/images/M/MV5BY2FjZGZiYzYtNTUyOS00NGJhLTkzYjgtNTczZjI1YjM0MDlkXkEyXkFqcGc@._V1_.jpg",
         "localized_alias": ""
       }
     },
@@ -1865,59 +1925,74 @@
       }
     },
     "tv|ameku m d doctor detective": {
-      "saved_at": 1791048342.7402217,
+      "saved_at": 1791048790.871508,
       "title": "Ameku M.D. Doctor Detective",
       "media_type": "tv",
+      "imdb_checked": true,
       "meta": {
         "cn_title": "",
-        "year": "",
-        "poster_candidates": [],
+        "year": "2025",
+        "poster_candidates": [
+          "https://m.media-amazon.com/images/M/MV5BZGY3OTgzMzEtNmJlNC00ZWIxLWE5YTEtMjg1MDNiNzI0MzYyXkEyXkFqcGc@._V1_.jpg"
+        ],
         "douban_matched": false,
         "justwatch_matched": false,
+        "imdb_matched": true,
         "douban_id": "",
         "douban_url": "",
-        "imdb_id": "",
+        "imdb_id": "tt33384314",
         "tmdb_id": "",
         "douban_poster": "",
         "justwatch_poster": "",
+        "imdb_poster": "https://m.media-amazon.com/images/M/MV5BZGY3OTgzMzEtNmJlNC00ZWIxLWE5YTEtMjg1MDNiNzI0MzYyXkEyXkFqcGc@._V1_.jpg",
         "localized_alias": ""
       }
     },
     "tv|smoking behind the supermarket with you": {
-      "saved_at": 1791048344.255289,
+      "saved_at": 1791048793.61998,
       "title": "Smoking Behind the Supermarket With You",
       "media_type": "tv",
+      "imdb_checked": true,
       "meta": {
         "cn_title": "",
-        "year": "",
-        "poster_candidates": [],
+        "year": "2026",
+        "poster_candidates": [
+          "https://m.media-amazon.com/images/M/MV5BMmQyMTI2NGYtMmQzMi00YTU3LWJmZmEtYjdlMjdjODMyMTlmXkEyXkFqcGc@._V1_.jpg"
+        ],
         "douban_matched": false,
         "justwatch_matched": false,
+        "imdb_matched": true,
         "douban_id": "",
         "douban_url": "",
-        "imdb_id": "",
+        "imdb_id": "tt37614297",
         "tmdb_id": "",
         "douban_poster": "",
         "justwatch_poster": "",
+        "imdb_poster": "https://m.media-amazon.com/images/M/MV5BMmQyMTI2NGYtMmQzMi00YTU3LWJmZmEtYjdlMjdjODMyMTlmXkEyXkFqcGc@._V1_.jpg",
         "localized_alias": ""
       }
     },
     "tv|mushoku tensei jobless reincarnation": {
-      "saved_at": 1791048348.4513223,
+      "saved_at": 1791048796.6245863,
       "title": "Mushoku Tensei: Jobless Reincarnation",
       "media_type": "tv",
+      "imdb_checked": true,
       "meta": {
         "cn_title": "",
-        "year": "",
-        "poster_candidates": [],
+        "year": "2021",
+        "poster_candidates": [
+          "https://m.media-amazon.com/images/M/MV5BYWQwNjk3MDItNDAxMS00YTQ2LWEyNDctMGYyZTE5OGQxNGQ1XkEyXkFqcGc@._V1_.jpg"
+        ],
         "douban_matched": false,
         "justwatch_matched": false,
+        "imdb_matched": true,
         "douban_id": "",
         "douban_url": "",
-        "imdb_id": "",
+        "imdb_id": "tt13293588",
         "tmdb_id": "",
         "douban_poster": "",
         "justwatch_poster": "",
+        "imdb_poster": "https://m.media-amazon.com/images/M/MV5BYWQwNjk3MDItNDAxMS00YTQ2LWEyNDctMGYyZTE5OGQxNGQ1XkEyXkFqcGc@._V1_.jpg",
         "localized_alias": ""
       }
     },
@@ -1943,21 +2018,26 @@
       }
     },
     "movie|the ultimate duo": {
-      "saved_at": 1791048352.798188,
+      "saved_at": 1791048800.161376,
       "title": "The Ultimate Duo",
       "media_type": "movie",
+      "imdb_checked": true,
       "meta": {
         "cn_title": "",
-        "year": "",
-        "poster_candidates": [],
+        "year": "2026",
+        "poster_candidates": [
+          "https://m.media-amazon.com/images/M/MV5BYWMzMGMyODItNjJiNi00MTU4LTg1OTQtZTI2YzJmZTY0NWY5XkEyXkFqcGc@._V1_.jpg"
+        ],
         "douban_matched": false,
         "justwatch_matched": false,
+        "imdb_matched": true,
         "douban_id": "",
         "douban_url": "",
-        "imdb_id": "",
+        "imdb_id": "tt39556297",
         "tmdb_id": "",
         "douban_poster": "",
         "justwatch_poster": "",
+        "imdb_poster": "https://m.media-amazon.com/images/M/MV5BYWMzMGMyODItNjJiNi00MTU4LTg1OTQtZTI2YzJmZTY0NWY5XkEyXkFqcGc@._V1_.jpg",
         "localized_alias": ""
       }
     },
@@ -2109,21 +2189,26 @@
       }
     },
     "movie|demon slayer kimetsu no yaiba infinity castle i": {
-      "saved_at": 1791048364.435491,
+      "saved_at": 1791048801.878939,
       "title": "Demon Slayer: Kimetsu no Yaiba Infinity Castle I",
       "media_type": "movie",
+      "imdb_checked": true,
       "meta": {
         "cn_title": "",
-        "year": "",
-        "poster_candidates": [],
+        "year": "2025",
+        "poster_candidates": [
+          "https://m.media-amazon.com/images/M/MV5BOGQ3YWUzYjEtMTJiYy00ZjQ0LWI0YjktYjhiNGVhNGExYTM3XkEyXkFqcGc@._V1_.jpg"
+        ],
         "douban_matched": false,
         "justwatch_matched": false,
+        "imdb_matched": true,
         "douban_id": "",
         "douban_url": "",
-        "imdb_id": "",
+        "imdb_id": "tt32820897",
         "tmdb_id": "",
         "douban_poster": "",
         "justwatch_poster": "",
+        "imdb_poster": "https://m.media-amazon.com/images/M/MV5BOGQ3YWUzYjEtMTJiYy00ZjQ0LWI0YjktYjhiNGVhNGExYTM3XkEyXkFqcGc@._V1_.jpg",
         "localized_alias": ""
       }
     },
@@ -2149,40 +2234,50 @@
       }
     },
     "tv|kian s bizarre b and b": {
-      "saved_at": 1791048369.3515341,
+      "saved_at": 1791048806.8768752,
       "title": "Kian’s Bizarre B&B",
       "media_type": "tv",
+      "imdb_checked": true,
       "meta": {
         "cn_title": "",
-        "year": "",
-        "poster_candidates": [],
+        "year": "2025",
+        "poster_candidates": [
+          "https://m.media-amazon.com/images/M/MV5BN2MwNzBiNzktZDI3YS00OTcyLTllZDYtZGQxNTRmMmE1ZjIzXkEyXkFqcGc@._V1_.jpg"
+        ],
         "douban_matched": false,
         "justwatch_matched": false,
+        "imdb_matched": true,
         "douban_id": "",
         "douban_url": "",
-        "imdb_id": "",
+        "imdb_id": "tt33047061",
         "tmdb_id": "",
         "douban_poster": "",
         "justwatch_poster": "",
+        "imdb_poster": "https://m.media-amazon.com/images/M/MV5BN2MwNzBiNzktZDI3YS00OTcyLTllZDYtZGQxNTRmMmE1ZjIzXkEyXkFqcGc@._V1_.jpg",
         "localized_alias": ""
       }
     },
     "tv|four hands two sonatas": {
-      "saved_at": 1791048371.6039755,
+      "saved_at": 1791048807.862717,
       "title": "Four Hands, Two Sonatas",
       "media_type": "tv",
+      "imdb_checked": true,
       "meta": {
         "cn_title": "",
-        "year": "",
-        "poster_candidates": [],
+        "year": "2026",
+        "poster_candidates": [
+          "https://m.media-amazon.com/images/M/MV5BN2Q3NDc0NTItM2I1ZS00NDg3LWFiYTctOGZjNTUxNjg3ZGNkXkEyXkFqcGc@._V1_.jpg"
+        ],
         "douban_matched": false,
         "justwatch_matched": false,
+        "imdb_matched": true,
         "douban_id": "",
         "douban_url": "",
-        "imdb_id": "",
+        "imdb_id": "tt39368345",
         "tmdb_id": "",
         "douban_poster": "",
         "justwatch_poster": "",
+        "imdb_poster": "https://m.media-amazon.com/images/M/MV5BN2Q3NDc0NTItM2I1ZS00NDg3LWFiYTctOGZjNTUxNjg3ZGNkXkEyXkFqcGc@._V1_.jpg",
         "localized_alias": ""
       }
     },
@@ -2229,40 +2324,48 @@
       }
     },
     "tv|i m solo love goes on": {
-      "saved_at": 1791048377.606254,
+      "saved_at": 1791048812.9270601,
       "title": "I'm SOLO, Love goes on",
       "media_type": "tv",
+      "imdb_checked": true,
       "meta": {
         "cn_title": "",
         "year": "",
         "poster_candidates": [],
         "douban_matched": false,
         "justwatch_matched": false,
+        "imdb_matched": false,
         "douban_id": "",
         "douban_url": "",
         "imdb_id": "",
         "tmdb_id": "",
         "douban_poster": "",
         "justwatch_poster": "",
+        "imdb_poster": "",
         "localized_alias": ""
       }
     },
     "tv|teach you a lesson": {
-      "saved_at": 1791048380.727523,
+      "saved_at": 1791048813.8612597,
       "title": "Teach You a Lesson",
       "media_type": "tv",
+      "imdb_checked": true,
       "meta": {
         "cn_title": "",
-        "year": "",
-        "poster_candidates": [],
+        "year": "2026",
+        "poster_candidates": [
+          "https://m.media-amazon.com/images/M/MV5BNzFjNmFjNzgtYmM0ZS00ODZmLWJiNTktOWNiYWZiMTE5MWRiXkEyXkFqcGc@._V1_.jpg"
+        ],
         "douban_matched": false,
         "justwatch_matched": false,
+        "imdb_matched": true,
         "douban_id": "",
         "douban_url": "",
-        "imdb_id": "",
+        "imdb_id": "tt34809853",
         "tmdb_id": "",
         "douban_poster": "",
         "justwatch_poster": "",
+        "imdb_poster": "https://m.media-amazon.com/images/M/MV5BNzFjNmFjNzgtYmM0ZS00ODZmLWJiNTktOWNiYWZiMTE5MWRiXkEyXkFqcGc@._V1_.jpg",
         "localized_alias": ""
       }
     },
@@ -2288,40 +2391,50 @@
       }
     },
     "movie|tummy tom and the lost teddy bear": {
-      "saved_at": 1791048386.3602254,
+      "saved_at": 1791048818.7121654,
       "title": "Tummy Tom and the Lost Teddy Bear",
       "media_type": "movie",
+      "imdb_checked": true,
       "meta": {
         "cn_title": "",
-        "year": "",
-        "poster_candidates": [],
+        "year": "2026",
+        "poster_candidates": [
+          "https://m.media-amazon.com/images/M/MV5BMzIyYWZjNjMtZjczNS00MzFkLWEwNjctNDA3MmM0MzVjOGJkXkEyXkFqcGc@._V1_.jpg"
+        ],
         "douban_matched": false,
         "justwatch_matched": false,
+        "imdb_matched": true,
         "douban_id": "",
         "douban_url": "",
-        "imdb_id": "",
+        "imdb_id": "tt39478817",
         "tmdb_id": "",
         "douban_poster": "",
         "justwatch_poster": "",
+        "imdb_poster": "https://m.media-amazon.com/images/M/MV5BMzIyYWZjNjMtZjczNS00MzFkLWEwNjctNDA3MmM0MzVjOGJkXkEyXkFqcGc@._V1_.jpg",
         "localized_alias": ""
       }
     },
     "movie|tummy tom a new friend for tummy tom": {
-      "saved_at": 1791048387.1187718,
+      "saved_at": 1791048820.230266,
       "title": "Tummy Tom: A New Friend for Tummy Tom",
       "media_type": "movie",
+      "imdb_checked": true,
       "meta": {
         "cn_title": "",
-        "year": "",
-        "poster_candidates": [],
+        "year": "2024",
+        "poster_candidates": [
+          "https://m.media-amazon.com/images/M/MV5BODE1MWFlODctNTdlMy00YWU5LThmZWUtYWVmY2QyYzFlYjllXkEyXkFqcGc@._V1_.jpg"
+        ],
         "douban_matched": false,
         "justwatch_matched": false,
+        "imdb_matched": true,
         "douban_id": "",
         "douban_url": "",
-        "imdb_id": "",
+        "imdb_id": "tt33996084",
         "tmdb_id": "",
         "douban_poster": "",
         "justwatch_poster": "",
+        "imdb_poster": "https://m.media-amazon.com/images/M/MV5BODE1MWFlODctNTdlMy00YWU5LThmZWUtYWVmY2QyYzFlYjllXkEyXkFqcGc@._V1_.jpg",
         "localized_alias": ""
       }
     },
@@ -2347,21 +2460,26 @@
       }
     },
     "tv|fauda": {
-      "saved_at": 1791048391.6297908,
+      "saved_at": 1791048824.4218376,
       "title": "Fauda",
       "media_type": "tv",
+      "imdb_checked": true,
       "meta": {
         "cn_title": "",
-        "year": "",
-        "poster_candidates": [],
+        "year": "2015",
+        "poster_candidates": [
+          "https://m.media-amazon.com/images/M/MV5BZDNjNzhmM2ItYWM4Ni00ZThjLWE4N2YtODQ1MzRiYWQ0YzBlXkEyXkFqcGc@._V1_.jpg"
+        ],
         "douban_matched": false,
         "justwatch_matched": false,
+        "imdb_matched": true,
         "douban_id": "",
         "douban_url": "",
-        "imdb_id": "",
+        "imdb_id": "tt4565380",
         "tmdb_id": "",
         "douban_poster": "",
         "justwatch_poster": "",
+        "imdb_poster": "https://m.media-amazon.com/images/M/MV5BZDNjNzhmM2ItYWM4Ni00ZThjLWE4N2YtODQ1MzRiYWQ0YzBlXkEyXkFqcGc@._V1_.jpg",
         "localized_alias": ""
       }
     },
@@ -2450,21 +2568,26 @@
       }
     },
     "tv|bad exorcist": {
-      "saved_at": 1791048399.4427714,
+      "saved_at": 1791048826.2702768,
       "title": "Bad Exorcist",
       "media_type": "tv",
+      "imdb_checked": true,
       "meta": {
         "cn_title": "",
-        "year": "",
-        "poster_candidates": [],
+        "year": "2020",
+        "poster_candidates": [
+          "https://m.media-amazon.com/images/M/MV5BZjIxYmI4MDQtNTc1Ny00NDQ4LThlZjItY2E3ZTgyNDRiMzcwXkEyXkFqcGc@._V1_.jpg"
+        ],
         "douban_matched": false,
         "justwatch_matched": false,
+        "imdb_matched": true,
         "douban_id": "",
         "douban_url": "",
-        "imdb_id": "",
+        "imdb_id": "tt13624584",
         "tmdb_id": "",
         "douban_poster": "",
         "justwatch_poster": "",
+        "imdb_poster": "https://m.media-amazon.com/images/M/MV5BZjIxYmI4MDQtNTc1Ny00NDQ4LThlZjItY2E3ZTgyNDRiMzcwXkEyXkFqcGc@._V1_.jpg",
         "localized_alias": ""
       }
     },
@@ -2574,21 +2697,24 @@
       }
     },
     "movie|bamse and the world s smallest adventure": {
-      "saved_at": 1791048408.308488,
+      "saved_at": 1791048830.037271,
       "title": "Bamse and the World’s Smallest Adventure",
       "media_type": "movie",
+      "imdb_checked": true,
       "meta": {
         "cn_title": "",
         "year": "",
         "poster_candidates": [],
         "douban_matched": false,
         "justwatch_matched": false,
+        "imdb_matched": false,
         "douban_id": "",
         "douban_url": "",
         "imdb_id": "",
         "tmdb_id": "",
         "douban_poster": "",
         "justwatch_poster": "",
+        "imdb_poster": "",
         "localized_alias": ""
       }
     },
@@ -2740,21 +2866,26 @@
       }
     },
     "tv|jo koy blue in the face": {
-      "saved_at": 1791048420.1019325,
+      "saved_at": 1791048832.280652,
       "title": "Jo Koy: Blue in the Face",
       "media_type": "tv",
+      "imdb_checked": true,
       "meta": {
         "cn_title": "",
-        "year": "",
-        "poster_candidates": [],
+        "year": "2026",
+        "poster_candidates": [
+          "https://m.media-amazon.com/images/M/MV5BYTk2OGY3NzgtN2JkMy00OGFkLTk0NmYtMGFiZmE4NGQ3Y2IzXkEyXkFqcGc@._V1_.jpg"
+        ],
         "douban_matched": false,
         "justwatch_matched": false,
+        "imdb_matched": true,
         "douban_id": "",
         "douban_url": "",
-        "imdb_id": "",
+        "imdb_id": "tt39052963",
         "tmdb_id": "",
         "douban_poster": "",
         "justwatch_poster": "",
+        "imdb_poster": "https://m.media-amazon.com/images/M/MV5BYTk2OGY3NzgtN2JkMy00OGFkLTk0NmYtMGFiZmE4NGQ3Y2IzXkEyXkFqcGc@._V1_.jpg",
         "localized_alias": ""
       }
     }
