@@ -23,36 +23,41 @@
       "title": "Stella Next to Me",
       "weeks_in_top_10": 1,
       "cn_title": "",
-      "year": "",
-      "poster_candidates": [],
+      "year": "2025",
+      "poster_candidates": [
+        "https://m.media-amazon.com/images/M/MV5BZGI0ZGZkZTMtYzI5Mi00YmUzLWJkZWMtZTZjMTM1NTI2ZTEyXkEyXkFqcGc@._V1_.jpg"
+      ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "",
+      "imdb_id": "tt37985079",
       "tmdb_id": "",
       "metadata_match_version": 2,
-      "metadata_confidence": "none",
-      "metadata_evidence": []
+      "metadata_confidence": "medium",
+      "metadata_evidence": [
+        "imdb_verified_title_alias",
+        "verified_netflix_identity",
+        "exact_imdb_id_year"
+      ]
     },
     {
       "rank": 3,
       "title": "Under the Open Sky",
       "weeks_in_top_10": 1,
       "cn_title": "",
-      "year": "2025",
+      "year": "2020",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/344629375/s332/.jpg",
-        "https://m.media-amazon.com/images/M/MV5BNTRkMDZmMDMtOWI5Zi00YTI3LTg2OGQtZDEzMzZkMzliMDU5XkEyXkFqcGc@._V1_.jpg"
+        "https://m.media-amazon.com/images/M/MV5BOWI4Y2U2MDItMTY1Zi00MGE3LWI4YjUtZWU0YjUxYTVkNTljXkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt32543911",
-      "tmdb_id": "1399750",
+      "imdb_id": "tt12801374",
+      "tmdb_id": "",
       "metadata_match_version": 2,
-      "metadata_confidence": "high",
+      "metadata_confidence": "medium",
       "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
+        "imdb_verified_title_alias",
+        "verified_netflix_identity",
+        "exact_imdb_id_year"
       ]
     },
     {
@@ -60,15 +65,21 @@
       "title": "Golden Kamuy -The Abashiri Prison Raid-",
       "weeks_in_top_10": 3,
       "cn_title": "",
-      "year": "",
-      "poster_candidates": [],
+      "year": "2026",
+      "poster_candidates": [
+        "https://m.media-amazon.com/images/M/MV5BMTMzMTkzMGMtN2U1OS00YzMxLWIwMzUtOTBiMzMwODI3NDZmXkEyXkFqcGc@._V1_.jpg"
+      ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "",
+      "imdb_id": "tt38109660",
       "tmdb_id": "",
       "metadata_match_version": 2,
-      "metadata_confidence": "none",
-      "metadata_evidence": []
+      "metadata_confidence": "medium",
+      "metadata_evidence": [
+        "imdb_verified_title_alias",
+        "verified_netflix_identity",
+        "exact_imdb_id_year"
+      ]
     },
     {
       "rank": 5,
@@ -97,45 +108,63 @@
       "title": "Muroi Shinji: Stay Alive",
       "weeks_in_top_10": 4,
       "cn_title": "",
-      "year": "",
-      "poster_candidates": [],
+      "year": "2024",
+      "poster_candidates": [
+        "https://m.media-amazon.com/images/M/MV5BY2U0YmNmYzQtNzYxNi00YTM5LTkwY2YtYTIyNGZmYTg3MWYxXkEyXkFqcGc@._V1_.jpg"
+      ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "",
+      "imdb_id": "tt33452952",
       "tmdb_id": "",
       "metadata_match_version": 2,
-      "metadata_confidence": "none",
-      "metadata_evidence": []
+      "metadata_confidence": "medium",
+      "metadata_evidence": [
+        "imdb_verified_title_alias",
+        "verified_netflix_identity",
+        "exact_imdb_id_year"
+      ]
     },
     {
       "rank": 7,
       "title": "Muroi Shinji: Not Defeated",
       "weeks_in_top_10": 7,
       "cn_title": "",
-      "year": "",
-      "poster_candidates": [],
+      "year": "2024",
+      "poster_candidates": [
+        "https://m.media-amazon.com/images/M/MV5BNTgzMThkZmUtODczNi00MWE0LWE0MmItNjMzNmY1MDRjYmZhXkEyXkFqcGc@._V1_.jpg"
+      ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "",
+      "imdb_id": "tt33184066",
       "tmdb_id": "",
       "metadata_match_version": 2,
-      "metadata_confidence": "none",
-      "metadata_evidence": []
+      "metadata_confidence": "medium",
+      "metadata_evidence": [
+        "imdb_verified_title_alias",
+        "verified_netflix_identity",
+        "exact_imdb_id_year"
+      ]
     },
     {
       "rank": 8,
       "title": "Bayside Shakedown 4: The Final",
       "weeks_in_top_10": 2,
       "cn_title": "",
-      "year": "",
-      "poster_candidates": [],
+      "year": "2012",
+      "poster_candidates": [
+        "https://m.media-amazon.com/images/M/MV5BMThlNjBmZjUtZDZhMC00OWQ4LWEyYzktODYxMzc1OWI5OTMzXkEyXkFqcGc@._V1_.jpg"
+      ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "",
+      "imdb_id": "tt2124014",
       "tmdb_id": "",
       "metadata_match_version": 2,
-      "metadata_confidence": "none",
-      "metadata_evidence": []
+      "metadata_confidence": "medium",
+      "metadata_evidence": [
+        "imdb_verified_title_alias",
+        "verified_netflix_identity",
+        "exact_imdb_id_year"
+      ]
     },
     {
       "rank": 9,
@@ -384,5 +413,5 @@
     }
   ],
   "metadata_version": 2,
-  "metadata_enriched_at": "2026-10-04T02:20:59.243249+00:00"
+  "metadata_enriched_at": "2026-10-04T02:57:06.597250+00:00"
 }

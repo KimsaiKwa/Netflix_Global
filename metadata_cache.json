@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-10-04T02:20:59.243249+00:00",
+  "updated_at": "2026-10-04T02:57:06.597250+00:00",
   "items": {
     "movie|unabomber": {
       "saved_at": 1791080220.9855633,
@@ -2318,27 +2318,34 @@
       }
     },
     "movie|stella next to me": {
-      "saved_at": 1791080341.5028703,
+      "saved_at": 1791082605.4985788,
       "title": "Stella Next to Me",
       "media_type": "movie",
       "match_version": 2,
+      "identity_revision": "ce51f2f7b9e3d01c0dc5beaaf94e3e9e9a17720474fb67743bb6d9674fa0d649",
       "meta": {
         "cn_title": "",
-        "year": "",
-        "poster_candidates": [],
+        "year": "2025",
+        "poster_candidates": [
+          "https://m.media-amazon.com/images/M/MV5BZGI0ZGZkZTMtYzI5Mi00YmUzLWJkZWMtZTZjMTM1NTI2ZTEyXkEyXkFqcGc@._V1_.jpg"
+        ],
         "douban_matched": false,
         "justwatch_matched": false,
-        "imdb_matched": false,
+        "imdb_matched": true,
         "douban_id": "",
         "douban_url": "",
-        "imdb_id": "",
+        "imdb_id": "tt37985079",
         "tmdb_id": "",
         "douban_poster": "",
         "justwatch_poster": "",
-        "imdb_poster": "",
+        "imdb_poster": "https://m.media-amazon.com/images/M/MV5BZGI0ZGZkZTMtYzI5Mi00YmUzLWJkZWMtZTZjMTM1NTI2ZTEyXkEyXkFqcGc@._V1_.jpg",
         "localized_alias": "",
-        "confidence": "none",
-        "evidence": []
+        "confidence": "medium",
+        "evidence": [
+          "imdb_verified_title_alias",
+          "verified_netflix_identity",
+          "exact_imdb_id_year"
+        ]
       }
     },
     "movie|detective conan the counterfeit case of ultra 30": {
@@ -2366,33 +2373,33 @@
       }
     },
     "movie|under the open sky": {
-      "saved_at": 1791080340.0646636,
+      "saved_at": 1791082604.459782,
       "title": "Under the Open Sky",
       "media_type": "movie",
       "match_version": 2,
+      "identity_revision": "891505c9870707459f4d5d51978df0862b56a3b7fd06240f17ea7e685ac802f9",
       "meta": {
         "cn_title": "",
-        "year": "2025",
+        "year": "2020",
         "poster_candidates": [
-          "https://images.justwatch.com/poster/344629375/s332/.jpg",
-          "https://m.media-amazon.com/images/M/MV5BNTRkMDZmMDMtOWI5Zi00YTI3LTg2OGQtZDEzMzZkMzliMDU5XkEyXkFqcGc@._V1_.jpg"
+          "https://m.media-amazon.com/images/M/MV5BOWI4Y2U2MDItMTY1Zi00MGE3LWI4YjUtZWU0YjUxYTVkNTljXkEyXkFqcGc@._V1_.jpg"
         ],
         "douban_matched": false,
-        "justwatch_matched": true,
+        "justwatch_matched": false,
         "imdb_matched": true,
         "douban_id": "",
         "douban_url": "",
-        "imdb_id": "tt32543911",
-        "tmdb_id": "1399750",
+        "imdb_id": "tt12801374",
+        "tmdb_id": "",
         "douban_poster": "",
-        "justwatch_poster": "https://images.justwatch.com/poster/344629375/s332/.jpg",
-        "imdb_poster": "https://m.media-amazon.com/images/M/MV5BNTRkMDZmMDMtOWI5Zi00YTI3LTg2OGQtZDEzMzZkMzliMDU5XkEyXkFqcGc@._V1_.jpg",
+        "justwatch_poster": "",
+        "imdb_poster": "https://m.media-amazon.com/images/M/MV5BOWI4Y2U2MDItMTY1Zi00MGE3LWI4YjUtZWU0YjUxYTVkNTljXkEyXkFqcGc@._V1_.jpg",
         "localized_alias": "",
-        "confidence": "high",
+        "confidence": "medium",
         "evidence": [
-          "justwatch_strict_title",
-          "imdb_strict_title",
-          "year_consensus"
+          "imdb_verified_title_alias",
+          "verified_netflix_identity",
+          "exact_imdb_id_year"
         ]
       }
     },
@@ -2428,99 +2435,127 @@
       }
     },
     "movie|golden kamuy the abashiri prison raid": {
-      "saved_at": 1791080345.2009017,
+      "saved_at": 1791082606.9931762,
       "title": "Golden Kamuy -The Abashiri Prison Raid-",
       "media_type": "movie",
       "match_version": 2,
+      "identity_revision": "8315f63c9ce4d0a7ac16de47edc197b3ad4cd385d706f4a1d1cf40acb613193f",
       "meta": {
         "cn_title": "",
-        "year": "",
-        "poster_candidates": [],
+        "year": "2026",
+        "poster_candidates": [
+          "https://m.media-amazon.com/images/M/MV5BMTMzMTkzMGMtN2U1OS00YzMxLWIwMzUtOTBiMzMwODI3NDZmXkEyXkFqcGc@._V1_.jpg"
+        ],
         "douban_matched": false,
         "justwatch_matched": false,
-        "imdb_matched": false,
+        "imdb_matched": true,
         "douban_id": "",
         "douban_url": "",
-        "imdb_id": "",
+        "imdb_id": "tt38109660",
         "tmdb_id": "",
         "douban_poster": "",
         "justwatch_poster": "",
-        "imdb_poster": "",
+        "imdb_poster": "https://m.media-amazon.com/images/M/MV5BMTMzMTkzMGMtN2U1OS00YzMxLWIwMzUtOTBiMzMwODI3NDZmXkEyXkFqcGc@._V1_.jpg",
         "localized_alias": "",
-        "confidence": "none",
-        "evidence": []
+        "confidence": "medium",
+        "evidence": [
+          "imdb_verified_title_alias",
+          "verified_netflix_identity",
+          "exact_imdb_id_year"
+        ]
       }
     },
     "movie|muroi shinji stay alive": {
-      "saved_at": 1791080349.7786515,
+      "saved_at": 1791082626.5966263,
       "title": "Muroi Shinji: Stay Alive",
       "media_type": "movie",
       "match_version": 2,
+      "identity_revision": "ee57d064946154617440a4bc176e9850a868c28c6f3bf3692350633dc77af516",
       "meta": {
         "cn_title": "",
-        "year": "",
-        "poster_candidates": [],
+        "year": "2024",
+        "poster_candidates": [
+          "https://m.media-amazon.com/images/M/MV5BY2U0YmNmYzQtNzYxNi00YTM5LTkwY2YtYTIyNGZmYTg3MWYxXkEyXkFqcGc@._V1_.jpg"
+        ],
         "douban_matched": false,
         "justwatch_matched": false,
-        "imdb_matched": false,
+        "imdb_matched": true,
         "douban_id": "",
         "douban_url": "",
-        "imdb_id": "",
+        "imdb_id": "tt33452952",
         "tmdb_id": "",
         "douban_poster": "",
         "justwatch_poster": "",
-        "imdb_poster": "",
+        "imdb_poster": "https://m.media-amazon.com/images/M/MV5BY2U0YmNmYzQtNzYxNi00YTM5LTkwY2YtYTIyNGZmYTg3MWYxXkEyXkFqcGc@._V1_.jpg",
         "localized_alias": "",
-        "confidence": "none",
-        "evidence": []
+        "confidence": "medium",
+        "evidence": [
+          "imdb_verified_title_alias",
+          "verified_netflix_identity",
+          "exact_imdb_id_year"
+        ]
       }
     },
     "movie|muroi shinji not defeated": {
-      "saved_at": 1791080351.291363,
+      "saved_at": 1791082614.7876801,
       "title": "Muroi Shinji: Not Defeated",
       "media_type": "movie",
       "match_version": 2,
+      "identity_revision": "b4fe6d7f4b4c71b39c31d78ad9cff0837ece25062eda6e919952270b33f48f5f",
       "meta": {
         "cn_title": "",
-        "year": "",
-        "poster_candidates": [],
+        "year": "2024",
+        "poster_candidates": [
+          "https://m.media-amazon.com/images/M/MV5BNTgzMThkZmUtODczNi00MWE0LWE0MmItNjMzNmY1MDRjYmZhXkEyXkFqcGc@._V1_.jpg"
+        ],
         "douban_matched": false,
         "justwatch_matched": false,
-        "imdb_matched": false,
+        "imdb_matched": true,
         "douban_id": "",
         "douban_url": "",
-        "imdb_id": "",
+        "imdb_id": "tt33184066",
         "tmdb_id": "",
         "douban_poster": "",
         "justwatch_poster": "",
-        "imdb_poster": "",
+        "imdb_poster": "https://m.media-amazon.com/images/M/MV5BNTgzMThkZmUtODczNi00MWE0LWE0MmItNjMzNmY1MDRjYmZhXkEyXkFqcGc@._V1_.jpg",
         "localized_alias": "",
-        "confidence": "none",
-        "evidence": []
+        "confidence": "medium",
+        "evidence": [
+          "imdb_verified_title_alias",
+          "verified_netflix_identity",
+          "exact_imdb_id_year"
+        ]
       }
     },
     "movie|bayside shakedown 4 the final": {
-      "saved_at": 1791080355.7797754,
+      "saved_at": 1791082617.7287335,
       "title": "Bayside Shakedown 4: The Final",
       "media_type": "movie",
       "match_version": 2,
+      "identity_revision": "04aeea045e9cb759b20c5bc7303482b174e9a592c9b4ca01f3195345e8d1ce4c",
       "meta": {
         "cn_title": "",
-        "year": "",
-        "poster_candidates": [],
+        "year": "2012",
+        "poster_candidates": [
+          "https://m.media-amazon.com/images/M/MV5BMThlNjBmZjUtZDZhMC00OWQ4LWEyYzktODYxMzc1OWI5OTMzXkEyXkFqcGc@._V1_.jpg"
+        ],
         "douban_matched": false,
         "justwatch_matched": false,
-        "imdb_matched": false,
+        "imdb_matched": true,
         "douban_id": "",
         "douban_url": "",
-        "imdb_id": "",
+        "imdb_id": "tt2124014",
         "tmdb_id": "",
         "douban_poster": "",
         "justwatch_poster": "",
-        "imdb_poster": "",
+        "imdb_poster": "https://m.media-amazon.com/images/M/MV5BMThlNjBmZjUtZDZhMC00OWQ4LWEyYzktODYxMzc1OWI5OTMzXkEyXkFqcGc@._V1_.jpg",
         "localized_alias": "",
-        "confidence": "none",
-        "evidence": []
+        "confidence": "medium",
+        "evidence": [
+          "imdb_verified_title_alias",
+          "verified_netflix_identity",
+          "exact_imdb_id_year"
+        ]
       }
     },
     "movie|ichi the killer 4k": {
