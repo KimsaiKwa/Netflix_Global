@@ -8,15 +8,19 @@
       "title": "Detective Conan the Counterfeit Case of Ultra 30",
       "weeks_in_top_10": 1,
       "cn_title": "",
-      "year": "",
-      "poster_candidates": [],
+      "year": "2026",
+      "poster_candidates": [
+        "https://m.media-amazon.com/images/M/MV5BMWQ3YmJiMzMtOGEzMy00NjEwLWE5MDAtN2U1NWZkNzQ5MzhjXkEyXkFqcGc@._V1_.jpg"
+      ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "",
+      "imdb_id": "tt46656123",
       "tmdb_id": "",
       "metadata_match_version": 2,
-      "metadata_confidence": "none",
-      "metadata_evidence": []
+      "metadata_confidence": "medium",
+      "metadata_evidence": [
+        "imdb_strict_title"
+      ]
     },
     {
       "rank": 2,
@@ -413,5 +417,5 @@
     }
   ],
   "metadata_version": 2,
-  "metadata_enriched_at": "2026-10-04T02:58:12.337847+00:00"
+  "metadata_enriched_at": "2026-10-04T22:20:36.636256+00:00"
 }

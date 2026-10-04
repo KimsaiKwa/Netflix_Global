@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-10-04T02:57:06.597250+00:00",
+  "updated_at": "2026-10-04T22:20:36.636256+00:00",
   "items": {
     "movie|unabomber": {
       "saved_at": 1791080220.9855633,
@@ -315,10 +315,11 @@
       }
     },
     "movie|modha rathri": {
-      "saved_at": 1791080233.1484778,
+      "saved_at": 1791152407.7413673,
       "title": "Modha Rathri",
       "media_type": "movie",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "",
@@ -640,10 +641,11 @@
       }
     },
     "movie|einfach mal was schönes": {
-      "saved_at": 1791080253.0548227,
+      "saved_at": 1791152405.86844,
       "title": "Einfach Mal Was Schönes",
       "media_type": "movie",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "",
@@ -754,10 +756,11 @@
       }
     },
     "movie|the secret woman": {
-      "saved_at": 1791080260.881488,
+      "saved_at": 1791152411.7316558,
       "title": "The Secret Woman",
       "media_type": "movie",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "1918",
@@ -871,10 +874,11 @@
       }
     },
     "tv|the doll": {
-      "saved_at": 1791080270.6870596,
+      "saved_at": 1791152410.2415316,
       "title": "The Doll",
       "media_type": "tv",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "",
@@ -1258,10 +1262,11 @@
       }
     },
     "movie|wunderschöner": {
-      "saved_at": 1791080288.3802643,
+      "saved_at": 1791152413.3327882,
       "title": "Wunderschöner",
       "media_type": "movie",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "",
@@ -2349,27 +2354,32 @@
       }
     },
     "movie|detective conan the counterfeit case of ultra 30": {
-      "saved_at": 1791080337.7445517,
+      "saved_at": 1791152416.2962008,
       "title": "Detective Conan the Counterfeit Case of Ultra 30",
       "media_type": "movie",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
-        "year": "",
-        "poster_candidates": [],
+        "year": "2026",
+        "poster_candidates": [
+          "https://m.media-amazon.com/images/M/MV5BMWQ3YmJiMzMtOGEzMy00NjEwLWE5MDAtN2U1NWZkNzQ5MzhjXkEyXkFqcGc@._V1_.jpg"
+        ],
         "douban_matched": false,
         "justwatch_matched": false,
-        "imdb_matched": false,
+        "imdb_matched": true,
         "douban_id": "",
         "douban_url": "",
-        "imdb_id": "",
+        "imdb_id": "tt46656123",
         "tmdb_id": "",
         "douban_poster": "",
         "justwatch_poster": "",
-        "imdb_poster": "",
+        "imdb_poster": "https://m.media-amazon.com/images/M/MV5BMWQ3YmJiMzMtOGEzMy00NjEwLWE5MDAtN2U1NWZkNzQ5MzhjXkEyXkFqcGc@._V1_.jpg",
         "localized_alias": "",
-        "confidence": "none",
-        "evidence": []
+        "confidence": "medium",
+        "evidence": [
+          "imdb_strict_title"
+        ]
       }
     },
     "movie|under the open sky": {
@@ -2615,10 +2625,11 @@
       }
     },
     "tv|a case": {
-      "saved_at": 1791080363.6894798,
+      "saved_at": 1791152419.4578009,
       "title": "A Case",
       "media_type": "tv",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "",
@@ -2869,10 +2880,11 @@
       }
     },
     "movie|ok madam": {
-      "saved_at": 1791080387.3871348,
+      "saved_at": 1791152422.370041,
       "title": "OK! Madam",
       "media_type": "movie",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "",
@@ -3048,10 +3060,11 @@
       }
     },
     "movie|demon slayer kimetsu no yaiba infinity castle i": {
-      "saved_at": 1791080394.2971256,
+      "saved_at": 1791152425.4826565,
       "title": "Demon Slayer: Kimetsu no Yaiba Infinity Castle I",
       "media_type": "movie",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "",
@@ -3215,10 +3228,11 @@
       }
     },
     "tv|i m solo love goes on": {
-      "saved_at": 1791080412.780946,
+      "saved_at": 1791152428.5398695,
       "title": "I'm SOLO, Love goes on",
       "media_type": "tv",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "",
@@ -3267,10 +3281,11 @@
       }
     },
     "tv|k shaman true horror stories": {
-      "saved_at": 1791080418.5613923,
+      "saved_at": 1791152430.6043234,
       "title": "K-Shaman: True Horror Stories",
       "media_type": "tv",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "",
@@ -3291,10 +3306,11 @@
       }
     },
     "movie|tummy tom and the lost teddy bear": {
-      "saved_at": 1791080421.5535588,
+      "saved_at": 1791152435.0924203,
       "title": "Tummy Tom and the Lost Teddy Bear",
       "media_type": "movie",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "",
@@ -3706,10 +3722,11 @@
       }
     },
     "movie|bamse and the world s smallest adventure": {
-      "saved_at": 1791080445.8506985,
+      "saved_at": 1791152436.6357946,
       "title": "Bamse and the World’s Smallest Adventure",
       "media_type": "movie",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "",
