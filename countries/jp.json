@@ -13,21 +13,25 @@
       "douban_id": "",
       "douban_url": "",
       "imdb_id": "",
-      "tmdb_id": ""
+      "tmdb_id": "",
+      "metadata_match_version": 2,
+      "metadata_confidence": "none",
+      "metadata_evidence": []
     },
     {
       "rank": 2,
       "title": "Stella Next to Me",
       "weeks_in_top_10": 1,
       "cn_title": "",
-      "year": "1971",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/18519298/s332/.jpg"
-      ],
+      "year": "",
+      "poster_candidates": [],
       "douban_id": "",
       "douban_url": "",
       "imdb_id": "",
-      "tmdb_id": "473796"
+      "tmdb_id": "",
+      "metadata_match_version": 2,
+      "metadata_confidence": "none",
+      "metadata_evidence": []
     },
     {
       "rank": 3,
@@ -36,12 +40,20 @@
       "cn_title": "",
       "year": "2025",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/344629375/s332/.jpg"
+        "https://images.justwatch.com/poster/344629375/s332/.jpg",
+        "https://m.media-amazon.com/images/M/MV5BNTRkMDZmMDMtOWI5Zi00YTI3LTg2OGQtZDEzMzZkMzliMDU5XkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
       "imdb_id": "tt32543911",
-      "tmdb_id": "1399750"
+      "tmdb_id": "1399750",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
     },
     {
       "rank": 4,
@@ -53,7 +65,10 @@
       "douban_id": "",
       "douban_url": "",
       "imdb_id": "",
-      "tmdb_id": ""
+      "tmdb_id": "",
+      "metadata_match_version": 2,
+      "metadata_confidence": "none",
+      "metadata_evidence": []
     },
     {
       "rank": 5,
@@ -62,26 +77,35 @@
       "cn_title": "",
       "year": "2024",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/335783623/s332/anora.jpg"
+        "https://images.justwatch.com/poster/335783623/s332/anora.jpg",
+        "https://m.media-amazon.com/images/M/MV5BYThiN2M0NTItODRmNC00NDhlLWFiYTgtMWM2YTEyYzI3ZTY1XkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
       "imdb_id": "tt28607951",
-      "tmdb_id": "1064213"
+      "tmdb_id": "1064213",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
     },
     {
       "rank": 6,
       "title": "Muroi Shinji: Stay Alive",
       "weeks_in_top_10": 4,
       "cn_title": "",
-      "year": "2006",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/176191526/s332/.jpg"
-      ],
+      "year": "",
+      "poster_candidates": [],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt0441796",
-      "tmdb_id": "10069"
+      "imdb_id": "",
+      "tmdb_id": "",
+      "metadata_match_version": 2,
+      "metadata_confidence": "none",
+      "metadata_evidence": []
     },
     {
       "rank": 7,
@@ -93,35 +117,44 @@
       "douban_id": "",
       "douban_url": "",
       "imdb_id": "",
-      "tmdb_id": ""
+      "tmdb_id": "",
+      "metadata_match_version": 2,
+      "metadata_confidence": "none",
+      "metadata_evidence": []
     },
     {
       "rank": 8,
       "title": "Bayside Shakedown 4: The Final",
       "weeks_in_top_10": 2,
       "cn_title": "",
-      "year": "2010",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/241534759/s332/wu-tai-kagekishiyouziyo-di-3zhang-the-final.jpg"
-      ],
+      "year": "",
+      "poster_candidates": [],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt1390535",
-      "tmdb_id": "34583"
+      "imdb_id": "",
+      "tmdb_id": "",
+      "metadata_match_version": 2,
+      "metadata_confidence": "none",
+      "metadata_evidence": []
     },
     {
       "rank": 9,
       "title": "Ichi the Killer 4K",
       "weeks_in_top_10": 2,
       "cn_title": "",
-      "year": "2023",
+      "year": "2001",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/312303739/s332/the-killer-2023.jpg"
+        "https://m.media-amazon.com/images/M/MV5BODJmM2NjNDctZjE3My00ZjE3LWExYzUtYjg1N2YyODEzNGIyXkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt1136617",
-      "tmdb_id": "800158"
+      "imdb_id": "tt0296042",
+      "tmdb_id": "",
+      "metadata_match_version": 2,
+      "metadata_confidence": "medium",
+      "metadata_evidence": [
+        "imdb_strict_title"
+      ]
     },
     {
       "rank": 10,
@@ -135,7 +168,12 @@
       "douban_id": "",
       "douban_url": "",
       "imdb_id": "tt0210199",
-      "tmdb_id": ""
+      "tmdb_id": "",
+      "metadata_match_version": 2,
+      "metadata_confidence": "medium",
+      "metadata_evidence": [
+        "imdb_strict_title"
+      ]
     }
   ],
   "tv": [
@@ -152,7 +190,12 @@
       "douban_id": "",
       "douban_url": "",
       "imdb_id": "tt37884325",
-      "tmdb_id": ""
+      "tmdb_id": "",
+      "metadata_match_version": 2,
+      "metadata_confidence": "medium",
+      "metadata_evidence": [
+        "imdb_strict_title"
+      ]
     },
     {
       "rank": 2,
@@ -160,14 +203,15 @@
       "weeks_in_top_10": 2,
       "season": "A Case: Season 1",
       "cn_title": "",
-      "year": "2023",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/321215160/s332/.jpg"
-      ],
+      "year": "",
+      "poster_candidates": [],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt36383281",
-      "tmdb_id": "245290"
+      "imdb_id": "",
+      "tmdb_id": "",
+      "metadata_match_version": 2,
+      "metadata_confidence": "none",
+      "metadata_evidence": []
     },
     {
       "rank": 3,
@@ -177,12 +221,20 @@
       "cn_title": "",
       "year": "2026",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/354912099/s332/seukaendeul-2026.jpg"
+        "https://images.justwatch.com/poster/354912099/s332/seukaendeul-2026.jpg",
+        "https://m.media-amazon.com/images/M/MV5BODMyM2VhYzktZTZhZi00NWNkLWI5NjgtNmU5MmI0ZDJiN2QzXkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
       "imdb_id": "tt36347588",
-      "tmdb_id": "275102"
+      "tmdb_id": "275102",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
     },
     {
       "rank": 4,
@@ -190,14 +242,19 @@
       "weeks_in_top_10": 1,
       "season": "Eerie: Invisible Face: Season 1",
       "cn_title": "",
-      "year": "2024",
+      "year": "2018",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/324706853/s332/invisible.jpg"
+        "https://m.media-amazon.com/images/M/MV5BMTQzN2Y5YTYtODFmMS00NDE0LWE2MWQtOWRlNzRmMzM3NWNkXkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt26658061",
-      "tmdb_id": "220513"
+      "imdb_id": "tt8924872",
+      "tmdb_id": "",
+      "metadata_match_version": 2,
+      "metadata_confidence": "medium",
+      "metadata_evidence": [
+        "imdb_strict_title"
+      ]
     },
     {
       "rank": 5,
@@ -207,12 +264,20 @@
       "cn_title": "",
       "year": "2023",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/310470283/s332/vivant.jpg"
+        "https://images.justwatch.com/poster/310470283/s332/vivant.jpg",
+        "https://m.media-amazon.com/images/M/MV5BYzJjZDQxZTQtMTM5Zi00M2U0LTg2YjEtZDU4ZTM2YWVhZWU1XkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
       "imdb_id": "tt28314144",
-      "tmdb_id": "218038"
+      "tmdb_id": "218038",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
     },
     {
       "rank": 6,
@@ -227,7 +292,12 @@
       "douban_id": "",
       "douban_url": "",
       "imdb_id": "tt33384314",
-      "tmdb_id": ""
+      "tmdb_id": "",
+      "metadata_match_version": 2,
+      "metadata_confidence": "medium",
+      "metadata_evidence": [
+        "imdb_strict_title"
+      ]
     },
     {
       "rank": 7,
@@ -242,7 +312,12 @@
       "douban_id": "",
       "douban_url": "",
       "imdb_id": "tt37614297",
-      "tmdb_id": ""
+      "tmdb_id": "",
+      "metadata_match_version": 2,
+      "metadata_confidence": "medium",
+      "metadata_evidence": [
+        "imdb_strict_title"
+      ]
     },
     {
       "rank": 8,
@@ -252,12 +327,20 @@
       "cn_title": "",
       "year": "2026",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/350459628/s332/gao-bai-25nian-mu-nomi-mi.jpg"
+        "https://images.justwatch.com/poster/350459628/s332/gao-bai-25nian-mu-nomi-mi.jpg",
+        "https://m.media-amazon.com/images/M/MV5BOGQ0YjU3NDktYWE5Ny00OGYyLThjMTMtNTU4YzdlNDE4ZTUxXkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
       "imdb_id": "tt43619278",
-      "tmdb_id": "326063"
+      "tmdb_id": "326063",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
     },
     {
       "rank": 9,
@@ -272,7 +355,12 @@
       "douban_id": "",
       "douban_url": "",
       "imdb_id": "tt13293588",
-      "tmdb_id": ""
+      "tmdb_id": "",
+      "metadata_match_version": 2,
+      "metadata_confidence": "medium",
+      "metadata_evidence": [
+        "imdb_strict_title"
+      ]
     },
     {
       "rank": 10,
@@ -280,16 +368,21 @@
       "weeks_in_top_10": 12,
       "season": "Until the T-shirt Dries: Season 1",
       "cn_title": "",
-      "year": "2018",
+      "year": "2026",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/320933819/s332/the-t.jpg"
+        "https://m.media-amazon.com/images/M/MV5BYjNlNWEwMTYtYjJlNy00YzJlLTllNmEtY2U0YmZmZThjNmVhXkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt8530588",
-      "tmdb_id": "88372"
+      "imdb_id": "tt43639297",
+      "tmdb_id": "",
+      "metadata_match_version": 2,
+      "metadata_confidence": "medium",
+      "metadata_evidence": [
+        "imdb_strict_title"
+      ]
     }
   ],
-  "metadata_version": 1,
-  "metadata_enriched_at": "2026-10-03T17:35:13.556098+00:00"
+  "metadata_version": 2,
+  "metadata_enriched_at": "2026-10-04T02:20:59.243249+00:00"
 }

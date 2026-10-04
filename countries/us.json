@@ -7,15 +7,25 @@
       "rank": 1,
       "title": "UNABOMBER",
       "weeks_in_top_10": 1,
-      "cn_title": "",
+      "cn_title": "大学炸弹客",
       "year": "2026",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/354976659/s332/yunabameo-bimil-silheom.jpg"
+        "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2936115679.jpg",
+        "https://images.justwatch.com/poster/354976659/s332/yunabameo-bimil-silheom.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMDE2ODhlNTUtYjdiOS00OTlmLTg5OGMtMGNjZWZmNWE4MGJiXkEyXkFqcGc@._V1_.jpg"
       ],
-      "douban_id": "",
-      "douban_url": "",
+      "douban_id": "38184963",
+      "douban_url": "https://movie.douban.com/subject/38184963/?suggest=UNABOMBER",
       "imdb_id": "tt6933238",
-      "tmdb_id": "1492640"
+      "tmdb_id": "1492640",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "douban_strict_title",
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
     },
     {
       "rank": 2,
@@ -24,12 +34,20 @@
       "cn_title": "",
       "year": "2024",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/313383451/s332/the-ministry-of-ungentlemanly-warfare.jpg"
+        "https://images.justwatch.com/poster/313383451/s332/the-ministry-of-ungentlemanly-warfare.jpg",
+        "https://m.media-amazon.com/images/M/MV5BYmIxODc5ZjMtYzZmZS00OTE5LThkZDktNWNmODNiZjFhMDgyXkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
       "imdb_id": "tt5177120",
-      "tmdb_id": "799583"
+      "tmdb_id": "799583",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
     },
     {
       "rank": 3,
@@ -38,26 +56,44 @@
       "cn_title": "",
       "year": "2022",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/302215375/s332/top-gun-maverick.jpg"
+        "https://images.justwatch.com/poster/302215375/s332/top-gun-maverick.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMDBkZDNjMWEtOTdmMi00NmExLTg5MmMtNTFlYTJlNWY5YTdmXkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
       "imdb_id": "tt1745960",
-      "tmdb_id": "361743"
+      "tmdb_id": "361743",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
     },
     {
       "rank": 4,
       "title": "Best of the Best",
       "weeks_in_top_10": 2,
-      "cn_title": "",
+      "cn_title": "最佳舞伴",
       "year": "2026",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/354777535/s332/best-of-the-best.jpg"
+        "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2935920442.jpg",
+        "https://images.justwatch.com/poster/354777535/s332/best-of-the-best.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMWJiYzQ5MmMtNzIyNS00YzQ0LTkyNmQtZmQ0NWQ4MmFhMzU5XkEyXkFqcGc@._V1_.jpg"
       ],
-      "douban_id": "",
-      "douban_url": "",
+      "douban_id": "36565928",
+      "douban_url": "https://movie.douban.com/subject/36565928/?suggest=Best+of+the+Best",
       "imdb_id": "tt16478058",
-      "tmdb_id": "1514863"
+      "tmdb_id": "1514863",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "douban_strict_title",
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
     },
     {
       "rank": 5,
@@ -66,12 +102,20 @@
       "cn_title": "",
       "year": "2026",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/355026291/s332/the-breadwinner-2026.jpg"
+        "https://images.justwatch.com/poster/355026291/s332/the-breadwinner-2026.jpg",
+        "https://m.media-amazon.com/images/M/MV5BZTQ3ZWQ4YTctMTI0OC00NmI5LWFlNjgtNjhhMDQxYjUxYTQyXkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
       "imdb_id": "tt34459219",
-      "tmdb_id": "1440050"
+      "tmdb_id": "1440050",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
     },
     {
       "rank": 6,
@@ -80,12 +124,20 @@
       "cn_title": "",
       "year": "2026",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/354562957/s332/miert-is-hazasodtam-meg.jpg"
+        "https://images.justwatch.com/poster/354562957/s332/miert-is-hazasodtam-meg.jpg",
+        "https://m.media-amazon.com/images/M/MV5BNTE5YWVkMTAtODJkYi00Y2IwLTlkZDAtYTQ3MDI3ODFiMWI5XkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
       "imdb_id": "tt38061210",
-      "tmdb_id": "1522689"
+      "tmdb_id": "1522689",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
     },
     {
       "rank": 7,
@@ -94,12 +146,20 @@
       "cn_title": "",
       "year": "2026",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/342937280/s332/the-seemingly-perfect-family.jpg"
+        "https://images.justwatch.com/poster/342937280/s332/the-seemingly-perfect-family.jpg",
+        "https://m.media-amazon.com/images/M/MV5BNGUwMjhlZTgtNmY0OC00MGEyLWE4MWYtMmM1MTU3MjU3ZDI2XkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
       "imdb_id": "tt38598321",
-      "tmdb_id": "1648760"
+      "tmdb_id": "1648760",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
     },
     {
       "rank": 8,
@@ -108,12 +168,20 @@
       "cn_title": "",
       "year": "2022",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/302407942/s332/puss-in-boots-the-last-wish.jpg"
+        "https://images.justwatch.com/poster/302407942/s332/puss-in-boots-the-last-wish.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMzg0MWUzMjctYjVlOS00NzVjLWIwZDMtNzg1YzNkYzdjNTMwXkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
       "imdb_id": "tt3915174",
-      "tmdb_id": "315162"
+      "tmdb_id": "315162",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
     },
     {
       "rank": 9,
@@ -122,12 +190,20 @@
       "cn_title": "",
       "year": "2023",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/347766045/s332/knock-at-the-cabin.jpg"
+        "https://images.justwatch.com/poster/347766045/s332/knock-at-the-cabin.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMzU1ODIzYjAtNjUzNi00YmNjLWI5ZDAtNDgzOWY3MDU1OThlXkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
       "imdb_id": "tt8272064",
-      "tmdb_id": "631842"
+      "tmdb_id": "631842",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
     },
     {
       "rank": 10,
@@ -136,12 +212,20 @@
       "cn_title": "",
       "year": "2018",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/191600282/s332/the-matchmakers-playbook.jpg"
+        "https://images.justwatch.com/poster/191600282/s332/the-matchmakers-playbook.jpg",
+        "https://m.media-amazon.com/images/M/MV5BOTUyNWRhY2MtYTcxNC00MzgxLWI5NjUtMDg0ZWE0YTg1NWJmXkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
       "imdb_id": "tt7913934",
-      "tmdb_id": "510938"
+      "tmdb_id": "510938",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
     }
   ],
   "tv": [
@@ -158,7 +242,12 @@
       "douban_id": "",
       "douban_url": "",
       "imdb_id": "",
-      "tmdb_id": "299939"
+      "tmdb_id": "299939",
+      "metadata_match_version": 2,
+      "metadata_confidence": "medium",
+      "metadata_evidence": [
+        "justwatch_strict_title"
+      ]
     },
     {
       "rank": 2,
@@ -168,12 +257,20 @@
       "cn_title": "",
       "year": "2026",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/355071095/s332/a-different-world-1.jpg"
+        "https://images.justwatch.com/poster/355071095/s332/a-different-world-1.jpg",
+        "https://m.media-amazon.com/images/M/MV5BNGIwZDc3OWYtZTZkOS00NmRjLTk3NTAtNjQzODI3ZTI4MWU4XkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
       "imdb_id": "tt33081352",
-      "tmdb_id": "305357"
+      "tmdb_id": "305357",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
     },
     {
       "rank": 3,
@@ -183,12 +280,20 @@
       "cn_title": "",
       "year": "2026",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/350868666/s332/wonkas-the-golden-ticket.jpg"
+        "https://images.justwatch.com/poster/350868666/s332/wonkas-the-golden-ticket.jpg",
+        "https://m.media-amazon.com/images/M/MV5BNTViMTljYjAtMDRiYi00NjAzLWEzZjEtODg4ODI5OTJlYjVmXkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
       "imdb_id": "tt36258621",
-      "tmdb_id": "286940"
+      "tmdb_id": "286940",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
     },
     {
       "rank": 4,
@@ -196,14 +301,19 @@
       "weeks_in_top_10": 1,
       "season": "The Great British Baking Show: Collection 14",
       "cn_title": "",
-      "year": "2018",
+      "year": "2010",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/301996951/s332/the-great-british-baking-show-holidays.jpg"
+        "https://m.media-amazon.com/images/M/MV5BNTc3MzZkZTQtMWM3MC00MThmLTlmNjctOWEwY2NjMzM2NTllXkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt16161100",
-      "tmdb_id": "215598"
+      "imdb_id": "tt1877368",
+      "tmdb_id": "",
+      "metadata_match_version": 2,
+      "metadata_confidence": "medium",
+      "metadata_evidence": [
+        "imdb_strict_title"
+      ]
     },
     {
       "rank": 5,
@@ -213,12 +323,20 @@
       "cn_title": "",
       "year": "2008",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/321050063/s332/raw.jpg"
+        "https://images.justwatch.com/poster/321050063/s332/raw.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMWMzY2RmM2UtNzZlOS00NDI2LWFmYzctZWI2NDFmNjAxOTliXkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
       "imdb_id": "tt1233560",
-      "tmdb_id": "7449"
+      "tmdb_id": "7449",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
     },
     {
       "rank": 6,
@@ -233,7 +351,12 @@
       "douban_id": "",
       "douban_url": "",
       "imdb_id": "tt39397536",
-      "tmdb_id": ""
+      "tmdb_id": "",
+      "metadata_match_version": 2,
+      "metadata_confidence": "medium",
+      "metadata_evidence": [
+        "imdb_strict_title"
+      ]
     },
     {
       "rank": 7,
@@ -247,7 +370,12 @@
       "douban_id": "",
       "douban_url": "",
       "imdb_id": "tt39052963",
-      "tmdb_id": ""
+      "tmdb_id": "",
+      "metadata_match_version": 2,
+      "metadata_confidence": "medium",
+      "metadata_evidence": [
+        "imdb_strict_title"
+      ]
     },
     {
       "rank": 8,
@@ -257,12 +385,20 @@
       "cn_title": "",
       "year": "2026",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/354594032/s332/crew-girl.jpg"
+        "https://images.justwatch.com/poster/354594032/s332/crew-girl.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMWVmYTE5OWQtOWJlMi00NzY4LWJmMTAtZDQ2ZTg1MTZhNWVlXkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
       "imdb_id": "tt38218082",
-      "tmdb_id": "300507"
+      "tmdb_id": "300507",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
     },
     {
       "rank": 9,
@@ -272,12 +408,20 @@
       "cn_title": "",
       "year": "2025",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/324853793/s332/ms-rachel.jpg"
+        "https://images.justwatch.com/poster/324853793/s332/ms-rachel.jpg",
+        "https://m.media-amazon.com/images/M/MV5BYmM2OGYxNDItMTdjZi00MTRmLTk0NGItYjFkMDBkZTZlZDVkXkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
       "imdb_id": "tt35406274",
-      "tmdb_id": "282238"
+      "tmdb_id": "282238",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
     },
     {
       "rank": 10,
@@ -287,14 +431,22 @@
       "cn_title": "",
       "year": "2020",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/344211336/s332/danny-go.jpg"
+        "https://images.justwatch.com/poster/344211336/s332/danny-go.jpg",
+        "https://m.media-amazon.com/images/M/MV5BOTY3OTZlZTEtMzRjOC00OWQxLTkwOTEtMmRkNTFmMzE1MTA2XkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
       "imdb_id": "tt13158394",
-      "tmdb_id": "258124"
+      "tmdb_id": "258124",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
     }
   ],
-  "metadata_version": 1,
-  "metadata_enriched_at": "2026-10-03T17:35:13.556098+00:00"
+  "metadata_version": 2,
+  "metadata_enriched_at": "2026-10-04T02:20:59.243249+00:00"
 }

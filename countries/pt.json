@@ -7,29 +7,49 @@
       "rank": 1,
       "title": "UNABOMBER",
       "weeks_in_top_10": 1,
-      "cn_title": "",
+      "cn_title": "大学炸弹客",
       "year": "2026",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/354976659/s332/yunabameo-bimil-silheom.jpg"
+        "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2936115679.jpg",
+        "https://images.justwatch.com/poster/354976659/s332/yunabameo-bimil-silheom.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMDE2ODhlNTUtYjdiOS00OTlmLTg5OGMtMGNjZWZmNWE4MGJiXkEyXkFqcGc@._V1_.jpg"
       ],
-      "douban_id": "",
-      "douban_url": "",
+      "douban_id": "38184963",
+      "douban_url": "https://movie.douban.com/subject/38184963/?suggest=UNABOMBER",
       "imdb_id": "tt6933238",
-      "tmdb_id": "1492640"
+      "tmdb_id": "1492640",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "douban_strict_title",
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
     },
     {
       "rank": 2,
       "title": "Best of the Best",
       "weeks_in_top_10": 2,
-      "cn_title": "",
+      "cn_title": "最佳舞伴",
       "year": "2026",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/354777535/s332/best-of-the-best.jpg"
+        "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2935920442.jpg",
+        "https://images.justwatch.com/poster/354777535/s332/best-of-the-best.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMWJiYzQ5MmMtNzIyNS00YzQ0LTkyNmQtZmQ0NWQ4MmFhMzU5XkEyXkFqcGc@._V1_.jpg"
       ],
-      "douban_id": "",
-      "douban_url": "",
+      "douban_id": "36565928",
+      "douban_url": "https://movie.douban.com/subject/36565928/?suggest=Best+of+the+Best",
       "imdb_id": "tt16478058",
-      "tmdb_id": "1514863"
+      "tmdb_id": "1514863",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "douban_strict_title",
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
     },
     {
       "rank": 3,
@@ -38,26 +58,44 @@
       "cn_title": "",
       "year": "2025",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/332807110/s332/superman-2025.jpg"
+        "https://images.justwatch.com/poster/332807110/s332/superman-2025.jpg",
+        "https://m.media-amazon.com/images/M/MV5BOGMwZGJiM2EtMzEwZC00YTYzLWIxNzYtMmJmZWNlZjgxZTMwXkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
       "imdb_id": "tt5950044",
-      "tmdb_id": "1061474"
+      "tmdb_id": "1061474",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
     },
     {
       "rank": 4,
       "title": "The Whisper Man",
       "weeks_in_top_10": 5,
-      "cn_title": "",
+      "cn_title": "耳语者",
       "year": "2026",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/354521042/s332/der-kinderfluesterer.jpg"
+        "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2934088022.jpg",
+        "https://images.justwatch.com/poster/354521042/s332/der-kinderfluesterer.jpg",
+        "https://m.media-amazon.com/images/M/MV5BOTI1YmY3YTQtYTg2Zi00OTZkLTk3NzQtNjcxNzIzMjk2ODZlXkEyXkFqcGc@._V1_.jpg"
       ],
-      "douban_id": "",
-      "douban_url": "",
+      "douban_id": "37228429",
+      "douban_url": "https://movie.douban.com/subject/37228429/?suggest=The+Whisper+Man",
       "imdb_id": "tt11561116",
-      "tmdb_id": "860508"
+      "tmdb_id": "860508",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "douban_strict_title",
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
     },
     {
       "rank": 5,
@@ -69,7 +107,14 @@
       "douban_id": "",
       "douban_url": "",
       "imdb_id": "tt0009595",
-      "tmdb_id": ""
+      "tmdb_id": "",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
     },
     {
       "rank": 6,
@@ -78,12 +123,20 @@
       "cn_title": "",
       "year": "2014",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/311745770/s332/the-judge.jpg"
+        "https://images.justwatch.com/poster/311745770/s332/the-judge.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMTcyNzIxOTIwMV5BMl5BanBnXkFtZTgwMzE0NjQwMjE@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
       "imdb_id": "tt1872194",
-      "tmdb_id": "205587"
+      "tmdb_id": "205587",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
     },
     {
       "rank": 7,
@@ -92,12 +145,20 @@
       "cn_title": "",
       "year": "2026",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/354562957/s332/miert-is-hazasodtam-meg.jpg"
+        "https://images.justwatch.com/poster/354562957/s332/miert-is-hazasodtam-meg.jpg",
+        "https://m.media-amazon.com/images/M/MV5BNTE5YWVkMTAtODJkYi00Y2IwLTlkZDAtYTQ3MDI3ODFiMWI5XkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
       "imdb_id": "tt38061210",
-      "tmdb_id": "1522689"
+      "tmdb_id": "1522689",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
     },
     {
       "rank": 8,
@@ -106,12 +167,20 @@
       "cn_title": "",
       "year": "2024",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/317926245/s332/despicable-me-4.jpg"
+        "https://images.justwatch.com/poster/317926245/s332/despicable-me-4.jpg",
+        "https://m.media-amazon.com/images/M/MV5BNzY0ZTlhYzgtOTgzZC00ZTg2LTk4NTEtZDllM2E2NGE5Njg2XkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
       "imdb_id": "tt7510222",
-      "tmdb_id": "519182"
+      "tmdb_id": "519182",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
     },
     {
       "rank": 9,
@@ -120,12 +189,20 @@
       "cn_title": "",
       "year": "2025",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/338118240/s332/aileen-la-demoiselle-de-la-mort.jpg"
+        "https://images.justwatch.com/poster/338118240/s332/aileen-la-demoiselle-de-la-mort.jpg",
+        "https://m.media-amazon.com/images/M/MV5BYjg4MDg1YTAtNDYwMC00MGEyLTk3NTYtMWY4YjJmNDMyZDdkXkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
       "imdb_id": "tt38457052",
-      "tmdb_id": "1550569"
+      "tmdb_id": "1550569",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
     },
     {
       "rank": 10,
@@ -134,12 +211,20 @@
       "cn_title": "",
       "year": "2013",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/319889604/s332/.jpg"
+        "https://images.justwatch.com/poster/319889604/s332/.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMTQ2ODg2MTIyNF5BMl5BanBnXkFtZTgwMzU2NjgwMDE@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
       "imdb_id": "tt1204975",
-      "tmdb_id": "137093"
+      "tmdb_id": "137093",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
     }
   ],
   "tv": [
@@ -156,7 +241,12 @@
       "douban_id": "",
       "douban_url": "",
       "imdb_id": "",
-      "tmdb_id": "299939"
+      "tmdb_id": "299939",
+      "metadata_match_version": 2,
+      "metadata_confidence": "medium",
+      "metadata_evidence": [
+        "justwatch_strict_title"
+      ]
     },
     {
       "rank": 2,
@@ -171,7 +261,12 @@
       "douban_id": "",
       "douban_url": "",
       "imdb_id": "tt39397536",
-      "tmdb_id": ""
+      "tmdb_id": "",
+      "metadata_match_version": 2,
+      "metadata_confidence": "medium",
+      "metadata_evidence": [
+        "imdb_strict_title"
+      ]
     },
     {
       "rank": 3,
@@ -181,12 +276,20 @@
       "cn_title": "",
       "year": "2026",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/354594032/s332/crew-girl.jpg"
+        "https://images.justwatch.com/poster/354594032/s332/crew-girl.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMWVmYTE5OWQtOWJlMi00NzY4LWJmMTAtZDQ2ZTg1MTZhNWVlXkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
       "imdb_id": "tt38218082",
-      "tmdb_id": "300507"
+      "tmdb_id": "300507",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
     },
     {
       "rank": 4,
@@ -201,7 +304,12 @@
       "douban_id": "",
       "douban_url": "",
       "imdb_id": "tt28765828",
-      "tmdb_id": ""
+      "tmdb_id": "",
+      "metadata_match_version": 2,
+      "metadata_confidence": "medium",
+      "metadata_evidence": [
+        "imdb_strict_title"
+      ]
     },
     {
       "rank": 5,
@@ -211,12 +319,20 @@
       "cn_title": "",
       "year": "2024",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/354137615/s332/The-Gentlemen.jpg"
+        "https://images.justwatch.com/poster/354137615/s332/The-Gentlemen.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMzM0YzFhMTYtYjZkNS00MWRmLTg2ZDgtY2MzYjQ5ODVmOTI1XkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
       "imdb_id": "tt13210838",
-      "tmdb_id": "236235"
+      "tmdb_id": "236235",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
     },
     {
       "rank": 6,
@@ -226,12 +342,20 @@
       "cn_title": "",
       "year": "2026",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/354997175/s332/habeas-corpus.jpg"
+        "https://images.justwatch.com/poster/354997175/s332/habeas-corpus.jpg",
+        "https://m.media-amazon.com/images/M/MV5BYmE2NGRiYzAtMDE1NC00NzgwLWExYTctYzc5ODg5ZmI1YmVlXkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
       "imdb_id": "tt39369819",
-      "tmdb_id": "308963"
+      "tmdb_id": "308963",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
     },
     {
       "rank": 7,
@@ -246,7 +370,12 @@
       "douban_id": "",
       "douban_url": "",
       "imdb_id": "tt36832679",
-      "tmdb_id": ""
+      "tmdb_id": "",
+      "metadata_match_version": 2,
+      "metadata_confidence": "medium",
+      "metadata_evidence": [
+        "imdb_strict_title"
+      ]
     },
     {
       "rank": 8,
@@ -256,12 +385,20 @@
       "cn_title": "",
       "year": "2021",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/327296475/s332/gabinin-kouzelny-domek.jpg"
+        "https://images.justwatch.com/poster/327296475/s332/gabinin-kouzelny-domek.jpg",
+        "https://m.media-amazon.com/images/M/MV5BYjQ5ZjA1NDQtMmVhOS00ZWUyLWI5ZDktODU4MWUyYTljODkwXkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
       "imdb_id": "tt9165438",
-      "tmdb_id": "111474"
+      "tmdb_id": "111474",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
     },
     {
       "rank": 9,
@@ -276,7 +413,14 @@
       "douban_id": "",
       "douban_url": "",
       "imdb_id": "tt47657141",
-      "tmdb_id": ""
+      "tmdb_id": "",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
     },
     {
       "rank": 10,
@@ -286,14 +430,22 @@
       "cn_title": "",
       "year": "2024",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/354137615/s332/The-Gentlemen.jpg"
+        "https://images.justwatch.com/poster/354137615/s332/The-Gentlemen.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMzM0YzFhMTYtYjZkNS00MWRmLTg2ZDgtY2MzYjQ5ODVmOTI1XkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
       "imdb_id": "tt13210838",
-      "tmdb_id": "236235"
+      "tmdb_id": "236235",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
     }
   ],
-  "metadata_version": 1,
-  "metadata_enriched_at": "2026-10-03T17:35:13.556098+00:00"
+  "metadata_version": 2,
+  "metadata_enriched_at": "2026-10-04T02:20:59.243249+00:00"
 }
