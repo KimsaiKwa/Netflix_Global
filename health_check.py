@@ -601,10 +601,11 @@ def validate_priority_poster_coverage(
             continue
 
         if coverage < MIN_PRIORITY_POSTER_COVERAGE:
-            report.error(
+            report.warning(
                 f"{label}: poster coverage {with_poster}/{total} "
-                f"({coverage:.1%}) is below minimum "
-                f"{MIN_PRIORITY_POSTER_COVERAGE:.0%}"
+                f"({coverage:.1%}) is below the quality floor "
+                f"{MIN_PRIORITY_POSTER_COVERAGE:.0%}, but publication is allowed "
+                "because anti-mismatch mode prefers missing posters over wrong posters"
             )
         elif coverage < PREFERRED_POSTER_COVERAGE:
             report.warning(
