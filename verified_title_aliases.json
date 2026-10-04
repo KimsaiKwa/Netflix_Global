@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "description": "Reviewed identity links for exact Netflix titles whose provider titles differ. No posters are stored here; runtime verifies IMDb ID, full title, media type and exact year before accepting its current image. Sources checked 2026-10-04.",
+  "titles": [
+    {
+      "netflix_title": "Stella Next to Me",
+      "media_type": "movie",
+      "year": 2025,
+      "imdb_id": "tt37985079",
+      "imdb_titles": [
+        "Tonari no Stella",
+        "Gazing at the Star Next Door"
+      ],
+      "sources": [
+        "https://www.netflix.com/jp-en/title/82758520",
+        "https://www.netflix.com/jp/title/82758520",
+        "https://www.imdb.com/title/tt37985079/"
+      ]
+    },
+    {
+      "netflix_title": "Golden Kamuy -The Abashiri Prison Raid-",
+      "media_type": "movie",
+      "year": 2026,
+      "imdb_id": "tt38109660",
+      "imdb_titles": [
+        "Golden Kamuy: Assault on Abashiri Prison",
+        "Golden Kamuy: Abashiri Kangoku Shûgeki-hen",
+        "Golden Kamuy: The Abashiri Prison Raid"
+      ],
+      "sources": [
+        "https://www.netflix.com/jp-en/title/82116953",
+        "https://www.netflix.com/jp/title/82116953",
+        "https://www.imdb.com/title/tt38109660/",
+        "https://www.justwatch.com/uk/movie/golden-kamuy-the-abashiri-prison-raid"
+      ]
+    },
+    {
+      "netflix_title": "Muroi Shinji: Stay Alive",
+      "media_type": "movie",
+      "year": 2024,
+      "imdb_id": "tt33452952",
+      "imdb_titles": [
+        "Muroi Shinji: Ikitsuzukeru Mono"
+      ],
+      "sources": [
+        "https://www.netflix.com/jp-en/title/82050598",
+        "https://www.netflix.com/jp/title/82050598",
+        "https://www.imdb.com/title/tt33452952/",
+        "https://fujicreative.co.jp/forBuyers/movie/works-10461/",
+        "https://jfdb.jp/en/title/10264"
+      ]
+    },
+    {
+      "netflix_title": "Muroi Shinji: Not Defeated",
+      "media_type": "movie",
+      "year": 2024,
+      "imdb_id": "tt33184066",
+      "imdb_titles": [
+        "Muroi Shinji: Yaburezaru Mono"
+      ],
+      "sources": [
+        "https://www.netflix.com/jp-en/title/82050595",
+        "https://www.netflix.com/jp/title/82050595",
+        "https://www.imdb.com/title/tt33184066/",
+        "https://fujicreative.co.jp/forBuyers/movie/works-10457/"
+      ]
+    },
+    {
+      "netflix_title": "Bayside Shakedown 4: The Final",
+      "media_type": "movie",
+      "year": 2012,
+      "imdb_id": "tt2124014",
+      "imdb_titles": [
+        "Bayside Shakedown the Final",
+        "Odoru daisousasen the Final: Aratanaru kibou",
+        "Odoru daisousasen the movie 4"
+      ],
+      "sources": [
+        "https://www.netflix.com/jp-en/title/81438151",
+        "https://www.netflix.com/jp/title/81438151",
+        "https://www.imdb.com/title/tt2124014/"
+      ]
+    },
+    {
+      "netflix_title": "Under the Open Sky",
+      "media_type": "movie",
+      "year": 2020,
+      "imdb_id": "tt12801374",
+      "imdb_titles": [
+        "Under the Open Sky"
+      ],
+      "sources": [
+        "https://www.netflix.com/sg/title/81620219",
+        "https://www.netflix.com/jp/title/81620219",
+        "https://pro.imdb.com/title/tt12801374/"
+      ],
+      "note": "Netflix 2020 Japanese film starring Koji Yakusho; not the 2025 namesake documentary tt32543911 / TMDb 1399750."
+    }
+  ]
+}

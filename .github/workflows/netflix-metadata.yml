@@ -10,6 +10,9 @@ on:
     paths:
       - "enrich_metadata.py"
       - "health_check.py"
+      - "publish_data.py"
+      - "verified_title_aliases.json"
+      - "tests/**"
       - ".github/workflows/netflix-metadata.yml"
 
 permissions:
@@ -17,8 +20,9 @@ permissions:
   issues: write
 
 concurrency:
-  group: netflix-display-metadata
-  cancel-in-progress: true
+  # The weekly generator uses this same group.
+  group: netflix-data-writer
+  cancel-in-progress: false
 
 jobs:
   refresh:
@@ -27,6 +31,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          # A queued run must start from the latest published cache and rankings.
+          ref: main
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -39,7 +46,8 @@ jobs:
         shell: bash
         run: |
           set -o pipefail
-          python3 -m py_compile enrich_metadata.py health_check.py 2>&1 | tee metadata-syntax.log
+          python3 -m py_compile enrich_metadata.py health_check.py publish_data.py 2>&1 | tee metadata-syntax.log
+          python3 -m unittest discover -s tests -v 2>&1 | tee -a metadata-syntax.log
 
       - name: Refresh cached display metadata
         id: enrich
@@ -61,81 +69,60 @@ jobs:
           set -o pipefail
           python3 health_check.py 2>&1 | tee metadata-health.log
 
+      - name: Publish healthy metadata or preserve cache progress
+        id: publish
+        if: ${{ !cancelled() && steps.syntax.outcome == 'success' }}
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if [ "${{ steps.enrich.outcome }}" = "success" ] && \
+             [ "${{ steps.validate.outcome }}" = "success" ]; then
+            python3 publish_data.py --mode full \
+              --message "Refresh Netflix display metadata [skip ci]" \
+              2>&1 | tee metadata-publication.log
+          else
+            python3 publish_data.py --mode cache \
+              --message "Preserve Netflix metadata cache progress [skip ci]" \
+              2>&1 | tee metadata-publication.log
+          fi
+
       - name: Publish workflow summary
         if: always()
         shell: bash
         run: |
           {
             echo "## Netflix Display Metadata Refresh"
-            echo
-            echo "### Syntax"
-            echo
-            echo "~~~text"
-            cat metadata-syntax.log 2>/dev/null || echo "Syntax check did not run."
-            echo "~~~"
-            echo
-            echo "### Enrichment"
-            echo
-            echo "~~~text"
-            cat metadata-refresh.log 2>/dev/null || echo "Enrichment did not run."
-            echo "~~~"
-            echo
-            echo "### Validation"
-            echo
-            echo "~~~text"
-            cat metadata-health.log 2>/dev/null || echo "Validation did not run."
-            echo "~~~"
+            for stage in syntax refresh health publication; do
+              echo
+              echo "### $stage"
+              echo
+              echo "~~~text"
+              cat "metadata-$stage.log" 2>/dev/null || echo "$stage did not run."
+              echo "~~~"
+            done
           } >> "$GITHUB_STEP_SUMMARY"
 
-      - name: Commit healthy metadata changes
-        if: >
-          steps.syntax.outcome == 'success' &&
-          steps.enrich.outcome == 'success' &&
-          steps.validate.outcome == 'success'
-        shell: bash
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          git add global.json countries metadata_cache.json
-
-          if git diff --cached --quiet; then
-            echo "No metadata changes to commit."
-            exit 0
-          fi
-
-          git commit -m "Refresh Netflix display metadata [skip ci]"
-          git pull --rebase origin main
-          git push
-
-      - name: Preserve metadata cache progress after incomplete refresh
-        if: >
-          steps.syntax.outcome == 'success' &&
-          steps.enrich.outcome == 'success' &&
-          steps.validate.outcome == 'failure'
-        shell: bash
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          if [ -f metadata_cache.json ]; then
-            git add metadata_cache.json
-          fi
-
-          if git diff --cached --quiet; then
-            echo "No cache progress to preserve."
-            exit 0
-          fi
-
-          git commit -m "Preserve Netflix metadata cache progress [skip ci]"
-          git pull --rebase origin main
-          git push
+      - name: Preserve refresh logs and cache artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: netflix-metadata-diagnostics-${{ github.run_id }}-${{ github.run_attempt }}
+          retention-days: 7
+          path: |
+            metadata-*.log
+            metadata_cache.json
 
       - name: Open or refresh metadata issue
         if: >
-          steps.syntax.outcome == 'failure' ||
-          steps.enrich.outcome == 'failure' ||
-          steps.validate.outcome == 'failure'
+          always() && !cancelled() && (
+            steps.syntax.outcome != 'success' ||
+            steps.enrich.outcome != 'success' ||
+            steps.validate.outcome != 'success' ||
+            steps.publish.outcome != 'success')
         uses: actions/github-script@v7
         with:
           script: |
@@ -166,6 +153,11 @@ jobs:
               '### Validation',
               '~~~text',
               read('metadata-health.log', 'No validation log.'),
+              '~~~',
+              '',
+              '### Publication',
+              '~~~text',
+              read('metadata-publication.log', 'Publication did not run.'),
               '~~~'
             ].join('\n');
 
@@ -182,6 +174,7 @@ jobs:
               '',
               'Workflow run: ' + runUrl,
               'Checked at: ' + new Date().toISOString(),
+              'Outcomes: syntax=${{ steps.syntax.outcome }}, enrichment=${{ steps.enrich.outcome }}, validation=${{ steps.validate.outcome }}, publication=${{ steps.publish.outcome }}',
               '',
               log,
               '',
@@ -217,9 +210,11 @@ jobs:
 
       - name: Close recovered metadata issue
         if: >
+          always() && !cancelled() &&
           steps.syntax.outcome == 'success' &&
           steps.enrich.outcome == 'success' &&
-          steps.validate.outcome == 'success'
+          steps.validate.outcome == 'success' &&
+          steps.publish.outcome == 'success'
         uses: actions/github-script@v7
         with:
           script: |
@@ -261,10 +256,13 @@ jobs:
 
       - name: Fail when metadata refresh is unhealthy
         if: >
-          steps.syntax.outcome == 'failure' ||
-          steps.enrich.outcome == 'failure' ||
-          steps.validate.outcome == 'failure'
+          always() && !cancelled() && (
+            steps.syntax.outcome != 'success' ||
+            steps.enrich.outcome != 'success' ||
+            steps.validate.outcome != 'success' ||
+            steps.publish.outcome != 'success')
         shell: bash
         run: |
-          echo "Display metadata refresh is not healthy yet."
+          echo "Display metadata refresh or publication failed; see the summary and artifacts."
           exit 1
+

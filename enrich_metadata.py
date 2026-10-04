@@ -20,6 +20,8 @@ empty transient network result.
 from __future__ import annotations
 
 import concurrent.futures
+import functools
+import hashlib
 import json
 import os
 import re
@@ -39,6 +41,7 @@ ROOT = Path(__file__).resolve().parent
 GLOBAL_PATH = ROOT / "global.json"
 COUNTRIES_DIR = ROOT / "countries"
 CACHE_PATH = ROOT / "metadata_cache.json"
+VERIFIED_ALIASES_PATH = ROOT / "verified_title_aliases.json"
 
 CACHE_VERSION = 2
 METADATA_VERSION = 2
@@ -761,11 +764,17 @@ def imdb_type_score(item: dict[str, Any], media_type: str) -> int:
     return 0
 
 
+class IdentityRejected(RuntimeError):
+    """The expected provider ID was observed with contradictory identity data."""
+
+
 def search_imdb(
     title: str,
     media_type: str,
     year_hint: str = "",
     imdb_id_hint: str = "",
+    *,
+    verified_aliases: tuple[str, ...] = (),
 ) -> dict[str, Any] | None:
     query = clean(imdb_id_hint, 40) or clean(title, 220)
     if not query:
@@ -802,6 +811,7 @@ def search_imdb(
 
     best: dict[str, Any] | None = None
     best_score = -10_000
+    rejected_identity = False
 
     for item in items:
         if not isinstance(item, dict):
@@ -810,12 +820,23 @@ def search_imdb(
         item_id = clean(item.get("id"), 40)
         item_title = clean(item.get("l"), 220)
 
-        title_score = strict_title_score(item_title, title)
+        # An ID hint is an identity constraint, never merely a ranking bonus.
+        if exact_id and item_id != exact_id:
+            continue
+
+        title_score = max(
+            strict_title_score(item_title, allowed_title)
+            for allowed_title in (title, *verified_aliases)
+        )
         if title_score <= 0:
+            rejected_identity = rejected_identity or bool(verified_aliases and exact_id and item_title)
             continue
 
         type_score = imdb_type_score(item, media_type)
         if type_score < 0:
+            rejected_identity = rejected_identity or bool(verified_aliases and exact_id)
+            continue
+        if verified_aliases and type_score == 0:
             continue
 
         item_year = parse_year(item.get("y"))
@@ -825,6 +846,7 @@ def search_imdb(
             and expected_year
             and abs(int(item_year) - int(expected_year)) > 1
         ):
+            rejected_identity = rejected_identity or bool(verified_aliases and exact_id)
             continue
 
         score = title_score + type_score
@@ -847,6 +869,8 @@ def search_imdb(
             best = item
 
     if best is None or best_score < 118:
+        if rejected_identity:
+            raise IdentityRejected("Expected IMDb ID failed title/type/year validation")
         return None
 
     image = best.get("i")
@@ -1017,12 +1041,136 @@ def merge_meta(old: Any, fresh: Any) -> dict[str, Any]:
     }
 
 
+@functools.lru_cache(maxsize=1)
+def verified_identities() -> dict[str, dict[str, Any]]:
+    """Read reviewed identity links, not fuzzy rules or hand-entered posters.
+
+    Each record links Netflix's exact ranked title to a specific provider work.
+    Source URLs are retained in the manifest for human review. Runtime still
+    verifies the returned ID, complete title/alias, media type, year and image.
+    """
+    data = load_json(VERIFIED_ALIASES_PATH)
+    if data.get("version") != 1 or not isinstance(data.get("titles"), list):
+        raise RuntimeError("Invalid verified-title alias manifest")
+    result: dict[str, dict[str, Any]] = {}
+    for item in data["titles"]:
+        if not isinstance(item, dict):
+            raise RuntimeError("Invalid verified-title identity")
+        title = clean(item.get("netflix_title"), 220)
+        media_type = item.get("media_type")
+        aliases = item.get("imdb_titles")
+        sources = item.get("sources")
+        if (
+            not title or media_type not in {"movie", "tv"}
+            or not re.fullmatch(r"tt[0-9]+", str(item.get("imdb_id", "")))
+            or not re.fullmatch(r"(?:19|20)[0-9]{2}", str(item.get("year", "")))
+            or not isinstance(aliases, list) or not aliases
+            or not all(isinstance(alias, str) and alias.strip() for alias in aliases)
+            or not isinstance(sources, list) or len(sources) < 2
+            or not all(isinstance(source, str) and source.startswith("https://") for source in sources)
+        ):
+            raise RuntimeError(f"Incomplete verified identity for {title!r}")
+        key = cache_key(media_type, title)
+        if key in result:
+            raise RuntimeError(f"Duplicate verified identity for {title!r}")
+        result[key] = item
+    return result
+
+
+def identity_revision(title: str, media_type: str) -> str:
+    identity = verified_identities().get(cache_key(media_type, title))
+    if not identity:
+        return ""
+    return hashlib.sha256(
+        json.dumps(
+            {key: identity[key] for key in ("netflix_title", "media_type", "year", "imdb_id", "imdb_titles")},
+            ensure_ascii=False, sort_keys=True,
+        ).encode("utf-8")
+    ).hexdigest()
+
+
+def resolve_verified_identity(
+    title: str, media_type: str, identity: dict[str, Any]
+) -> dict[str, Any]:
+    meta = empty_meta()
+    try:
+        imdb = search_imdb(
+            title, media_type, str(identity["year"]), identity["imdb_id"],
+            verified_aliases=tuple(identity["imdb_titles"]),
+        )
+    except IdentityRejected as exc:
+        log(f"REJECT verified IMDb identity {media_type} {title!r}: {exc}")
+        meta["_identity_rejected"] = True
+        return meta
+    except Exception as exc:
+        log(f"WARN verified IMDb identity {media_type} {title!r}: {exc}")
+        return meta
+
+    # An absent/truncated provider result is not evidence against cached data.
+    if not imdb or not imdb.get("year"):
+        return meta
+    # Reviewed links need an exact year, not the generic ±1-year allowance.
+    if imdb.get("year") != str(identity["year"]):
+        log(f"REJECT verified IMDb identity {media_type} {title!r}: identity/year mismatch")
+        meta["_identity_rejected"] = True
+        return meta
+    poster = normalize_image_url(imdb.get("poster"))
+    meta.update({
+        "year": imdb["year"],
+        "imdb_id": imdb["imdb_id"],
+        "imdb_matched": True,
+        "imdb_poster": poster,
+        "poster_candidates": [poster] if poster else [],
+        "confidence": "medium",
+        "evidence": ["imdb_verified_title_alias", "verified_netflix_identity", "exact_imdb_id_year"],
+    })
+
+    # Chinese titles remain Douban-only. A reviewed IMDb identity does not
+    # authorize translating a title or copying one from a different provider.
+    # Keep enrichment available, but require a complete verified title plus a
+    # known compatible release year and explicit media type for this link.
+    for query in unique_strings([title, imdb.get("matched_title")]):
+        try:
+            candidates = [
+                candidate for candidate in search_douban(query)
+                if isinstance(candidate, dict)
+                and douban_type_score(candidate, media_type) > 0
+                and parse_year(candidate.get("year") or candidate.get("card_subtitle"))
+            ]
+            selected = select_douban_candidate(
+                candidates, title, media_type, query, str(identity["year"])
+            )
+            if not selected:
+                continue
+            db = build_douban_meta(selected[0], media_type, title)
+            meta.update({
+                "cn_title": db["cn_title"],
+                "douban_id": db["douban_id"],
+                "douban_url": db["douban_url"],
+                "douban_matched": True,
+                "douban_poster": db["poster"],
+                "poster_candidates": unique_strings([db["poster"], poster]),
+                "confidence": "high",
+                "evidence": meta["evidence"] + ["douban_strict_title", "year_consensus"],
+            })
+            break
+        except Exception as exc:
+            log(f"WARN verified Douban alias {media_type} {title!r}: {exc}")
+    return meta
+
+
 def resolve_fresh_meta(
     title: str,
     media_type: str,
     year_hint: str = "",
     country_hints: set[str] | None = None,
 ) -> dict[str, Any]:
+    identity = verified_identities().get(cache_key(media_type, title))
+    if identity:
+        # Never fall back to an unrelated exact-name work when a reviewed
+        # identity exists. A temporary provider failure stays empty/cached.
+        return resolve_verified_identity(title, media_type, identity)
+
     # Existing enriched years are not treated as authoritative during v2
     # revalidation. Provider-to-provider agreement is preferred instead.
     direct_candidates: list[dict[str, Any]] = []
@@ -1233,10 +1381,12 @@ def get_stable_meta(
     record = record if isinstance(record, dict) else {}
 
     record_match_version = int(record.get("match_version") or 0)
+    revision = identity_revision(title, media_type)
+    identity_current = (record.get("identity_revision") or "") == revision
     existing = sanitize_meta(record.get("meta"))
     trusted_existing = (
         existing
-        if record_match_version == MATCH_VERSION
+        if record_match_version == MATCH_VERSION and identity_current
         else empty_meta()
     )
 
@@ -1261,6 +1411,7 @@ def get_stable_meta(
 
     if (
         record_match_version == MATCH_VERSION
+        and identity_current
         and not FORCE
         and saved_at_value
         and age < ttl
@@ -1279,11 +1430,16 @@ def get_stable_meta(
     except Exception as exc:
         log(f"WARN metadata resolve {media_type} {title!r}: {exc}")
 
+    # A successful response contradicting a pinned identity is not a transient
+    # outage. Do not resurrect the now-rejected cached poster on every retry.
+    if fresh.get("_identity_rejected"):
+        trusted_existing = empty_meta()
+
     # v1 matches are intentionally not merged into v2. This is the key cleanup
     # that removes previously cached fuzzy-title false positives.
     merged = (
         merge_meta(trusted_existing, fresh)
-        if record_match_version == MATCH_VERSION
+        if record_match_version == MATCH_VERSION and identity_current
         else sanitize_meta(fresh)
     )
 
@@ -1292,6 +1448,7 @@ def get_stable_meta(
         "title": title,
         "media_type": media_type,
         "match_version": MATCH_VERSION,
+        "identity_revision": revision,
         "meta": merged if meta_useful(merged) else empty_meta(),
     }
 
@@ -1543,3 +1700,4 @@ if __name__ == "__main__":
     except Exception as exc:
         print(f"ERROR: {type(exc).__name__}: {exc}", file=sys.stderr)
         raise
+

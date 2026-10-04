@@ -4,6 +4,12 @@ on:
   schedule:
     - cron: "45 18 * * *"
   workflow_dispatch:
+  workflow_run:
+    workflows:
+      - "Update Netflix Top 10 Data"
+      - "Refresh Netflix Display Metadata"
+    types: [completed]
+    branches: [main]
   push:
     branches:
       - main
@@ -28,6 +34,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          ref: main
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -168,3 +176,4 @@ jobs:
         run: |
           echo "Netflix mirror health check failed. See the workflow summary and health issue."
           exit 1
+

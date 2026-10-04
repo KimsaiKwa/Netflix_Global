@@ -12,14 +12,18 @@ on:
       - "update_countries.py"
       - "enrich_metadata.py"
       - "health_check.py"
+      - "publish_data.py"
+      - "verified_title_aliases.json"
+      - "tests/**"
       - ".github/workflows/netflix-global.yml"
 
 permissions:
   contents: write
 
 concurrency:
-  group: netflix-top10-update
-  cancel-in-progress: true
+  # Serialize both writers without cancelling in-flight metadata lookups.
+  group: netflix-data-writer
+  cancel-in-progress: false
 
 jobs:
   update:
@@ -28,11 +32,20 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          # A queued run must start from the latest published cache and rankings.
+          ref: main
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+
+      - name: Check syntax and offline regressions
+        shell: bash
+        run: |
+          python3 -m py_compile update.py update_countries.py enrich_metadata.py health_check.py publish_data.py
+          python3 -m unittest discover -s tests -v
 
       - name: Download Netflix global TSV
         id: download_global
@@ -336,60 +349,46 @@ jobs:
             } > diagnostics.txt
           fi
 
-      - name: Commit generated data or diagnostics
-        if: always()
+      - name: Publish validated data or preserve cache and diagnostics
+        id: publish
+        if: ${{ !cancelled() }}
+        continue-on-error: true
         shell: bash
         run: |
+          set -o pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           if [ "$success" = "true" ]; then
-            git add global.json countries metadata_cache.json
-
-            if [ -f diagnostics.txt ]; then
-              rm -f diagnostics.txt
-            fi
-            git rm --ignore-unmatch diagnostics.txt >/dev/null 2>&1 || true
-
-            if git diff --cached --quiet; then
-              echo "No generated changes to commit."
-              exit 0
-            fi
-
             WEEK=$(python3 -c 'import json; print(json.load(open("global.json", encoding="utf-8"))["week"])')
-            git commit -m "Update Netflix browser-ready Top 10: week $WEEK [skip ci]"
-            git pull --rebase origin main
-            git push
-            exit 0
+            python3 publish_data.py --mode full --diagnostics remove \
+              --message "Update Netflix browser-ready Top 10: week $WEEK [skip ci]" \
+              2>&1 | tee publication.log
+          else
+            python3 publish_data.py --mode cache --diagnostics publish \
+              --message "Record Netflix Top 10 update diagnostics [skip ci]" \
+              2>&1 | tee publication.log
           fi
 
-          if [ -f diagnostics.txt ]; then
-            git add diagnostics.txt
-          fi
-
-          # Preserve successful metadata cache progress even if final poster
-          # coverage has not yet crossed the publish threshold. The browser
-          # JSON itself is not staged on failure.
-          if [ -f metadata_cache.json ]; then
-            git add metadata_cache.json
-          fi
-
-          if git diff --cached --quiet; then
-            echo "No diagnostics changes to commit."
-            exit 0
-          fi
-
-          git commit -m "Record Netflix Top 10 update diagnostics [skip ci]"
-          git pull --rebase origin main
-          git push
+      - name: Preserve update logs and cache artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: netflix-update-diagnostics-${{ github.run_id }}-${{ github.run_attempt }}
+          retention-days: 7
+          path: |
+            *.log
+            diagnostics.txt
+            metadata_cache.json
 
       - name: Fail workflow when update failed
         if: always()
         shell: bash
         run: |
-          if [ "$success" != "true" ]; then
-            echo "Netflix Top 10 update failed. Check diagnostics.txt."
+          if [ "$success" != "true" ] || [ "${{ steps.publish.outcome }}" != "success" ]; then
+            echo "Netflix Top 10 update or publication failed. Check diagnostics and publication.log."
             exit 1
           fi
 
           echo "Netflix browser-ready Top 10 update completed successfully."
+

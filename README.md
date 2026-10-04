@@ -116,6 +116,13 @@ The backend now:
 - keeps Chinese display titles Douban-only
 - records `metadata_match_version`, `metadata_confidence`, and `metadata_evidence` on browser-facing rows
 - invalidates pre-v2 fuzzy-match cache entries instead of carrying them forward
+- uses reviewed identity links in `verified_title_aliases.json` for exact Netflix titles with different IMDb names or known namesakes; each link retains Netflix/provider evidence
+- fetches those posters live only after the exact IMDb ID, complete accepted title, media type and exact release year all agree; it never uses the manifest as a source of hand-entered poster URLs
+- invalidates a title's cache when its reviewed identity changes, so a previously accepted namesake cannot be merged back in
+
+The reviewed Japan mappings include the two distinct 2024 Muroi films, the 2012 fourth Bayside film, the 2026 Abashiri Prison film, and the 2025 Stella film. `Under the Open Sky` is pinned to the 2020 Japanese film, not its unrelated 2025 namesake. The 2026 Conan anniversary special remains empty until its own identity and poster can be verified; a series/franchise image is not an acceptable substitute.
+
+Run the offline regression suite with `python3 -m unittest discover -s tests -v`.
 
 
 The weekly update pipeline is now:
@@ -134,6 +141,10 @@ A separate daily workflow retries incomplete metadata without regenerating Netfl
 `.github/workflows/netflix-metadata.yml`
 
 It runs daily at 19:15 UTC. If the final mirror is not healthy enough to publish, only cache progress is preserved; the committed browser-facing JSON remains unchanged.
+
+Both writers share a non-cancelling concurrency group and check out the latest `main` when their job starts. `publish_data.py` creates an isolated clean worktree at the latest remote revision, so uncommitted failed outputs cannot break a cache-only save. Cache records are merged as whole identities, retaining current reviewed mappings and fresher concurrent work. A non-fast-forward push is retried without force. If rankings, cache or generation inputs changed during enrichment, browser JSON is withheld and the run must retry from current inputs; unrelated remote edits are preserved. Full publication reruns the health check before committing.
+
+Both workflows retain logs and the generated cache as a seven-day Actions artifact, including when publication fails. Metadata failure alerts include publication status and run even when the cache push failed. The independent health workflow also runs after either writer completes and checks the latest committed mirror, allowing recovery alerts to close after skipped-CI data commits.
 
 ## Independent health check
 
@@ -246,3 +257,4 @@ The weekly update workflow downloads the TSV files with retry handling, validate
 ## Intended use
 
 The Douban userscript can read small raw JSON files directly from this repository instead of downloading and parsing Netflix's much larger TSV datasets in the browser.
+
