@@ -1,6 +1,6 @@
 {
   "week": "2026-09-27",
-  "generated_at": "2026-10-03T17:35:11.590452+00:00",
+  "generated_at": "2026-10-04T02:58:10.427089+00:00",
   "source": "Netflix Tudum Top 10",
   "source_url": "https://top10.netflix.com/data/all-weeks-global.tsv",
   "derived": true,
@@ -926,5 +926,5 @@
     }
   ],
   "metadata_version": 2,
-  "metadata_enriched_at": "2026-10-04T02:57:06.597250+00:00"
+  "metadata_enriched_at": "2026-10-04T02:58:12.337847+00:00"
 }
