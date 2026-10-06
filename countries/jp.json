@@ -1,12 +1,12 @@
 {
-  "week": "2026-09-27",
+  "week": "2026-10-04",
   "country_iso2": "JP",
   "country_name": "Japan",
   "films": [
     {
       "rank": 1,
       "title": "Detective Conan the Counterfeit Case of Ultra 30",
-      "weeks_in_top_10": 1,
+      "weeks_in_top_10": 2,
       "cn_title": "",
       "year": "2026",
       "poster_candidates": [
@@ -24,29 +24,8 @@
     },
     {
       "rank": 2,
-      "title": "Stella Next to Me",
-      "weeks_in_top_10": 1,
-      "cn_title": "",
-      "year": "2025",
-      "poster_candidates": [
-        "https://m.media-amazon.com/images/M/MV5BZGI0ZGZkZTMtYzI5Mi00YmUzLWJkZWMtZTZjMTM1NTI2ZTEyXkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt37985079",
-      "tmdb_id": "",
-      "metadata_match_version": 2,
-      "metadata_confidence": "medium",
-      "metadata_evidence": [
-        "imdb_verified_title_alias",
-        "verified_netflix_identity",
-        "exact_imdb_id_year"
-      ]
-    },
-    {
-      "rank": 3,
       "title": "Under the Open Sky",
-      "weeks_in_top_10": 1,
+      "weeks_in_top_10": 2,
       "cn_title": "",
       "year": "2020",
       "poster_candidates": [
@@ -65,17 +44,60 @@
       ]
     },
     {
-      "rank": 4,
-      "title": "Golden Kamuy -The Abashiri Prison Raid-",
-      "weeks_in_top_10": 3,
+      "rank": 3,
+      "title": "Angry Squad: Civil Servants & Seven Swindlers",
+      "weeks_in_top_10": 1,
       "cn_title": "",
-      "year": "2026",
+      "year": "2024",
       "poster_candidates": [
-        "https://m.media-amazon.com/images/M/MV5BMTMzMTkzMGMtN2U1OS00YzMxLWIwMzUtOTBiMzMwODI3NDZmXkEyXkFqcGc@._V1_.jpg"
+        "https://m.media-amazon.com/images/M/MV5BMDljOTJlNGQtMGY4ZS00NGI3LTk1NTctMDNjODkyNDIwYjMxXkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt38109660",
+      "imdb_id": "tt34821564",
+      "tmdb_id": "",
+      "metadata_match_version": 2,
+      "metadata_confidence": "medium",
+      "metadata_evidence": [
+        "imdb_strict_title"
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "UNABOMBER",
+      "weeks_in_top_10": 1,
+      "cn_title": "大学炸弹客",
+      "year": "2026",
+      "poster_candidates": [
+        "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2936115679.jpg",
+        "https://images.justwatch.com/poster/354976659/s332/yunabameo-bimil-silheom.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMDE2ODhlNTUtYjdiOS00OTlmLTg5OGMtMGNjZWZmNWE4MGJiXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "38184963",
+      "douban_url": "https://movie.douban.com/subject/38184963/?suggest=UNABOMBER",
+      "imdb_id": "tt6933238",
+      "tmdb_id": "1492640",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "douban_strict_title",
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "Stella Next to Me",
+      "weeks_in_top_10": 2,
+      "cn_title": "",
+      "year": "2025",
+      "poster_candidates": [
+        "https://m.media-amazon.com/images/M/MV5BZGI0ZGZkZTMtYzI5Mi00YmUzLWJkZWMtZTZjMTM1NTI2ZTEyXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt37985079",
       "tmdb_id": "",
       "metadata_match_version": 2,
       "metadata_confidence": "medium",
@@ -86,19 +108,19 @@
       ]
     },
     {
-      "rank": 5,
-      "title": "Anora",
-      "weeks_in_top_10": 1,
+      "rank": 6,
+      "title": "Iron Man",
+      "weeks_in_top_10": 2,
       "cn_title": "",
-      "year": "2024",
+      "year": "2008",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/335783623/s332/anora.jpg",
-        "https://m.media-amazon.com/images/M/MV5BYThiN2M0NTItODRmNC00NDhlLWFiYTgtMWM2YTEyYzI3ZTY1XkEyXkFqcGc@._V1_.jpg"
+        "https://images.justwatch.com/poster/348291280/s332/aianman.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt28607951",
-      "tmdb_id": "1064213",
+      "imdb_id": "tt0371746",
+      "tmdb_id": "1726",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
       "metadata_evidence": [
@@ -108,104 +130,88 @@
       ]
     },
     {
-      "rank": 6,
-      "title": "Muroi Shinji: Stay Alive",
-      "weeks_in_top_10": 4,
-      "cn_title": "",
-      "year": "2024",
-      "poster_candidates": [
-        "https://m.media-amazon.com/images/M/MV5BY2U0YmNmYzQtNzYxNi00YTM5LTkwY2YtYTIyNGZmYTg3MWYxXkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt33452952",
-      "tmdb_id": "",
-      "metadata_match_version": 2,
-      "metadata_confidence": "medium",
-      "metadata_evidence": [
-        "imdb_verified_title_alias",
-        "verified_netflix_identity",
-        "exact_imdb_id_year"
-      ]
-    },
-    {
       "rank": 7,
-      "title": "Muroi Shinji: Not Defeated",
-      "weeks_in_top_10": 7,
+      "title": "366 Days",
+      "weeks_in_top_10": 1,
       "cn_title": "",
-      "year": "2024",
+      "year": "2011",
       "poster_candidates": [
-        "https://m.media-amazon.com/images/M/MV5BNTgzMThkZmUtODczNi00MWE0LWE0MmItNjMzNmY1MDRjYmZhXkEyXkFqcGc@._V1_.jpg"
+        "https://images.justwatch.com/poster/343408526/s332/.jpg",
+        "https://m.media-amazon.com/images/M/MV5BZThiZGE1NDEtMjAyMS00NmQzLTgzOTMtOWQwNWM2MjQ2ZWIyXkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt33184066",
-      "tmdb_id": "",
+      "imdb_id": "tt1984098",
+      "tmdb_id": "179975",
       "metadata_match_version": 2,
-      "metadata_confidence": "medium",
+      "metadata_confidence": "high",
       "metadata_evidence": [
-        "imdb_verified_title_alias",
-        "verified_netflix_identity",
-        "exact_imdb_id_year"
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
       ]
     },
     {
       "rank": 8,
-      "title": "Bayside Shakedown 4: The Final",
-      "weeks_in_top_10": 2,
+      "title": "Mononoke The Movie: Chapter Ⅲ - The Curse of the Serpent",
+      "weeks_in_top_10": 1,
       "cn_title": "",
-      "year": "2012",
+      "year": "2026",
       "poster_candidates": [
-        "https://m.media-amazon.com/images/M/MV5BMThlNjBmZjUtZDZhMC00OWQ4LWEyYzktODYxMzc1OWI5OTMzXkEyXkFqcGc@._V1_.jpg"
+        "https://m.media-amazon.com/images/M/MV5BMzhjZDc1ZDUtMTFiYS00ODAwLTlmOGMtZTgyOTNkYTliOWEwXkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt2124014",
+      "imdb_id": "tt36282134",
       "tmdb_id": "",
       "metadata_match_version": 2,
       "metadata_confidence": "medium",
       "metadata_evidence": [
-        "imdb_verified_title_alias",
-        "verified_netflix_identity",
-        "exact_imdb_id_year"
+        "imdb_strict_title"
       ]
     },
     {
       "rank": 9,
-      "title": "Ichi the Killer 4K",
-      "weeks_in_top_10": 2,
+      "title": "Untraceable",
+      "weeks_in_top_10": 1,
       "cn_title": "",
-      "year": "2001",
+      "year": "2008",
       "poster_candidates": [
-        "https://m.media-amazon.com/images/M/MV5BODJmM2NjNDctZjE3My00ZjE3LWExYzUtYjg1N2YyODEzNGIyXkEyXkFqcGc@._V1_.jpg"
+        "https://images.justwatch.com/poster/330079246/s332/untraceable.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMTYyNTcwODYzMF5BMl5BanBnXkFtZTcwNjMwMzU1MQ@@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt0296042",
-      "tmdb_id": "",
+      "imdb_id": "tt0880578",
+      "tmdb_id": "8090",
       "metadata_match_version": 2,
-      "metadata_confidence": "medium",
+      "metadata_confidence": "high",
       "metadata_evidence": [
-        "imdb_strict_title"
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
       ]
     },
     {
       "rank": 10,
-      "title": "Bayside Shakedown",
+      "title": "The Silence of the Lambs",
       "weeks_in_top_10": 1,
       "cn_title": "",
-      "year": "1998",
+      "year": "1991",
       "poster_candidates": [
-        "https://m.media-amazon.com/images/M/MV5BY2FjZGZiYzYtNTUyOS00NGJhLTkzYjgtNTczZjI1YjM0MDlkXkEyXkFqcGc@._V1_.jpg"
+        "https://images.justwatch.com/poster/337000947/s332/yangdeulyi-cimmug.jpg",
+        "https://m.media-amazon.com/images/M/MV5BNDdhOGJhYzctYzYwZC00YmI2LWI0MjctYjg4ODdlMDExYjBlXkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt0210199",
-      "tmdb_id": "",
+      "imdb_id": "tt0102926",
+      "tmdb_id": "274",
       "metadata_match_version": 2,
-      "metadata_confidence": "medium",
+      "metadata_confidence": "high",
       "metadata_evidence": [
-        "imdb_strict_title"
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
       ]
     }
   ],
@@ -213,7 +219,7 @@
     {
       "rank": 1,
       "title": "Plastic Beauty",
-      "weeks_in_top_10": 2,
+      "weeks_in_top_10": 3,
       "season": "Plastic Beauty: Season 1",
       "cn_title": "",
       "year": "2026",
@@ -232,35 +238,79 @@
     },
     {
       "rank": 2,
-      "title": "A Case",
-      "weeks_in_top_10": 2,
-      "season": "A Case: Season 1",
-      "cn_title": "",
-      "year": "",
-      "poster_candidates": [],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "",
-      "tmdb_id": "",
-      "metadata_match_version": 2,
-      "metadata_confidence": "none",
-      "metadata_evidence": []
-    },
-    {
-      "rank": 3,
-      "title": "The Scandal",
+      "title": "STEEL BALL RUN JoJo’s Bizarre Adventure",
       "weeks_in_top_10": 1,
-      "season": "The Scandal: Limited Series",
+      "season": "STEEL BALL RUN JoJo’s Bizarre Adventure: 2nd-3rd STAGE",
       "cn_title": "",
       "year": "2026",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/354912099/s332/seukaendeul-2026.jpg",
-        "https://m.media-amazon.com/images/M/MV5BODMyM2VhYzktZTZhZi00NWNkLWI5NjgtNmU5MmI0ZDJiN2QzXkEyXkFqcGc@._V1_.jpg"
+        "https://m.media-amazon.com/images/M/MV5BZDFmY2JjYmYtNjZhOC00ODJkLTliMjYtM2Y4YzBjMWE0ZGZjXkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt36347588",
-      "tmdb_id": "275102",
+      "imdb_id": "tt38268282",
+      "tmdb_id": "",
+      "metadata_match_version": 2,
+      "metadata_confidence": "medium",
+      "metadata_evidence": [
+        "imdb_strict_title"
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "The Villager of Level 999",
+      "weeks_in_top_10": 1,
+      "season": "The Villager of Level 999: Season 1",
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://m.media-amazon.com/images/M/MV5BOGM4YzNhN2YtMTYzNy00NDk4LWI1OWYtZGYwYWM5ZjIzMGM4XkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt38262097",
+      "tmdb_id": "",
+      "metadata_match_version": 2,
+      "metadata_confidence": "medium",
+      "metadata_evidence": [
+        "imdb_strict_title"
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "A Wild Last Boss Appeared!",
+      "weeks_in_top_10": 1,
+      "season": "A Wild Last Boss Appeared!: Season 1",
+      "cn_title": "",
+      "year": "2025",
+      "poster_candidates": [
+        "https://m.media-amazon.com/images/M/MV5BZjY0NTQ2YjYtOGVjZS00ZmQ4LTkyNGYtMGYzODczMDAwMTc3XkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt33258199",
+      "tmdb_id": "",
+      "metadata_match_version": 2,
+      "metadata_confidence": "medium",
+      "metadata_evidence": [
+        "imdb_strict_title"
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "Boss",
+      "weeks_in_top_10": 1,
+      "season": "Boss: Season 1",
+      "cn_title": "",
+      "year": "2011",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/319923668/s332/boss.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMjFmNDNjZTYtYTkzYS00MDMxLTljNWItOTdlMDNlNDcwNzM5XkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt1833285",
+      "tmdb_id": "38922",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
       "metadata_evidence": [
@@ -270,9 +320,9 @@
       ]
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "Eerie: Invisible Face",
-      "weeks_in_top_10": 1,
+      "weeks_in_top_10": 2,
       "season": "Eerie: Invisible Face: Season 1",
       "cn_title": "",
       "year": "2018",
@@ -290,9 +340,49 @@
       ]
     },
     {
-      "rank": 5,
+      "rank": 7,
+      "title": "STEEL BALL RUN JoJo’s Bizarre Adventure",
+      "weeks_in_top_10": 3,
+      "season": "STEEL BALL RUN JoJo’s Bizarre Adventure: 1st STAGE",
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://m.media-amazon.com/images/M/MV5BZDFmY2JjYmYtNjZhOC00ODJkLTliMjYtM2Y4YzBjMWE0ZGZjXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt38268282",
+      "tmdb_id": "",
+      "metadata_match_version": 2,
+      "metadata_confidence": "medium",
+      "metadata_evidence": [
+        "imdb_strict_title"
+      ]
+    },
+    {
+      "rank": 8,
+      "title": "Mushoku Tensei: Jobless Reincarnation",
+      "weeks_in_top_10": 11,
+      "season": "Mushoku Tensei: Jobless Reincarnation: Season 3",
+      "cn_title": "",
+      "year": "2021",
+      "poster_candidates": [
+        "https://m.media-amazon.com/images/M/MV5BYWQwNjk3MDItNDAxMS00YTQ2LWEyNDctMGYyZTE5OGQxNGQ1XkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt13293588",
+      "tmdb_id": "",
+      "metadata_match_version": 2,
+      "metadata_confidence": "medium",
+      "metadata_evidence": [
+        "imdb_strict_title"
+      ]
+    },
+    {
+      "rank": 9,
       "title": "Vivant",
-      "weeks_in_top_10": 17,
+      "weeks_in_top_10": 18,
       "season": "Vivant: Season 1",
       "cn_title": "",
       "year": "2023",
@@ -313,101 +403,18 @@
       ]
     },
     {
-      "rank": 6,
-      "title": "Ameku M.D. Doctor Detective",
-      "weeks_in_top_10": 1,
-      "season": "Ameku M.D. Doctor Detective: Season 1",
-      "cn_title": "",
-      "year": "2025",
-      "poster_candidates": [
-        "https://m.media-amazon.com/images/M/MV5BZGY3OTgzMzEtNmJlNC00ZWIxLWE5YTEtMjg1MDNiNzI0MzYyXkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt33384314",
-      "tmdb_id": "",
-      "metadata_match_version": 2,
-      "metadata_confidence": "medium",
-      "metadata_evidence": [
-        "imdb_strict_title"
-      ]
-    },
-    {
-      "rank": 7,
-      "title": "Smoking Behind the Supermarket With You",
-      "weeks_in_top_10": 11,
-      "season": "Smoking Behind the Supermarket With You: Season 1",
-      "cn_title": "",
-      "year": "2026",
-      "poster_candidates": [
-        "https://m.media-amazon.com/images/M/MV5BMmQyMTI2NGYtMmQzMi00YTU3LWJmZmEtYjdlMjdjODMyMTlmXkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt37614297",
-      "tmdb_id": "",
-      "metadata_match_version": 2,
-      "metadata_confidence": "medium",
-      "metadata_evidence": [
-        "imdb_strict_title"
-      ]
-    },
-    {
-      "rank": 8,
-      "title": "25 Years of You",
-      "weeks_in_top_10": 5,
-      "season": "25 Years of You: Season 1",
-      "cn_title": "",
-      "year": "2026",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/350459628/s332/gao-bai-25nian-mu-nomi-mi.jpg",
-        "https://m.media-amazon.com/images/M/MV5BOGQ0YjU3NDktYWE5Ny00OGYyLThjMTMtNTU4YzdlNDE4ZTUxXkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt43619278",
-      "tmdb_id": "326063",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 9,
-      "title": "Mushoku Tensei: Jobless Reincarnation",
-      "weeks_in_top_10": 10,
-      "season": "Mushoku Tensei: Jobless Reincarnation: Season 3",
-      "cn_title": "",
-      "year": "2021",
-      "poster_candidates": [
-        "https://m.media-amazon.com/images/M/MV5BYWQwNjk3MDItNDAxMS00YTQ2LWEyNDctMGYyZTE5OGQxNGQ1XkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt13293588",
-      "tmdb_id": "",
-      "metadata_match_version": 2,
-      "metadata_confidence": "medium",
-      "metadata_evidence": [
-        "imdb_strict_title"
-      ]
-    },
-    {
       "rank": 10,
-      "title": "Until the T-shirt Dries",
-      "weeks_in_top_10": 12,
-      "season": "Until the T-shirt Dries: Season 1",
+      "title": "Marumo's Story",
+      "weeks_in_top_10": 1,
+      "season": "Marumo's Story: Season 1",
       "cn_title": "",
-      "year": "2026",
+      "year": "2011",
       "poster_candidates": [
-        "https://m.media-amazon.com/images/M/MV5BYjNlNWEwMTYtYjJlNy00YzJlLTllNmEtY2U0YmZmZThjNmVhXkEyXkFqcGc@._V1_.jpg"
+        "https://m.media-amazon.com/images/M/MV5BZDQ5NWI3MGUtODNkZi00NTA0LWFiODEtOTE0MWIwMTM2YWYyXkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt43639297",
+      "imdb_id": "tt1850764",
       "tmdb_id": "",
       "metadata_match_version": 2,
       "metadata_confidence": "medium",
@@ -417,5 +424,5 @@
     }
   ],
   "metadata_version": 2,
-  "metadata_enriched_at": "2026-10-06T00:49:23.402474+00:00"
+  "metadata_enriched_at": "2026-10-06T21:06:54.947762+00:00"
 }

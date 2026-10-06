@@ -1,12 +1,34 @@
 {
-  "week": "2026-09-27",
+  "week": "2026-10-04",
   "country_iso2": "GB",
   "country_name": "United Kingdom",
   "films": [
     {
       "rank": 1,
-      "title": "UNABOMBER",
+      "title": "The Widower: 'Til Death Do Us Part",
       "weeks_in_top_10": 1,
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/354591590/s332/the-widower-til-death-do-us-part.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMjMyODRmODYtNGM1MS00MzQ5LWFkM2MtY2E0NTM3NWNhOWEwXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt44568097",
+      "tmdb_id": "1758536",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "UNABOMBER",
+      "weeks_in_top_10": 2,
       "cn_title": "大学炸弹客",
       "year": "2026",
       "poster_candidates": [
@@ -28,19 +50,19 @@
       ]
     },
     {
-      "rank": 2,
-      "title": "Wasteman",
+      "rank": 3,
+      "title": "Kraven the Hunter",
       "weeks_in_top_10": 1,
       "cn_title": "",
-      "year": "2026",
+      "year": "2024",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/344231304/s332/wasteman.jpg",
-        "https://m.media-amazon.com/images/M/MV5BNzg2ZjlkNTgtMWE4Mi00YzAwLWE1NTMtMzQzYjcwOTVhMmUyXkEyXkFqcGc@._V1_.jpg"
+        "https://images.justwatch.com/poster/335816082/s332/kreiven-o-kynigos.jpg",
+        "https://m.media-amazon.com/images/M/MV5BZDU0YTI5ODAtN2NmMS00YTg3LTgyNDItN2RmOWEzOTkzZjcyXkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt29028515",
-      "tmdb_id": "1307373",
+      "imdb_id": "tt8790086",
+      "tmdb_id": "539972",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
       "metadata_evidence": [
@@ -50,9 +72,9 @@
       ]
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "Sonic the Hedgehog 3",
-      "weeks_in_top_10": 1,
+      "weeks_in_top_10": 2,
       "cn_title": "",
       "year": "2024",
       "poster_candidates": [
@@ -72,33 +94,53 @@
       ]
     },
     {
-      "rank": 4,
-      "title": "Best of the Best",
-      "weeks_in_top_10": 2,
-      "cn_title": "最佳舞伴",
-      "year": "2026",
+      "rank": 5,
+      "title": "The Lego Movie",
+      "weeks_in_top_10": 1,
+      "cn_title": "",
+      "year": "2014",
       "poster_candidates": [
-        "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2935920442.jpg",
-        "https://images.justwatch.com/poster/354777535/s332/best-of-the-best.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMWJiYzQ5MmMtNzIyNS00YzQ0LTkyNmQtZmQ0NWQ4MmFhMzU5XkEyXkFqcGc@._V1_.jpg"
+        "https://images.justwatch.com/poster/292315682/s332/the-lego-movie.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMTg4MDk1ODExN15BMl5BanBnXkFtZTgwNzIyNjg3MDE@._V1_.jpg"
       ],
-      "douban_id": "36565928",
-      "douban_url": "https://movie.douban.com/subject/36565928/?suggest=Best+of+the+Best",
-      "imdb_id": "tt16478058",
-      "tmdb_id": "1514863",
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt1490017",
+      "tmdb_id": "137106",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
       "metadata_evidence": [
-        "douban_strict_title",
         "justwatch_strict_title",
         "imdb_strict_title",
         "year_consensus"
       ]
     },
     {
-      "rank": 5,
+      "rank": 6,
+      "title": "Doing Life",
+      "weeks_in_top_10": 1,
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/355162793/s332/doing-life.jpg",
+        "https://m.media-amazon.com/images/M/MV5BYmNlYzg5NmMtMWZlMi00MWMwLWJmODEtMzVhOTQ3NjEzOGM2XkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt36429458",
+      "tmdb_id": "1458857",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 7,
       "title": "Aileen: Queen of the Serial Killers",
-      "weeks_in_top_10": 3,
+      "weeks_in_top_10": 4,
       "cn_title": "",
       "year": "2025",
       "poster_candidates": [
@@ -118,19 +160,19 @@
       ]
     },
     {
-      "rank": 6,
-      "title": "The Judge",
-      "weeks_in_top_10": 1,
+      "rank": 8,
+      "title": "How to Lose a Guy in 10 Days",
+      "weeks_in_top_10": 2,
       "cn_title": "",
-      "year": "2014",
+      "year": "2003",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/311745770/s332/the-judge.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMTcyNzIxOTIwMV5BMl5BanBnXkFtZTgwMzE0NjQwMjE@._V1_.jpg"
+        "https://images.justwatch.com/poster/294804544/s332/Wie-werde-ich-ihn-los-in-10-Tagen.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMjE4NTA1NzExN15BMl5BanBnXkFtZTYwNjc3MjM3._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt1872194",
-      "tmdb_id": "205587",
+      "imdb_id": "tt0251127",
+      "tmdb_id": "9919",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
       "metadata_evidence": [
@@ -140,9 +182,31 @@
       ]
     },
     {
-      "rank": 7,
+      "rank": 9,
+      "title": "Wasteman",
+      "weeks_in_top_10": 2,
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/344231304/s332/wasteman.jpg",
+        "https://m.media-amazon.com/images/M/MV5BNzg2ZjlkNTgtMWE4Mi00YzAwLWE1NTMtMzQzYjcwOTVhMmUyXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt29028515",
+      "tmdb_id": "1307373",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 10,
       "title": "The Whisper Man",
-      "weeks_in_top_10": 5,
+      "weeks_in_top_10": 6,
       "cn_title": "耳语者",
       "year": "2026",
       "poster_candidates": [
@@ -162,79 +226,36 @@
         "imdb_strict_title",
         "year_consensus"
       ]
-    },
-    {
-      "rank": 8,
-      "title": "Birds of Prey (And the Fantabulous Emancipation of One Harley Quinn)",
-      "weeks_in_top_10": 1,
-      "cn_title": "",
-      "year": "2020",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/302215442/s332/birds-of-prey-and-the-fantabulous-emancipation-of-one-harley-quinn.jpg",
-        "https://m.media-amazon.com/images/M/MV5BNTgwNWEwOWMtNGIxMy00YzU5LTk2MzgtMjAzMmM1MjZiY2RiXkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt7713068",
-      "tmdb_id": "495764",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 9,
-      "title": "Ted",
-      "weeks_in_top_10": 2,
-      "cn_title": "",
-      "year": "2012",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/308841313/s332/ted.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMTQ1OTU0ODcxMV5BMl5BanBnXkFtZTcwOTMxNTUwOA@@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt1637725",
-      "tmdb_id": "72105",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 10,
-      "title": "Twilight",
-      "weeks_in_top_10": 2,
-      "cn_title": "",
-      "year": "2008",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/305252331/s332/twilight.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMTQ2NzUxMTAxN15BMl5BanBnXkFtZTcwMzEyMTIwMg@@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt1099212",
-      "tmdb_id": "8966",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
     }
   ],
   "tv": [
     {
       "rank": 1,
+      "title": "Outside",
+      "weeks_in_top_10": 1,
+      "season": "Outside: Season 1",
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/350514030/s332/outside.jpg",
+        "https://m.media-amazon.com/images/M/MV5BOTI3OTkyYmEtNzNmZi00OTlkLThlNGItZjEzMjRjZjZlMWNkXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt44877899",
+      "tmdb_id": "333016",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 2,
       "title": "Monster: The Lizzie Borden Story",
-      "weeks_in_top_10": 2,
+      "weeks_in_top_10": 3,
       "season": "Monster: The Lizzie Borden Story: Season 1",
       "cn_title": "",
       "year": "2026",
@@ -252,9 +273,9 @@
       ]
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "The Gentlemen",
-      "weeks_in_top_10": 4,
+      "weeks_in_top_10": 5,
       "season": "The Gentlemen: Season 2",
       "cn_title": "",
       "year": "2024",
@@ -275,9 +296,55 @@
       ]
     },
     {
-      "rank": 3,
-      "title": "Wonka's The Golden Ticket",
+      "rank": 4,
+      "title": "Leaving",
+      "weeks_in_top_10": 2,
+      "season": "Leaving: Season 1",
+      "cn_title": "",
+      "year": "2012",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/133329261/s332/leaving.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMDVmNWJiMGUtMDc3NS00ZDdiLWJjZTQtYjE4MWU4MDk3YTQ3XkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt2369037",
+      "tmdb_id": "65609",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "East of Eden",
       "weeks_in_top_10": 1,
+      "season": "East of Eden: Limited Series",
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/355131667/s332/east-of-eden-2026.jpg",
+        "https://m.media-amazon.com/images/M/MV5BNmI2ODMyNjctZTA1MS00ODNhLWI3ZjAtMmE4MDE4OWRjMWZlXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt21097264",
+      "tmdb_id": "258165",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "Wonka's The Golden Ticket",
+      "weeks_in_top_10": 2,
       "season": "Wonka's The Golden Ticket: Season 1",
       "cn_title": "",
       "year": "2026",
@@ -298,9 +365,9 @@
       ]
     },
     {
-      "rank": 4,
+      "rank": 7,
       "title": "The Gentlemen",
-      "weeks_in_top_10": 14,
+      "weeks_in_top_10": 15,
       "season": "The Gentlemen: Season 1",
       "cn_title": "",
       "year": "2024",
@@ -321,99 +388,10 @@
       ]
     },
     {
-      "rank": 5,
-      "title": "Not a Stranger",
-      "weeks_in_top_10": 1,
-      "season": "Not a Stranger: Season 1",
-      "cn_title": "",
-      "year": "2026",
-      "poster_candidates": [
-        "https://m.media-amazon.com/images/M/MV5BYWNjNzcxYzctZGM4Zi00OWUwLTkyODctNzc1Y2U4MjZiZDY0XkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt39397536",
-      "tmdb_id": "",
-      "metadata_match_version": 2,
-      "metadata_confidence": "medium",
-      "metadata_evidence": [
-        "imdb_strict_title"
-      ]
-    },
-    {
-      "rank": 6,
-      "title": "The Real Unforgotten",
-      "weeks_in_top_10": 3,
-      "season": "The Real Unforgotten: Season 1",
-      "cn_title": "",
-      "year": "2025",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/326902889/s332/the-real-unforgotten.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMjQyZTQ3MTItZGY5Yy00MTgyLThhOGQtMzE4NmQzOTY1ZTQwXkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt35853579",
-      "tmdb_id": "284053",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 7,
-      "title": "Crew Girl",
-      "weeks_in_top_10": 3,
-      "season": "Crew Girl: Season 1",
-      "cn_title": "",
-      "year": "2026",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/354594032/s332/crew-girl.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMWVmYTE5OWQtOWJlMi00NzY4LWJmMTAtZDQ2ZTg1MTZhNWVlXkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt38218082",
-      "tmdb_id": "300507",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
       "rank": 8,
-      "title": "Raw",
-      "weeks_in_top_10": 1,
-      "season": "Raw: September 21, 2026",
-      "cn_title": "",
-      "year": "2008",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/321050063/s332/raw.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMWMzY2RmM2UtNzZlOS00NDI2LWFmYzctZWI2NDFmNjAxOTliXkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt1233560",
-      "tmdb_id": "7449",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 9,
       "title": "Ms. Rachel",
-      "weeks_in_top_10": 41,
-      "season": "Ms. Rachel: Season 1",
+      "weeks_in_top_10": 1,
+      "season": "Ms. Rachel: Season 3",
       "cn_title": "",
       "year": "2025",
       "poster_candidates": [
@@ -433,20 +411,43 @@
       ]
     },
     {
-      "rank": 10,
-      "title": "Leaving",
+      "rank": 9,
+      "title": "Raw",
       "weeks_in_top_10": 1,
-      "season": "Leaving: Season 1",
+      "season": "Raw: September 28, 2026",
       "cn_title": "",
-      "year": "2012",
+      "year": "2008",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/133329261/s332/leaving.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMDVmNWJiMGUtMDc3NS00ZDdiLWJjZTQtYjE4MWU4MDk3YTQ3XkEyXkFqcGc@._V1_.jpg"
+        "https://images.justwatch.com/poster/321050063/s332/raw.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMWMzY2RmM2UtNzZlOS00NDI2LWFmYzctZWI2NDFmNjAxOTliXkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt2369037",
-      "tmdb_id": "65609",
+      "imdb_id": "tt1233560",
+      "tmdb_id": "7449",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 10,
+      "title": "LEGO ONE PIECE",
+      "weeks_in_top_10": 1,
+      "season": "LEGO ONE PIECE: Season 1",
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/354213775/s332/lego-one-piece.jpg",
+        "https://m.media-amazon.com/images/M/MV5BN2NlMGYxMzYtN2Y5My00NWY3LWI0NDItNGY3YjE0YmI0NDFjXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt41538904",
+      "tmdb_id": "318918",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
       "metadata_evidence": [
@@ -457,5 +458,5 @@
     }
   ],
   "metadata_version": 2,
-  "metadata_enriched_at": "2026-10-06T00:49:23.402474+00:00"
+  "metadata_enriched_at": "2026-10-06T21:06:54.947762+00:00"
 }

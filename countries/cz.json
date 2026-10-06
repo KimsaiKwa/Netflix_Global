@@ -1,12 +1,12 @@
 {
-  "week": "2026-09-27",
+  "week": "2026-10-04",
   "country_iso2": "CZ",
   "country_name": "Czech Republic",
   "films": [
     {
       "rank": 1,
       "title": "Second Chances",
-      "weeks_in_top_10": 1,
+      "weeks_in_top_10": 2,
       "cn_title": "",
       "year": "2013",
       "poster_candidates": [
@@ -28,7 +28,7 @@
     {
       "rank": 2,
       "title": "UNABOMBER",
-      "weeks_in_top_10": 1,
+      "weeks_in_top_10": 2,
       "cn_title": "大学炸弹客",
       "year": "2026",
       "poster_candidates": [
@@ -51,23 +51,21 @@
     },
     {
       "rank": 3,
-      "title": "Best of the Best",
-      "weeks_in_top_10": 2,
-      "cn_title": "最佳舞伴",
+      "title": "The Widower: 'Til Death Do Us Part",
+      "weeks_in_top_10": 1,
+      "cn_title": "",
       "year": "2026",
       "poster_candidates": [
-        "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2935920442.jpg",
-        "https://images.justwatch.com/poster/354777535/s332/best-of-the-best.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMWJiYzQ5MmMtNzIyNS00YzQ0LTkyNmQtZmQ0NWQ4MmFhMzU5XkEyXkFqcGc@._V1_.jpg"
+        "https://images.justwatch.com/poster/354591590/s332/the-widower-til-death-do-us-part.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMjMyODRmODYtNGM1MS00MzQ5LWFkM2MtY2E0NTM3NWNhOWEwXkEyXkFqcGc@._V1_.jpg"
       ],
-      "douban_id": "36565928",
-      "douban_url": "https://movie.douban.com/subject/36565928/?suggest=Best+of+the+Best",
-      "imdb_id": "tt16478058",
-      "tmdb_id": "1514863",
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt44568097",
+      "tmdb_id": "1758536",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
       "metadata_evidence": [
-        "douban_strict_title",
         "justwatch_strict_title",
         "imdb_strict_title",
         "year_consensus"
@@ -76,7 +74,7 @@
     {
       "rank": 4,
       "title": "Ted",
-      "weeks_in_top_10": 2,
+      "weeks_in_top_10": 3,
       "cn_title": "",
       "year": "2012",
       "poster_candidates": [
@@ -97,8 +95,74 @@
     },
     {
       "rank": 5,
+      "title": "Doing Life",
+      "weeks_in_top_10": 1,
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/355162793/s332/doing-life.jpg",
+        "https://m.media-amazon.com/images/M/MV5BYmNlYzg5NmMtMWZlMi00MWMwLWJmODEtMzVhOTQ3NjEzOGM2XkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt36429458",
+      "tmdb_id": "1458857",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "Ted 2",
+      "weeks_in_top_10": 2,
+      "cn_title": "",
+      "year": "2015",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/309012040/s332/meda-2.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMjEwMDg3MDk1NF5BMl5BanBnXkFtZTgwNjYyODA1NTE@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt2637276",
+      "tmdb_id": "214756",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "The Mummy",
+      "weeks_in_top_10": 3,
+      "cn_title": "",
+      "year": "1999",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/347395520/s332/miira.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMTY4YWE0OGMtNjU0Yi00YzIwLTk3NTktM2ZiYWQwNjM4MmMxXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt0120616",
+      "tmdb_id": "564",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 8,
       "title": "The Whisper Man",
-      "weeks_in_top_10": 5,
+      "weeks_in_top_10": 6,
       "cn_title": "耳语者",
       "year": "2026",
       "poster_candidates": [
@@ -120,31 +184,28 @@
       ]
     },
     {
-      "rank": 6,
-      "title": "Dog Man",
+      "rank": 9,
+      "title": "Schumacher ’94 — The Birth of a Legend",
       "weeks_in_top_10": 1,
       "cn_title": "",
-      "year": "2025",
+      "year": "2026",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/343784202/s332/untitled-dreamworks-animation-film-2024.jpg",
-        "https://m.media-amazon.com/images/M/MV5BNDVlZGQyM2MtNjA2OS00MjdkLThiNDQtZTYzMTA1MGU3M2M0XkEyXkFqcGc@._V1_.jpg"
+        "https://m.media-amazon.com/images/M/MV5BOWI2NmQ5ZmUtYmIxZi00YjViLWJmMjEtNjM3NmQ5MTQ5Y2Q3XkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt10954718",
-      "tmdb_id": "774370",
+      "imdb_id": "tt39453404",
+      "tmdb_id": "",
       "metadata_match_version": 2,
-      "metadata_confidence": "high",
+      "metadata_confidence": "medium",
       "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
+        "imdb_strict_title"
       ]
     },
     {
-      "rank": 7,
+      "rank": 10,
       "title": "Shrek",
-      "weeks_in_top_10": 16,
+      "weeks_in_top_10": 17,
       "cn_title": "",
       "year": "2001",
       "poster_candidates": [
@@ -162,79 +223,13 @@
         "imdb_strict_title",
         "year_consensus"
       ]
-    },
-    {
-      "rank": 8,
-      "title": "Ted 2",
-      "weeks_in_top_10": 1,
-      "cn_title": "",
-      "year": "2015",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/309012040/s332/meda-2.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMjEwMDg3MDk1NF5BMl5BanBnXkFtZTgwNjYyODA1NTE@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt2637276",
-      "tmdb_id": "214756",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 9,
-      "title": "Aileen: Queen of the Serial Killers",
-      "weeks_in_top_10": 3,
-      "cn_title": "",
-      "year": "2025",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/338118240/s332/aileen-la-demoiselle-de-la-mort.jpg",
-        "https://m.media-amazon.com/images/M/MV5BYjg4MDg1YTAtNDYwMC00MGEyLTk3NTYtMWY4YjJmNDMyZDdkXkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt38457052",
-      "tmdb_id": "1550569",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 10,
-      "title": "Shrek 2",
-      "weeks_in_top_10": 9,
-      "cn_title": "",
-      "year": "2004",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/305333922/s332/shrek-2.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMzNmNjQ1NmUtNzhiZS00YWE2LTg4N2ItZTA2ODdmOTMwOTQ1XkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt0298148",
-      "tmdb_id": "809",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
     }
   ],
   "tv": [
     {
       "rank": 1,
       "title": "Monster: The Lizzie Borden Story",
-      "weeks_in_top_10": 2,
+      "weeks_in_top_10": 3,
       "season": "Monster: The Lizzie Borden Story: Season 1",
       "cn_title": "",
       "year": "2026",
@@ -253,39 +248,42 @@
     },
     {
       "rank": 2,
-      "title": "Not a Stranger",
-      "weeks_in_top_10": 2,
-      "season": "Not a Stranger: Season 1",
+      "title": "East of Eden",
+      "weeks_in_top_10": 1,
+      "season": "East of Eden: Limited Series",
       "cn_title": "",
       "year": "2026",
       "poster_candidates": [
-        "https://m.media-amazon.com/images/M/MV5BYWNjNzcxYzctZGM4Zi00OWUwLTkyODctNzc1Y2U4MjZiZDY0XkEyXkFqcGc@._V1_.jpg"
+        "https://images.justwatch.com/poster/355131667/s332/east-of-eden-2026.jpg",
+        "https://m.media-amazon.com/images/M/MV5BNmI2ODMyNjctZTA1MS00ODNhLWI3ZjAtMmE4MDE4OWRjMWZlXkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt39397536",
-      "tmdb_id": "",
+      "imdb_id": "tt21097264",
+      "tmdb_id": "258165",
       "metadata_match_version": 2,
-      "metadata_confidence": "medium",
+      "metadata_confidence": "high",
       "metadata_evidence": [
-        "imdb_strict_title"
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
       ]
     },
     {
       "rank": 3,
-      "title": "Crew Girl",
-      "weeks_in_top_10": 3,
-      "season": "Crew Girl: Season 1",
+      "title": "LEGO ONE PIECE",
+      "weeks_in_top_10": 1,
+      "season": "LEGO ONE PIECE: Season 1",
       "cn_title": "",
       "year": "2026",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/354594032/s332/crew-girl.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMWVmYTE5OWQtOWJlMi00NzY4LWJmMTAtZDQ2ZTg1MTZhNWVlXkEyXkFqcGc@._V1_.jpg"
+        "https://images.justwatch.com/poster/354213775/s332/lego-one-piece.jpg",
+        "https://m.media-amazon.com/images/M/MV5BN2NlMGYxMzYtN2Y5My00NWY3LWI0NDItNGY3YjE0YmI0NDFjXkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt38218082",
-      "tmdb_id": "300507",
+      "imdb_id": "tt41538904",
+      "tmdb_id": "318918",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
       "metadata_evidence": [
@@ -296,31 +294,28 @@
     },
     {
       "rank": 4,
-      "title": "Gabby's Dollhouse",
+      "title": "The Final Problem",
       "weeks_in_top_10": 2,
-      "season": "Gabby's Dollhouse: Season 14",
+      "season": "The Final Problem: Limited Series",
       "cn_title": "",
-      "year": "2021",
+      "year": "2026",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/327296475/s332/gabinin-kouzelny-domek.jpg",
-        "https://m.media-amazon.com/images/M/MV5BYjQ5ZjA1NDQtMmVhOS00ZWUyLWI5ZDktODU4MWUyYTljODkwXkEyXkFqcGc@._V1_.jpg"
+        "https://m.media-amazon.com/images/M/MV5BZDI1YTE5ZDEtNDBlNS00MWRlLWJjY2UtYjhiMjhkMDlhMjk5XkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt9165438",
-      "tmdb_id": "111474",
+      "imdb_id": "tt36832679",
+      "tmdb_id": "",
       "metadata_match_version": 2,
-      "metadata_confidence": "high",
+      "metadata_confidence": "medium",
       "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
+        "imdb_strict_title"
       ]
     },
     {
       "rank": 5,
       "title": "Wonka's The Golden Ticket",
-      "weeks_in_top_10": 1,
+      "weeks_in_top_10": 2,
       "season": "Wonka's The Golden Ticket: Season 1",
       "cn_title": "",
       "year": "2026",
@@ -342,8 +337,48 @@
     },
     {
       "rank": 6,
+      "title": "Minerva Academy",
+      "weeks_in_top_10": 2,
+      "season": "Minerva Academy: Season 1",
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://m.media-amazon.com/images/M/MV5BZDI2YTkzYjItZWIzZi00MWFkLWI3MzctYmU3OWVhODUwNjM5XkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt28765828",
+      "tmdb_id": "",
+      "metadata_match_version": 2,
+      "metadata_confidence": "medium",
+      "metadata_evidence": [
+        "imdb_strict_title"
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "Not a Stranger",
+      "weeks_in_top_10": 3,
+      "season": "Not a Stranger: Season 1",
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://m.media-amazon.com/images/M/MV5BYWNjNzcxYzctZGM4Zi00OWUwLTkyODctNzc1Y2U4MjZiZDY0XkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt39397536",
+      "tmdb_id": "",
+      "metadata_match_version": 2,
+      "metadata_confidence": "medium",
+      "metadata_evidence": [
+        "imdb_strict_title"
+      ]
+    },
+    {
+      "rank": 8,
       "title": "The Gentlemen",
-      "weeks_in_top_10": 4,
+      "weeks_in_top_10": 5,
       "season": "The Gentlemen: Season 2",
       "cn_title": "",
       "year": "2024",
@@ -364,59 +399,20 @@
       ]
     },
     {
-      "rank": 7,
-      "title": "Minerva Academy",
-      "weeks_in_top_10": 1,
-      "season": "Minerva Academy: Season 1",
-      "cn_title": "",
-      "year": "2026",
-      "poster_candidates": [
-        "https://m.media-amazon.com/images/M/MV5BZDI2YTkzYjItZWIzZi00MWFkLWI3MzctYmU3OWVhODUwNjM5XkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt28765828",
-      "tmdb_id": "",
-      "metadata_match_version": 2,
-      "metadata_confidence": "medium",
-      "metadata_evidence": [
-        "imdb_strict_title"
-      ]
-    },
-    {
-      "rank": 8,
-      "title": "The Final Problem",
-      "weeks_in_top_10": 1,
-      "season": "The Final Problem: Limited Series",
-      "cn_title": "",
-      "year": "2026",
-      "poster_candidates": [
-        "https://m.media-amazon.com/images/M/MV5BZDI1YTE5ZDEtNDBlNS00MWRlLWJjY2UtYjhiMjhkMDlhMjk5XkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt36832679",
-      "tmdb_id": "",
-      "metadata_match_version": 2,
-      "metadata_confidence": "medium",
-      "metadata_evidence": [
-        "imdb_strict_title"
-      ]
-    },
-    {
       "rank": 9,
-      "title": "The Perfect Lie",
-      "weeks_in_top_10": 3,
-      "season": "The Perfect Lie: Season 1",
+      "title": "Crew Girl",
+      "weeks_in_top_10": 4,
+      "season": "Crew Girl: Season 1",
       "cn_title": "",
       "year": "2026",
       "poster_candidates": [
-        "https://m.media-amazon.com/images/M/MV5BNTc5M2Q3NWItYjE5MS00ZDdiLTgyNWMtZjQ2YmQxYjExZTE5XkEyXkFqcGc@._V1_.jpg"
+        "https://images.justwatch.com/poster/354594032/s332/crew-girl.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMWVmYTE5OWQtOWJlMi00NzY4LWJmMTAtZDQ2ZTg1MTZhNWVlXkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt47657141",
-      "tmdb_id": "",
+      "imdb_id": "tt38218082",
+      "tmdb_id": "300507",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
       "metadata_evidence": [
@@ -427,19 +423,19 @@
     },
     {
       "rank": 10,
-      "title": "The Gentlemen",
-      "weeks_in_top_10": 14,
-      "season": "The Gentlemen: Season 1",
+      "title": "Gabby's Dollhouse",
+      "weeks_in_top_10": 3,
+      "season": "Gabby's Dollhouse: Season 14",
       "cn_title": "",
-      "year": "2024",
+      "year": "2021",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/354137615/s332/The-Gentlemen.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMzM0YzFhMTYtYjZkNS00MWRmLTg2ZDgtY2MzYjQ5ODVmOTI1XkEyXkFqcGc@._V1_.jpg"
+        "https://images.justwatch.com/poster/327296475/s332/gabinin-kouzelny-domek.jpg",
+        "https://m.media-amazon.com/images/M/MV5BYjQ5ZjA1NDQtMmVhOS00ZWUyLWI5ZDktODU4MWUyYTljODkwXkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt13210838",
-      "tmdb_id": "236235",
+      "imdb_id": "tt9165438",
+      "tmdb_id": "111474",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
       "metadata_evidence": [
@@ -450,5 +446,5 @@
     }
   ],
   "metadata_version": 2,
-  "metadata_enriched_at": "2026-10-06T00:49:23.402474+00:00"
+  "metadata_enriched_at": "2026-10-06T21:06:54.947762+00:00"
 }

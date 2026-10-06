@@ -1,12 +1,12 @@
 {
-  "week": "2026-09-27",
+  "week": "2026-10-04",
   "country_iso2": "KR",
   "country_name": "South Korea",
   "films": [
     {
       "rank": 1,
       "title": "The Ultimate Duo",
-      "weeks_in_top_10": 1,
+      "weeks_in_top_10": 2,
       "cn_title": "",
       "year": "2026",
       "poster_candidates": [
@@ -24,89 +24,8 @@
     },
     {
       "rank": 2,
-      "title": "OK! Madam",
-      "weeks_in_top_10": 4,
-      "cn_title": "",
-      "year": "",
-      "poster_candidates": [],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "",
-      "tmdb_id": "",
-      "metadata_match_version": 2,
-      "metadata_confidence": "none",
-      "metadata_evidence": []
-    },
-    {
-      "rank": 3,
-      "title": "Black Bag",
-      "weeks_in_top_10": 2,
-      "cn_title": "",
-      "year": "2025",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/346325220/s332/black-bag.jpg",
-        "https://m.media-amazon.com/images/M/MV5BNzA1OWU4NDMtMDUxMC00NWI4LWJhYjUtYWQ0OGQ5MTc2NDRjXkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt30988739",
-      "tmdb_id": "1233575",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 4,
-      "title": "Shelter",
-      "weeks_in_top_10": 5,
-      "cn_title": "",
-      "year": "2026",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/341217204/s332/swelteo-2026.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMzI2ODY3MzQtYzllNy00YWM1LWExZTgtOGIwNjk2MmE2MmY2XkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt32357218",
-      "tmdb_id": "1290821",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 5,
-      "title": "Tenet",
-      "weeks_in_top_10": 2,
-      "cn_title": "",
-      "year": "2020",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/340838414/s332/tenes.jpg",
-        "https://m.media-amazon.com/images/M/MV5BNTIzNDIxMzktMzlkMi00MmUyLWFmMjQtZDgwMjBmOGJmNTI3XkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt6723592",
-      "tmdb_id": "577922",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 6,
       "title": "UNABOMBER",
-      "weeks_in_top_10": 1,
+      "weeks_in_top_10": 2,
       "cn_title": "大学炸弹客",
       "year": "2026",
       "poster_candidates": [
@@ -128,19 +47,19 @@
       ]
     },
     {
-      "rank": 7,
-      "title": "Troy",
+      "rank": 3,
+      "title": "The Desperate Chase",
       "weeks_in_top_10": 3,
       "cn_title": "",
-      "year": "2004",
+      "year": "2024",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/344497034/s332/troy.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMTk5MzU1MDMwMF5BMl5BanBnXkFtZTcwNjczODMzMw@@._V1_.jpg"
+        "https://images.justwatch.com/poster/322079058/s332/a-desperate-pursuit.jpg",
+        "https://m.media-amazon.com/images/M/MV5BNmJmY2FjNzgtYTZkYS00ZjRmLWI2YTQtYmFmNzM3NjA2OGM4XkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt0332452",
-      "tmdb_id": "652",
+      "imdb_id": "tt27176023",
+      "tmdb_id": "1063814",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
       "metadata_evidence": [
@@ -150,46 +69,9 @@
       ]
     },
     {
-      "rank": 8,
-      "title": "Demon Slayer: Kimetsu no Yaiba Infinity Castle I",
-      "weeks_in_top_10": 8,
-      "cn_title": "",
-      "year": "",
-      "poster_candidates": [],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "",
-      "tmdb_id": "",
-      "metadata_match_version": 2,
-      "metadata_confidence": "none",
-      "metadata_evidence": []
-    },
-    {
-      "rank": 9,
-      "title": "The Warriors",
-      "weeks_in_top_10": 2,
-      "cn_title": "",
-      "year": "1979",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/312336356/s332/.jpg",
-        "https://m.media-amazon.com/images/M/MV5BYjAzNTNlMTgtYzdlYi00NGViLWIwNzUtNjc3MDg1ZTAxNjc3XkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt0080120",
-      "tmdb_id": "11474",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 10,
+      "rank": 4,
       "title": "Clash of the Titans",
-      "weeks_in_top_10": 1,
+      "weeks_in_top_10": 2,
       "cn_title": "",
       "year": "2010",
       "poster_candidates": [
@@ -207,13 +89,138 @@
         "imdb_strict_title",
         "year_consensus"
       ]
+    },
+    {
+      "rank": 5,
+      "title": "OK! Madam",
+      "weeks_in_top_10": 5,
+      "cn_title": "",
+      "year": "",
+      "poster_candidates": [],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "",
+      "tmdb_id": "",
+      "metadata_match_version": 2,
+      "metadata_confidence": "none",
+      "metadata_evidence": []
+    },
+    {
+      "rank": 6,
+      "title": "The Silence of the Lambs",
+      "weeks_in_top_10": 1,
+      "cn_title": "",
+      "year": "1991",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/337000947/s332/yangdeulyi-cimmug.jpg",
+        "https://m.media-amazon.com/images/M/MV5BNDdhOGJhYzctYzYwZC00YmI2LWI0MjctYjg4ODdlMDExYjBlXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt0102926",
+      "tmdb_id": "274",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "The Mummy",
+      "weeks_in_top_10": 1,
+      "cn_title": "",
+      "year": "1999",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/347395520/s332/miira.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMTY4YWE0OGMtNjU0Yi00YzIwLTk3NTktM2ZiYWQwNjM4MmMxXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt0120616",
+      "tmdb_id": "564",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 8,
+      "title": "Shelter",
+      "weeks_in_top_10": 6,
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/341217204/s332/swelteo-2026.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMzI2ODY3MzQtYzllNy00YWM1LWExZTgtOGIwNjk2MmE2MmY2XkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt32357218",
+      "tmdb_id": "1290821",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 9,
+      "title": "Law Abiding Citizen",
+      "weeks_in_top_10": 4,
+      "cn_title": "",
+      "year": "2009",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/312399153/s332/mobeomsimin.jpg",
+        "https://m.media-amazon.com/images/M/MV5BNDFjNzM2NzMtNTkxZi00ZGFmLTkyZGMtZWQ3ZjMwZDc5NDExXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt1197624",
+      "tmdb_id": "22803",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 10,
+      "title": "Hansel & Gretel",
+      "weeks_in_top_10": 1,
+      "cn_title": "",
+      "year": "2013",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/325104291/s332/henjelgwa-geuretel-2014.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMTY5NjczNzAyMl5BMl5BanBnXkFtZTcwNjcxNDQ5OA@@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt2415464",
+      "tmdb_id": "200462",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
     }
   ],
   "tv": [
     {
       "rank": 1,
       "title": "Kian’s Bizarre B&B",
-      "weeks_in_top_10": 1,
+      "weeks_in_top_10": 2,
       "season": "Kian’s Bizarre B&B: Season 2",
       "cn_title": "",
       "year": "2025",
@@ -232,8 +239,28 @@
     },
     {
       "rank": 2,
+      "title": "Marriage of Convenience",
+      "weeks_in_top_10": 1,
+      "season": "Marriage of Convenience: Season 1",
+      "cn_title": "",
+      "year": "2022",
+      "poster_candidates": [
+        "https://m.media-amazon.com/images/M/MV5BNjdjMzI2NjEtMjRmYy00NzIyLTg5ZTQtNDgxMzNmZjYzYmVlXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt19726762",
+      "tmdb_id": "",
+      "metadata_match_version": 2,
+      "metadata_confidence": "medium",
+      "metadata_evidence": [
+        "imdb_strict_title"
+      ]
+    },
+    {
+      "rank": 3,
       "title": "The Scandal",
-      "weeks_in_top_10": 2,
+      "weeks_in_top_10": 3,
       "season": "The Scandal: Limited Series",
       "cn_title": "",
       "year": "2026",
@@ -254,9 +281,9 @@
       ]
     },
     {
-      "rank": 3,
+      "rank": 4,
       "title": "Four Hands, Two Sonatas",
-      "weeks_in_top_10": 5,
+      "weeks_in_top_10": 6,
       "season": "Four Hands, Two Sonatas: Limited Series",
       "cn_title": "",
       "year": "2026",
@@ -274,29 +301,9 @@
       ]
     },
     {
-      "rank": 4,
-      "title": "Mousetrap",
-      "weeks_in_top_10": 5,
-      "season": "Mousetrap: Limited Series",
-      "cn_title": "",
-      "year": "2026",
-      "poster_candidates": [
-        "https://m.media-amazon.com/images/M/MV5BNWIwMWVhNTQtOGQ4Ny00MGFkLThjNzktZWVhNzI4YzFlMGE1XkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt36996011",
-      "tmdb_id": "",
-      "metadata_match_version": 2,
-      "metadata_confidence": "medium",
-      "metadata_evidence": [
-        "imdb_strict_title"
-      ]
-    },
-    {
       "rank": 5,
       "title": "I am Solo",
-      "weeks_in_top_10": 8,
+      "weeks_in_top_10": 9,
       "season": "I am Solo: Part 33",
       "cn_title": "",
       "year": "2021",
@@ -315,80 +322,31 @@
     },
     {
       "rank": 6,
-      "title": "Monster: The Lizzie Borden Story",
+      "title": "Your Personal Taxi",
       "weeks_in_top_10": 1,
-      "season": "Monster: The Lizzie Borden Story: Season 1",
+      "season": "Your Personal Taxi: Season 1",
       "cn_title": "",
       "year": "2026",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/354782112/s332/goemul-riji-bodeun-iyagi.jpg"
+        "https://images.justwatch.com/poster/354599645/s332/gaeinjeogin-taegsi.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMTk3OGMxMGYtOTY1ZC00M2Y1LTk3ZDItZjkwNzdhZTdmM2I1XkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "",
-      "tmdb_id": "299939",
+      "imdb_id": "tt41070790",
+      "tmdb_id": "333484",
       "metadata_match_version": 2,
-      "metadata_confidence": "medium",
+      "metadata_confidence": "high",
       "metadata_evidence": [
-        "justwatch_strict_title"
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
       ]
     },
     {
       "rank": 7,
-      "title": "I'm SOLO, Love goes on",
-      "weeks_in_top_10": 7,
-      "season": "I'm SOLO, Love goes on: 2026 Part 2",
-      "cn_title": "",
-      "year": "",
-      "poster_candidates": [],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "",
-      "tmdb_id": "",
-      "metadata_match_version": 2,
-      "metadata_confidence": "none",
-      "metadata_evidence": []
-    },
-    {
-      "rank": 8,
-      "title": "Teach You a Lesson",
-      "weeks_in_top_10": 11,
-      "season": "Teach You a Lesson: Limited Series",
-      "cn_title": "",
-      "year": "2026",
-      "poster_candidates": [
-        "https://m.media-amazon.com/images/M/MV5BNzFjNmFjNzgtYmM0ZS00ODZmLWJiNTktOWNiYWZiMTE5MWRiXkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt34809853",
-      "tmdb_id": "",
-      "metadata_match_version": 2,
-      "metadata_confidence": "medium",
-      "metadata_evidence": [
-        "imdb_strict_title"
-      ]
-    },
-    {
-      "rank": 9,
-      "title": "K-Shaman: True Horror Stories",
-      "weeks_in_top_10": 2,
-      "season": "K-Shaman: True Horror Stories: Season 2",
-      "cn_title": "",
-      "year": "",
-      "poster_candidates": [],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "",
-      "tmdb_id": "",
-      "metadata_match_version": 2,
-      "metadata_confidence": "none",
-      "metadata_evidence": []
-    },
-    {
-      "rank": 10,
       "title": "Kian’s Bizarre B&B",
-      "weeks_in_top_10": 6,
+      "weeks_in_top_10": 7,
       "season": "Kian’s Bizarre B&B: Season 1",
       "cn_title": "",
       "year": "2025",
@@ -404,8 +362,64 @@
       "metadata_evidence": [
         "imdb_strict_title"
       ]
+    },
+    {
+      "rank": 8,
+      "title": "Mousetrap",
+      "weeks_in_top_10": 6,
+      "season": "Mousetrap: Limited Series",
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://m.media-amazon.com/images/M/MV5BNWIwMWVhNTQtOGQ4Ny00MGFkLThjNzktZWVhNzI4YzFlMGE1XkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt36996011",
+      "tmdb_id": "",
+      "metadata_match_version": 2,
+      "metadata_confidence": "medium",
+      "metadata_evidence": [
+        "imdb_strict_title"
+      ]
+    },
+    {
+      "rank": 9,
+      "title": "I'm SOLO, Love goes on",
+      "weeks_in_top_10": 8,
+      "season": "I'm SOLO, Love goes on: 2026 Part 2",
+      "cn_title": "",
+      "year": "",
+      "poster_candidates": [],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "",
+      "tmdb_id": "",
+      "metadata_match_version": 2,
+      "metadata_confidence": "none",
+      "metadata_evidence": []
+    },
+    {
+      "rank": 10,
+      "title": "Teach You a Lesson",
+      "weeks_in_top_10": 12,
+      "season": "Teach You a Lesson: Limited Series",
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://m.media-amazon.com/images/M/MV5BNzFjNmFjNzgtYmM0ZS00ODZmLWJiNTktOWNiYWZiMTE5MWRiXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt34809853",
+      "tmdb_id": "",
+      "metadata_match_version": 2,
+      "metadata_confidence": "medium",
+      "metadata_evidence": [
+        "imdb_strict_title"
+      ]
     }
   ],
   "metadata_version": 2,
-  "metadata_enriched_at": "2026-10-06T00:49:23.402474+00:00"
+  "metadata_enriched_at": "2026-10-06T21:06:54.947762+00:00"
 }
