@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-10-10T22:31:03.397208+00:00",
+  "updated_at": "2026-10-11T22:55:54.559873+00:00",
   "items": {
     "movie|unabomber": {
       "saved_at": 1791080220.9855633,
@@ -287,14 +287,16 @@
       }
     },
     "tv|monster the lizzie borden story": {
-      "saved_at": 1791080235.2491438,
+      "saved_at": 1791759236.522212,
       "title": "Monster: The Lizzie Borden Story",
       "media_type": "tv",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2026",
         "poster_candidates": [
+          "https://images.justwatch.com/poster/354782112/s332/monster-the-lizzie-borden-story.jpg",
           "https://images.justwatch.com/poster/354782112/s332/goemul-riji-bodeun-iyagi.jpg"
         ],
         "douban_matched": false,
@@ -305,7 +307,7 @@
         "imdb_id": "",
         "tmdb_id": "299939",
         "douban_poster": "",
-        "justwatch_poster": "https://images.justwatch.com/poster/354782112/s332/goemul-riji-bodeun-iyagi.jpg",
+        "justwatch_poster": "https://images.justwatch.com/poster/354782112/s332/monster-the-lizzie-borden-story.jpg",
         "imdb_poster": "",
         "localized_alias": "怪物：丽兹·波顿的故事",
         "confidence": "medium",
@@ -340,10 +342,11 @@
       }
     },
     "tv|not a stranger": {
-      "saved_at": 1791080237.8521304,
+      "saved_at": 1791759240.7282867,
       "title": "Not a Stranger",
       "media_type": "tv",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2026",
@@ -368,10 +371,11 @@
       }
     },
     "tv|plastic beauty": {
-      "saved_at": 1791080240.6587746,
+      "saved_at": 1791759304.010618,
       "title": "Plastic Beauty",
       "media_type": "tv",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2026",
@@ -396,10 +400,11 @@
       }
     },
     "tv|wonka s the golden ticket": {
-      "saved_at": 1791080239.8252594,
+      "saved_at": 1791759242.2638736,
       "title": "Wonka's The Golden Ticket",
       "media_type": "tv",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2026",
@@ -417,7 +422,7 @@
         "douban_poster": "",
         "justwatch_poster": "https://images.justwatch.com/poster/350868666/s332/wonkas-the-golden-ticket.jpg",
         "imdb_poster": "https://m.media-amazon.com/images/M/MV5BNTViMTljYjAtMDRiYi00NjAzLWEzZjEtODg4ODI5OTJlYjVmXkEyXkFqcGc@._V1_.jpg",
-        "localized_alias": "",
+        "localized_alias": "旺卡的金奖券争夺战",
         "confidence": "high",
         "evidence": [
           "justwatch_strict_title",
@@ -427,10 +432,11 @@
       }
     },
     "tv|crew girl": {
-      "saved_at": 1791080242.4122353,
+      "saved_at": 1791759254.0095713,
       "title": "Crew Girl",
       "media_type": "tv",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2026",
@@ -458,10 +464,11 @@
       }
     },
     "tv|the gentlemen": {
-      "saved_at": 1791080243.19051,
+      "saved_at": 1791759246.115821,
       "title": "The Gentlemen",
       "media_type": "tv",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2024",
@@ -489,16 +496,18 @@
       }
     },
     "tv|a different world": {
-      "saved_at": 1791080244.7961652,
+      "saved_at": 1791759240.01948,
       "title": "A Different World",
       "media_type": "tv",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2026",
         "poster_candidates": [
-          "https://images.justwatch.com/poster/355071095/s332/a-different-world-1.jpg",
-          "https://m.media-amazon.com/images/M/MV5BNGIwZDc3OWYtZTZkOS00NmRjLTk3NTAtNjQzODI3ZTI4MWU4XkEyXkFqcGc@._V1_.jpg"
+          "https://images.justwatch.com/poster/355071095/s332/a-different-world.jpg",
+          "https://m.media-amazon.com/images/M/MV5BNGIwZDc3OWYtZTZkOS00NmRjLTk3NTAtNjQzODI3ZTI4MWU4XkEyXkFqcGc@._V1_.jpg",
+          "https://images.justwatch.com/poster/355071095/s332/a-different-world-1.jpg"
         ],
         "douban_matched": false,
         "justwatch_matched": true,
@@ -508,7 +517,7 @@
         "imdb_id": "tt33081352",
         "tmdb_id": "305357",
         "douban_poster": "",
-        "justwatch_poster": "https://images.justwatch.com/poster/355071095/s332/a-different-world-1.jpg",
+        "justwatch_poster": "https://images.justwatch.com/poster/355071095/s332/a-different-world.jpg",
         "imdb_poster": "https://m.media-amazon.com/images/M/MV5BNGIwZDc3OWYtZTZkOS00NmRjLTk3NTAtNjQzODI3ZTI4MWU4XkEyXkFqcGc@._V1_.jpg",
         "localized_alias": "别样世界",
         "confidence": "high",
@@ -520,10 +529,11 @@
       }
     },
     "tv|the scandal": {
-      "saved_at": 1791080246.0430431,
+      "saved_at": 1791759319.7549045,
       "title": "The Scandal",
       "media_type": "tv",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2026",
@@ -551,38 +561,43 @@
       }
     },
     "tv|shaque trust no one": {
-      "saved_at": 1791080249.0952573,
+      "saved_at": 1791759243.5382972,
       "title": "Shaque: Trust No One",
       "media_type": "tv",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2026",
         "poster_candidates": [
+          "https://images.justwatch.com/poster/355215999/s332/shaque-trust-no-one.jpg",
           "https://m.media-amazon.com/images/M/MV5BYWRlNDA3MGYtMWMzZS00MDAwLTk4MTAtY2RhMGI3OTA2OTY1XkEyXkFqcGc@._V1_.jpg"
         ],
         "douban_matched": false,
-        "justwatch_matched": false,
+        "justwatch_matched": true,
         "imdb_matched": true,
         "douban_id": "",
         "douban_url": "",
         "imdb_id": "tt35929525",
-        "tmdb_id": "",
+        "tmdb_id": "285147",
         "douban_poster": "",
-        "justwatch_poster": "",
+        "justwatch_poster": "https://images.justwatch.com/poster/355215999/s332/shaque-trust-no-one.jpg",
         "imdb_poster": "https://m.media-amazon.com/images/M/MV5BYWRlNDA3MGYtMWMzZS00MDAwLTk4MTAtY2RhMGI3OTA2OTY1XkEyXkFqcGc@._V1_.jpg",
-        "localized_alias": "",
-        "confidence": "medium",
+        "localized_alias": "寻女无归途",
+        "confidence": "high",
         "evidence": [
-          "imdb_strict_title"
+          "justwatch_strict_title",
+          "imdb_strict_title",
+          "year_consensus"
         ]
       }
     },
     "tv|gabby s dollhouse": {
-      "saved_at": 1791080249.4026372,
+      "saved_at": 1791759264.4179184,
       "title": "Gabby's Dollhouse",
       "media_type": "tv",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2021",
@@ -610,10 +625,11 @@
       }
     },
     "movie|mickey 17": {
-      "saved_at": 1791080251.7931287,
+      "saved_at": 1791759249.8795893,
       "title": "Mickey 17",
       "media_type": "movie",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2025",
@@ -641,7 +657,7 @@
       }
     },
     "movie|einfach mal was schönes": {
-      "saved_at": 1791671443.6554637,
+      "saved_at": 1791759251.693123,
       "title": "Einfach Mal Was Schönes",
       "media_type": "movie",
       "match_version": 2,
@@ -666,10 +682,11 @@
       }
     },
     "movie|novocaine": {
-      "saved_at": 1791080252.507431,
+      "saved_at": 1791759253.2331972,
       "title": "Novocaine",
       "media_type": "movie",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2025",
@@ -728,10 +745,11 @@
       }
     },
     "movie|weekend rebels": {
-      "saved_at": 1791080257.5052447,
+      "saved_at": 1791759268.2333655,
       "title": "Weekend Rebels",
       "media_type": "movie",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2023",
@@ -756,7 +774,7 @@
       }
     },
     "movie|the secret woman": {
-      "saved_at": 1791671449.5524185,
+      "saved_at": 1791759271.9395995,
       "title": "The Secret Woman",
       "media_type": "movie",
       "match_version": 2,
@@ -816,14 +834,16 @@
       }
     },
     "tv|the perfect lie": {
-      "saved_at": 1791080266.9328644,
+      "saved_at": 1791759259.8744326,
       "title": "The Perfect Lie",
       "media_type": "tv",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2026",
         "poster_candidates": [
+          "https://m.media-amazon.com/images/M/MV5BZjA3Yjg2NTEtZDMwYy00MDVlLWIwMmUtMDZmOTcyMjY4MTFhXkEyXkFqcGc@._V1_.jpg",
           "https://m.media-amazon.com/images/M/MV5BNTc5M2Q3NWItYjE5MS00ZDdiLTgyNWMtZjQ2YmQxYjExZTE5XkEyXkFqcGc@._V1_.jpg"
         ],
         "douban_matched": false,
@@ -835,7 +855,7 @@
         "tmdb_id": "",
         "douban_poster": "",
         "justwatch_poster": "",
-        "imdb_poster": "https://m.media-amazon.com/images/M/MV5BNTc5M2Q3NWItYjE5MS00ZDdiLTgyNWMtZjQ2YmQxYjExZTE5XkEyXkFqcGc@._V1_.jpg",
+        "imdb_poster": "https://m.media-amazon.com/images/M/MV5BZjA3Yjg2NTEtZDMwYy00MDVlLWIwMmUtMDZmOTcyMjY4MTFhXkEyXkFqcGc@._V1_.jpg",
         "localized_alias": "",
         "confidence": "high",
         "evidence": [
@@ -846,10 +866,11 @@
       }
     },
     "tv|the final problem": {
-      "saved_at": 1791080267.95443,
+      "saved_at": 1791759246.783854,
       "title": "The Final Problem",
       "media_type": "tv",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2026",
@@ -874,7 +895,7 @@
       }
     },
     "tv|the doll": {
-      "saved_at": 1791671459.4651241,
+      "saved_at": 1791759345.1353197,
       "title": "The Doll",
       "media_type": "tv",
       "match_version": 2,
@@ -899,10 +920,11 @@
       }
     },
     "tv|minerva academy": {
-      "saved_at": 1791080271.1570616,
+      "saved_at": 1791759250.9641495,
       "title": "Minerva Academy",
       "media_type": "tv",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2026",
@@ -927,16 +949,18 @@
       }
     },
     "movie|aileen queen of the serial killers": {
-      "saved_at": 1791080273.7692847,
+      "saved_at": 1791759271.1602137,
       "title": "Aileen: Queen of the Serial Killers",
       "media_type": "movie",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2025",
         "poster_candidates": [
-          "https://images.justwatch.com/poster/338118240/s332/aileen-la-demoiselle-de-la-mort.jpg",
-          "https://m.media-amazon.com/images/M/MV5BYjg4MDg1YTAtNDYwMC00MGEyLTk3NTYtMWY4YjJmNDMyZDdkXkEyXkFqcGc@._V1_.jpg"
+          "https://images.justwatch.com/poster/338118240/s332/aileen-queen-of-the-serial-killers.jpg",
+          "https://m.media-amazon.com/images/M/MV5BYjg4MDg1YTAtNDYwMC00MGEyLTk3NTYtMWY4YjJmNDMyZDdkXkEyXkFqcGc@._V1_.jpg",
+          "https://images.justwatch.com/poster/338118240/s332/aileen-la-demoiselle-de-la-mort.jpg"
         ],
         "douban_matched": false,
         "justwatch_matched": true,
@@ -946,7 +970,7 @@
         "imdb_id": "tt38457052",
         "tmdb_id": "1550569",
         "douban_poster": "",
-        "justwatch_poster": "https://images.justwatch.com/poster/338118240/s332/aileen-la-demoiselle-de-la-mort.jpg",
+        "justwatch_poster": "https://images.justwatch.com/poster/338118240/s332/aileen-queen-of-the-serial-killers.jpg",
         "imdb_poster": "https://m.media-amazon.com/images/M/MV5BYjg4MDg1YTAtNDYwMC00MGEyLTk3NTYtMWY4YjJmNDMyZDdkXkEyXkFqcGc@._V1_.jpg",
         "localized_alias": "艾琳：连环杀手女王",
         "confidence": "high",
@@ -989,10 +1013,11 @@
       }
     },
     "movie|rescapé l épisode final": {
-      "saved_at": 1791080274.624598,
+      "saved_at": 1791759284.084191,
       "title": "Rescapé : L'épisode final",
       "media_type": "movie",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2026",
@@ -1017,10 +1042,11 @@
       }
     },
     "movie|the town": {
-      "saved_at": 1791080276.2322264,
+      "saved_at": 1791759255.9768107,
       "title": "The Town",
       "media_type": "movie",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2010",
@@ -1048,16 +1074,18 @@
       }
     },
     "movie|ted": {
-      "saved_at": 1791080277.6644056,
+      "saved_at": 1791759261.4885256,
       "title": "Ted",
       "media_type": "movie",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2012",
         "poster_candidates": [
-          "https://images.justwatch.com/poster/308841313/s332/ted.jpg",
-          "https://m.media-amazon.com/images/M/MV5BMTQ1OTU0ODcxMV5BMl5BanBnXkFtZTcwOTMxNTUwOA@@._V1_.jpg"
+          "https://images.justwatch.com/poster/308841313/s332/meda.jpg",
+          "https://m.media-amazon.com/images/M/MV5BMTQ1OTU0ODcxMV5BMl5BanBnXkFtZTcwOTMxNTUwOA@@._V1_.jpg",
+          "https://images.justwatch.com/poster/308841313/s332/ted.jpg"
         ],
         "douban_matched": false,
         "justwatch_matched": true,
@@ -1067,7 +1095,7 @@
         "imdb_id": "tt1637725",
         "tmdb_id": "72105",
         "douban_poster": "",
-        "justwatch_poster": "https://images.justwatch.com/poster/308841313/s332/ted.jpg",
+        "justwatch_poster": "https://images.justwatch.com/poster/308841313/s332/meda.jpg",
         "imdb_poster": "https://m.media-amazon.com/images/M/MV5BMTQ1OTU0ODcxMV5BMl5BanBnXkFtZTcwOTMxNTUwOA@@._V1_.jpg",
         "localized_alias": "泰迪熊",
         "confidence": "high",
@@ -1079,14 +1107,17 @@
       }
     },
     "movie|second chances": {
-      "saved_at": 1791080280.144554,
+      "saved_at": 1791759259.1669185,
       "title": "Second Chances",
       "media_type": "movie",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
-        "year": "2013",
+        "year": "2010",
         "poster_candidates": [
+          "https://images.justwatch.com/poster/205631654/s332/.jpg",
+          "https://m.media-amazon.com/images/M/MV5BMjI3NjUxNDM0Ml5BMl5BanBnXkFtZTgwNzg4ODY0NzE@._V1_.jpg",
           "https://images.justwatch.com/poster/343448923/s332/.jpg",
           "https://m.media-amazon.com/images/M/MV5BMjA1MzAxOTAxNl5BMl5BanBnXkFtZTcwNTAxNzMxOQ@@._V1_.jpg"
         ],
@@ -1095,12 +1126,12 @@
         "imdb_matched": true,
         "douban_id": "",
         "douban_url": "",
-        "imdb_id": "tt2705368",
-        "tmdb_id": "272103",
+        "imdb_id": "tt1491043",
+        "tmdb_id": "111039",
         "douban_poster": "",
-        "justwatch_poster": "https://images.justwatch.com/poster/343448923/s332/.jpg",
-        "imdb_poster": "https://m.media-amazon.com/images/M/MV5BMjA1MzAxOTAxNl5BMl5BanBnXkFtZTcwNTAxNzMxOQ@@._V1_.jpg",
-        "localized_alias": "",
+        "justwatch_poster": "https://images.justwatch.com/poster/205631654/s332/.jpg",
+        "imdb_poster": "https://m.media-amazon.com/images/M/MV5BMjI3NjUxNDM0Ml5BMl5BanBnXkFtZTgwNzg4ODY0NzE@._V1_.jpg",
+        "localized_alias": "第二次机会",
         "confidence": "high",
         "evidence": [
           "justwatch_strict_title",
@@ -1169,10 +1200,11 @@
       }
     },
     "movie|shrek": {
-      "saved_at": 1791080283.6078598,
+      "saved_at": 1791759263.546333,
       "title": "Shrek",
       "media_type": "movie",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2001",
@@ -1231,10 +1263,11 @@
       }
     },
     "movie|ted 2": {
-      "saved_at": 1791080285.575445,
+      "saved_at": 1791759261.9558964,
       "title": "Ted 2",
       "media_type": "movie",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2015",
@@ -1287,16 +1320,18 @@
       }
     },
     "movie|the judge": {
-      "saved_at": 1791080288.7278974,
+      "saved_at": 1791759342.3418536,
       "title": "The Judge",
       "media_type": "movie",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2014",
         "poster_candidates": [
-          "https://images.justwatch.com/poster/311745770/s332/the-judge.jpg",
-          "https://m.media-amazon.com/images/M/MV5BMTcyNzIxOTIwMV5BMl5BanBnXkFtZTgwMzE0NjQwMjE@._V1_.jpg"
+          "https://images.justwatch.com/poster/311745770/s332/sedzia.jpg",
+          "https://m.media-amazon.com/images/M/MV5BMTcyNzIxOTIwMV5BMl5BanBnXkFtZTgwMzE0NjQwMjE@._V1_.jpg",
+          "https://images.justwatch.com/poster/311745770/s332/the-judge.jpg"
         ],
         "douban_matched": false,
         "justwatch_matched": true,
@@ -1306,7 +1341,7 @@
         "imdb_id": "tt1872194",
         "tmdb_id": "205587",
         "douban_poster": "",
-        "justwatch_poster": "https://images.justwatch.com/poster/311745770/s332/the-judge.jpg",
+        "justwatch_poster": "https://images.justwatch.com/poster/311745770/s332/sedzia.jpg",
         "imdb_poster": "https://m.media-amazon.com/images/M/MV5BMTcyNzIxOTIwMV5BMl5BanBnXkFtZTgwMzE0NjQwMjE@._V1_.jpg",
         "localized_alias": "法官老爹",
         "confidence": "high",
@@ -1318,16 +1353,18 @@
       }
     },
     "movie|the little things": {
-      "saved_at": 1791080290.7827694,
+      "saved_at": 1791759345.0203145,
       "title": "The Little Things",
       "media_type": "movie",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2021",
         "poster_candidates": [
-          "https://images.justwatch.com/poster/347774442/s332/the-little-things-2021.jpg",
-          "https://m.media-amazon.com/images/M/MV5BZmRjYmQ5Y2YtYTUyMy00OTg0LWE1YmEtZTI2NDYxYTBhYTYxXkEyXkFqcGc@._V1_.jpg"
+          "https://images.justwatch.com/poster/347774442/s332/male-rzeczy.jpg",
+          "https://m.media-amazon.com/images/M/MV5BZmRjYmQ5Y2YtYTUyMy00OTg0LWE1YmEtZTI2NDYxYTBhYTYxXkEyXkFqcGc@._V1_.jpg",
+          "https://images.justwatch.com/poster/347774442/s332/the-little-things-2021.jpg"
         ],
         "douban_matched": false,
         "justwatch_matched": true,
@@ -1337,7 +1374,7 @@
         "imdb_id": "tt10016180",
         "tmdb_id": "602269",
         "douban_poster": "",
-        "justwatch_poster": "https://images.justwatch.com/poster/347774442/s332/the-little-things-2021.jpg",
+        "justwatch_poster": "https://images.justwatch.com/poster/347774442/s332/male-rzeczy.jpg",
         "imdb_poster": "https://m.media-amazon.com/images/M/MV5BZmRjYmQ5Y2YtYTUyMy00OTg0LWE1YmEtZTI2NDYxYTBhYTYxXkEyXkFqcGc@._V1_.jpg",
         "localized_alias": "蛛丝马迹",
         "confidence": "high",
@@ -1380,10 +1417,11 @@
       }
     },
     "tv|blood sacrifice": {
-      "saved_at": 1791080295.013436,
+      "saved_at": 1791759275.3493814,
       "title": "Blood Sacrifice",
       "media_type": "tv",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2026",
@@ -1439,10 +1477,11 @@
       }
     },
     "movie|al otro barrio": {
-      "saved_at": 1791080296.7587602,
+      "saved_at": 1791759274.0972135,
       "title": "Al otro barrio",
       "media_type": "movie",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2024",
@@ -1529,10 +1568,11 @@
       }
     },
     "movie|oppenheimer": {
-      "saved_at": 1791080300.8871453,
+      "saved_at": 1791759277.9528537,
       "title": "Oppenheimer",
       "media_type": "movie",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2023",
@@ -1560,16 +1600,18 @@
       }
     },
     "movie|chips": {
-      "saved_at": 1791080303.7160823,
+      "saved_at": 1791759267.3922899,
       "title": "CHIPS",
       "media_type": "movie",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2017",
         "poster_candidates": [
-          "https://images.justwatch.com/poster/9343132/s332/paskalakit-pyorilla.jpg",
-          "https://m.media-amazon.com/images/M/MV5BZjFjYmUwMGYtYWNkMS00ZTYwLWFjMjItNmNlYmJjZWVkODVhXkEyXkFqcGc@._V1_.jpg"
+          "https://images.justwatch.com/poster/9343132/s332/chips.jpg",
+          "https://m.media-amazon.com/images/M/MV5BZjFjYmUwMGYtYWNkMS00ZTYwLWFjMjItNmNlYmJjZWVkODVhXkEyXkFqcGc@._V1_.jpg",
+          "https://images.justwatch.com/poster/9343132/s332/paskalakit-pyorilla.jpg"
         ],
         "douban_matched": false,
         "justwatch_matched": true,
@@ -1579,7 +1621,7 @@
         "imdb_id": "tt0493405",
         "tmdb_id": "417644",
         "douban_poster": "",
-        "justwatch_poster": "https://images.justwatch.com/poster/9343132/s332/paskalakit-pyorilla.jpg",
+        "justwatch_poster": "https://images.justwatch.com/poster/9343132/s332/chips.jpg",
         "imdb_poster": "https://m.media-amazon.com/images/M/MV5BZjFjYmUwMGYtYWNkMS00ZTYwLWFjMjItNmNlYmJjZWVkODVhXkEyXkFqcGc@._V1_.jpg",
         "localized_alias": "加州公路巡警",
         "confidence": "high",
@@ -1591,10 +1633,11 @@
       }
     },
     "movie|hungry": {
-      "saved_at": 1791080304.3404639,
+      "saved_at": 1791759279.9722202,
       "title": "Hungry",
       "media_type": "movie",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2026",
@@ -1622,10 +1665,11 @@
       }
     },
     "movie|coexister": {
-      "saved_at": 1791080306.3792481,
+      "saved_at": 1791759281.82125,
       "title": "Coexister",
       "media_type": "movie",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2017",
@@ -1639,7 +1683,7 @@
         "douban_id": "",
         "douban_url": "",
         "imdb_id": "tt6144762",
-        "tmdb_id": "636300",
+        "tmdb_id": "432618",
         "douban_poster": "",
         "justwatch_poster": "https://images.justwatch.com/poster/141865074/s332/coexister.jpg",
         "imdb_poster": "https://m.media-amazon.com/images/M/MV5BMjkwNDQ3MWYtODQ5MS00Y2Y1LWE4ZDAtZjA3OTUxODAzZWQ1XkEyXkFqcGc@._V1_.jpg",
@@ -1653,10 +1697,11 @@
       }
     },
     "movie|m3gan 2 0": {
-      "saved_at": 1791080306.8165343,
+      "saved_at": 1791759283.8780646,
       "title": "M3GAN 2.0",
       "media_type": "movie",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2025",
@@ -1740,10 +1785,11 @@
       }
     },
     "movie|le grand déplacement": {
-      "saved_at": 1791080310.478867,
+      "saved_at": 1791759286.193231,
       "title": "Le grand déplacement",
       "media_type": "movie",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2025",
@@ -1771,10 +1817,11 @@
       }
     },
     "movie|wasteman": {
-      "saved_at": 1791080313.753127,
+      "saved_at": 1791759288.656119,
       "title": "Wasteman",
       "media_type": "movie",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2026",
@@ -1802,10 +1849,11 @@
       }
     },
     "movie|sonic the hedgehog 3": {
-      "saved_at": 1791080314.8447626,
+      "saved_at": 1791759286.9342523,
       "title": "Sonic the Hedgehog 3",
       "media_type": "movie",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2024",
@@ -1926,10 +1974,11 @@
       }
     },
     "tv|raw": {
-      "saved_at": 1791080319.7521532,
+      "saved_at": 1791759291.351126,
       "title": "Raw",
       "media_type": "tv",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2008",
@@ -1957,10 +2006,11 @@
       }
     },
     "tv|ms rachel": {
-      "saved_at": 1791080320.5540824,
+      "saved_at": 1791759290.7368631,
       "title": "Ms. Rachel",
       "media_type": "tv",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2025",
@@ -1988,10 +2038,11 @@
       }
     },
     "tv|leaving": {
-      "saved_at": 1791080320.9949038,
+      "saved_at": 1791759288.3699343,
       "title": "Leaving",
       "media_type": "tv",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2012",
@@ -2050,16 +2101,18 @@
       }
     },
     "movie|kraven the hunter": {
-      "saved_at": 1791080323.6110938,
+      "saved_at": 1791759276.9781563,
       "title": "Kraven the Hunter",
       "media_type": "movie",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2024",
         "poster_candidates": [
-          "https://images.justwatch.com/poster/335816082/s332/kreiven-o-kynigos.jpg",
-          "https://m.media-amazon.com/images/M/MV5BZDU0YTI5ODAtN2NmMS00YTg3LTgyNDItN2RmOWEzOTkzZjcyXkEyXkFqcGc@._V1_.jpg"
+          "https://images.justwatch.com/poster/335816082/s332/kraven-el-cazador.jpg",
+          "https://m.media-amazon.com/images/M/MV5BZDU0YTI5ODAtN2NmMS00YTg3LTgyNDItN2RmOWEzOTkzZjcyXkEyXkFqcGc@._V1_.jpg",
+          "https://images.justwatch.com/poster/335816082/s332/kreiven-o-kynigos.jpg"
         ],
         "douban_matched": false,
         "justwatch_matched": true,
@@ -2069,7 +2122,7 @@
         "imdb_id": "tt8790086",
         "tmdb_id": "539972",
         "douban_poster": "",
-        "justwatch_poster": "https://images.justwatch.com/poster/335816082/s332/kreiven-o-kynigos.jpg",
+        "justwatch_poster": "https://images.justwatch.com/poster/335816082/s332/kraven-el-cazador.jpg",
         "imdb_poster": "https://m.media-amazon.com/images/M/MV5BZDU0YTI5ODAtN2NmMS00YTg3LTgyNDItN2RmOWEzOTkzZjcyXkEyXkFqcGc@._V1_.jpg",
         "localized_alias": "猎人克莱文",
         "confidence": "high",
@@ -2112,10 +2165,11 @@
       }
     },
     "tv|mobland": {
-      "saved_at": 1791080326.103682,
+      "saved_at": 1791759293.464282,
       "title": "MobLand",
       "media_type": "tv",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2025",
@@ -2143,10 +2197,11 @@
       }
     },
     "tv|habeas corpus": {
-      "saved_at": 1791080328.175449,
+      "saved_at": 1791759255.451427,
       "title": "Habeas Corpus",
       "media_type": "tv",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2026",
@@ -2295,10 +2350,11 @@
       }
     },
     "tv|physical 100 italy": {
-      "saved_at": 1791080336.6597128,
+      "saved_at": 1791759298.2122471,
       "title": "Physical 100: Italy",
       "media_type": "tv",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2026",
@@ -2323,7 +2379,7 @@
       }
     },
     "movie|stella next to me": {
-      "saved_at": 1791082605.4985788,
+      "saved_at": 1791759301.4688075,
       "title": "Stella Next to Me",
       "media_type": "movie",
       "match_version": 2,
@@ -2354,7 +2410,7 @@
       }
     },
     "movie|detective conan the counterfeit case of ultra 30": {
-      "saved_at": 1791152416.2962008,
+      "saved_at": 1791759299.8318086,
       "title": "Detective Conan the Counterfeit Case of Ultra 30",
       "media_type": "movie",
       "match_version": 2,
@@ -2383,7 +2439,7 @@
       }
     },
     "movie|under the open sky": {
-      "saved_at": 1791082604.459782,
+      "saved_at": 1791759299.4500403,
       "title": "Under the Open Sky",
       "media_type": "movie",
       "match_version": 2,
@@ -2650,10 +2706,11 @@
       }
     },
     "tv|eerie invisible face": {
-      "saved_at": 1791080367.6072578,
+      "saved_at": 1791759307.4769342,
       "title": "Eerie: Invisible Face",
       "media_type": "tv",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2018",
@@ -2678,10 +2735,11 @@
       }
     },
     "tv|vivant": {
-      "saved_at": 1791080366.8809745,
+      "saved_at": 1791759311.1125567,
       "title": "Vivant",
       "media_type": "tv",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2023",
@@ -2765,10 +2823,11 @@
       }
     },
     "tv|mushoku tensei jobless reincarnation": {
-      "saved_at": 1791080377.9986608,
+      "saved_at": 1791759309.2727234,
       "title": "Mushoku Tensei: Jobless Reincarnation",
       "media_type": "tv",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2021",
@@ -2824,10 +2883,11 @@
       }
     },
     "movie|the ultimate duo": {
-      "saved_at": 1791080383.7052398,
+      "saved_at": 1791759314.3199117,
       "title": "The Ultimate Duo",
       "media_type": "movie",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2026",
@@ -2880,7 +2940,7 @@
       }
     },
     "movie|ok madam": {
-      "saved_at": 1791671454.983279,
+      "saved_at": 1791759317.1305637,
       "title": "OK! Madam",
       "media_type": "movie",
       "match_version": 2,
@@ -2936,10 +2996,11 @@
       }
     },
     "movie|shelter": {
-      "saved_at": 1791080389.5469186,
+      "saved_at": 1791759316.922805,
       "title": "Shelter",
       "media_type": "movie",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2026",
@@ -3060,7 +3121,7 @@
       }
     },
     "movie|demon slayer kimetsu no yaiba infinity castle i": {
-      "saved_at": 1791671448.3116624,
+      "saved_at": 1791759236.7810764,
       "title": "Demon Slayer: Kimetsu no Yaiba Infinity Castle I",
       "media_type": "movie",
       "match_version": 2,
@@ -3085,10 +3146,11 @@
       }
     },
     "movie|clash of the titans": {
-      "saved_at": 1791080397.0180318,
+      "saved_at": 1791759279.380818,
       "title": "Clash of the Titans",
       "media_type": "movie",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2010",
@@ -3116,10 +3178,11 @@
       }
     },
     "tv|kian s bizarre b and b": {
-      "saved_at": 1791080400.8510303,
+      "saved_at": 1791759321.557318,
       "title": "Kian’s Bizarre B&B",
       "media_type": "tv",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2025",
@@ -3144,10 +3207,11 @@
       }
     },
     "tv|four hands two sonatas": {
-      "saved_at": 1791080403.8950443,
+      "saved_at": 1791759326.0831616,
       "title": "Four Hands, Two Sonatas",
       "media_type": "tv",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2026",
@@ -3172,10 +3236,11 @@
       }
     },
     "tv|mousetrap": {
-      "saved_at": 1791080405.923007,
+      "saved_at": 1791759331.5893502,
       "title": "Mousetrap",
       "media_type": "tv",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2026",
@@ -3200,10 +3265,11 @@
       }
     },
     "tv|i am solo": {
-      "saved_at": 1791080409.495731,
+      "saved_at": 1791759327.3558977,
       "title": "I am Solo",
       "media_type": "tv",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2021",
@@ -3228,7 +3294,7 @@
       }
     },
     "tv|i m solo love goes on": {
-      "saved_at": 1791671456.8425627,
+      "saved_at": 1791759333.6206334,
       "title": "I'm SOLO, Love goes on",
       "media_type": "tv",
       "match_version": 2,
@@ -3253,10 +3319,11 @@
       }
     },
     "tv|teach you a lesson": {
-      "saved_at": 1791080414.940793,
+      "saved_at": 1791759338.114711,
       "title": "Teach You a Lesson",
       "media_type": "tv",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2026",
@@ -3306,7 +3373,7 @@
       }
     },
     "movie|tummy tom and the lost teddy bear": {
-      "saved_at": 1791671460.305341,
+      "saved_at": 1791759339.4294624,
       "title": "Tummy Tom and the Lost Teddy Bear",
       "media_type": "movie",
       "match_version": 2,
@@ -3331,10 +3398,11 @@
       }
     },
     "movie|tummy tom a new friend for tummy tom": {
-      "saved_at": 1791080424.5289469,
+      "saved_at": 1791759343.1673048,
       "title": "Tummy Tom: A New Friend for Tummy Tom",
       "media_type": "movie",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2024",
@@ -3598,16 +3666,18 @@
       }
     },
     "movie|last vegas": {
-      "saved_at": 1791080440.440803,
+      "saved_at": 1791759293.0091612,
       "title": "Last Vegas",
       "media_type": "movie",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2013",
         "poster_candidates": [
-          "https://images.justwatch.com/poster/319889604/s332/.jpg",
-          "https://m.media-amazon.com/images/M/MV5BMTQ2ODg2MTIyNF5BMl5BanBnXkFtZTgwMzU2NjgwMDE@._V1_.jpg"
+          "https://images.justwatch.com/poster/319889604/s332/last-vegas.jpg",
+          "https://m.media-amazon.com/images/M/MV5BMTQ2ODg2MTIyNF5BMl5BanBnXkFtZTgwMzU2NjgwMDE@._V1_.jpg",
+          "https://images.justwatch.com/poster/319889604/s332/.jpg"
         ],
         "douban_matched": false,
         "justwatch_matched": true,
@@ -3617,7 +3687,7 @@
         "imdb_id": "tt1204975",
         "tmdb_id": "137093",
         "douban_poster": "",
-        "justwatch_poster": "https://images.justwatch.com/poster/319889604/s332/.jpg",
+        "justwatch_poster": "https://images.justwatch.com/poster/319889604/s332/last-vegas.jpg",
         "imdb_poster": "https://m.media-amazon.com/images/M/MV5BMTQ2ODg2MTIyNF5BMl5BanBnXkFtZTgwMzU2NjgwMDE@._V1_.jpg",
         "localized_alias": "最后的维加斯",
         "confidence": "high",
@@ -3629,10 +3699,11 @@
       }
     },
     "movie|venom the last dance": {
-      "saved_at": 1791080441.163379,
+      "saved_at": 1791759347.1367788,
       "title": "Venom: The Last Dance",
       "media_type": "movie",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2024",
@@ -3691,10 +3762,11 @@
       }
     },
     "movie|top gun maverick": {
-      "saved_at": 1791080445.7025375,
+      "saved_at": 1791759349.8983448,
       "title": "Top Gun: Maverick",
       "media_type": "movie",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2022",
@@ -3722,7 +3794,7 @@
       }
     },
     "movie|bamse and the world s smallest adventure": {
-      "saved_at": 1791671463.396805,
+      "saved_at": 1791759350.3903878,
       "title": "Bamse and the World’s Smallest Adventure",
       "media_type": "movie",
       "match_version": 2,
@@ -3778,30 +3850,33 @@
       }
     },
     "movie|the breadwinner": {
-      "saved_at": 1791080447.9477003,
+      "saved_at": 1791759233.494625,
       "title": "The Breadwinner",
       "media_type": "movie",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
-        "cn_title": "",
+        "cn_title": "一家之主",
         "year": "2026",
         "poster_candidates": [
+          "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2928234359.jpg",
           "https://images.justwatch.com/poster/355026291/s332/the-breadwinner-2026.jpg",
           "https://m.media-amazon.com/images/M/MV5BZTQ3ZWQ4YTctMTI0OC00NmI5LWFlNjgtNjhhMDQxYjUxYTQyXkEyXkFqcGc@._V1_.jpg"
         ],
-        "douban_matched": false,
+        "douban_matched": true,
         "justwatch_matched": true,
         "imdb_matched": true,
-        "douban_id": "",
-        "douban_url": "",
+        "douban_id": "37235281",
+        "douban_url": "https://movie.douban.com/subject/37235281/?suggest=The+Breadwinner",
         "imdb_id": "tt34459219",
         "tmdb_id": "1440050",
-        "douban_poster": "",
+        "douban_poster": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2928234359.jpg",
         "justwatch_poster": "https://images.justwatch.com/poster/355026291/s332/the-breadwinner-2026.jpg",
         "imdb_poster": "https://m.media-amazon.com/images/M/MV5BZTQ3ZWQ4YTctMTI0OC00NmI5LWFlNjgtNjhhMDQxYjUxYTQyXkEyXkFqcGc@._V1_.jpg",
         "localized_alias": "一家之主",
         "confidence": "high",
         "evidence": [
+          "douban_strict_title",
           "justwatch_strict_title",
           "imdb_strict_title",
           "year_consensus"
@@ -3871,10 +3946,11 @@
       }
     },
     "tv|the great british baking show": {
-      "saved_at": 1791080455.749217,
+      "saved_at": 1791759354.5593545,
       "title": "The Great British Baking Show",
       "media_type": "tv",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2010",
@@ -3930,10 +4006,11 @@
       }
     },
     "tv|danny go": {
-      "saved_at": 1791080458.2816548,
+      "saved_at": 1791759352.8267834,
       "title": "Danny Go!",
       "media_type": "tv",
       "match_version": 2,
+      "identity_revision": "",
       "meta": {
         "cn_title": "",
         "year": "2020",
@@ -5652,7 +5729,7 @@
       }
     },
     "movie|vultures": {
-      "saved_at": 1791671450.223433,
+      "saved_at": 1791759282.0369325,
       "title": "Vultures",
       "media_type": "movie",
       "match_version": 2,

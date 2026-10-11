@@ -177,8 +177,9 @@
       "cn_title": "",
       "year": "2025",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/338118240/s332/aileen-la-demoiselle-de-la-mort.jpg",
-        "https://m.media-amazon.com/images/M/MV5BYjg4MDg1YTAtNDYwMC00MGEyLTk3NTYtMWY4YjJmNDMyZDdkXkEyXkFqcGc@._V1_.jpg"
+        "https://images.justwatch.com/poster/338118240/s332/aileen-queen-of-the-serial-killers.jpg",
+        "https://m.media-amazon.com/images/M/MV5BYjg4MDg1YTAtNDYwMC00MGEyLTk3NTYtMWY4YjJmNDMyZDdkXkEyXkFqcGc@._V1_.jpg",
+        "https://images.justwatch.com/poster/338118240/s332/aileen-la-demoiselle-de-la-mort.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
@@ -244,6 +245,7 @@
       "cn_title": "",
       "year": "2026",
       "poster_candidates": [
+        "https://m.media-amazon.com/images/M/MV5BZjA3Yjg2NTEtZDMwYy00MDVlLWIwMmUtMDZmOTcyMjY4MTFhXkEyXkFqcGc@._V1_.jpg",
         "https://m.media-amazon.com/images/M/MV5BNTc5M2Q3NWItYjE5MS00ZDdiLTgyNWMtZjQ2YmQxYjExZTE5XkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
@@ -289,6 +291,7 @@
       "cn_title": "",
       "year": "2026",
       "poster_candidates": [
+        "https://images.justwatch.com/poster/354782112/s332/monster-the-lizzie-borden-story.jpg",
         "https://images.justwatch.com/poster/354782112/s332/goemul-riji-bodeun-iyagi.jpg"
       ],
       "douban_id": "",
@@ -378,16 +381,19 @@
       "cn_title": "",
       "year": "2026",
       "poster_candidates": [
+        "https://images.justwatch.com/poster/355215999/s332/shaque-trust-no-one.jpg",
         "https://m.media-amazon.com/images/M/MV5BYWRlNDA3MGYtMWMzZS00MDAwLTk4MTAtY2RhMGI3OTA2OTY1XkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
       "imdb_id": "tt35929525",
-      "tmdb_id": "",
+      "tmdb_id": "285147",
       "metadata_match_version": 2,
-      "metadata_confidence": "medium",
+      "metadata_confidence": "high",
       "metadata_evidence": [
-        "imdb_strict_title"
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
       ]
     },
     {
@@ -398,8 +404,9 @@
       "cn_title": "",
       "year": "2026",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/355071095/s332/a-different-world-1.jpg",
-        "https://m.media-amazon.com/images/M/MV5BNGIwZDc3OWYtZTZkOS00NmRjLTk3NTAtNjQzODI3ZTI4MWU4XkEyXkFqcGc@._V1_.jpg"
+        "https://images.justwatch.com/poster/355071095/s332/a-different-world.jpg",
+        "https://m.media-amazon.com/images/M/MV5BNGIwZDc3OWYtZTZkOS00NmRjLTk3NTAtNjQzODI3ZTI4MWU4XkEyXkFqcGc@._V1_.jpg",
+        "https://images.justwatch.com/poster/355071095/s332/a-different-world-1.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
@@ -435,5 +442,5 @@
     }
   ],
   "metadata_version": 2,
-  "metadata_enriched_at": "2026-10-10T22:31:03.397208+00:00"
+  "metadata_enriched_at": "2026-10-11T22:55:54.559873+00:00"
 }

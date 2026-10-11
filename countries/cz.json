@@ -8,15 +8,17 @@
       "title": "Second Chances",
       "weeks_in_top_10": 2,
       "cn_title": "",
-      "year": "2013",
+      "year": "2010",
       "poster_candidates": [
+        "https://images.justwatch.com/poster/205631654/s332/.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMjI3NjUxNDM0Ml5BMl5BanBnXkFtZTgwNzg4ODY0NzE@._V1_.jpg",
         "https://images.justwatch.com/poster/343448923/s332/.jpg",
         "https://m.media-amazon.com/images/M/MV5BMjA1MzAxOTAxNl5BMl5BanBnXkFtZTcwNTAxNzMxOQ@@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt2705368",
-      "tmdb_id": "272103",
+      "imdb_id": "tt1491043",
+      "tmdb_id": "111039",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
       "metadata_evidence": [
@@ -78,8 +80,9 @@
       "cn_title": "",
       "year": "2012",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/308841313/s332/ted.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMTQ1OTU0ODcxMV5BMl5BanBnXkFtZTcwOTMxNTUwOA@@._V1_.jpg"
+        "https://images.justwatch.com/poster/308841313/s332/meda.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMTQ1OTU0ODcxMV5BMl5BanBnXkFtZTcwOTMxNTUwOA@@._V1_.jpg",
+        "https://images.justwatch.com/poster/308841313/s332/ted.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
@@ -234,6 +237,7 @@
       "cn_title": "",
       "year": "2026",
       "poster_candidates": [
+        "https://images.justwatch.com/poster/354782112/s332/monster-the-lizzie-borden-story.jpg",
         "https://images.justwatch.com/poster/354782112/s332/goemul-riji-bodeun-iyagi.jpg"
       ],
       "douban_id": "",
@@ -446,5 +450,5 @@
     }
   ],
   "metadata_version": 2,
-  "metadata_enriched_at": "2026-10-10T22:31:03.397208+00:00"
+  "metadata_enriched_at": "2026-10-11T22:55:54.559873+00:00"
 }

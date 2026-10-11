@@ -253,6 +253,7 @@
       "cn_title": "",
       "year": "2026",
       "poster_candidates": [
+        "https://images.justwatch.com/poster/354782112/s332/monster-the-lizzie-borden-story.jpg",
         "https://images.justwatch.com/poster/354782112/s332/goemul-riji-bodeun-iyagi.jpg"
       ],
       "douban_id": "",
@@ -273,6 +274,7 @@
       "cn_title": "",
       "year": "2026",
       "poster_candidates": [
+        "https://m.media-amazon.com/images/M/MV5BZjA3Yjg2NTEtZDMwYy00MDVlLWIwMmUtMDZmOTcyMjY4MTFhXkEyXkFqcGc@._V1_.jpg",
         "https://m.media-amazon.com/images/M/MV5BNTc5M2Q3NWItYjE5MS00ZDdiLTgyNWMtZjQ2YmQxYjExZTE5XkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
@@ -441,5 +443,5 @@
     }
   ],
   "metadata_version": 2,
-  "metadata_enriched_at": "2026-10-10T22:31:03.397208+00:00"
+  "metadata_enriched_at": "2026-10-11T22:55:54.559873+00:00"
 }

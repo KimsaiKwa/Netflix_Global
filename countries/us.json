@@ -75,19 +75,21 @@
       "rank": 4,
       "title": "The Breadwinner",
       "weeks_in_top_10": 2,
-      "cn_title": "",
+      "cn_title": "一家之主",
       "year": "2026",
       "poster_candidates": [
+        "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2928234359.jpg",
         "https://images.justwatch.com/poster/355026291/s332/the-breadwinner-2026.jpg",
         "https://m.media-amazon.com/images/M/MV5BZTQ3ZWQ4YTctMTI0OC00NmI5LWFlNjgtNjhhMDQxYjUxYTQyXkEyXkFqcGc@._V1_.jpg"
       ],
-      "douban_id": "",
-      "douban_url": "",
+      "douban_id": "37235281",
+      "douban_url": "https://movie.douban.com/subject/37235281/?suggest=The+Breadwinner",
       "imdb_id": "tt34459219",
       "tmdb_id": "1440050",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
       "metadata_evidence": [
+        "douban_strict_title",
         "justwatch_strict_title",
         "imdb_strict_title",
         "year_consensus"
@@ -228,8 +230,9 @@
       "cn_title": "",
       "year": "2026",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/355071095/s332/a-different-world-1.jpg",
-        "https://m.media-amazon.com/images/M/MV5BNGIwZDc3OWYtZTZkOS00NmRjLTk3NTAtNjQzODI3ZTI4MWU4XkEyXkFqcGc@._V1_.jpg"
+        "https://images.justwatch.com/poster/355071095/s332/a-different-world.jpg",
+        "https://m.media-amazon.com/images/M/MV5BNGIwZDc3OWYtZTZkOS00NmRjLTk3NTAtNjQzODI3ZTI4MWU4XkEyXkFqcGc@._V1_.jpg",
+        "https://images.justwatch.com/poster/355071095/s332/a-different-world-1.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
@@ -317,6 +320,7 @@
       "cn_title": "",
       "year": "2026",
       "poster_candidates": [
+        "https://images.justwatch.com/poster/354782112/s332/monster-the-lizzie-borden-story.jpg",
         "https://images.justwatch.com/poster/354782112/s332/goemul-riji-bodeun-iyagi.jpg"
       ],
       "douban_id": "",
@@ -446,5 +450,5 @@
     }
   ],
   "metadata_version": 2,
-  "metadata_enriched_at": "2026-10-10T22:31:03.397208+00:00"
+  "metadata_enriched_at": "2026-10-11T22:55:54.559873+00:00"
 }

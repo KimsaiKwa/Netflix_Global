@@ -56,8 +56,9 @@
       "cn_title": "",
       "year": "2017",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/9343132/s332/paskalakit-pyorilla.jpg",
-        "https://m.media-amazon.com/images/M/MV5BZjFjYmUwMGYtYWNkMS00ZTYwLWFjMjItNmNlYmJjZWVkODVhXkEyXkFqcGc@._V1_.jpg"
+        "https://images.justwatch.com/poster/9343132/s332/chips.jpg",
+        "https://m.media-amazon.com/images/M/MV5BZjFjYmUwMGYtYWNkMS00ZTYwLWFjMjItNmNlYmJjZWVkODVhXkEyXkFqcGc@._V1_.jpg",
+        "https://images.justwatch.com/poster/9343132/s332/paskalakit-pyorilla.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
@@ -202,8 +203,9 @@
       "cn_title": "",
       "year": "2025",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/338118240/s332/aileen-la-demoiselle-de-la-mort.jpg",
-        "https://m.media-amazon.com/images/M/MV5BYjg4MDg1YTAtNDYwMC00MGEyLTk3NTYtMWY4YjJmNDMyZDdkXkEyXkFqcGc@._V1_.jpg"
+        "https://images.justwatch.com/poster/338118240/s332/aileen-queen-of-the-serial-killers.jpg",
+        "https://m.media-amazon.com/images/M/MV5BYjg4MDg1YTAtNDYwMC00MGEyLTk3NTYtMWY4YjJmNDMyZDdkXkEyXkFqcGc@._V1_.jpg",
+        "https://images.justwatch.com/poster/338118240/s332/aileen-la-demoiselle-de-la-mort.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
@@ -250,6 +252,7 @@
       "cn_title": "",
       "year": "2026",
       "poster_candidates": [
+        "https://images.justwatch.com/poster/354782112/s332/monster-the-lizzie-borden-story.jpg",
         "https://images.justwatch.com/poster/354782112/s332/goemul-riji-bodeun-iyagi.jpg"
       ],
       "douban_id": "",
@@ -445,5 +448,5 @@
     }
   ],
   "metadata_version": 2,
-  "metadata_enriched_at": "2026-10-10T22:31:03.397208+00:00"
+  "metadata_enriched_at": "2026-10-11T22:55:54.559873+00:00"
 }
