@@ -76,15 +76,22 @@
       "title": "Vultures",
       "weeks_in_top_10": 1,
       "cn_title": "",
-      "year": "",
-      "poster_candidates": [],
+      "year": "1983",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/347354749/s332/.jpg",
+        "https://m.media-amazon.com/images/M/MV5BYWQ2MGQyYjMtZjFiYi00YjJiLTkzMTYtYmRhZTYyMGNkYWIzXkEyXkFqcGc@._V1_.jpg"
+      ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "",
-      "tmdb_id": "",
+      "imdb_id": "tt0086563",
+      "tmdb_id": "224007",
       "metadata_match_version": 2,
-      "metadata_confidence": "none",
-      "metadata_evidence": []
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
     },
     {
       "rank": 5,
@@ -309,8 +316,9 @@
       "cn_title": "",
       "year": "2026",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/355131667/s332/east-of-eden-2026.jpg",
-        "https://m.media-amazon.com/images/M/MV5BNmI2ODMyNjctZTA1MS00ODNhLWI3ZjAtMmE4MDE4OWRjMWZlXkEyXkFqcGc@._V1_.jpg"
+        "https://images.justwatch.com/poster/355253707/s332/east-of-eden-2026.jpg",
+        "https://m.media-amazon.com/images/M/MV5BNmI2ODMyNjctZTA1MS00ODNhLWI3ZjAtMmE4MDE4OWRjMWZlXkEyXkFqcGc@._V1_.jpg",
+        "https://images.justwatch.com/poster/355131667/s332/east-of-eden-2026.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
@@ -439,5 +447,5 @@
     }
   ],
   "metadata_version": 2,
-  "metadata_enriched_at": "2026-10-13T01:20:35.916860+00:00"
+  "metadata_enriched_at": "2026-10-13T21:24:47.437258+00:00"
 }

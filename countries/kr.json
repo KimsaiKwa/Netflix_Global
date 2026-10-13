@@ -243,17 +243,19 @@
       "weeks_in_top_10": 1,
       "season": "Marriage of Convenience: Season 1",
       "cn_title": "",
-      "year": "2022",
+      "year": "2026",
       "poster_candidates": [
+        "https://images.justwatch.com/poster/355142065/s332/.jpg",
         "https://m.media-amazon.com/images/M/MV5BNjdjMzI2NjEtMjRmYy00NzIyLTg5ZTQtNDgxMzNmZjYzYmVlXkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
       "imdb_id": "tt19726762",
-      "tmdb_id": "",
+      "tmdb_id": "336844",
       "metadata_match_version": 2,
       "metadata_confidence": "medium",
       "metadata_evidence": [
+        "justwatch_strict_title",
         "imdb_strict_title"
       ]
     },
@@ -328,8 +330,9 @@
       "cn_title": "",
       "year": "2026",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/354599645/s332/gaeinjeogin-taegsi.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMTk3OGMxMGYtOTY1ZC00M2Y1LTk3ZDItZjkwNzdhZTdmM2I1XkEyXkFqcGc@._V1_.jpg"
+        "https://images.justwatch.com/poster/355343146/s332/gaeinjeogin-taegsi.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMTk3OGMxMGYtOTY1ZC00M2Y1LTk3ZDItZjkwNzdhZTdmM2I1XkEyXkFqcGc@._V1_.jpg",
+        "https://images.justwatch.com/poster/354599645/s332/gaeinjeogin-taegsi.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
@@ -421,5 +424,5 @@
     }
   ],
   "metadata_version": 2,
-  "metadata_enriched_at": "2026-10-13T01:20:35.916860+00:00"
+  "metadata_enriched_at": "2026-10-13T21:24:47.437258+00:00"
 }

@@ -232,8 +232,9 @@
       "cn_title": "",
       "year": "2026",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/355131667/s332/east-of-eden-2026.jpg",
-        "https://m.media-amazon.com/images/M/MV5BNmI2ODMyNjctZTA1MS00ODNhLWI3ZjAtMmE4MDE4OWRjMWZlXkEyXkFqcGc@._V1_.jpg"
+        "https://images.justwatch.com/poster/355253707/s332/east-of-eden-2026.jpg",
+        "https://m.media-amazon.com/images/M/MV5BNmI2ODMyNjctZTA1MS00ODNhLWI3ZjAtMmE4MDE4OWRjMWZlXkEyXkFqcGc@._V1_.jpg",
+        "https://images.justwatch.com/poster/355131667/s332/east-of-eden-2026.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
@@ -426,14 +427,16 @@
       "weeks_in_top_10": 1,
       "season": "Irreplaceable: Season 1",
       "cn_title": "",
-      "year": "2026",
+      "year": "2020",
       "poster_candidates": [
+        "https://images.justwatch.com/poster/320401495/s332/.jpg",
+        "https://m.media-amazon.com/images/M/MV5BNzYzMjkzZTAtMDgyZi00YzI5LTk0OTAtOGExOWVhMGRjZWRkXkEyXkFqcGc@._V1_.jpg",
         "https://images.justwatch.com/poster/350411885/s332/de-neinlocuit.jpg",
         "https://m.media-amazon.com/images/M/MV5BNjk0Y2M1YzgtZDRmMi00ZTNhLTlhMjEtMTEyMjA2NTA5OTY4XkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt37819415",
+      "imdb_id": "tt11685906",
       "tmdb_id": "297982",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
@@ -445,5 +448,5 @@
     }
   ],
   "metadata_version": 2,
-  "metadata_enriched_at": "2026-10-13T01:20:35.916860+00:00"
+  "metadata_enriched_at": "2026-10-13T21:24:47.437258+00:00"
 }
