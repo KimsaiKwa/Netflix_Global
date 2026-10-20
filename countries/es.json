@@ -115,19 +115,21 @@
       "rank": 6,
       "title": "Doing Life",
       "weeks_in_top_10": 3,
-      "cn_title": "",
+      "cn_title": "人生在世",
       "year": "2026",
       "poster_candidates": [
+        "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2935424658.jpg",
         "https://images.justwatch.com/poster/355162793/s332/doing-life.jpg",
         "https://m.media-amazon.com/images/M/MV5BYmNlYzg5NmMtMWZlMi00MWMwLWJmODEtMzVhOTQ3NjEzOGM2XkEyXkFqcGc@._V1_.jpg"
       ],
-      "douban_id": "",
-      "douban_url": "",
+      "douban_id": "37305600",
+      "douban_url": "https://movie.douban.com/subject/37305600/?suggest=Doing+Life",
       "imdb_id": "tt36429458",
       "tmdb_id": "1458857",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
       "metadata_evidence": [
+        "douban_strict_title",
         "justwatch_strict_title",
         "imdb_strict_title",
         "year_consensus"
@@ -439,5 +441,5 @@
     }
   ],
   "metadata_version": 2,
-  "metadata_enriched_at": "2026-10-20T20:05:20.843013+00:00"
+  "metadata_enriched_at": "2026-10-20T22:17:37.034062+00:00"
 }

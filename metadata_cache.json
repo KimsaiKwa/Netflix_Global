@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-10-20T20:05:20.843013+00:00",
+  "updated_at": "2026-10-20T22:17:37.034062+00:00",
   "items": {
     "movie|unabomber": {
       "saved_at": 1791080220.9855633,
@@ -4104,7 +4104,7 @@
       }
     },
     "movie|jurassic world rebirth": {
-      "saved_at": 1791926626.0243852,
+      "saved_at": 1792534648.170257,
       "title": "Jurassic World Rebirth",
       "media_type": "movie",
       "match_version": 2,
@@ -4136,7 +4136,7 @@
       }
     },
     "movie|schumacher 94 the birth of a legend": {
-      "saved_at": 1791926596.2582717,
+      "saved_at": 1792534642.179953,
       "title": "Schumacher ’94 — The Birth of a Legend",
       "media_type": "movie",
       "match_version": 2,
@@ -4194,7 +4194,7 @@
       }
     },
     "movie|white chicks": {
-      "saved_at": 1791926636.3354564,
+      "saved_at": 1792534650.7461343,
       "title": "White Chicks",
       "media_type": "movie",
       "match_version": 2,
@@ -4258,7 +4258,7 @@
       }
     },
     "tv|love is blind netherlands": {
-      "saved_at": 1791926678.5389166,
+      "saved_at": 1792534657.0336683,
       "title": "Love is Blind: Netherlands",
       "media_type": "tv",
       "match_version": 2,
@@ -4319,7 +4319,7 @@
       }
     },
     "tv|veneno": {
-      "saved_at": 1791926619.045426,
+      "saved_at": 1792534645.8707452,
       "title": "Veneno",
       "media_type": "tv",
       "match_version": 2,
@@ -4575,7 +4575,7 @@
       }
     },
     "movie|the soul eater": {
-      "saved_at": 1791926614.1945257,
+      "saved_at": 1792534646.7040257,
       "title": "The Soul Eater",
       "media_type": "movie",
       "match_version": 2,
@@ -4636,7 +4636,7 @@
       }
     },
     "tv|the hunting wives": {
-      "saved_at": 1791926600.1564634,
+      "saved_at": 1792534637.875026,
       "title": "The Hunting Wives",
       "media_type": "tv",
       "match_version": 2,
@@ -4700,7 +4700,7 @@
       }
     },
     "tv|matlock": {
-      "saved_at": 1791926611.7931917,
+      "saved_at": 1792534638.4950812,
       "title": "Matlock",
       "media_type": "tv",
       "match_version": 2,
@@ -4857,7 +4857,7 @@
       }
     },
     "tv|marriage of convenience": {
-      "saved_at": 1791926667.4767215,
+      "saved_at": 1792534653.103275,
       "title": "Marriage of Convenience",
       "media_type": "tv",
       "match_version": 2,
@@ -5044,7 +5044,7 @@
       }
     },
     "tv|the arena": {
-      "saved_at": 1791926602.6792743,
+      "saved_at": 1792534648.2384288,
       "title": "The Arena",
       "media_type": "tv",
       "match_version": 2,
@@ -5364,7 +5364,7 @@
       }
     },
     "movie|angry squad civil servants and seven swindlers": {
-      "saved_at": 1791926641.029933,
+      "saved_at": 1792534653.6463873,
       "title": "Angry Squad: Civil Servants & Seven Swindlers",
       "media_type": "movie",
       "match_version": 2,
@@ -5393,7 +5393,7 @@
       }
     },
     "tv|east of eden": {
-      "saved_at": 1791926592.1065097,
+      "saved_at": 1792534635.2602541,
       "title": "East of Eden",
       "media_type": "tv",
       "match_version": 2,
@@ -5612,7 +5612,7 @@
       }
     },
     "movie|the widower til death do us part": {
-      "saved_at": 1791926583.1337204,
+      "saved_at": 1792534641.863281,
       "title": "The Widower: 'Til Death Do Us Part",
       "media_type": "movie",
       "match_version": 2,
@@ -5837,31 +5837,33 @@
       }
     },
     "movie|doing life": {
-      "saved_at": 1791926582.6557512,
+      "saved_at": 1792534635.8958092,
       "title": "Doing Life",
       "media_type": "movie",
       "match_version": 2,
       "identity_revision": "",
       "meta": {
-        "cn_title": "",
+        "cn_title": "人生在世",
         "year": "2026",
         "poster_candidates": [
+          "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2935424658.jpg",
           "https://images.justwatch.com/poster/355162793/s332/doing-life.jpg",
           "https://m.media-amazon.com/images/M/MV5BYmNlYzg5NmMtMWZlMi00MWMwLWJmODEtMzVhOTQ3NjEzOGM2XkEyXkFqcGc@._V1_.jpg"
         ],
-        "douban_matched": false,
+        "douban_matched": true,
         "justwatch_matched": true,
         "imdb_matched": true,
-        "douban_id": "",
-        "douban_url": "",
+        "douban_id": "37305600",
+        "douban_url": "https://movie.douban.com/subject/37305600/?suggest=Doing+Life",
         "imdb_id": "tt36429458",
         "tmdb_id": "1458857",
-        "douban_poster": "",
+        "douban_poster": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2935424658.jpg",
         "justwatch_poster": "https://images.justwatch.com/poster/355162793/s332/doing-life.jpg",
         "imdb_poster": "https://m.media-amazon.com/images/M/MV5BYmNlYzg5NmMtMWZlMi00MWMwLWJmODEtMzVhOTQ3NjEzOGM2XkEyXkFqcGc@._V1_.jpg",
         "localized_alias": "只要活下去",
         "confidence": "high",
         "evidence": [
+          "douban_strict_title",
           "justwatch_strict_title",
           "imdb_strict_title",
           "year_consensus"
