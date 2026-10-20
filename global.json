@@ -1,6 +1,6 @@
 {
-  "week": "2026-10-04",
-  "generated_at": "2026-10-13T21:22:58.011191+00:00",
+  "week": "2026-10-18",
+  "generated_at": "2026-10-20T20:03:07.593627+00:00",
   "source": "Netflix Tudum Top 10",
   "source_url": "https://top10.netflix.com/data/all-weeks-global.tsv",
   "derived": true,
@@ -9,340 +9,340 @@
     "Films (English)": [
       {
         "source_rank": 1,
-        "title": "UNABOMBER",
+        "title": "Animals",
         "season": null,
-        "views": 24900000,
-        "hours_viewed": 41500000,
-        "runtime_hours": 1.6667,
+        "views": 30800000,
+        "hours_viewed": 55400000,
+        "runtime_hours": 1.8,
         "weeks_in_top_10": 2
       },
       {
         "source_rank": 2,
-        "title": "The Widower: 'Til Death Do Us Part",
+        "title": "Doing Life",
         "season": null,
-        "views": 11600000,
-        "hours_viewed": 17800000,
-        "runtime_hours": 1.5333,
-        "weeks_in_top_10": 1
+        "views": 7300000,
+        "hours_viewed": 13100000,
+        "runtime_hours": 1.8,
+        "weeks_in_top_10": 3
       },
       {
         "source_rank": 3,
-        "title": "Doing Life",
+        "title": "Ice Age: Collision Course",
         "season": null,
-        "views": 9300000,
-        "hours_viewed": 16800000,
-        "runtime_hours": 1.8,
-        "weeks_in_top_10": 1
-      },
-      {
-        "source_rank": 4,
-        "title": "The Breadwinner",
-        "season": null,
-        "views": 5300000,
-        "hours_viewed": 8800000,
-        "runtime_hours": 1.65,
-        "weeks_in_top_10": 1
-      },
-      {
-        "source_rank": 5,
-        "title": "The Equalizer 3",
-        "season": null,
-        "views": 5000000,
-        "hours_viewed": 9100000,
-        "runtime_hours": 1.8167,
+        "views": 6300000,
+        "hours_viewed": 10200000,
+        "runtime_hours": 1.6167,
         "weeks_in_top_10": 5
       },
       {
-        "source_rank": 6,
-        "title": "The Mummy",
+        "source_rank": 4,
+        "title": "Ice Age: Dawn of the Dinosaurs",
         "season": null,
-        "views": 3100000,
-        "hours_viewed": 6500000,
-        "runtime_hours": 2.0833,
+        "views": 4900000,
+        "hours_viewed": 7800000,
+        "runtime_hours": 1.5833,
+        "weeks_in_top_10": 5
+      },
+      {
+        "source_rank": 5,
+        "title": "Ice Age",
+        "season": null,
+        "views": 4800000,
+        "hours_viewed": 6600000,
+        "runtime_hours": 1.3833,
+        "weeks_in_top_10": 2
+      },
+      {
+        "source_rank": 6,
+        "title": "Corpse Bride",
+        "season": null,
+        "views": 4600000,
+        "hours_viewed": 5900000,
+        "runtime_hours": 1.2833,
         "weeks_in_top_10": 1
       },
       {
         "source_rank": 7,
-        "title": "The Whisper Man",
+        "title": "Anyone But You",
         "season": null,
-        "views": 2700000,
-        "hours_viewed": 5100000,
-        "runtime_hours": 1.9,
-        "weeks_in_top_10": 6
+        "views": 4400000,
+        "hours_viewed": 7700000,
+        "runtime_hours": 1.7333,
+        "weeks_in_top_10": 4
       },
       {
         "source_rank": 8,
-        "title": "What's Your Number?",
+        "title": "Ice Age: Continental Drift",
         "season": null,
-        "views": 2600000,
-        "hours_viewed": 4600000,
-        "runtime_hours": 1.7667,
-        "weeks_in_top_10": 1
+        "views": 4300000,
+        "hours_viewed": 6500000,
+        "runtime_hours": 1.5167,
+        "weeks_in_top_10": 2
       },
       {
         "source_rank": 9,
-        "title": "A Minecraft Movie",
+        "title": "UNABOMBER",
         "season": null,
-        "views": 2500000,
-        "hours_viewed": 4200000,
-        "runtime_hours": 1.6833,
-        "weeks_in_top_10": 3
+        "views": 4200000,
+        "hours_viewed": 7000000,
+        "runtime_hours": 1.6667,
+        "weeks_in_top_10": 4
       },
       {
         "source_rank": 10,
-        "title": "KPop Demon Hunters",
+        "title": "Ice Age: The Meltdown",
         "season": null,
-        "views": 2400000,
-        "hours_viewed": 4000000,
-        "runtime_hours": 1.6667,
-        "weeks_in_top_10": 67
+        "views": 3600000,
+        "hours_viewed": 5600000,
+        "runtime_hours": 1.55,
+        "weeks_in_top_10": 2
       }
     ],
     "Films (Non-English)": [
       {
         "source_rank": 1,
-        "title": "Demon Slayer: Kimetsu no Yaiba Infinity Castle I",
+        "title": "Therapy Done Right",
         "season": null,
-        "views": 6400000,
-        "hours_viewed": 16600000,
-        "runtime_hours": 2.5833,
-        "weeks_in_top_10": 3
+        "views": 3000000,
+        "hours_viewed": 4900000,
+        "runtime_hours": 1.65,
+        "weeks_in_top_10": 1
       },
       {
         "source_rank": 2,
-        "title": "What a Father!",
+        "title": "The Storm",
         "season": null,
-        "views": 2000000,
-        "hours_viewed": 3200000,
-        "runtime_hours": 1.6167,
+        "views": 2600000,
+        "hours_viewed": 4400000,
+        "runtime_hours": 1.6833,
         "weeks_in_top_10": 1
       },
       {
         "source_rank": 3,
-        "title": "Crazy Rich, Incredibly Broke",
+        "title": "Mandaadi",
         "season": null,
-        "views": 1800000,
-        "hours_viewed": 3000000,
-        "runtime_hours": 1.6333,
-        "weeks_in_top_10": 1
+        "views": 2200000,
+        "hours_viewed": 5600000,
+        "runtime_hours": 2.55,
+        "weeks_in_top_10": 2
       },
       {
         "source_rank": 4,
-        "title": "The Secret Woman",
+        "title": "Reporting Live",
         "season": null,
-        "views": 1600000,
-        "hours_viewed": 3200000,
-        "runtime_hours": 1.9833,
-        "weeks_in_top_10": 6
+        "views": 1900000,
+        "hours_viewed": 3700000,
+        "runtime_hours": 1.95,
+        "weeks_in_top_10": 2
       },
       {
         "source_rank": 5,
-        "title": "Facing El Chapo",
+        "title": "Acid",
         "season": null,
-        "views": 1500000,
-        "hours_viewed": 2400000,
-        "runtime_hours": 1.55,
-        "weeks_in_top_10": 7
+        "views": 1800000,
+        "hours_viewed": 3000000,
+        "runtime_hours": 1.6667,
+        "weeks_in_top_10": 2
       },
       {
         "source_rank": 6,
-        "title": "Unhappily Ever After",
+        "title": "Facing El Chapo",
         "season": null,
-        "views": 1500000,
-        "hours_viewed": 2200000,
-        "runtime_hours": 1.45,
-        "weeks_in_top_10": 1
+        "views": 1300000,
+        "hours_viewed": 2000000,
+        "runtime_hours": 1.55,
+        "weeks_in_top_10": 9
       },
       {
         "source_rank": 7,
-        "title": "Vishwanath & Sons",
+        "title": "Demon Slayer: Kimetsu no Yaiba Infinity Castle I",
         "season": null,
         "views": 1200000,
-        "hours_viewed": 3300000,
-        "runtime_hours": 2.6667,
-        "weeks_in_top_10": 4
+        "hours_viewed": 3100000,
+        "runtime_hours": 2.5833,
+        "weeks_in_top_10": 5
       },
       {
         "source_rank": 8,
-        "title": "Schumacher ’94 — The Birth of a Legend",
+        "title": "Enna Vilai : The Price of Dignity",
         "season": null,
         "views": 1200000,
-        "hours_viewed": 2200000,
-        "runtime_hours": 1.7833,
+        "hours_viewed": 2400000,
+        "runtime_hours": 2.0333,
         "weeks_in_top_10": 1
       },
       {
         "source_rank": 9,
-        "title": "Irumudi",
+        "title": "Pradhama Drishtya Kuttakkar",
         "season": null,
         "views": 1100000,
-        "hours_viewed": 2700000,
-        "runtime_hours": 2.3667,
-        "weeks_in_top_10": 3
+        "hours_viewed": 3000000,
+        "runtime_hours": 2.6167,
+        "weeks_in_top_10": 2
       },
       {
         "source_rank": 10,
-        "title": "Modha Rathri",
+        "title": "Crazy Rich, Incredibly Broke",
         "season": null,
         "views": 1000000,
-        "hours_viewed": 2400000,
-        "runtime_hours": 2.3667,
+        "hours_viewed": 1600000,
+        "runtime_hours": 1.6333,
         "weeks_in_top_10": 3
       }
     ],
     "TV (English)": [
       {
         "source_rank": 1,
-        "title": "East of Eden",
-        "season": "East of Eden: Limited Series",
-        "views": 6500000,
-        "hours_viewed": 45500000,
-        "runtime_hours": 6.95,
-        "weeks_in_top_10": 1
+        "title": "Below",
+        "season": "Below: Limited Series",
+        "views": 21200000,
+        "hours_viewed": 86400000,
+        "runtime_hours": 4.0667,
+        "weeks_in_top_10": 2
       },
       {
         "source_rank": 2,
-        "title": "Monster: The Lizzie Borden Story",
-        "season": "Monster: The Lizzie Borden Story: Season 1",
-        "views": 5700000,
-        "hours_viewed": 37900000,
-        "runtime_hours": 6.6333,
+        "title": "East of Eden",
+        "season": "East of Eden: Limited Series",
+        "views": 6200000,
+        "hours_viewed": 43300000,
+        "runtime_hours": 6.95,
         "weeks_in_top_10": 3
       },
       {
         "source_rank": 3,
-        "title": "A Different World",
-        "season": "A Different World: Season 1",
+        "title": "Instadocs: AI Gone Wild",
+        "season": null,
         "views": 5100000,
-        "hours_viewed": 27900000,
-        "runtime_hours": 5.45,
-        "weeks_in_top_10": 2
+        "hours_viewed": 2300000,
+        "runtime_hours": 0.45,
+        "weeks_in_top_10": 1
       },
       {
         "source_rank": 4,
-        "title": "Wonka's The Golden Ticket",
-        "season": "Wonka's The Golden Ticket: Season 1",
-        "views": 4300000,
-        "hours_viewed": 34100000,
-        "runtime_hours": 7.85,
-        "weeks_in_top_10": 2
+        "title": "TYSON",
+        "season": "TYSON: Limited Series",
+        "views": 5100000,
+        "hours_viewed": 22500000,
+        "runtime_hours": 4.4167,
+        "weeks_in_top_10": 1
       },
       {
         "source_rank": 5,
-        "title": "LEGO ONE PIECE",
-        "season": "LEGO ONE PIECE: Season 1",
-        "views": 3800000,
-        "hours_viewed": 4200000,
-        "runtime_hours": 1.1,
+        "title": "The Diplomat",
+        "season": "The Diplomat: Season 4",
+        "views": 4800000,
+        "hours_viewed": 33500000,
+        "runtime_hours": 7.0333,
         "weeks_in_top_10": 1
       },
       {
         "source_rank": 6,
-        "title": "The Gentlemen",
-        "season": "The Gentlemen: Season 2",
-        "views": 2900000,
-        "hours_viewed": 21800000,
-        "runtime_hours": 7.4333,
-        "weeks_in_top_10": 5
+        "title": "Love Is Blind",
+        "season": "Love Is Blind: S11: Boston",
+        "views": 3600000,
+        "hours_viewed": 17100000,
+        "runtime_hours": 4.7833,
+        "weeks_in_top_10": 1
       },
       {
         "source_rank": 7,
-        "title": "Crew Girl",
-        "season": "Crew Girl: Season 1",
-        "views": 2600000,
-        "hours_viewed": 16100000,
-        "runtime_hours": 6.2,
-        "weeks_in_top_10": 4
+        "title": "Spike",
+        "season": "Spike: Season 1",
+        "views": 2800000,
+        "hours_viewed": 8500000,
+        "runtime_hours": 3.0167,
+        "weeks_in_top_10": 1
       },
       {
         "source_rank": 8,
-        "title": "Raw",
-        "season": "Raw: September 28, 2026",
-        "views": 2500000,
-        "hours_viewed": 4400000,
-        "runtime_hours": 1.7,
+        "title": "Is It Cake? Halloween",
+        "season": "Is It Cake? Halloween: Season 2",
+        "views": 2700000,
+        "hours_viewed": 5300000,
+        "runtime_hours": 1.9833,
         "weeks_in_top_10": 1
       },
       {
         "source_rank": 9,
-        "title": "The Gentlemen",
-        "season": "The Gentlemen: Season 1",
-        "views": 1700000,
-        "hours_viewed": 11400000,
-        "runtime_hours": 6.6833,
-        "weeks_in_top_10": 15
+        "title": "Haunted Hotel",
+        "season": "Haunted Hotel: Season 2",
+        "views": 2700000,
+        "hours_viewed": 9100000,
+        "runtime_hours": 3.4167,
+        "weeks_in_top_10": 1
       },
       {
         "source_rank": 10,
-        "title": "Gabby's Dollhouse",
-        "season": "Gabby's Dollhouse: Season 14",
-        "views": 1700000,
-        "hours_viewed": 2700000,
-        "runtime_hours": 1.6167,
-        "weeks_in_top_10": 3
+        "title": "Raw",
+        "season": "Raw: October 12, 2026",
+        "views": 2500000,
+        "hours_viewed": 4500000,
+        "runtime_hours": 1.7667,
+        "weeks_in_top_10": 1
       }
     ],
     "TV (Non-English)": [
       {
         "source_rank": 1,
-        "title": "Not a Stranger",
-        "season": "Not a Stranger: Season 1",
-        "views": 5100000,
-        "hours_viewed": 34800000,
-        "runtime_hours": 6.7833,
-        "weeks_in_top_10": 3
+        "title": "Doctor X: Mafia in White",
+        "season": "Doctor X: Mafia in White: Limited Series",
+        "views": 7100000,
+        "hours_viewed": 30000000,
+        "runtime_hours": 4.25,
+        "weeks_in_top_10": 2
       },
       {
         "source_rank": 2,
-        "title": "Shaque: Trust No One",
-        "season": "Shaque: Trust No One: Season 1",
-        "views": 4200000,
-        "hours_viewed": 18500000,
-        "runtime_hours": 4.45,
+        "title": "Take Charge of My Heart",
+        "season": "Take Charge of My Heart: Limited Series",
+        "views": 6400000,
+        "hours_viewed": 67800000,
+        "runtime_hours": 10.5333,
         "weeks_in_top_10": 2
       },
       {
         "source_rank": 3,
-        "title": "The Final Problem",
-        "season": "The Final Problem: Limited Series",
-        "views": 3200000,
-        "hours_viewed": 9900000,
-        "runtime_hours": 3.05,
-        "weeks_in_top_10": 2
+        "title": "The Trap",
+        "season": "The Trap: Limited Series",
+        "views": 5400000,
+        "hours_viewed": 26400000,
+        "runtime_hours": 4.9167,
+        "weeks_in_top_10": 1
       },
       {
         "source_rank": 4,
-        "title": "Minerva Academy",
-        "season": "Minerva Academy: Season 1",
-        "views": 2700000,
-        "hours_viewed": 18600000,
-        "runtime_hours": 6.9833,
-        "weeks_in_top_10": 2
+        "title": "100 Days of Deception",
+        "season": "100 Days of Deception: Limited Series",
+        "views": 2800000,
+        "hours_viewed": 13000000,
+        "runtime_hours": 4.5667,
+        "weeks_in_top_10": 1
       },
       {
         "source_rank": 5,
-        "title": "Plastic Beauty",
-        "season": "Plastic Beauty: Season 1",
-        "views": 2500000,
-        "hours_viewed": 22600000,
-        "runtime_hours": 9.1667,
-        "weeks_in_top_10": 3
+        "title": "Not a Stranger",
+        "season": "Not a Stranger: Season 1",
+        "views": 2100000,
+        "hours_viewed": 14100000,
+        "runtime_hours": 6.7833,
+        "weeks_in_top_10": 5
       },
       {
         "source_rank": 6,
-        "title": "Habeas Corpus",
-        "season": "Habeas Corpus: Season 1",
-        "views": 2400000,
-        "hours_viewed": 20700000,
-        "runtime_hours": 8.5833,
+        "title": "Inside The Circle",
+        "season": "Inside The Circle: Season 1",
+        "views": 2000000,
+        "hours_viewed": 12300000,
+        "runtime_hours": 6.1833,
         "weeks_in_top_10": 2
       },
       {
         "source_rank": 7,
-        "title": "Irreplaceable",
-        "season": "Irreplaceable: Season 1",
-        "views": 2000000,
-        "hours_viewed": 17100000,
+        "title": "Where the Mask Ends",
+        "season": "Where the Mask Ends: Season 1",
+        "views": 1600000,
+        "hours_viewed": 12200000,
         "runtime_hours": 0.0,
         "weeks_in_top_10": 1
       },
@@ -350,28 +350,28 @@
         "source_rank": 8,
         "title": "STEEL BALL RUN JoJo’s Bizarre Adventure",
         "season": "STEEL BALL RUN JoJo’s Bizarre Adventure: 2nd-3rd STAGE",
-        "views": 2000000,
-        "hours_viewed": 1600000,
-        "runtime_hours": 0.8,
-        "weeks_in_top_10": 1
+        "views": 1200000,
+        "hours_viewed": 1900000,
+        "runtime_hours": 1.5833,
+        "weeks_in_top_10": 3
       },
       {
         "source_rank": 9,
-        "title": "The Great Indian Kapil Show",
-        "season": "The Great Indian Kapil Show: Season 5",
-        "views": 1400000,
-        "hours_viewed": 3100000,
-        "runtime_hours": 2.2,
-        "weeks_in_top_10": 1
+        "title": "The Apothecary Diaries",
+        "season": "The Apothecary Diaries: Season 3",
+        "views": 1200000,
+        "hours_viewed": 1400000,
+        "runtime_hours": 1.2,
+        "weeks_in_top_10": 2
       },
       {
         "source_rank": 10,
-        "title": "The Perfect Lie",
-        "season": "The Perfect Lie: Season 1",
-        "views": 1400000,
-        "hours_viewed": 8500000,
-        "runtime_hours": 6.1,
-        "weeks_in_top_10": 4
+        "title": "The Ramparts of Ice",
+        "season": "The Ramparts of Ice: Season 2",
+        "views": 1200000,
+        "hours_viewed": 1400000,
+        "runtime_hours": 1.2,
+        "weeks_in_top_10": 2
       }
     ]
   },
@@ -379,12 +379,236 @@
     {
       "rank": 1,
       "source_rank": 1,
+      "title": "Animals",
+      "season": null,
+      "views": 30800000,
+      "hours_viewed": 55400000,
+      "runtime_hours": 1.8,
+      "weeks_in_top_10": 2,
+      "source_category": "Films (English)",
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/355355509/s332/jimseungdeul.jpg",
+        "https://m.media-amazon.com/images/M/MV5BZmY3MmZiZjctOTgyYy00OGIxLTkwMDUtNDU3MGNkMGI3YWJlXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt31049299",
+      "tmdb_id": "1236045",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 2,
+      "source_rank": 2,
+      "title": "Doing Life",
+      "season": null,
+      "views": 7300000,
+      "hours_viewed": 13100000,
+      "runtime_hours": 1.8,
+      "weeks_in_top_10": 3,
+      "source_category": "Films (English)",
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/355162793/s332/doing-life.jpg",
+        "https://m.media-amazon.com/images/M/MV5BYmNlYzg5NmMtMWZlMi00MWMwLWJmODEtMzVhOTQ3NjEzOGM2XkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt36429458",
+      "tmdb_id": "1458857",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 3,
+      "source_rank": 3,
+      "title": "Ice Age: Collision Course",
+      "season": null,
+      "views": 6300000,
+      "hours_viewed": 10200000,
+      "runtime_hours": 1.6167,
+      "weeks_in_top_10": 5,
+      "source_category": "Films (English)",
+      "cn_title": "",
+      "year": "2016",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/355389186/s332/Ice-Age-5-Kollision-voraus.jpg",
+        "https://m.media-amazon.com/images/M/MV5BZmExOGMxNzMtYjc3MC00OWU5LTg5OTAtNmRhNzBkYzk2ZGE1XkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt3416828",
+      "tmdb_id": "278154",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 4,
+      "source_rank": 4,
+      "title": "Ice Age: Dawn of the Dinosaurs",
+      "season": null,
+      "views": 4900000,
+      "hours_viewed": 7800000,
+      "runtime_hours": 1.5833,
+      "weeks_in_top_10": 5,
+      "source_category": "Films (English)",
+      "cn_title": "",
+      "year": "2009",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/355389176/s332/Ice-Age-3-Die-Dinosaurier-sind-los.jpg",
+        "https://m.media-amazon.com/images/M/MV5BZWJjZDYwMjgtZDZiMy00YzcyLThjN2YtYjI1ZDQ2ZDJkOTVmXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt1080016",
+      "tmdb_id": "8355",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 5,
+      "source_rank": 5,
+      "title": "Ice Age",
+      "season": null,
+      "views": 4800000,
+      "hours_viewed": 6600000,
+      "runtime_hours": 1.3833,
+      "weeks_in_top_10": 2,
+      "source_category": "Films (English)",
+      "cn_title": "",
+      "year": "2002",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/355389166/s332/Ice-Age.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMDBlYzU2OGMtOGJjNi00ZGZjLWIwNjMtYzdiZjkwYWNjZDljXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt0268380",
+      "tmdb_id": "425",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 6,
+      "source_rank": 6,
+      "title": "Corpse Bride",
+      "season": null,
+      "views": 4600000,
+      "hours_viewed": 5900000,
+      "runtime_hours": 1.2833,
+      "weeks_in_top_10": 1,
+      "source_category": "Films (English)",
+      "cn_title": "",
+      "year": "2005",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/336270797/s332/tim-burtons-corpse-bride.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMTk1MTY1NjU4MF5BMl5BanBnXkFtZTcwNjIzMTEzMw@@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt0121164",
+      "tmdb_id": "3933",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 7,
+      "source_rank": 7,
+      "title": "Anyone But You",
+      "season": null,
+      "views": 4400000,
+      "hours_viewed": 7700000,
+      "runtime_hours": 1.7333,
+      "weeks_in_top_10": 4,
+      "source_category": "Films (English)",
+      "cn_title": "",
+      "year": "2023",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/335814717/s332/anyone-but-you.jpg",
+        "https://m.media-amazon.com/images/M/MV5BOTdiMzFjNWQtZjgyMC00OGE3LThjMDgtMDg4OTRmYTY4NGI3XkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt26047818",
+      "tmdb_id": "1072790",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 8,
+      "source_rank": 8,
+      "title": "Ice Age: Continental Drift",
+      "season": null,
+      "views": 4300000,
+      "hours_viewed": 6500000,
+      "runtime_hours": 1.5167,
+      "weeks_in_top_10": 2,
+      "source_category": "Films (English)",
+      "cn_title": "",
+      "year": "2012",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/355394591/s332/Ice-Age-4-Voll-verschoben.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMTM3NDM5MzY5Ml5BMl5BanBnXkFtZTcwNjExMDUwOA@@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt1667889",
+      "tmdb_id": "57800",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 9,
+      "source_rank": 9,
       "title": "UNABOMBER",
       "season": null,
-      "views": 24900000,
-      "hours_viewed": 41500000,
+      "views": 4200000,
+      "hours_viewed": 7000000,
       "runtime_hours": 1.6667,
-      "weeks_in_top_10": 2,
+      "weeks_in_top_10": 4,
       "source_category": "Films (English)",
       "cn_title": "大学炸弹客",
       "year": "2026",
@@ -407,25 +631,25 @@
       ]
     },
     {
-      "rank": 2,
-      "source_rank": 2,
-      "title": "The Widower: 'Til Death Do Us Part",
+      "rank": 10,
+      "source_rank": 10,
+      "title": "Ice Age: The Meltdown",
       "season": null,
-      "views": 11600000,
-      "hours_viewed": 17800000,
-      "runtime_hours": 1.5333,
-      "weeks_in_top_10": 1,
+      "views": 3600000,
+      "hours_viewed": 5600000,
+      "runtime_hours": 1.55,
+      "weeks_in_top_10": 2,
       "source_category": "Films (English)",
       "cn_title": "",
-      "year": "2026",
+      "year": "2006",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/354591590/s332/the-widower-til-death-do-us-part.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMjMyODRmODYtNGM1MS00MzQ5LWFkM2MtY2E0NTM3NWNhOWEwXkEyXkFqcGc@._V1_.jpg"
+        "https://images.justwatch.com/poster/355389173/s332/doba-ledova-2-obleva.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMjAwODg3OTAxMl5BMl5BanBnXkFtZTcwMjg2NjYyMw@@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt44568097",
-      "tmdb_id": "1758536",
+      "imdb_id": "tt0438097",
+      "tmdb_id": "950",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
       "metadata_evidence": [
@@ -433,45 +657,47 @@
         "imdb_strict_title",
         "year_consensus"
       ]
-    },
+    }
+  ],
+  "tv": [
     {
-      "rank": 3,
-      "source_rank": 3,
-      "title": "Doing Life",
-      "season": null,
-      "views": 9300000,
-      "hours_viewed": 16800000,
-      "runtime_hours": 1.8,
-      "weeks_in_top_10": 1,
-      "source_category": "Films (English)",
-      "cn_title": "",
-      "year": "2026",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/355162793/s332/doing-life.jpg",
-        "https://m.media-amazon.com/images/M/MV5BYmNlYzg5NmMtMWZlMi00MWMwLWJmODEtMzVhOTQ3NjEzOGM2XkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt36429458",
-      "tmdb_id": "1458857",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 4,
+      "rank": 1,
       "source_rank": 1,
-      "title": "Demon Slayer: Kimetsu no Yaiba Infinity Castle I",
-      "season": null,
-      "views": 6400000,
-      "hours_viewed": 16600000,
-      "runtime_hours": 2.5833,
-      "weeks_in_top_10": 3,
-      "source_category": "Films (Non-English)",
+      "title": "Below",
+      "season": "Below: Limited Series",
+      "views": 21200000,
+      "hours_viewed": 86400000,
+      "runtime_hours": 4.0667,
+      "weeks_in_top_10": 2,
+      "source_category": "TV (English)",
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/355537031/s332/below.jpg",
+        "https://m.media-amazon.com/images/M/MV5BYzRjZjU3NTktOTY5My00YTEzLTliYjAtMDNjYjhiN2MyYjllXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt35934755",
+      "tmdb_id": "285322",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 2,
+      "source_rank": 1,
+      "title": "Doctor X: Mafia in White",
+      "season": "Doctor X: Mafia in White: Limited Series",
+      "views": 7100000,
+      "hours_viewed": 30000000,
+      "runtime_hours": 4.25,
+      "weeks_in_top_10": 2,
+      "source_category": "TV (Non-English)",
       "cn_title": "",
       "year": "",
       "poster_candidates": [],
@@ -484,190 +710,39 @@
       "metadata_evidence": []
     },
     {
-      "rank": 5,
-      "source_rank": 4,
-      "title": "The Breadwinner",
-      "season": null,
-      "views": 5300000,
-      "hours_viewed": 8800000,
-      "runtime_hours": 1.65,
-      "weeks_in_top_10": 1,
-      "source_category": "Films (English)",
-      "cn_title": "一家之主",
+      "rank": 3,
+      "source_rank": 2,
+      "title": "Take Charge of My Heart",
+      "season": "Take Charge of My Heart: Limited Series",
+      "views": 6400000,
+      "hours_viewed": 67800000,
+      "runtime_hours": 10.5333,
+      "weeks_in_top_10": 2,
+      "source_category": "TV (Non-English)",
+      "cn_title": "",
       "year": "2026",
       "poster_candidates": [
-        "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2928234359.jpg",
-        "https://images.justwatch.com/poster/355026291/s332/the-breadwinner-2026.jpg",
-        "https://m.media-amazon.com/images/M/MV5BZTQ3ZWQ4YTctMTI0OC00NmI5LWFlNjgtNjhhMDQxYjUxYTQyXkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "37235281",
-      "douban_url": "https://movie.douban.com/subject/37235281/?suggest=The+Breadwinner",
-      "imdb_id": "tt34459219",
-      "tmdb_id": "1440050",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "douban_strict_title",
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 6,
-      "source_rank": 5,
-      "title": "The Equalizer 3",
-      "season": null,
-      "views": 5000000,
-      "hours_viewed": 9100000,
-      "runtime_hours": 1.8167,
-      "weeks_in_top_10": 5,
-      "source_category": "Films (English)",
-      "cn_title": "",
-      "year": "2023",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/307341892/s332/the-equalizer-3.jpg",
-        "https://m.media-amazon.com/images/M/MV5BYTM1OTAyYmQtY2ZiZS00NTRlLWEyZDYtZWMyYjMyOTE2YWE4XkEyXkFqcGc@._V1_.jpg"
+        "https://m.media-amazon.com/images/M/MV5BMDJlMjJkZDQtMzA5Mi00MTkyLWE3ZTctNGQ5ZGZkODlmYmI0XkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt17024450",
-      "tmdb_id": "926393",
+      "imdb_id": "tt37737331",
+      "tmdb_id": "",
       "metadata_match_version": 2,
-      "metadata_confidence": "high",
+      "metadata_confidence": "medium",
       "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
+        "imdb_strict_title"
       ]
     },
     {
-      "rank": 7,
-      "source_rank": 6,
-      "title": "The Mummy",
-      "season": null,
-      "views": 3100000,
-      "hours_viewed": 6500000,
-      "runtime_hours": 2.0833,
-      "weeks_in_top_10": 1,
-      "source_category": "Films (English)",
-      "cn_title": "",
-      "year": "1999",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/347395520/s332/miira.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMTY4YWE0OGMtNjU0Yi00YzIwLTk3NTktM2ZiYWQwNjM4MmMxXkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt0120616",
-      "tmdb_id": "564",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 8,
-      "source_rank": 7,
-      "title": "The Whisper Man",
-      "season": null,
-      "views": 2700000,
-      "hours_viewed": 5100000,
-      "runtime_hours": 1.9,
-      "weeks_in_top_10": 6,
-      "source_category": "Films (English)",
-      "cn_title": "耳语者",
-      "year": "2026",
-      "poster_candidates": [
-        "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2934088022.jpg",
-        "https://images.justwatch.com/poster/354521042/s332/der-kinderfluesterer.jpg",
-        "https://m.media-amazon.com/images/M/MV5BOTI1YmY3YTQtYTg2Zi00OTZkLTk3NzQtNjcxNzIzMjk2ODZlXkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "37228429",
-      "douban_url": "https://movie.douban.com/subject/37228429/?suggest=The+Whisper+Man",
-      "imdb_id": "tt11561116",
-      "tmdb_id": "860508",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "douban_strict_title",
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 9,
-      "source_rank": 8,
-      "title": "What's Your Number?",
-      "season": null,
-      "views": 2600000,
-      "hours_viewed": 4600000,
-      "runtime_hours": 1.7667,
-      "weeks_in_top_10": 1,
-      "source_category": "Films (English)",
-      "cn_title": "",
-      "year": "2011",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/326321871/s332/Der-perfekte-Ex.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMjIzNTc2MTgwNV5BMl5BanBnXkFtZTcwMzYzMzgxNQ@@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt0770703",
-      "tmdb_id": "63492",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 10,
-      "source_rank": 9,
-      "title": "A Minecraft Movie",
-      "season": null,
-      "views": 2500000,
-      "hours_viewed": 4200000,
-      "runtime_hours": 1.6833,
-      "weeks_in_top_10": 3,
-      "source_category": "Films (English)",
-      "cn_title": "我的世界大电影",
-      "year": "2025",
-      "poster_candidates": [
-        "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2919803217.jpg",
-        "https://images.justwatch.com/poster/326379892/s332/a-minecraft-movie-2025.jpg",
-        "https://m.media-amazon.com/images/M/MV5BYzFjMzNjOTktNDBlNy00YWZhLWExYTctZDcxNDA4OWVhOTJjXkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "26149750",
-      "douban_url": "https://movie.douban.com/subject/26149750/?suggest=A+Minecraft+Movie",
-      "imdb_id": "tt3566834",
-      "tmdb_id": "950387",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "douban_strict_title",
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    }
-  ],
-  "tv": [
-    {
-      "rank": 1,
-      "source_rank": 1,
+      "rank": 4,
+      "source_rank": 2,
       "title": "East of Eden",
       "season": "East of Eden: Limited Series",
-      "views": 6500000,
-      "hours_viewed": 45500000,
+      "views": 6200000,
+      "hours_viewed": 43300000,
       "runtime_hours": 6.95,
-      "weeks_in_top_10": 1,
+      "weeks_in_top_10": 3,
       "source_category": "TV (English)",
       "cn_title": "",
       "year": "2026",
@@ -689,105 +764,25 @@
       ]
     },
     {
-      "rank": 2,
-      "source_rank": 2,
-      "title": "Monster: The Lizzie Borden Story",
-      "season": "Monster: The Lizzie Borden Story: Season 1",
-      "views": 5700000,
-      "hours_viewed": 37900000,
-      "runtime_hours": 6.6333,
-      "weeks_in_top_10": 3,
-      "source_category": "TV (English)",
-      "cn_title": "",
-      "year": "2026",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/354782112/s332/monster-the-lizzie-borden-story.jpg",
-        "https://images.justwatch.com/poster/354782112/s332/goemul-riji-bodeun-iyagi.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "",
-      "tmdb_id": "299939",
-      "metadata_match_version": 2,
-      "metadata_confidence": "medium",
-      "metadata_evidence": [
-        "justwatch_strict_title"
-      ]
-    },
-    {
-      "rank": 3,
-      "source_rank": 1,
-      "title": "Not a Stranger",
-      "season": "Not a Stranger: Season 1",
-      "views": 5100000,
-      "hours_viewed": 34800000,
-      "runtime_hours": 6.7833,
-      "weeks_in_top_10": 3,
+      "rank": 5,
+      "source_rank": 3,
+      "title": "The Trap",
+      "season": "The Trap: Limited Series",
+      "views": 5400000,
+      "hours_viewed": 26400000,
+      "runtime_hours": 4.9167,
+      "weeks_in_top_10": 1,
       "source_category": "TV (Non-English)",
       "cn_title": "",
-      "year": "2026",
+      "year": "2018",
       "poster_candidates": [
-        "https://m.media-amazon.com/images/M/MV5BYWNjNzcxYzctZGM4Zi00OWUwLTkyODctNzc1Y2U4MjZiZDY0XkEyXkFqcGc@._V1_.jpg"
+        "https://images.justwatch.com/poster/141610274/s332/.jpg",
+        "https://m.media-amazon.com/images/M/MV5BNjYwYjExM2UtNDk0ZC00MmFjLWJkMDQtODA2ZjU0M2VjZGIyXkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt39397536",
-      "tmdb_id": "",
-      "metadata_match_version": 2,
-      "metadata_confidence": "medium",
-      "metadata_evidence": [
-        "imdb_strict_title"
-      ]
-    },
-    {
-      "rank": 4,
-      "source_rank": 3,
-      "title": "A Different World",
-      "season": "A Different World: Season 1",
-      "views": 5100000,
-      "hours_viewed": 27900000,
-      "runtime_hours": 5.45,
-      "weeks_in_top_10": 2,
-      "source_category": "TV (English)",
-      "cn_title": "",
-      "year": "2026",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/355071095/s332/a-different-world.jpg",
-        "https://m.media-amazon.com/images/M/MV5BNGIwZDc3OWYtZTZkOS00NmRjLTk3NTAtNjQzODI3ZTI4MWU4XkEyXkFqcGc@._V1_.jpg",
-        "https://images.justwatch.com/poster/355071095/s332/a-different-world-1.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt33081352",
-      "tmdb_id": "305357",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 5,
-      "source_rank": 4,
-      "title": "Wonka's The Golden Ticket",
-      "season": "Wonka's The Golden Ticket: Season 1",
-      "views": 4300000,
-      "hours_viewed": 34100000,
-      "runtime_hours": 7.85,
-      "weeks_in_top_10": 2,
-      "source_category": "TV (English)",
-      "cn_title": "",
-      "year": "2026",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/350868666/s332/wonkas-the-golden-ticket.jpg",
-        "https://m.media-amazon.com/images/M/MV5BNTViMTljYjAtMDRiYi00NjAzLWEzZjEtODg4ODI5OTJlYjVmXkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt36258621",
-      "tmdb_id": "286940",
+      "imdb_id": "tt8542132",
+      "tmdb_id": "81843",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
       "metadata_evidence": [
@@ -798,24 +793,24 @@
     },
     {
       "rank": 6,
-      "source_rank": 2,
-      "title": "Shaque: Trust No One",
-      "season": "Shaque: Trust No One: Season 1",
-      "views": 4200000,
-      "hours_viewed": 18500000,
-      "runtime_hours": 4.45,
-      "weeks_in_top_10": 2,
-      "source_category": "TV (Non-English)",
+      "source_rank": 4,
+      "title": "TYSON",
+      "season": "TYSON: Limited Series",
+      "views": 5100000,
+      "hours_viewed": 22500000,
+      "runtime_hours": 4.4167,
+      "weeks_in_top_10": 1,
+      "source_category": "TV (English)",
       "cn_title": "",
       "year": "2026",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/355215999/s332/shaque-trust-no-one.jpg",
-        "https://m.media-amazon.com/images/M/MV5BYWRlNDA3MGYtMWMzZS00MDAwLTk4MTAtY2RhMGI3OTA2OTY1XkEyXkFqcGc@._V1_.jpg"
+        "https://images.justwatch.com/poster/355560385/s332/tyson.jpg",
+        "https://m.media-amazon.com/images/M/MV5BZjk2OTZmOTgtY2E0NC00MDViLTg3NWYtNGQwMjZhNDJhNTNiXkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt35929525",
-      "tmdb_id": "285147",
+      "imdb_id": "tt35051210",
+      "tmdb_id": "335536",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
       "metadata_evidence": [
@@ -826,24 +821,49 @@
     },
     {
       "rank": 7,
-      "source_rank": 5,
-      "title": "LEGO ONE PIECE",
-      "season": "LEGO ONE PIECE: Season 1",
-      "views": 3800000,
-      "hours_viewed": 4200000,
-      "runtime_hours": 1.1,
+      "source_rank": 3,
+      "title": "Instadocs: AI Gone Wild",
+      "season": null,
+      "views": 5100000,
+      "hours_viewed": 2300000,
+      "runtime_hours": 0.45,
       "weeks_in_top_10": 1,
       "source_category": "TV (English)",
       "cn_title": "",
       "year": "2026",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/354213775/s332/lego-one-piece.jpg",
-        "https://m.media-amazon.com/images/M/MV5BN2NlMGYxMzYtN2Y5My00NWY3LWI0NDItNGY3YjE0YmI0NDFjXkEyXkFqcGc@._V1_.jpg"
+        "https://m.media-amazon.com/images/M/MV5BMzNmMTVmZmYtNWYyMy00NzhkLTg4ZmQtNTMzZjY2N2QyMTE5XkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt41538904",
-      "tmdb_id": "318918",
+      "imdb_id": "tt48437216",
+      "tmdb_id": "",
+      "metadata_match_version": 2,
+      "metadata_confidence": "medium",
+      "metadata_evidence": [
+        "imdb_strict_title"
+      ]
+    },
+    {
+      "rank": 8,
+      "source_rank": 5,
+      "title": "The Diplomat",
+      "season": "The Diplomat: Season 4",
+      "views": 4800000,
+      "hours_viewed": 33500000,
+      "runtime_hours": 7.0333,
+      "weeks_in_top_10": 1,
+      "source_category": "TV (English)",
+      "cn_title": "",
+      "year": "2023",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/338464486/s332/the-diplomat.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMmY4YWMyOGItMzA1MC00ZjY0LWEyM2QtZWFmNGNhNDZlZjk5XkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt17491088",
+      "tmdb_id": "203857",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
       "metadata_evidence": [
@@ -853,50 +873,25 @@
       ]
     },
     {
-      "rank": 8,
-      "source_rank": 3,
-      "title": "The Final Problem",
-      "season": "The Final Problem: Limited Series",
-      "views": 3200000,
-      "hours_viewed": 9900000,
-      "runtime_hours": 3.05,
-      "weeks_in_top_10": 2,
-      "source_category": "TV (Non-English)",
-      "cn_title": "",
-      "year": "2026",
-      "poster_candidates": [
-        "https://m.media-amazon.com/images/M/MV5BZDI1YTE5ZDEtNDBlNS00MWRlLWJjY2UtYjhiMjhkMDlhMjk5XkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt36832679",
-      "tmdb_id": "",
-      "metadata_match_version": 2,
-      "metadata_confidence": "medium",
-      "metadata_evidence": [
-        "imdb_strict_title"
-      ]
-    },
-    {
       "rank": 9,
       "source_rank": 6,
-      "title": "The Gentlemen",
-      "season": "The Gentlemen: Season 2",
-      "views": 2900000,
-      "hours_viewed": 21800000,
-      "runtime_hours": 7.4333,
-      "weeks_in_top_10": 5,
+      "title": "Love Is Blind",
+      "season": "Love Is Blind: S11: Boston",
+      "views": 3600000,
+      "hours_viewed": 17100000,
+      "runtime_hours": 4.7833,
+      "weeks_in_top_10": 1,
       "source_category": "TV (English)",
       "cn_title": "",
-      "year": "2024",
+      "year": "2020",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/354137615/s332/The-Gentlemen.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMzM0YzFhMTYtYjZkNS00MWRmLTg2ZDgtY2MzYjQ5ODVmOTI1XkEyXkFqcGc@._V1_.jpg"
+        "https://images.justwatch.com/poster/249642024/s332/love-is-blind-2020-0.jpg",
+        "https://m.media-amazon.com/images/M/MV5BNDAxNjY2M2UtYTliYi00ZDA4LTkyMzYtN2Q5NzQxMzFhM2VmXkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt13210838",
-      "tmdb_id": "236235",
+      "imdb_id": "tt11704040",
+      "tmdb_id": "99353",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
       "metadata_evidence": [
@@ -908,21 +903,21 @@
     {
       "rank": 10,
       "source_rank": 4,
-      "title": "Minerva Academy",
-      "season": "Minerva Academy: Season 1",
-      "views": 2700000,
-      "hours_viewed": 18600000,
-      "runtime_hours": 6.9833,
-      "weeks_in_top_10": 2,
+      "title": "100 Days of Deception",
+      "season": "100 Days of Deception: Limited Series",
+      "views": 2800000,
+      "hours_viewed": 13000000,
+      "runtime_hours": 4.5667,
+      "weeks_in_top_10": 1,
       "source_category": "TV (Non-English)",
       "cn_title": "",
       "year": "2026",
       "poster_candidates": [
-        "https://m.media-amazon.com/images/M/MV5BZDI2YTkzYjItZWIzZi00MWFkLWI3MzctYmU3OWVhODUwNjM5XkEyXkFqcGc@._V1_.jpg"
+        "https://m.media-amazon.com/images/M/MV5BNzk0OWQxMjQtZWI1Ny00MjdjLTgzYTUtYmM4N2EyNGE0ZDg1XkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt28765828",
+      "imdb_id": "tt39201866",
       "tmdb_id": "",
       "metadata_match_version": 2,
       "metadata_confidence": "medium",
@@ -932,5 +927,5 @@
     }
   ],
   "metadata_version": 2,
-  "metadata_enriched_at": "2026-10-14T22:18:26.218688+00:00"
+  "metadata_enriched_at": "2026-10-20T20:05:20.843013+00:00"
 }

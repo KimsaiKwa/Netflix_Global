@@ -1,12 +1,122 @@
 {
-  "week": "2026-10-04",
+  "week": "2026-10-18",
   "country_iso2": "AT",
   "country_name": "Austria",
   "films": [
     {
       "rank": 1,
-      "title": "UNABOMBER",
+      "title": "Animals",
       "weeks_in_top_10": 2,
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/355355509/s332/jimseungdeul.jpg",
+        "https://m.media-amazon.com/images/M/MV5BZmY3MmZiZjctOTgyYy00OGIxLTkwMDUtNDU3MGNkMGI3YWJlXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt31049299",
+      "tmdb_id": "1236045",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Extrawurst",
+      "weeks_in_top_10": 1,
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/336191285/s332/extrawurst.jpg",
+        "https://m.media-amazon.com/images/M/MV5BZjlmNzczODItMTZlYy00NWMxLWIyZWEtYTU4N2M1NTdjM2FmXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt36586751",
+      "tmdb_id": "1427838",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Evil Dead Burn",
+      "weeks_in_top_10": 1,
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/346673389/s332/ibeul-dedeu-beon.jpg",
+        "https://m.media-amazon.com/images/M/MV5BZTljMTZjZTItZjMzZi00NDBhLWFmMzAtOGNiNTlhY2MxMzg5XkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt31170389",
+      "tmdb_id": "1212763",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Doing Life",
+      "weeks_in_top_10": 3,
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/355162793/s332/doing-life.jpg",
+        "https://m.media-amazon.com/images/M/MV5BYmNlYzg5NmMtMWZlMi00MWMwLWJmODEtMzVhOTQ3NjEzOGM2XkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt36429458",
+      "tmdb_id": "1458857",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "Ice Age: Collision Course",
+      "weeks_in_top_10": 2,
+      "cn_title": "",
+      "year": "2016",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/355389186/s332/Ice-Age-5-Kollision-voraus.jpg",
+        "https://m.media-amazon.com/images/M/MV5BZmExOGMxNzMtYjc3MC00OWU5LTg5OTAtNmRhNzBkYzk2ZGE1XkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt3416828",
+      "tmdb_id": "278154",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "UNABOMBER",
+      "weeks_in_top_10": 4,
       "cn_title": "大学炸弹客",
       "year": "2026",
       "poster_candidates": [
@@ -28,119 +138,18 @@
       ]
     },
     {
-      "rank": 2,
-      "title": "The Widower: 'Til Death Do Us Part",
-      "weeks_in_top_10": 1,
-      "cn_title": "",
-      "year": "2026",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/354591590/s332/the-widower-til-death-do-us-part.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMjMyODRmODYtNGM1MS00MzQ5LWFkM2MtY2E0NTM3NWNhOWEwXkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt44568097",
-      "tmdb_id": "1758536",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 3,
-      "title": "Mickey 17",
-      "weeks_in_top_10": 2,
-      "cn_title": "",
-      "year": "2025",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/336806083/s332/mickey-17.jpg",
-        "https://m.media-amazon.com/images/M/MV5BZGQwYmEzMzktYzBmMy00NmVmLTkyYTUtOTYyZjliZDNhZGVkXkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt12299608",
-      "tmdb_id": "696506",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 4,
-      "title": "Demon Slayer: Kimetsu no Yaiba Infinity Castle I",
-      "weeks_in_top_10": 1,
-      "cn_title": "",
-      "year": "",
-      "poster_candidates": [],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "",
-      "tmdb_id": "",
-      "metadata_match_version": 2,
-      "metadata_confidence": "none",
-      "metadata_evidence": []
-    },
-    {
-      "rank": 5,
-      "title": "Schumacher ’94 — The Birth of a Legend",
-      "weeks_in_top_10": 1,
-      "cn_title": "",
-      "year": "2026",
-      "poster_candidates": [
-        "https://m.media-amazon.com/images/M/MV5BOWI2NmQ5ZmUtYmIxZi00YjViLWJmMjEtNjM3NmQ5MTQ5Y2Q3XkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt39453404",
-      "tmdb_id": "",
-      "metadata_match_version": 2,
-      "metadata_confidence": "medium",
-      "metadata_evidence": [
-        "imdb_strict_title"
-      ]
-    },
-    {
-      "rank": 6,
-      "title": "How to Lose a Guy in 10 Days",
-      "weeks_in_top_10": 3,
-      "cn_title": "",
-      "year": "2003",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/294804544/s332/Wie-werde-ich-ihn-los-in-10-Tagen.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMjE4NTA1NzExN15BMl5BanBnXkFtZTYwNjc3MjM3._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt0251127",
-      "tmdb_id": "9919",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
       "rank": 7,
-      "title": "Doing Life",
+      "title": "The Storm",
       "weeks_in_top_10": 1,
       "cn_title": "",
-      "year": "2026",
+      "year": "2012",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/355162793/s332/doing-life.jpg",
-        "https://m.media-amazon.com/images/M/MV5BYmNlYzg5NmMtMWZlMi00MWMwLWJmODEtMzVhOTQ3NjEzOGM2XkEyXkFqcGc@._V1_.jpg"
+        "https://images.justwatch.com/poster/343430256/s332/.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt36429458",
-      "tmdb_id": "1458857",
+      "imdb_id": "tt2388783",
+      "tmdb_id": "610222",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
       "metadata_evidence": [
@@ -151,38 +160,43 @@
     },
     {
       "rank": 8,
-      "title": "Einfach Mal Was Schönes",
+      "title": "Ice Age: Dawn of the Dinosaurs",
       "weeks_in_top_10": 3,
       "cn_title": "",
-      "year": "",
-      "poster_candidates": [],
+      "year": "2009",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/355389176/s332/Ice-Age-3-Die-Dinosaurier-sind-los.jpg",
+        "https://m.media-amazon.com/images/M/MV5BZWJjZDYwMjgtZDZiMy00YzcyLThjN2YtYjI1ZDQ2ZDJkOTVmXkEyXkFqcGc@._V1_.jpg"
+      ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "",
-      "tmdb_id": "",
-      "metadata_match_version": 2,
-      "metadata_confidence": "none",
-      "metadata_evidence": []
-    },
-    {
-      "rank": 9,
-      "title": "The Whisper Man",
-      "weeks_in_top_10": 6,
-      "cn_title": "耳语者",
-      "year": "2026",
-      "poster_candidates": [
-        "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2934088022.jpg",
-        "https://images.justwatch.com/poster/354521042/s332/der-kinderfluesterer.jpg",
-        "https://m.media-amazon.com/images/M/MV5BOTI1YmY3YTQtYTg2Zi00OTZkLTk3NzQtNjcxNzIzMjk2ODZlXkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "37228429",
-      "douban_url": "https://movie.douban.com/subject/37228429/?suggest=The+Whisper+Man",
-      "imdb_id": "tt11561116",
-      "tmdb_id": "860508",
+      "imdb_id": "tt1080016",
+      "tmdb_id": "8355",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
       "metadata_evidence": [
-        "douban_strict_title",
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 9,
+      "title": "Ice Age",
+      "weeks_in_top_10": 2,
+      "cn_title": "",
+      "year": "2002",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/355389166/s332/Ice-Age.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMDBlYzU2OGMtOGJjNi00ZGZjLWIwNjMtYzdiZjkwYWNjZDljXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt0268380",
+      "tmdb_id": "425",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
         "justwatch_strict_title",
         "imdb_strict_title",
         "year_consensus"
@@ -190,18 +204,18 @@
     },
     {
       "rank": 10,
-      "title": "Novocaine",
-      "weeks_in_top_10": 2,
+      "title": "Ice Age: Continental Drift",
+      "weeks_in_top_10": 1,
       "cn_title": "",
-      "year": "2025",
+      "year": "2012",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/346262896/s332/mr-no-pain.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMWU4MmUxODktMWUwYy00YzM0LTg1ZmItNzVlMTZhOWVlNWFjXkEyXkFqcGc@._V1_.jpg"
+        "https://images.justwatch.com/poster/355394591/s332/Ice-Age-4-Voll-verschoben.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMTM3NDM5MzY5Ml5BMl5BanBnXkFtZTcwNjExMDUwOA@@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt29603959",
-      "tmdb_id": "1195506",
+      "imdb_id": "tt1667889",
+      "tmdb_id": "57800",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
       "metadata_evidence": [
@@ -214,8 +228,73 @@
   "tv": [
     {
       "rank": 1,
-      "title": "East of Eden",
+      "title": "Below",
+      "weeks_in_top_10": 2,
+      "season": "Below: Limited Series",
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/355537031/s332/below.jpg",
+        "https://m.media-amazon.com/images/M/MV5BYzRjZjU3NTktOTY5My00YTEzLTliYjAtMDNjYjhiN2MyYjllXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt35934755",
+      "tmdb_id": "285322",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "The Trap",
       "weeks_in_top_10": 1,
+      "season": "The Trap: Limited Series",
+      "cn_title": "",
+      "year": "2018",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/141610274/s332/.jpg",
+        "https://m.media-amazon.com/images/M/MV5BNjYwYjExM2UtNDk0ZC00MmFjLWJkMDQtODA2ZjU0M2VjZGIyXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt8542132",
+      "tmdb_id": "81843",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Instadocs: AI Gone Wild",
+      "weeks_in_top_10": 1,
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://m.media-amazon.com/images/M/MV5BMzNmMTVmZmYtNWYyMy00NzhkLTg4ZmQtNTMzZjY2N2QyMTE5XkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt48437216",
+      "tmdb_id": "",
+      "metadata_match_version": 2,
+      "metadata_confidence": "medium",
+      "metadata_evidence": [
+        "imdb_strict_title"
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "East of Eden",
+      "weeks_in_top_10": 3,
       "season": "East of Eden: Limited Series",
       "cn_title": "",
       "year": "2026",
@@ -237,101 +316,43 @@
       ]
     },
     {
-      "rank": 2,
-      "title": "Monster: The Lizzie Borden Story",
-      "weeks_in_top_10": 3,
-      "season": "Monster: The Lizzie Borden Story: Season 1",
-      "cn_title": "",
-      "year": "2026",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/354782112/s332/monster-the-lizzie-borden-story.jpg",
-        "https://images.justwatch.com/poster/354782112/s332/goemul-riji-bodeun-iyagi.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "",
-      "tmdb_id": "299939",
-      "metadata_match_version": 2,
-      "metadata_confidence": "medium",
-      "metadata_evidence": [
-        "justwatch_strict_title"
-      ]
-    },
-    {
-      "rank": 3,
-      "title": "Not a Stranger",
-      "weeks_in_top_10": 3,
-      "season": "Not a Stranger: Season 1",
-      "cn_title": "",
-      "year": "2026",
-      "poster_candidates": [
-        "https://m.media-amazon.com/images/M/MV5BYWNjNzcxYzctZGM4Zi00OWUwLTkyODctNzc1Y2U4MjZiZDY0XkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt39397536",
-      "tmdb_id": "",
-      "metadata_match_version": 2,
-      "metadata_confidence": "medium",
-      "metadata_evidence": [
-        "imdb_strict_title"
-      ]
-    },
-    {
-      "rank": 4,
-      "title": "The Final Problem",
-      "weeks_in_top_10": 2,
-      "season": "The Final Problem: Limited Series",
-      "cn_title": "",
-      "year": "2026",
-      "poster_candidates": [
-        "https://m.media-amazon.com/images/M/MV5BZDI1YTE5ZDEtNDBlNS00MWRlLWJjY2UtYjhiMjhkMDlhMjk5XkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt36832679",
-      "tmdb_id": "",
-      "metadata_match_version": 2,
-      "metadata_confidence": "medium",
-      "metadata_evidence": [
-        "imdb_strict_title"
-      ]
-    },
-    {
       "rank": 5,
-      "title": "Minerva Academy",
-      "weeks_in_top_10": 2,
-      "season": "Minerva Academy: Season 1",
+      "title": "TYSON",
+      "weeks_in_top_10": 1,
+      "season": "TYSON: Limited Series",
       "cn_title": "",
       "year": "2026",
       "poster_candidates": [
-        "https://m.media-amazon.com/images/M/MV5BZDI2YTkzYjItZWIzZi00MWFkLWI3MzctYmU3OWVhODUwNjM5XkEyXkFqcGc@._V1_.jpg"
+        "https://images.justwatch.com/poster/355560385/s332/tyson.jpg",
+        "https://m.media-amazon.com/images/M/MV5BZjk2OTZmOTgtY2E0NC00MDViLTg3NWYtNGQwMjZhNDJhNTNiXkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt28765828",
-      "tmdb_id": "",
+      "imdb_id": "tt35051210",
+      "tmdb_id": "335536",
       "metadata_match_version": 2,
-      "metadata_confidence": "medium",
+      "metadata_confidence": "high",
       "metadata_evidence": [
-        "imdb_strict_title"
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
       ]
     },
     {
       "rank": 6,
-      "title": "Crew Girl",
-      "weeks_in_top_10": 4,
-      "season": "Crew Girl: Season 1",
+      "title": "The Diplomat",
+      "weeks_in_top_10": 1,
+      "season": "The Diplomat: Season 4",
       "cn_title": "",
-      "year": "2026",
+      "year": "2023",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/354594032/s332/crew-girl.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMWVmYTE5OWQtOWJlMi00NzY4LWJmMTAtZDQ2ZTg1MTZhNWVlXkEyXkFqcGc@._V1_.jpg"
+        "https://images.justwatch.com/poster/338464486/s332/the-diplomat.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMmY4YWMyOGItMzA1MC00ZjY0LWEyM2QtZWFmNGNhNDZlZjk5XkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt38218082",
-      "tmdb_id": "300507",
+      "imdb_id": "tt17491088",
+      "tmdb_id": "203857",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
       "metadata_evidence": [
@@ -342,19 +363,19 @@
     },
     {
       "rank": 7,
-      "title": "The Gentlemen",
-      "weeks_in_top_10": 5,
-      "season": "The Gentlemen: Season 2",
+      "title": "Unforgettable",
+      "weeks_in_top_10": 1,
+      "season": "Unforgettable: Season 1",
       "cn_title": "",
-      "year": "2024",
+      "year": "2011",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/354137615/s332/The-Gentlemen.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMzM0YzFhMTYtYjZkNS00MWRmLTg2ZDgtY2MzYjQ5ODVmOTI1XkEyXkFqcGc@._V1_.jpg"
+        "https://images.justwatch.com/poster/306909728/s332/Unforgettable.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMmVmNmFmNGEtZjU3Yy00OGNjLWI2ZmUtNjI5YTkzYzg5MTBiXkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt13210838",
-      "tmdb_id": "236235",
+      "imdb_id": "tt1842530",
+      "tmdb_id": "39276",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
       "metadata_evidence": [
@@ -365,19 +386,19 @@
     },
     {
       "rank": 8,
-      "title": "LEGO ONE PIECE",
+      "title": "Playing Gracie Darling",
       "weeks_in_top_10": 1,
-      "season": "LEGO ONE PIECE: Season 1",
+      "season": "Playing Gracie Darling: Season 1",
       "cn_title": "",
-      "year": "2026",
+      "year": "2025",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/354213775/s332/lego-one-piece.jpg",
-        "https://m.media-amazon.com/images/M/MV5BN2NlMGYxMzYtN2Y5My00NWY3LWI0NDItNGY3YjE0YmI0NDFjXkEyXkFqcGc@._V1_.jpg"
+        "https://images.justwatch.com/poster/334425723/s332/playing-gracie-darling.jpg",
+        "https://m.media-amazon.com/images/M/MV5BOTgwYjZjOTctYzE3OC00NWVhLWI4ZmYtYjg5NGEwMGFkODMyXkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt41538904",
-      "tmdb_id": "318918",
+      "imdb_id": "tt33384059",
+      "tmdb_id": "271823",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
       "metadata_evidence": [
@@ -388,31 +409,8 @@
     },
     {
       "rank": 9,
-      "title": "Habeas Corpus",
-      "weeks_in_top_10": 1,
-      "season": "Habeas Corpus: Season 1",
-      "cn_title": "",
-      "year": "2026",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/354997175/s332/habeas-corpus.jpg",
-        "https://m.media-amazon.com/images/M/MV5BYmE2NGRiYzAtMDE1NC00NzgwLWExYTctYzc5ODg5ZmI1YmVlXkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt39369819",
-      "tmdb_id": "308963",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 10,
       "title": "The Hunting Wives",
-      "weeks_in_top_10": 1,
+      "weeks_in_top_10": 3,
       "season": "The Hunting Wives: Season 1",
       "cn_title": "",
       "year": "2025",
@@ -431,8 +429,31 @@
         "imdb_strict_title",
         "year_consensus"
       ]
+    },
+    {
+      "rank": 10,
+      "title": "Matlock",
+      "weeks_in_top_10": 2,
+      "season": "Matlock: Season 1",
+      "cn_title": "",
+      "year": "2024",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/332786851/s332/matlock-2024.jpg",
+        "https://m.media-amazon.com/images/M/MV5BZjJjYTM0ZTgtOWNlOS00MDE4LWE5NTQtNmExZDY2ZjY5N2ZkXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt26591147",
+      "tmdb_id": "226174",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
     }
   ],
   "metadata_version": 2,
-  "metadata_enriched_at": "2026-10-14T22:18:26.218688+00:00"
+  "metadata_enriched_at": "2026-10-20T20:05:20.843013+00:00"
 }
