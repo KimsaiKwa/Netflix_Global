@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-10-20T22:17:37.034062+00:00",
+  "updated_at": "2026-10-21T22:20:02.033723+00:00",
   "items": {
     "movie|unabomber": {
       "saved_at": 1791080220.9855633,
@@ -897,7 +897,7 @@
       }
     },
     "tv|the doll": {
-      "saved_at": 1792526713.283152,
+      "saved_at": 1792621200.9829314,
       "title": "The Doll",
       "media_type": "tv",
       "match_version": 2,
@@ -3377,7 +3377,7 @@
       }
     },
     "movie|tummy tom and the lost teddy bear": {
-      "saved_at": 1792526708.9424195,
+      "saved_at": 1792621202.0332453,
       "title": "Tummy Tom and the Lost Teddy Bear",
       "media_type": "movie",
       "match_version": 2,
@@ -6624,7 +6624,7 @@
       }
     },
     "tv|the ballad of us": {
-      "saved_at": 1792526704.383198,
+      "saved_at": 1792621198.5534844,
       "title": "The Ballad of Us",
       "media_type": "tv",
       "match_version": 2,
@@ -6649,28 +6649,32 @@
       }
     },
     "movie|hana korea": {
-      "saved_at": 1792526696.0262597,
+      "saved_at": 1792621192.2474885,
       "title": "Hana Korea",
       "media_type": "movie",
       "match_version": 2,
       "identity_revision": "",
       "meta": {
-        "cn_title": "",
-        "year": "",
-        "poster_candidates": [],
-        "douban_matched": false,
+        "cn_title": "单一幻国",
+        "year": "2025",
+        "poster_candidates": [
+          "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2932801432.jpg"
+        ],
+        "douban_matched": true,
         "justwatch_matched": false,
         "imdb_matched": false,
-        "douban_id": "",
-        "douban_url": "",
+        "douban_id": "35172559",
+        "douban_url": "https://movie.douban.com/subject/35172559/?suggest=Hana+Korea",
         "imdb_id": "",
         "tmdb_id": "",
-        "douban_poster": "",
+        "douban_poster": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2932801432.jpg",
         "justwatch_poster": "",
         "imdb_poster": "",
         "localized_alias": "",
-        "confidence": "none",
-        "evidence": []
+        "confidence": "medium",
+        "evidence": [
+          "douban_strict_title"
+        ]
       }
     },
     "movie|constantine": {
@@ -6738,7 +6742,7 @@
       }
     },
     "tv|politicalupin": {
-      "saved_at": 1792526676.44311,
+      "saved_at": 1792621190.054456,
       "title": "PoliticaLupin",
       "media_type": "tv",
       "match_version": 2,
@@ -6888,7 +6892,7 @@
       }
     },
     "movie|manok": {
-      "saved_at": 1792526701.20063,
+      "saved_at": 1792621196.6807055,
       "title": "Manok",
       "media_type": "movie",
       "match_version": 2,
@@ -7136,7 +7140,7 @@
       }
     },
     "tv|a day like no other": {
-      "saved_at": 1792526642.6092272,
+      "saved_at": 1792621186.3711584,
       "title": "A Day Like No Other",
       "media_type": "tv",
       "match_version": 2,
@@ -7790,7 +7794,7 @@
       }
     },
     "tv|doctor x mafia in white": {
-      "saved_at": 1792526603.627948,
+      "saved_at": 1792621185.2221417,
       "title": "Doctor X: Mafia in White",
       "media_type": "tv",
       "match_version": 2,

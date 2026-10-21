@@ -73,16 +73,20 @@
       "rank": 4,
       "title": "Hana Korea",
       "weeks_in_top_10": 2,
-      "cn_title": "",
-      "year": "",
-      "poster_candidates": [],
-      "douban_id": "",
-      "douban_url": "",
+      "cn_title": "单一幻国",
+      "year": "2025",
+      "poster_candidates": [
+        "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2932801432.jpg"
+      ],
+      "douban_id": "35172559",
+      "douban_url": "https://movie.douban.com/subject/35172559/?suggest=Hana+Korea",
       "imdb_id": "",
       "tmdb_id": "",
       "metadata_match_version": 2,
-      "metadata_confidence": "none",
-      "metadata_evidence": []
+      "metadata_confidence": "medium",
+      "metadata_evidence": [
+        "douban_strict_title"
+      ]
     },
     {
       "rank": 5,
@@ -410,5 +414,5 @@
     }
   ],
   "metadata_version": 2,
-  "metadata_enriched_at": "2026-10-20T22:17:37.034062+00:00"
+  "metadata_enriched_at": "2026-10-21T22:20:02.033723+00:00"
 }
