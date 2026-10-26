@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-10-25T21:46:20.226160+00:00",
+  "updated_at": "2026-10-26T23:07:56.783856+00:00",
   "items": {
     "movie|unabomber": {
       "saved_at": 1791080220.9855633,
@@ -287,7 +287,7 @@
       }
     },
     "tv|monster the lizzie borden story": {
-      "saved_at": 1792450446.4048767,
+      "saved_at": 1793056030.8514423,
       "title": "Monster: The Lizzie Borden Story",
       "media_type": "tv",
       "match_version": 2,
@@ -342,7 +342,7 @@
       }
     },
     "tv|not a stranger": {
-      "saved_at": 1792450451.1455152,
+      "saved_at": 1793056028.4896379,
       "title": "Not a Stranger",
       "media_type": "tv",
       "match_version": 2,
@@ -371,7 +371,7 @@
       }
     },
     "tv|plastic beauty": {
-      "saved_at": 1792450517.1238854,
+      "saved_at": 1793056050.6130714,
       "title": "Plastic Beauty",
       "media_type": "tv",
       "match_version": 2,
@@ -464,7 +464,7 @@
       }
     },
     "tv|the gentlemen": {
-      "saved_at": 1792450457.4620721,
+      "saved_at": 1793056025.7516625,
       "title": "The Gentlemen",
       "media_type": "tv",
       "match_version": 2,
@@ -684,7 +684,7 @@
       }
     },
     "movie|novocaine": {
-      "saved_at": 1792450464.3249352,
+      "saved_at": 1793056054.3842163,
       "title": "Novocaine",
       "media_type": "movie",
       "match_version": 2,
@@ -693,8 +693,9 @@
         "cn_title": "",
         "year": "2025",
         "poster_candidates": [
-          "https://images.justwatch.com/poster/346262896/s332/mr-no-pain.jpg",
-          "https://m.media-amazon.com/images/M/MV5BMWU4MmUxODktMWUwYy00YzM0LTg1ZmItNzVlMTZhOWVlNWFjXkEyXkFqcGc@._V1_.jpg"
+          "https://images.justwatch.com/poster/346262896/s332/nobokein-2025.jpg",
+          "https://m.media-amazon.com/images/M/MV5BMWU4MmUxODktMWUwYy00YzM0LTg1ZmItNzVlMTZhOWVlNWFjXkEyXkFqcGc@._V1_.jpg",
+          "https://images.justwatch.com/poster/346262896/s332/mr-no-pain.jpg"
         ],
         "douban_matched": false,
         "justwatch_matched": true,
@@ -704,7 +705,7 @@
         "imdb_id": "tt29603959",
         "tmdb_id": "1195506",
         "douban_poster": "",
-        "justwatch_poster": "https://images.justwatch.com/poster/346262896/s332/mr-no-pain.jpg",
+        "justwatch_poster": "https://images.justwatch.com/poster/346262896/s332/nobokein-2025.jpg",
         "imdb_poster": "https://m.media-amazon.com/images/M/MV5BMWU4MmUxODktMWUwYy00YzM0LTg1ZmItNzVlMTZhOWVlNWFjXkEyXkFqcGc@._V1_.jpg",
         "localized_alias": "無痛先生",
         "confidence": "high",
@@ -836,7 +837,7 @@
       }
     },
     "tv|the perfect lie": {
-      "saved_at": 1792450471.2902613,
+      "saved_at": 1793056024.0316744,
       "title": "The Perfect Lie",
       "media_type": "tv",
       "match_version": 2,
@@ -868,7 +869,7 @@
       }
     },
     "tv|the final problem": {
-      "saved_at": 1792450457.911081,
+      "saved_at": 1793056037.4931931,
       "title": "The Final Problem",
       "media_type": "tv",
       "match_version": 2,
@@ -897,7 +898,7 @@
       }
     },
     "tv|the doll": {
-      "saved_at": 1792964780.2256267,
+      "saved_at": 1793056073.0832353,
       "title": "The Doll",
       "media_type": "tv",
       "match_version": 2,
@@ -922,7 +923,7 @@
       }
     },
     "tv|minerva academy": {
-      "saved_at": 1792450461.8215117,
+      "saved_at": 1793056041.9910388,
       "title": "Minerva Academy",
       "media_type": "tv",
       "match_version": 2,
@@ -1044,7 +1045,7 @@
       }
     },
     "movie|the town": {
-      "saved_at": 1792450467.814876,
+      "saved_at": 1793056075.5690322,
       "title": "The Town",
       "media_type": "movie",
       "match_version": 2,
@@ -1109,7 +1110,7 @@
       }
     },
     "movie|second chances": {
-      "saved_at": 1792450470.5835943,
+      "saved_at": 1793056028.1612604,
       "title": "Second Chances",
       "media_type": "movie",
       "match_version": 2,
@@ -1978,7 +1979,7 @@
       }
     },
     "tv|raw": {
-      "saved_at": 1792450504.1393154,
+      "saved_at": 1793056076.7834055,
       "title": "Raw",
       "media_type": "tv",
       "match_version": 2,
@@ -2105,7 +2106,7 @@
       }
     },
     "movie|kraven the hunter": {
-      "saved_at": 1792450490.0753775,
+      "saved_at": 1793056031.6161795,
       "title": "Kraven the Hunter",
       "media_type": "movie",
       "match_version": 2,
@@ -2414,7 +2415,7 @@
       }
     },
     "movie|detective conan the counterfeit case of ultra 30": {
-      "saved_at": 1792450513.0395753,
+      "saved_at": 1793056043.8265526,
       "title": "Detective Conan the Counterfeit Case of Ultra 30",
       "media_type": "movie",
       "match_version": 2,
@@ -2443,7 +2444,7 @@
       }
     },
     "movie|under the open sky": {
-      "saved_at": 1792450512.4993007,
+      "saved_at": 1793056043.4178073,
       "title": "Under the Open Sky",
       "media_type": "movie",
       "match_version": 2,
@@ -2887,7 +2888,7 @@
       }
     },
     "movie|the ultimate duo": {
-      "saved_at": 1792450526.8421602,
+      "saved_at": 1793056054.2701468,
       "title": "The Ultimate Duo",
       "media_type": "movie",
       "match_version": 2,
@@ -3182,7 +3183,7 @@
       }
     },
     "tv|kian s bizarre b and b": {
-      "saved_at": 1792450535.1368842,
+      "saved_at": 1793056067.3392384,
       "title": "Kian’s Bizarre B&B",
       "media_type": "tv",
       "match_version": 2,
@@ -3269,7 +3270,7 @@
       }
     },
     "tv|i am solo": {
-      "saved_at": 1792450541.7359428,
+      "saved_at": 1793056061.2512105,
       "title": "I am Solo",
       "media_type": "tv",
       "match_version": 2,
@@ -3377,7 +3378,7 @@
       }
     },
     "movie|tummy tom and the lost teddy bear": {
-      "saved_at": 1792964779.54984,
+      "saved_at": 1793056071.0510325,
       "title": "Tummy Tom and the Lost Teddy Bear",
       "media_type": "movie",
       "match_version": 2,
@@ -3402,7 +3403,7 @@
       }
     },
     "movie|tummy tom a new friend for tummy tom": {
-      "saved_at": 1792450554.8732135,
+      "saved_at": 1793056074.0154881,
       "title": "Tummy Tom: A New Friend for Tummy Tom",
       "media_type": "movie",
       "match_version": 2,
@@ -6624,7 +6625,7 @@
       }
     },
     "tv|the ballad of us": {
-      "saved_at": 1792964778.0760965,
+      "saved_at": 1793056065.1790426,
       "title": "The Ballad of Us",
       "media_type": "tv",
       "match_version": 2,
@@ -6742,7 +6743,7 @@
       }
     },
     "tv|politicalupin": {
-      "saved_at": 1792964771.364785,
+      "saved_at": 1793056048.8750756,
       "title": "PoliticaLupin",
       "media_type": "tv",
       "match_version": 2,
@@ -6892,7 +6893,7 @@
       }
     },
     "movie|manok": {
-      "saved_at": 1792964773.3799057,
+      "saved_at": 1793056059.6826394,
       "title": "Manok",
       "media_type": "movie",
       "match_version": 2,
@@ -7140,7 +7141,7 @@
       }
     },
     "tv|a day like no other": {
-      "saved_at": 1792964767.5352032,
+      "saved_at": 1793056036.7129006,
       "title": "A Day Like No Other",
       "media_type": "tv",
       "match_version": 2,
@@ -7794,7 +7795,7 @@
       }
     },
     "tv|doctor x mafia in white": {
-      "saved_at": 1792964766.4280365,
+      "saved_at": 1793056023.337303,
       "title": "Doctor X: Mafia in White",
       "media_type": "tv",
       "match_version": 2,

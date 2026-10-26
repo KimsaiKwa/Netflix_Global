@@ -118,8 +118,9 @@
       "cn_title": "",
       "year": "2025",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/346262896/s332/mr-no-pain.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMWU4MmUxODktMWUwYy00YzM0LTg1ZmItNzVlMTZhOWVlNWFjXkEyXkFqcGc@._V1_.jpg"
+        "https://images.justwatch.com/poster/346262896/s332/nobokein-2025.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMWU4MmUxODktMWUwYy00YzM0LTg1ZmItNzVlMTZhOWVlNWFjXkEyXkFqcGc@._V1_.jpg",
+        "https://images.justwatch.com/poster/346262896/s332/mr-no-pain.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
@@ -439,5 +440,5 @@
     }
   ],
   "metadata_version": 2,
-  "metadata_enriched_at": "2026-10-25T21:46:20.226160+00:00"
+  "metadata_enriched_at": "2026-10-26T23:07:56.783856+00:00"
 }
