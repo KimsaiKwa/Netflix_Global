@@ -270,8 +270,9 @@
       "cn_title": "",
       "year": "2023",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/338464486/s332/the-diplomat.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMmY4YWMyOGItMzA1MC00ZjY0LWEyM2QtZWFmNGNhNDZlZjk5XkEyXkFqcGc@._V1_.jpg"
+        "https://images.justwatch.com/poster/355789175/s332/the-diplomat.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMmY4YWMyOGItMzA1MC00ZjY0LWEyM2QtZWFmNGNhNDZlZjk5XkEyXkFqcGc@._V1_.jpg",
+        "https://images.justwatch.com/poster/338464486/s332/the-diplomat.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
@@ -443,5 +444,5 @@
     }
   ],
   "metadata_version": 2,
-  "metadata_enriched_at": "2026-10-26T23:07:56.783856+00:00"
+  "metadata_enriched_at": "2026-10-27T20:51:13.788923+00:00"
 }
