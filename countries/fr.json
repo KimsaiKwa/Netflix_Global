@@ -75,19 +75,21 @@
       "rank": 4,
       "title": "Jurassic World Rebirth",
       "weeks_in_top_10": 3,
-      "cn_title": "",
+      "cn_title": "侏罗纪世界：重生",
       "year": "2025",
       "poster_candidates": [
+        "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2922024674.jpg",
         "https://images.justwatch.com/poster/332224395/s332/jurassic-world-4.jpg",
         "https://m.media-amazon.com/images/M/MV5BNjg2NTcwYWQtYzk4NS00MTJhLWEzZjItMzIxNjk3YzlkYzU0XkEyXkFqcGc@._V1_.jpg"
       ],
-      "douban_id": "",
-      "douban_url": "",
+      "douban_id": "36743767",
+      "douban_url": "https://movie.douban.com/subject/36743767/?suggest=Jurassic+World+Rebirth",
       "imdb_id": "tt31036941",
       "tmdb_id": "1234821",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
       "metadata_evidence": [
+        "douban_strict_title",
         "justwatch_strict_title",
         "imdb_strict_title",
         "year_consensus"
@@ -451,5 +453,5 @@
     }
   ],
   "metadata_version": 2,
-  "metadata_enriched_at": "2026-10-27T20:51:13.788923+00:00"
+  "metadata_enriched_at": "2026-10-27T22:57:13.546298+00:00"
 }

@@ -210,19 +210,21 @@
       "rank": 10,
       "title": "White Chicks",
       "weeks_in_top_10": 2,
-      "cn_title": "",
+      "cn_title": "小姐好白",
       "year": "2004",
       "poster_candidates": [
+        "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p915897391.jpg",
         "https://images.justwatch.com/poster/342975170/s332/white-chicks.jpg",
         "https://m.media-amazon.com/images/M/MV5BMTY3OTg2OTM3OV5BMl5BanBnXkFtZTYwNzY5OTA3._V1_.jpg"
       ],
-      "douban_id": "",
-      "douban_url": "",
+      "douban_id": "1309120",
+      "douban_url": "https://movie.douban.com/subject/1309120/?suggest=White+Chicks",
       "imdb_id": "tt0381707",
       "tmdb_id": "12153",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
       "metadata_evidence": [
+        "douban_strict_title",
         "justwatch_strict_title",
         "imdb_strict_title",
         "year_consensus"
@@ -458,5 +460,5 @@
     }
   ],
   "metadata_version": 2,
-  "metadata_enriched_at": "2026-10-27T20:51:13.788923+00:00"
+  "metadata_enriched_at": "2026-10-27T22:57:13.546298+00:00"
 }
