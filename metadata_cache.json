@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-11-01T22:48:12.983951+00:00",
+  "updated_at": "2026-11-03T01:35:51.681141+00:00",
   "items": {
     "movie|unabomber": {
       "saved_at": 1791080220.9855633,
@@ -287,7 +287,7 @@
       }
     },
     "tv|monster the lizzie borden story": {
-      "saved_at": 1793056030.8514423,
+      "saved_at": 1793669707.2264497,
       "title": "Monster: The Lizzie Borden Story",
       "media_type": "tv",
       "match_version": 2,
@@ -309,7 +309,7 @@
         "douban_poster": "",
         "justwatch_poster": "https://images.justwatch.com/poster/354782112/s332/monster-the-lizzie-borden-story.jpg",
         "imdb_poster": "",
-        "localized_alias": "怪物：莉齐·博登的故事",
+        "localized_alias": "怪物：丽兹·波顿的故事",
         "confidence": "medium",
         "evidence": [
           "justwatch_strict_title"
@@ -342,7 +342,7 @@
       }
     },
     "tv|not a stranger": {
-      "saved_at": 1793056028.4896379,
+      "saved_at": 1793669704.8721864,
       "title": "Not a Stranger",
       "media_type": "tv",
       "match_version": 2,
@@ -371,7 +371,7 @@
       }
     },
     "tv|plastic beauty": {
-      "saved_at": 1793056050.6130714,
+      "saved_at": 1793669726.1013513,
       "title": "Plastic Beauty",
       "media_type": "tv",
       "match_version": 2,
@@ -464,7 +464,7 @@
       }
     },
     "tv|the gentlemen": {
-      "saved_at": 1793056025.7516625,
+      "saved_at": 1793669703.3267024,
       "title": "The Gentlemen",
       "media_type": "tv",
       "match_version": 2,
@@ -684,7 +684,7 @@
       }
     },
     "movie|novocaine": {
-      "saved_at": 1793056054.3842163,
+      "saved_at": 1793669728.5421822,
       "title": "Novocaine",
       "media_type": "movie",
       "match_version": 2,
@@ -837,7 +837,7 @@
       }
     },
     "tv|the perfect lie": {
-      "saved_at": 1793056024.0316744,
+      "saved_at": 1793669700.7595887,
       "title": "The Perfect Lie",
       "media_type": "tv",
       "match_version": 2,
@@ -869,7 +869,7 @@
       }
     },
     "tv|the final problem": {
-      "saved_at": 1793056037.4931931,
+      "saved_at": 1793669714.7593095,
       "title": "The Final Problem",
       "media_type": "tv",
       "match_version": 2,
@@ -898,7 +898,7 @@
       }
     },
     "tv|the doll": {
-      "saved_at": 1793573292.9835043,
+      "saved_at": 1793669748.34321,
       "title": "The Doll",
       "media_type": "tv",
       "match_version": 2,
@@ -923,7 +923,7 @@
       }
     },
     "tv|minerva academy": {
-      "saved_at": 1793056041.9910388,
+      "saved_at": 1793669717.3690689,
       "title": "Minerva Academy",
       "media_type": "tv",
       "match_version": 2,
@@ -1045,7 +1045,7 @@
       }
     },
     "movie|the town": {
-      "saved_at": 1793056075.5690322,
+      "saved_at": 1793669749.5841453,
       "title": "The Town",
       "media_type": "movie",
       "match_version": 2,
@@ -1110,7 +1110,7 @@
       }
     },
     "movie|second chances": {
-      "saved_at": 1793056028.1612604,
+      "saved_at": 1793669705.886964,
       "title": "Second Chances",
       "media_type": "movie",
       "match_version": 2,
@@ -1979,7 +1979,7 @@
       }
     },
     "tv|raw": {
-      "saved_at": 1793056076.7834055,
+      "saved_at": 1793669751.6806042,
       "title": "Raw",
       "media_type": "tv",
       "match_version": 2,
@@ -2106,7 +2106,7 @@
       }
     },
     "movie|kraven the hunter": {
-      "saved_at": 1793056031.6161795,
+      "saved_at": 1793669708.3728836,
       "title": "Kraven the Hunter",
       "media_type": "movie",
       "match_version": 2,
@@ -2415,7 +2415,7 @@
       }
     },
     "movie|detective conan the counterfeit case of ultra 30": {
-      "saved_at": 1793056043.8265526,
+      "saved_at": 1793669719.863494,
       "title": "Detective Conan the Counterfeit Case of Ultra 30",
       "media_type": "movie",
       "match_version": 2,
@@ -2444,7 +2444,7 @@
       }
     },
     "movie|under the open sky": {
-      "saved_at": 1793056043.4178073,
+      "saved_at": 1793669718.477147,
       "title": "Under the Open Sky",
       "media_type": "movie",
       "match_version": 2,
@@ -2888,7 +2888,7 @@
       }
     },
     "movie|the ultimate duo": {
-      "saved_at": 1793056054.2701468,
+      "saved_at": 1793669729.7924902,
       "title": "The Ultimate Duo",
       "media_type": "movie",
       "match_version": 2,
@@ -3183,7 +3183,7 @@
       }
     },
     "tv|kian s bizarre b and b": {
-      "saved_at": 1793056067.3392384,
+      "saved_at": 1793669741.725051,
       "title": "Kian’s Bizarre B&B",
       "media_type": "tv",
       "match_version": 2,
@@ -3270,7 +3270,7 @@
       }
     },
     "tv|i am solo": {
-      "saved_at": 1793056061.2512105,
+      "saved_at": 1793669735.319365,
       "title": "I am Solo",
       "media_type": "tv",
       "match_version": 2,
@@ -3378,7 +3378,7 @@
       }
     },
     "movie|tummy tom and the lost teddy bear": {
-      "saved_at": 1793573270.2513046,
+      "saved_at": 1793669746.2496452,
       "title": "Tummy Tom and the Lost Teddy Bear",
       "media_type": "movie",
       "match_version": 2,
@@ -3403,7 +3403,7 @@
       }
     },
     "movie|tummy tom a new friend for tummy tom": {
-      "saved_at": 1793056074.0154881,
+      "saved_at": 1793669747.6424642,
       "title": "Tummy Tom: A New Friend for Tummy Tom",
       "media_type": "movie",
       "match_version": 2,
@@ -6632,7 +6632,7 @@
       }
     },
     "tv|the ballad of us": {
-      "saved_at": 1793573268.011317,
+      "saved_at": 1793669740.253079,
       "title": "The Ballad of Us",
       "media_type": "tv",
       "match_version": 2,
@@ -6750,7 +6750,7 @@
       }
     },
     "tv|politicalupin": {
-      "saved_at": 1793573259.8946075,
+      "saved_at": 1793669724.4595606,
       "title": "PoliticaLupin",
       "media_type": "tv",
       "match_version": 2,
@@ -6900,7 +6900,7 @@
       }
     },
     "movie|manok": {
-      "saved_at": 1793573261.3360682,
+      "saved_at": 1793669734.0667212,
       "title": "Manok",
       "media_type": "movie",
       "match_version": 2,
@@ -7148,7 +7148,7 @@
       }
     },
     "tv|a day like no other": {
-      "saved_at": 1793573251.2057824,
+      "saved_at": 1793669711.8591433,
       "title": "A Day Like No Other",
       "media_type": "tv",
       "match_version": 2,
@@ -7803,7 +7803,7 @@
       }
     },
     "tv|doctor x mafia in white": {
-      "saved_at": 1793573251.8632245,
+      "saved_at": 1793669701.0669677,
       "title": "Doctor X: Mafia in White",
       "media_type": "tv",
       "match_version": 2,
