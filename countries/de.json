@@ -1,22 +1,22 @@
 {
-  "week": "2026-10-18",
+  "week": "2026-11-01",
   "country_iso2": "DE",
   "country_name": "Germany",
   "films": [
     {
       "rank": 1,
-      "title": "Animals",
-      "weeks_in_top_10": 2,
+      "title": "The Birthday Gift",
+      "weeks_in_top_10": 1,
       "cn_title": "",
       "year": "2026",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/355355509/s332/jimseungdeul.jpg",
-        "https://m.media-amazon.com/images/M/MV5BZmY3MmZiZjctOTgyYy00OGIxLTkwMDUtNDU3MGNkMGI3YWJlXkEyXkFqcGc@._V1_.jpg"
+        "https://images.justwatch.com/poster/348284415/s332/.jpg",
+        "https://m.media-amazon.com/images/M/MV5BZTM2MGFiMGYtMmFhZC00YWU3LThlOTAtZTAyOGNiMzUxODc4XkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt31049299",
-      "tmdb_id": "1236045",
+      "imdb_id": "tt38999812",
+      "tmdb_id": "1653554",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
       "metadata_evidence": [
@@ -27,8 +27,73 @@
     },
     {
       "rank": 2,
-      "title": "Extrawurst",
+      "title": "Collision Course",
       "weeks_in_top_10": 1,
+      "cn_title": "",
+      "year": "2012",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/302581310/s332/nonseutob-aegsideonteu.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt2327245",
+      "tmdb_id": "151092",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Surviving Hurricane Otis",
+      "weeks_in_top_10": 2,
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://m.media-amazon.com/images/M/MV5BYTYzNzc5NjctZjg5OC00NzRmLWFkODAtZDU2NDBhNmRkNzhjXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt37961714",
+      "tmdb_id": "",
+      "metadata_match_version": 2,
+      "metadata_confidence": "medium",
+      "metadata_evidence": [
+        "imdb_strict_title"
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "A Minecraft Movie",
+      "weeks_in_top_10": 2,
+      "cn_title": "我的世界大电影",
+      "year": "2025",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/326379892/s332/minecraft.jpg",
+        "https://m.media-amazon.com/images/M/MV5BYzFjMzNjOTktNDBlNy00YWZhLWExYTctZDcxNDA4OWVhOTJjXkEyXkFqcGc@._V1_.jpg",
+        "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2919803217.jpg",
+        "https://images.justwatch.com/poster/326379892/s332/a-minecraft-movie-2025.jpg"
+      ],
+      "douban_id": "26149750",
+      "douban_url": "https://movie.douban.com/subject/26149750/?suggest=A+Minecraft+Movie",
+      "imdb_id": "tt3566834",
+      "tmdb_id": "950387",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus",
+        "douban_strict_title"
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "Extrawurst",
+      "weeks_in_top_10": 3,
       "cn_title": "",
       "year": "2026",
       "poster_candidates": [
@@ -48,9 +113,69 @@
       ]
     },
     {
-      "rank": 3,
+      "rank": 6,
+      "title": "Animals",
+      "weeks_in_top_10": 4,
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/355355509/s332/animals-2026.jpg",
+        "https://m.media-amazon.com/images/M/MV5BZmY3MmZiZjctOTgyYy00OGIxLTkwMDUtNDU3MGNkMGI3YWJlXkEyXkFqcGc@._V1_.jpg",
+        "https://images.justwatch.com/poster/355355509/s332/jimseungdeul.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt31049299",
+      "tmdb_id": "1236045",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "Das perfekte Geheimnis",
+      "weeks_in_top_10": 6,
+      "cn_title": "",
+      "year": "",
+      "poster_candidates": [],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "",
+      "tmdb_id": "",
+      "metadata_match_version": 2,
+      "metadata_confidence": "none",
+      "metadata_evidence": []
+    },
+    {
+      "rank": 8,
+      "title": "Halloween",
+      "weeks_in_top_10": 2,
+      "cn_title": "",
+      "year": "1978",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/341835864/s332/Halloween-Die-Nacht-des-Grauens.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMzZiNTdiYTgtYjNkMS00MmJmLWEwZGQtNmY0NGJkMGE0YmYzXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt0077651",
+      "tmdb_id": "948",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 9,
       "title": "Evil Dead Burn",
-      "weeks_in_top_10": 1,
+      "weeks_in_top_10": 3,
       "cn_title": "",
       "year": "2026",
       "poster_candidates": [
@@ -70,152 +195,19 @@
       ]
     },
     {
-      "rank": 4,
-      "title": "Doing Life",
-      "weeks_in_top_10": 3,
-      "cn_title": "人生在世",
-      "year": "2026",
-      "poster_candidates": [
-        "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2935424658.jpg",
-        "https://images.justwatch.com/poster/355162793/s332/doing-life.jpg",
-        "https://m.media-amazon.com/images/M/MV5BYmNlYzg5NmMtMWZlMi00MWMwLWJmODEtMzVhOTQ3NjEzOGM2XkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "37305600",
-      "douban_url": "https://movie.douban.com/subject/37305600/?suggest=Doing+Life",
-      "imdb_id": "tt36429458",
-      "tmdb_id": "1458857",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "douban_strict_title",
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 5,
-      "title": "Ice Age: Collision Course",
-      "weeks_in_top_10": 2,
-      "cn_title": "",
-      "year": "2016",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/355389186/s332/Ice-Age-5-Kollision-voraus.jpg",
-        "https://m.media-amazon.com/images/M/MV5BZmExOGMxNzMtYjc3MC00OWU5LTg5OTAtNmRhNzBkYzk2ZGE1XkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt3416828",
-      "tmdb_id": "278154",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 6,
-      "title": "UNABOMBER",
-      "weeks_in_top_10": 4,
-      "cn_title": "大学炸弹客",
-      "year": "2026",
-      "poster_candidates": [
-        "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2936115679.jpg",
-        "https://images.justwatch.com/poster/354976659/s332/yunabameo-bimil-silheom.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMDE2ODhlNTUtYjdiOS00OTlmLTg5OGMtMGNjZWZmNWE4MGJiXkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "38184963",
-      "douban_url": "https://movie.douban.com/subject/38184963/?suggest=UNABOMBER",
-      "imdb_id": "tt6933238",
-      "tmdb_id": "1492640",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "douban_strict_title",
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 7,
-      "title": "Ice Age: Dawn of the Dinosaurs",
-      "weeks_in_top_10": 3,
-      "cn_title": "",
-      "year": "2009",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/355389176/s332/Ice-Age-3-Die-Dinosaurier-sind-los.jpg",
-        "https://m.media-amazon.com/images/M/MV5BZWJjZDYwMjgtZDZiMy00YzcyLThjN2YtYjI1ZDQ2ZDJkOTVmXkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt1080016",
-      "tmdb_id": "8355",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 8,
-      "title": "Ice Age",
-      "weeks_in_top_10": 2,
-      "cn_title": "",
-      "year": "2002",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/355389166/s332/Ice-Age.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMDBlYzU2OGMtOGJjNi00ZGZjLWIwNjMtYzdiZjkwYWNjZDljXkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt0268380",
-      "tmdb_id": "425",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 9,
-      "title": "Schumacher ’94 — The Birth of a Legend",
-      "weeks_in_top_10": 3,
-      "cn_title": "",
-      "year": "2026",
-      "poster_candidates": [
-        "https://m.media-amazon.com/images/M/MV5BOWI2NmQ5ZmUtYmIxZi00YjViLWJmMjEtNjM3NmQ5MTQ5Y2Q3XkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt39453404",
-      "tmdb_id": "",
-      "metadata_match_version": 2,
-      "metadata_confidence": "medium",
-      "metadata_evidence": [
-        "imdb_strict_title"
-      ]
-    },
-    {
       "rank": 10,
-      "title": "The Storm",
-      "weeks_in_top_10": 1,
+      "title": "Halloween Kills",
+      "weeks_in_top_10": 2,
       "cn_title": "",
-      "year": "2012",
+      "year": "2021",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/343430256/s332/.jpg",
-        "https://m.media-amazon.com/images/M/MV5BNjEyNjQ5ODUzOF5BMl5BanBnXkFtZTcwMTEwMzk0OA@@._V1_.jpg"
+        "https://images.justwatch.com/poster/347159182/s332/Halloween-Kills.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMDZjMzJjYzMtMzkxMi00ODdiLTkyZTctMzY3MGNmOTRlZmQ3XkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt2355826",
-      "tmdb_id": "610222",
+      "imdb_id": "tt10665338",
+      "tmdb_id": "610253",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
       "metadata_evidence": [
@@ -228,8 +220,169 @@
   "tv": [
     {
       "rank": 1,
-      "title": "Below",
+      "title": "Lupin",
       "weeks_in_top_10": 2,
+      "season": "Lupin: Part 4",
+      "cn_title": "",
+      "year": "2021",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/356434719/s332/Lupin.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMzk4MTc0NWUtZjk3Mi00ODkzLTlkYjItOWRhMTc5MmRiNjI0XkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt2531336",
+      "tmdb_id": "96677",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Lupin",
+      "weeks_in_top_10": 6,
+      "season": "Lupin: Part 1",
+      "cn_title": "",
+      "year": "2021",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/356434719/s332/Lupin.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMzk4MTc0NWUtZjk3Mi00ODkzLTlkYjItOWRhMTc5MmRiNjI0XkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt2531336",
+      "tmdb_id": "96677",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Nobody Wants This",
+      "weeks_in_top_10": 2,
+      "season": "Nobody Wants This: Season 3",
+      "cn_title": "",
+      "year": "2024",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/337837446/s332/nobody-wants-this.jpg",
+        "https://m.media-amazon.com/images/M/MV5BM2ExMmE3YTgtY2RmNC00ZWIzLWJlNGYtYmViNWVjM2Q1MjNjXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt26933824",
+      "tmdb_id": "250923",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "A Couple of Lies",
+      "weeks_in_top_10": 1,
+      "season": "A Couple of Lies: Limited Series",
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/355553777/s332/a-couple-of-lies.jpg",
+        "https://m.media-amazon.com/images/M/MV5BNzdiOGJlZWYtN2MwMS00OTRiLTlhMWUtODBjMDUyN2E2YTM1XkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt42767924",
+      "tmdb_id": "336240",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "The One About Matthew Perry",
+      "weeks_in_top_10": 1,
+      "season": "The One About Matthew Perry: Season 1",
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/355270562/s332/the-one-about-matthew-perry.jpg",
+        "https://m.media-amazon.com/images/M/MV5BODNiYmZlNmMtNDFmNC00YThkLTk4ZWItZTYzYTMwODg3MjIzXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt44941753",
+      "tmdb_id": "333533",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "Lupin",
+      "weeks_in_top_10": 10,
+      "season": "Lupin: Part 3",
+      "cn_title": "",
+      "year": "2021",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/356434719/s332/Lupin.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMzk4MTc0NWUtZjk3Mi00ODkzLTlkYjItOWRhMTc5MmRiNjI0XkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt2531336",
+      "tmdb_id": "96677",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "Lupin",
+      "weeks_in_top_10": 7,
+      "season": "Lupin: Part 2",
+      "cn_title": "",
+      "year": "2021",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/356434719/s332/Lupin.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMzk4MTc0NWUtZjk3Mi00ODkzLTlkYjItOWRhMTc5MmRiNjI0XkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt2531336",
+      "tmdb_id": "96677",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 8,
+      "title": "Below",
+      "weeks_in_top_10": 4,
       "season": "Below: Limited Series",
       "cn_title": "",
       "year": "2026",
@@ -250,9 +403,9 @@
       ]
     },
     {
-      "rank": 2,
+      "rank": 9,
       "title": "The Trap",
-      "weeks_in_top_10": 1,
+      "weeks_in_top_10": 3,
       "season": "The Trap: Limited Series",
       "cn_title": "",
       "year": "2018",
@@ -273,186 +426,26 @@
       ]
     },
     {
-      "rank": 3,
-      "title": "East of Eden",
-      "weeks_in_top_10": 3,
-      "season": "East of Eden: Limited Series",
-      "cn_title": "",
-      "year": "2026",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/355253707/s332/east-of-eden-2026.jpg",
-        "https://m.media-amazon.com/images/M/MV5BNmI2ODMyNjctZTA1MS00ODNhLWI3ZjAtMmE4MDE4OWRjMWZlXkEyXkFqcGc@._V1_.jpg",
-        "https://images.justwatch.com/poster/355131667/s332/east-of-eden-2026.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt21097264",
-      "tmdb_id": "258165",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 4,
-      "title": "TYSON",
+      "rank": 10,
+      "title": "Dead-End Job",
       "weeks_in_top_10": 1,
-      "season": "TYSON: Limited Series",
+      "season": "Dead-End Job: Limited Series",
       "cn_title": "",
       "year": "2026",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/355560385/s332/tyson.jpg",
-        "https://m.media-amazon.com/images/M/MV5BZjk2OTZmOTgtY2E0NC00MDViLTg3NWYtNGQwMjZhNDJhNTNiXkEyXkFqcGc@._V1_.jpg"
+        "https://m.media-amazon.com/images/M/MV5BMzRiOWExZWItOTlmOS00N2FjLWFiOWQtYTdkNGY4NjBjMGJiXkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt35051210",
-      "tmdb_id": "335536",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 5,
-      "title": "Instadocs: AI Gone Wild",
-      "weeks_in_top_10": 1,
-      "cn_title": "",
-      "year": "2026",
-      "poster_candidates": [
-        "https://m.media-amazon.com/images/M/MV5BMzNmMTVmZmYtNWYyMy00NzhkLTg4ZmQtNTMzZjY2N2QyMTE5XkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt48437216",
+      "imdb_id": "tt36458668",
       "tmdb_id": "",
       "metadata_match_version": 2,
       "metadata_confidence": "medium",
       "metadata_evidence": [
         "imdb_strict_title"
       ]
-    },
-    {
-      "rank": 6,
-      "title": "Unforgettable",
-      "weeks_in_top_10": 1,
-      "season": "Unforgettable: Season 1",
-      "cn_title": "",
-      "year": "2011",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/306909728/s332/Unforgettable.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMmVmNmFmNGEtZjU3Yy00OGNjLWI2ZmUtNjI5YTkzYzg5MTBiXkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt1842530",
-      "tmdb_id": "39276",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 7,
-      "title": "Playing Gracie Darling",
-      "weeks_in_top_10": 1,
-      "season": "Playing Gracie Darling: Season 1",
-      "cn_title": "",
-      "year": "2025",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/334425723/s332/playing-gracie-darling.jpg",
-        "https://m.media-amazon.com/images/M/MV5BOTgwYjZjOTctYzE3OC00NWVhLWI4ZmYtYjg5NGEwMGFkODMyXkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt33384059",
-      "tmdb_id": "271823",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 8,
-      "title": "The Diplomat",
-      "weeks_in_top_10": 1,
-      "season": "The Diplomat: Season 4",
-      "cn_title": "",
-      "year": "2023",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/355789175/s332/the-diplomat.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMmY4YWMyOGItMzA1MC00ZjY0LWEyM2QtZWFmNGNhNDZlZjk5XkEyXkFqcGc@._V1_.jpg",
-        "https://images.justwatch.com/poster/338464486/s332/the-diplomat.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt17491088",
-      "tmdb_id": "203857",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 9,
-      "title": "Spike",
-      "weeks_in_top_10": 1,
-      "season": "Spike: Season 1",
-      "cn_title": "",
-      "year": "2024",
-      "poster_candidates": [
-        "https://m.media-amazon.com/images/M/MV5BMTkyOTA5OTc0MV5BMl5BanBnXkFtZTcwNjQ1MjIyNw@@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "nm3653487",
-      "tmdb_id": "258382",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title"
-      ]
-    },
-    {
-      "rank": 10,
-      "title": "Percy Jackson and the Olympians",
-      "weeks_in_top_10": 2,
-      "season": "Percy Jackson and the Olympians: Season 1",
-      "cn_title": "",
-      "year": "2023",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/310515742/s332/percy-jackson-and-the-olympians.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMTI3YmIzNzYtOTcwNy00ZTZiLTg5NmQtMTUyNGY1ZWVmZDJiXkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt12324366",
-      "tmdb_id": "103540",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
     }
   ],
   "metadata_version": 2,
-  "metadata_enriched_at": "2026-10-28T23:13:47.788094+00:00"
+  "metadata_enriched_at": "2026-11-03T21:55:39.681812+00:00"
 }
