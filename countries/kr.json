@@ -1,20 +1,20 @@
 {
-  "week": "2026-11-01",
+  "week": "2026-11-08",
   "country_iso2": "KR",
   "country_name": "South Korea",
   "films": [
     {
       "rank": 1,
-      "title": "Surviving Hurricane Otis",
-      "weeks_in_top_10": 2,
+      "title": "Possible Love",
+      "weeks_in_top_10": 1,
       "cn_title": "",
       "year": "2026",
       "poster_candidates": [
-        "https://m.media-amazon.com/images/M/MV5BYTYzNzc5NjctZjg5OC00NzRmLWFkODAtZDU2NDBhNmRkNzhjXkEyXkFqcGc@._V1_.jpg"
+        "https://m.media-amazon.com/images/M/MV5BMTk4NjU5NjQtZjQxOS00OGIwLThhM2MtYWU1OTc4Y2M4NGVmXkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt37961714",
+      "imdb_id": "tt37803364",
       "tmdb_id": "",
       "metadata_match_version": 2,
       "metadata_confidence": "medium",
@@ -24,37 +24,17 @@
     },
     {
       "rank": 2,
-      "title": "The Ultimate Duo",
-      "weeks_in_top_10": 6,
-      "cn_title": "",
-      "year": "2026",
-      "poster_candidates": [
-        "https://m.media-amazon.com/images/M/MV5BYWMzMGMyODItNjJiNi00MTU4LTg1OTQtZTI2YzJmZTY0NWY5XkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt39556297",
-      "tmdb_id": "",
-      "metadata_match_version": 2,
-      "metadata_confidence": "medium",
-      "metadata_evidence": [
-        "imdb_strict_title"
-      ]
-    },
-    {
-      "rank": 3,
-      "title": "Drop",
+      "title": "Collision Course",
       "weeks_in_top_10": 2,
       "cn_title": "",
-      "year": "2025",
+      "year": "2012",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/347761467/s332/drop.jpg",
-        "https://m.media-amazon.com/images/M/MV5BOWUyOTNlMjItNWUyZC00ZGJiLTg3MDMtODJmMGQyMGY3NzU3XkEyXkFqcGc@._V1_.jpg"
+        "https://images.justwatch.com/poster/302581310/s332/nonseutob-aegsideonteu.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt32149847",
-      "tmdb_id": "1249213",
+      "imdb_id": "tt2327245",
+      "tmdb_id": "151092",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
       "metadata_evidence": [
@@ -64,9 +44,138 @@
       ]
     },
     {
-      "rank": 4,
-      "title": "Nowhere to Run",
+      "rank": 3,
+      "title": "One Year to Live, Buy a Man",
       "weeks_in_top_10": 1,
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://m.media-amazon.com/images/M/MV5BNTg3ZjZmODAtNTZjYS00NDMzLTg3NjYtZWYyMzkyY2VlZjRhXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt39400541",
+      "tmdb_id": "",
+      "metadata_match_version": 2,
+      "metadata_confidence": "medium",
+      "metadata_evidence": [
+        "imdb_strict_title"
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "The Hobbit: An Unexpected Journey",
+      "weeks_in_top_10": 1,
+      "cn_title": "",
+      "year": "2012",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/309946241/s332/the-hobbit-an-unexpected-journey.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMTcwNTE4MTUxMl5BMl5BanBnXkFtZTcwMDIyODM4OA@@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt0903624",
+      "tmdb_id": "49051",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "The Hobbit: The Battle of the Five Armies",
+      "weeks_in_top_10": 1,
+      "cn_title": "",
+      "year": "2014",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/309946320/s332/the-hobbit-the-battle-of-the-five-armies.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMTYzNDE3OTQ3MF5BMl5BanBnXkFtZTgwODczMTg4MjE@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt2310332",
+      "tmdb_id": "122917",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "The Hobbit: The Desolation of Smaug",
+      "weeks_in_top_10": 1,
+      "cn_title": "",
+      "year": "2013",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/309946323/s332/hobis-seumaugeuyi-pyeheo.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMzU0NDY0NDEzNV5BMl5BanBnXkFtZTgwOTIxNDU1MDE@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt1170358",
+      "tmdb_id": "57158",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "Me Before You",
+      "weeks_in_top_10": 1,
+      "cn_title": "",
+      "year": "2016",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/336659891/s332/mi-bipo-yu.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMTQ2NjE4NDE2NV5BMl5BanBnXkFtZTgwOTcwNDE5NzE@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt2674426",
+      "tmdb_id": "296096",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 8,
+      "title": "Heist",
+      "weeks_in_top_10": 1,
+      "cn_title": "",
+      "year": "2001",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/327798592/s332/heist-2001.jpg",
+        "https://m.media-amazon.com/images/M/MV5BY2M4YWQ5NDAtNjAwZC00NmM2LWJiNWUtOWEwNmE1Mjc5OGMyXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt0252503",
+      "tmdb_id": "11088",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 9,
+      "title": "Nowhere to Run",
+      "weeks_in_top_10": 2,
       "cn_title": "",
       "year": "1993",
       "poster_candidates": [
@@ -86,126 +195,17 @@
       ]
     },
     {
-      "rank": 5,
-      "title": "The Eyes",
-      "weeks_in_top_10": 4,
-      "cn_title": "",
-      "year": "2017",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/332711310/s332/.jpg",
-        "https://m.media-amazon.com/images/M/MV5BYzFjMDlkYWQtMGFhYS00MzExLTk4NGQtNTZlN2NjZTMyNzdhXkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt4902260",
-      "tmdb_id": "450975",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 6,
-      "title": "Collision Course",
-      "weeks_in_top_10": 1,
-      "cn_title": "",
-      "year": "2012",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/302581310/s332/nonseutob-aegsideonteu.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt2327245",
-      "tmdb_id": "151092",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 7,
-      "title": "Evil Dead Burn",
-      "weeks_in_top_10": 3,
+      "rank": 10,
+      "title": "The Ultimate Duo",
+      "weeks_in_top_10": 7,
       "cn_title": "",
       "year": "2026",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/346673389/s332/ibeul-dedeu-beon.jpg",
-        "https://m.media-amazon.com/images/M/MV5BZTljMTZjZTItZjMzZi00NDBhLWFmMzAtOGNiNTlhY2MxMzg5XkEyXkFqcGc@._V1_.jpg"
+        "https://m.media-amazon.com/images/M/MV5BYWMzMGMyODItNjJiNi00MTU4LTg1OTQtZTI2YzJmZTY0NWY5XkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt31170389",
-      "tmdb_id": "1212763",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 8,
-      "title": "Kubi",
-      "weeks_in_top_10": 1,
-      "cn_title": "",
-      "year": "2023",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/308489684/s332/kubi.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMjNjNWIwYjYtZmY5NC00NGY2LTg0ZWYtNjA4YTk3YzIzZDhmXkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt27502365",
-      "tmdb_id": "795087",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 9,
-      "title": "Armored",
-      "weeks_in_top_10": 2,
-      "cn_title": "",
-      "year": "2009",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/354808308/s332/armored.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMTgyOTI4NzAyMF5BMl5BanBnXkFtZTcwOTk3Mjg3Mg@@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt0913354",
-      "tmdb_id": "4597",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 10,
-      "title": "My Boss My Hero",
-      "weeks_in_top_10": 2,
-      "cn_title": "",
-      "year": "2001",
-      "poster_candidates": [
-        "https://m.media-amazon.com/images/M/MV5BMTVmYThmZWMtMmFhYy00NmQ0LWEzZmQtNGZkM2FlNDJkMmRmXkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt0301214",
+      "imdb_id": "tt39556297",
       "tmdb_id": "",
       "metadata_match_version": 2,
       "metadata_confidence": "medium",
@@ -217,24 +217,8 @@
   "tv": [
     {
       "rank": 1,
-      "title": "Doctor X: Mafia in White",
-      "weeks_in_top_10": 4,
-      "season": "Doctor X: Mafia in White: Limited Series",
-      "cn_title": "",
-      "year": "",
-      "poster_candidates": [],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "",
-      "tmdb_id": "",
-      "metadata_match_version": 2,
-      "metadata_confidence": "none",
-      "metadata_evidence": []
-    },
-    {
-      "rank": 2,
       "title": "Dead-End Job",
-      "weeks_in_top_10": 1,
+      "weeks_in_top_10": 2,
       "season": "Dead-End Job: Limited Series",
       "cn_title": "",
       "year": "2026",
@@ -252,9 +236,25 @@
       ]
     },
     {
+      "rank": 2,
+      "title": "Doctor X: Mafia in White",
+      "weeks_in_top_10": 5,
+      "season": "Doctor X: Mafia in White: Limited Series",
+      "cn_title": "",
+      "year": "",
+      "poster_candidates": [],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "",
+      "tmdb_id": "",
+      "metadata_match_version": 2,
+      "metadata_confidence": "none",
+      "metadata_evidence": []
+    },
+    {
       "rank": 3,
       "title": "100 Days of Deception",
-      "weeks_in_top_10": 4,
+      "weeks_in_top_10": 5,
       "season": "100 Days of Deception: Limited Series",
       "cn_title": "",
       "year": "2026",
@@ -274,7 +274,7 @@
     {
       "rank": 4,
       "title": "I am Solo",
-      "weeks_in_top_10": 4,
+      "weeks_in_top_10": 5,
       "season": "I am Solo: Part 34",
       "cn_title": "",
       "year": "2021",
@@ -293,24 +293,28 @@
     },
     {
       "rank": 5,
-      "title": "The Ballad of Us",
-      "weeks_in_top_10": 4,
-      "season": "The Ballad of Us: Season 2",
+      "title": "Romance School : First & Again",
+      "weeks_in_top_10": 1,
+      "season": "Romance School : First & Again: Season 2",
       "cn_title": "",
-      "year": "",
-      "poster_candidates": [],
+      "year": "2026",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/347851417/s332/yeonaegisughaggyo-dolsingnmosol.jpg"
+      ],
       "douban_id": "",
       "douban_url": "",
       "imdb_id": "",
-      "tmdb_id": "",
+      "tmdb_id": "319744",
       "metadata_match_version": 2,
-      "metadata_confidence": "none",
-      "metadata_evidence": []
+      "metadata_confidence": "medium",
+      "metadata_evidence": [
+        "justwatch_strict_title"
+      ]
     },
     {
       "rank": 6,
       "title": "World Dice Tour",
-      "weeks_in_top_10": 2,
+      "weeks_in_top_10": 3,
       "season": "World Dice Tour: Season 4",
       "cn_title": "",
       "year": "",
@@ -325,8 +329,24 @@
     },
     {
       "rank": 7,
+      "title": "The Ballad of Us",
+      "weeks_in_top_10": 5,
+      "season": "The Ballad of Us: Season 2",
+      "cn_title": "",
+      "year": "",
+      "poster_candidates": [],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "",
+      "tmdb_id": "",
+      "metadata_match_version": 2,
+      "metadata_confidence": "none",
+      "metadata_evidence": []
+    },
+    {
+      "rank": 8,
       "title": "The Wonder Coach",
-      "weeks_in_top_10": 3,
+      "weeks_in_top_10": 4,
       "season": "The Wonder Coach: Season 2",
       "cn_title": "",
       "year": "2025",
@@ -344,29 +364,9 @@
       ]
     },
     {
-      "rank": 8,
-      "title": "Where the Mask Ends",
-      "weeks_in_top_10": 2,
-      "season": "Where the Mask Ends: Season 1",
-      "cn_title": "",
-      "year": "2026",
-      "poster_candidates": [
-        "https://m.media-amazon.com/images/M/MV5BNjU2YjkwZjktYmY0Mi00MjVmLWJmYzAtZWM4MjIxZDgzNmNiXkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt42576855",
-      "tmdb_id": "",
-      "metadata_match_version": 2,
-      "metadata_confidence": "medium",
-      "metadata_evidence": [
-        "imdb_strict_title"
-      ]
-    },
-    {
       "rank": 9,
       "title": "Marriage of Convenience",
-      "weeks_in_top_10": 4,
+      "weeks_in_top_10": 5,
       "season": "Marriage of Convenience: Season 1",
       "cn_title": "",
       "year": "2026",
@@ -388,17 +388,17 @@
     },
     {
       "rank": 10,
-      "title": "Take Charge of My Heart",
-      "weeks_in_top_10": 4,
-      "season": "Take Charge of My Heart: Limited Series",
+      "title": "Where the Mask Ends",
+      "weeks_in_top_10": 3,
+      "season": "Where the Mask Ends: Season 1",
       "cn_title": "",
       "year": "2026",
       "poster_candidates": [
-        "https://m.media-amazon.com/images/M/MV5BMDJlMjJkZDQtMzA5Mi00MTkyLWE3ZTctNGQ5ZGZkODlmYmI0XkEyXkFqcGc@._V1_.jpg"
+        "https://m.media-amazon.com/images/M/MV5BNjU2YjkwZjktYmY0Mi00MjVmLWJmYzAtZWM4MjIxZDgzNmNiXkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt37737331",
+      "imdb_id": "tt42576855",
       "tmdb_id": "",
       "metadata_match_version": 2,
       "metadata_confidence": "medium",
@@ -408,5 +408,5 @@
     }
   ],
   "metadata_version": 2,
-  "metadata_enriched_at": "2026-11-10T02:07:02.618512+00:00"
+  "metadata_enriched_at": "2026-11-10T21:54:00.374772+00:00"
 }

@@ -1,41 +1,44 @@
 {
-  "week": "2026-11-01",
+  "week": "2026-11-08",
   "country_iso2": "US",
   "country_name": "United States",
   "films": [
     {
       "rank": 1,
-      "title": "Surviving Hurricane Otis",
+      "title": "The Day After Tomorrow",
       "weeks_in_top_10": 2,
       "cn_title": "",
-      "year": "2026",
+      "year": "2004",
       "poster_candidates": [
-        "https://m.media-amazon.com/images/M/MV5BYTYzNzc5NjctZjg5OC00NzRmLWFkODAtZDU2NDBhNmRkNzhjXkEyXkFqcGc@._V1_.jpg"
+        "https://images.justwatch.com/poster/310572606/s332/the-day-after-tomorrow.jpg",
+        "https://m.media-amazon.com/images/M/MV5BOGZmNDYyNmMtNDQyNy00OTkzLTg1OGUtYWJiNmQ5Y2Q5ZGU3XkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt37961714",
-      "tmdb_id": "",
+      "imdb_id": "tt0319262",
+      "tmdb_id": "435",
       "metadata_match_version": 2,
-      "metadata_confidence": "medium",
+      "metadata_confidence": "high",
       "metadata_evidence": [
-        "imdb_strict_title"
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
       ]
     },
     {
       "rank": 2,
-      "title": "Gladiator II",
-      "weeks_in_top_10": 2,
+      "title": "Kidnapped in Her Own Home: The Martha Carelli Story",
+      "weeks_in_top_10": 1,
       "cn_title": "",
-      "year": "2024",
+      "year": "2026",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/323197661/s332/gladiator-2.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMWYzZTM5ZGQtOGE5My00NmM2LWFlMDEtMGNjYjdmOWM1MzA1XkEyXkFqcGc@._V1_.jpg"
+        "https://images.justwatch.com/poster/346882048/s332/kidnapped-in-her-own-home-the-martha-carelli-story.jpg",
+        "https://m.media-amazon.com/images/M/MV5BNjFkOGRhOWEtNTFmZC00ZDI3LTlkMDgtZjU2MDM1OThlZTI4XkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt9218128",
-      "tmdb_id": "558449",
+      "imdb_id": "tt39182249",
+      "tmdb_id": "1665152",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
       "metadata_evidence": [
@@ -46,8 +49,118 @@
     },
     {
       "rank": 3,
-      "title": "Don't Trust the Couple Upstairs",
+      "title": "A Dog's Perfect Christmas",
       "weeks_in_top_10": 1,
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/356525646/s332/winstead-ein-hund-feiert-weihnachten.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMWYzMGYxZjgtZjc2Yy00YzQ2LThhMWItZmU5Y2FjNjRkYjRmXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt38515310",
+      "tmdb_id": "1570488",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "The Croods",
+      "weeks_in_top_10": 9,
+      "cn_title": "",
+      "year": "2013",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/335784397/s332/the-croods.jpg",
+        "https://m.media-amazon.com/images/M/MV5BODU3NzI5ODc1NV5BMl5BanBnXkFtZTcwODQ2NDU1OA@@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt0481499",
+      "tmdb_id": "49519",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "Collision Course",
+      "weeks_in_top_10": 2,
+      "cn_title": "",
+      "year": "2012",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/302581310/s332/nonseutob-aegsideonteu.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt2327245",
+      "tmdb_id": "151092",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "King Arthur: Legend of the Sword",
+      "weeks_in_top_10": 3,
+      "cn_title": "",
+      "year": "2017",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/293237145/s332/king-arthur-legend-of-the-sword.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMjM3ODY3Njc5Ml5BMl5BanBnXkFtZTgwMjQ5NjM5MTI@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt1972591",
+      "tmdb_id": "274857",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "The Mummy",
+      "weeks_in_top_10": 2,
+      "cn_title": "",
+      "year": "1999",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/347395520/s332/the-mummy-1999.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMTY4YWE0OGMtNjU0Yi00YzIwLTk3NTktM2ZiYWQwNjM4MmMxXkEyXkFqcGc@._V1_.jpg",
+        "https://images.justwatch.com/poster/347395520/s332/miira.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt0120616",
+      "tmdb_id": "564",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 8,
+      "title": "Don't Trust the Couple Upstairs",
+      "weeks_in_top_10": 2,
       "cn_title": "",
       "year": "2026",
       "poster_candidates": [
@@ -67,18 +180,19 @@
       ]
     },
     {
-      "rank": 4,
-      "title": "Collision Course",
+      "rank": 9,
+      "title": "Love the Coopers",
       "weeks_in_top_10": 1,
       "cn_title": "",
-      "year": "2012",
+      "year": "2015",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/302581310/s332/nonseutob-aegsideonteu.jpg"
+        "https://images.justwatch.com/poster/193215288/s332/love-the-coopers.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMjE4NTkyODk4NF5BMl5BanBnXkFtZTgwNjY0NzkxNzE@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt2327245",
-      "tmdb_id": "151092",
+      "imdb_id": "tt2279339",
+      "tmdb_id": "333348",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
       "metadata_evidence": [
@@ -88,32 +202,9 @@
       ]
     },
     {
-      "rank": 5,
-      "title": "Animals",
-      "weeks_in_top_10": 4,
-      "cn_title": "",
-      "year": "2026",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/355355509/s332/animals-2026.jpg",
-        "https://m.media-amazon.com/images/M/MV5BZmY3MmZiZjctOTgyYy00OGIxLTkwMDUtNDU3MGNkMGI3YWJlXkEyXkFqcGc@._V1_.jpg",
-        "https://images.justwatch.com/poster/355355509/s332/jimseungdeul.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt31049299",
-      "tmdb_id": "1236045",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 6,
+      "rank": 10,
       "title": "Champions",
-      "weeks_in_top_10": 1,
+      "weeks_in_top_10": 2,
       "cn_title": "",
       "year": "2023",
       "poster_candidates": [
@@ -131,98 +222,36 @@
         "imdb_strict_title",
         "year_consensus"
       ]
-    },
-    {
-      "rank": 7,
-      "title": "Hubie Halloween",
-      "weeks_in_top_10": 2,
-      "cn_title": "",
-      "year": "2020",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/292402051/s332/hubie-halloween.jpg",
-        "https://m.media-amazon.com/images/M/MV5BZTlkMDdiNmUtOTQwYS00ZTE5LWJlMWEtNzMyN2M2MWIzZTMzXkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt10682266",
-      "tmdb_id": "617505",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 8,
-      "title": "KPop Demon Hunters",
-      "weeks_in_top_10": 51,
-      "cn_title": "",
-      "year": "2025",
-      "poster_candidates": [
-        "https://m.media-amazon.com/images/M/MV5BNTBiYWJlMjQtOTIyMy00NTY4LWFhOWItOWZhNzc3NGMyMjc2XkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt14205554",
-      "tmdb_id": "",
-      "metadata_match_version": 2,
-      "metadata_confidence": "medium",
-      "metadata_evidence": [
-        "imdb_strict_title"
-      ]
-    },
-    {
-      "rank": 9,
-      "title": "Twilight",
-      "weeks_in_top_10": 9,
-      "cn_title": "",
-      "year": "2008",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/305252331/s332/twilight.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMTQ2NzUxMTAxN15BMl5BanBnXkFtZTcwMzEyMTIwMg@@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt1099212",
-      "tmdb_id": "8966",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 10,
-      "title": "The Day After Tomorrow",
-      "weeks_in_top_10": 1,
-      "cn_title": "",
-      "year": "2004",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/310572606/s332/the-day-after-tomorrow.jpg",
-        "https://m.media-amazon.com/images/M/MV5BOGZmNDYyNmMtNDQyNy00OTkzLTg1OGUtYWJiNmQ5Y2Q5ZGU3XkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt0319262",
-      "tmdb_id": "435",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
     }
   ],
   "tv": [
     {
       "rank": 1,
-      "title": "The One About Matthew Perry",
+      "title": "Taken: Natalee Holloway",
       "weeks_in_top_10": 1,
+      "season": "Taken: Natalee Holloway: Season 1",
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/355784537/s332/taken-natalee-holloway.jpg",
+        "https://m.media-amazon.com/images/M/MV5BNDU1MjVkODMtOGJjYi00Y2IxLWFkOGYtOTc2ODA4OTZkMWUxXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt43681696",
+      "tmdb_id": "338684",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "The One About Matthew Perry",
+      "weeks_in_top_10": 2,
       "season": "The One About Matthew Perry: Season 1",
       "cn_title": "",
       "year": "2026",
@@ -243,9 +272,9 @@
       ]
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "Nobody Wants This",
-      "weeks_in_top_10": 2,
+      "weeks_in_top_10": 3,
       "season": "Nobody Wants This: Season 3",
       "cn_title": "",
       "year": "2024",
@@ -266,32 +295,9 @@
       ]
     },
     {
-      "rank": 3,
-      "title": "The Fall of El Mayo",
-      "weeks_in_top_10": 1,
-      "season": "The Fall of El Mayo: Limited Series",
-      "cn_title": "",
-      "year": "2026",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/356372700/s332/der-fall-von-el-mayo.jpg",
-        "https://m.media-amazon.com/images/M/MV5BZWZmMzRhZmMtZDViYi00MmNkLTg4ZTktZGFjMDA1YzgyMjUzXkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt49250618",
-      "tmdb_id": "338689",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
       "rank": 4,
       "title": "From",
-      "weeks_in_top_10": 2,
+      "weeks_in_top_10": 3,
       "season": "From: Season 1",
       "cn_title": "",
       "year": "2022",
@@ -313,19 +319,19 @@
     },
     {
       "rank": 5,
-      "title": "Love Is Blind",
-      "weeks_in_top_10": 3,
-      "season": "Love Is Blind: S11: Boston",
+      "title": "Raw",
+      "weeks_in_top_10": 1,
+      "season": "Raw: November 2, 2026",
       "cn_title": "",
-      "year": "2020",
+      "year": "2008",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/249642024/s332/love-is-blind-2020-0.jpg",
-        "https://m.media-amazon.com/images/M/MV5BNDAxNjY2M2UtYTliYi00ZDA4LTkyMzYtN2Q5NzQxMzFhM2VmXkEyXkFqcGc@._V1_.jpg"
+        "https://images.justwatch.com/poster/321050063/s332/raw.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMWMzY2RmM2UtNzZlOS00NDI2LWFmYzctZWI2NDFmNjAxOTliXkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt11704040",
-      "tmdb_id": "99353",
+      "imdb_id": "tt1233560",
+      "tmdb_id": "7449",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
       "metadata_evidence": [
@@ -336,8 +342,31 @@
     },
     {
       "rank": 6,
-      "title": "From",
+      "title": "Mistletoe Murders",
       "weeks_in_top_10": 1,
+      "season": "Mistletoe Murders: Season 1",
+      "cn_title": "",
+      "year": "2024",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/337767760/s332/mistletoe-murders.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMjYyNGEyMTMtNTQ1Mi00YWM0LWE1MjgtOGNlODU1MTkzYTZmXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt32378211",
+      "tmdb_id": "261317",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "From",
+      "weeks_in_top_10": 2,
       "season": "From: Season 2",
       "cn_title": "",
       "year": "2022",
@@ -358,74 +387,9 @@
       ]
     },
     {
-      "rank": 7,
-      "title": "Minimum Wage",
-      "weeks_in_top_10": 1,
-      "season": "Minimum Wage: Season 1",
-      "cn_title": "",
-      "year": "2026",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/356390342/s332/minimum-wage.jpg",
-        "https://m.media-amazon.com/images/M/MV5BYTJmZDBhZjMtNTkzZS00MzA5LWFmN2QtYTdlZDdhODQ4MzBlXkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt42220724",
-      "tmdb_id": "321221",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
       "rank": 8,
-      "title": "Raw",
-      "weeks_in_top_10": 1,
-      "season": "Raw: October 26, 2026",
-      "cn_title": "",
-      "year": "2008",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/321050063/s332/raw.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMWMzY2RmM2UtNzZlOS00NDI2LWFmYzctZWI2NDFmNjAxOTliXkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt1233560",
-      "tmdb_id": "7449",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 9,
-      "title": "Instadocs: Jane Doe v. Cornell",
-      "weeks_in_top_10": 1,
-      "cn_title": "",
-      "year": "2026",
-      "poster_candidates": [
-        "https://m.media-amazon.com/images/M/MV5BMTUxYmQ1MWMtZTg2ZS00OGVmLWE4NDQtNGM3ZTAzMjc3N2Y3XkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt50245863",
-      "tmdb_id": "",
-      "metadata_match_version": 2,
-      "metadata_confidence": "medium",
-      "metadata_evidence": [
-        "imdb_strict_title"
-      ]
-    },
-    {
-      "rank": 10,
       "title": "From",
-      "weeks_in_top_10": 1,
+      "weeks_in_top_10": 2,
       "season": "From: Season 3",
       "cn_title": "",
       "year": "2022",
@@ -444,8 +408,54 @@
         "imdb_strict_title",
         "year_consensus"
       ]
+    },
+    {
+      "rank": 9,
+      "title": "Love Is Blind",
+      "weeks_in_top_10": 4,
+      "season": "Love Is Blind: S11: Boston",
+      "cn_title": "",
+      "year": "2020",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/249642024/s332/love-is-blind-2020-0.jpg",
+        "https://m.media-amazon.com/images/M/MV5BNDAxNjY2M2UtYTliYi00ZDA4LTkyMzYtN2Q5NzQxMzFhM2VmXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt11704040",
+      "tmdb_id": "99353",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 10,
+      "title": "The Fall of El Mayo",
+      "weeks_in_top_10": 2,
+      "season": "The Fall of El Mayo: Limited Series",
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/356372700/s332/der-fall-von-el-mayo.jpg",
+        "https://m.media-amazon.com/images/M/MV5BZWZmMzRhZmMtZDViYi00MmNkLTg4ZTktZGFjMDA1YzgyMjUzXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt49250618",
+      "tmdb_id": "338689",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
     }
   ],
   "metadata_version": 2,
-  "metadata_enriched_at": "2026-11-10T02:07:02.618512+00:00"
+  "metadata_enriched_at": "2026-11-10T21:54:00.374772+00:00"
 }

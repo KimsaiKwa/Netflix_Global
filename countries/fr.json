@@ -1,34 +1,31 @@
 {
-  "week": "2026-11-01",
+  "week": "2026-11-08",
   "country_iso2": "FR",
   "country_name": "France",
   "films": [
     {
       "rank": 1,
-      "title": "Le clan",
+      "title": "Ninho: Fame Ain’t Worth It",
       "weeks_in_top_10": 1,
       "cn_title": "",
-      "year": "2023",
+      "year": "2026",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/302517105/s332/le-clan-2023.jpg",
-        "https://m.media-amazon.com/images/M/MV5BNmQxYzczMDQtNjJiYy00MjY3LTg0OGItZTI3N2I2MmZkZjM5XkEyXkFqcGc@._V1_.jpg"
+        "https://m.media-amazon.com/images/M/MV5BNmZiZjI5NTAtMmVlZi00YWI2LWEzZmEtMmIxMjVmM2RiZWY2XkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt24156250",
-      "tmdb_id": "1000094",
+      "imdb_id": "tt49895708",
+      "tmdb_id": "",
       "metadata_match_version": 2,
-      "metadata_confidence": "high",
+      "metadata_confidence": "medium",
       "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
+        "imdb_strict_title"
       ]
     },
     {
       "rank": 2,
       "title": "Collision Course",
-      "weeks_in_top_10": 1,
+      "weeks_in_top_10": 2,
       "cn_title": "",
       "year": "2012",
       "poster_candidates": [
@@ -48,7 +45,7 @@
     },
     {
       "rank": 3,
-      "title": "Comme des Riches",
+      "title": "Mon garçon",
       "weeks_in_top_10": 2,
       "cn_title": "",
       "year": "",
@@ -63,37 +60,40 @@
     },
     {
       "rank": 4,
-      "title": "Surviving Hurricane Otis",
-      "weeks_in_top_10": 2,
+      "title": "Heist",
+      "weeks_in_top_10": 1,
       "cn_title": "",
-      "year": "2026",
+      "year": "2001",
       "poster_candidates": [
-        "https://m.media-amazon.com/images/M/MV5BYTYzNzc5NjctZjg5OC00NzRmLWFkODAtZDU2NDBhNmRkNzhjXkEyXkFqcGc@._V1_.jpg"
+        "https://images.justwatch.com/poster/327798592/s332/heist-2001.jpg",
+        "https://m.media-amazon.com/images/M/MV5BY2M4YWQ5NDAtNjAwZC00NmM2LWJiNWUtOWEwNmE1Mjc5OGMyXkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt37961714",
-      "tmdb_id": "",
+      "imdb_id": "tt0252503",
+      "tmdb_id": "11088",
       "metadata_match_version": 2,
-      "metadata_confidence": "medium",
+      "metadata_confidence": "high",
       "metadata_evidence": [
-        "imdb_strict_title"
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
       ]
     },
     {
       "rank": 5,
-      "title": "The Guardian",
-      "weeks_in_top_10": 1,
+      "title": "Le clan",
+      "weeks_in_top_10": 2,
       "cn_title": "",
-      "year": "2006",
+      "year": "2023",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/309291602/s332/the-guardian-2006.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMTI0MDkzMzQ1M15BMl5BanBnXkFtZTcwMDQ3MTQzMQ@@._V1_.jpg"
+        "https://images.justwatch.com/poster/302517105/s332/le-clan-2023.jpg",
+        "https://m.media-amazon.com/images/M/MV5BNmQxYzczMDQtNjJiYy00MjY3LTg0OGItZTI3N2I2MmZkZjM5XkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt0406816",
-      "tmdb_id": "4643",
+      "imdb_id": "tt24156250",
+      "tmdb_id": "1000094",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
       "metadata_evidence": [
@@ -105,7 +105,7 @@
     {
       "rank": 6,
       "title": "The Wing or the Thigh?",
-      "weeks_in_top_10": 1,
+      "weeks_in_top_10": 2,
       "cn_title": "",
       "year": "1976",
       "poster_candidates": [
@@ -123,8 +123,30 @@
     },
     {
       "rank": 7,
-      "title": "The Bad Guys 2",
+      "title": "Retribution",
       "weeks_in_top_10": 1,
+      "cn_title": "",
+      "year": "2023",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/309826065/s332/retribution-2023.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMTIxZTM4ZWUtZjczOS00MWFmLWJhMWMtMjA4NmMzYzFlMTIyXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt6906292",
+      "tmdb_id": "762430",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 8,
+      "title": "The Bad Guys 2",
+      "weeks_in_top_10": 2,
       "cn_title": "",
       "year": "2025",
       "poster_candidates": [
@@ -144,42 +166,19 @@
       ]
     },
     {
-      "rank": 8,
-      "title": "Untouchable",
-      "weeks_in_top_10": 3,
-      "cn_title": "",
-      "year": "2019",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/145118571/s332/untouchable.jpg",
-        "https://m.media-amazon.com/images/M/MV5BYmNlN2FjMTMtZDRhYy00MzczLTk3MmUtNWZmN2YwZDIxZWEyXkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt9358228",
-      "tmdb_id": "566236",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
       "rank": 9,
-      "title": "Animals",
-      "weeks_in_top_10": 4,
+      "title": "My Best Friend",
+      "weeks_in_top_10": 1,
       "cn_title": "",
-      "year": "2026",
+      "year": "2016",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/355355509/s332/animals-2026.jpg",
-        "https://m.media-amazon.com/images/M/MV5BZmY3MmZiZjctOTgyYy00OGIxLTkwMDUtNDU3MGNkMGI3YWJlXkEyXkFqcGc@._V1_.jpg",
-        "https://images.justwatch.com/poster/355355509/s332/jimseungdeul.jpg"
+        "https://images.justwatch.com/poster/41704195/s332/Fuer-immer-beste-Freunde.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMTg1MDkwMjI0NF5BMl5BanBnXkFtZTgwNjEzMTIyMDI@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt31049299",
-      "tmdb_id": "1236045",
+      "imdb_id": "tt4952982",
+      "tmdb_id": "412469",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
       "metadata_evidence": [
@@ -190,7 +189,7 @@
     },
     {
       "rank": 10,
-      "title": "Mon garçon",
+      "title": "Pídeme lo que quieras",
       "weeks_in_top_10": 1,
       "cn_title": "",
       "year": "",
@@ -208,7 +207,7 @@
     {
       "rank": 1,
       "title": "Lupin",
-      "weeks_in_top_10": 2,
+      "weeks_in_top_10": 3,
       "season": "Lupin: Part 4",
       "cn_title": "",
       "year": "2021",
@@ -230,163 +229,8 @@
     },
     {
       "rank": 2,
-      "title": "Djadel Show",
-      "weeks_in_top_10": 2,
-      "season": "Djadel Show: Season 2",
-      "cn_title": "",
-      "year": "2025",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/355783809/s332/djadel-show.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "",
-      "tmdb_id": "339290",
-      "metadata_match_version": 2,
-      "metadata_confidence": "medium",
-      "metadata_evidence": [
-        "justwatch_strict_title"
-      ]
-    },
-    {
-      "rank": 3,
-      "title": "Lupin",
-      "weeks_in_top_10": 6,
-      "season": "Lupin: Part 1",
-      "cn_title": "",
-      "year": "2021",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/356434719/s332/Lupin.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMzk4MTc0NWUtZjk3Mi00ODkzLTlkYjItOWRhMTc5MmRiNjI0XkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt2531336",
-      "tmdb_id": "96677",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 4,
-      "title": "Lupin",
-      "weeks_in_top_10": 10,
-      "season": "Lupin: Part 3",
-      "cn_title": "",
-      "year": "2021",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/356434719/s332/Lupin.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMzk4MTc0NWUtZjk3Mi00ODkzLTlkYjItOWRhMTc5MmRiNjI0XkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt2531336",
-      "tmdb_id": "96677",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 5,
-      "title": "Lupin",
-      "weeks_in_top_10": 10,
-      "season": "Lupin: Part 2",
-      "cn_title": "",
-      "year": "2021",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/356434719/s332/Lupin.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMzk4MTc0NWUtZjk3Mi00ODkzLTlkYjItOWRhMTc5MmRiNjI0XkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt2531336",
-      "tmdb_id": "96677",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 6,
-      "title": "The One About Matthew Perry",
-      "weeks_in_top_10": 1,
-      "season": "The One About Matthew Perry: Season 1",
-      "cn_title": "",
-      "year": "2026",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/355270562/s332/the-one-about-matthew-perry.jpg",
-        "https://m.media-amazon.com/images/M/MV5BODNiYmZlNmMtNDFmNC00YThkLTk4ZWItZTYzYTMwODg3MjIzXkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt44941753",
-      "tmdb_id": "333533",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 7,
-      "title": "Nobody Wants This",
-      "weeks_in_top_10": 1,
-      "season": "Nobody Wants This: Season 3",
-      "cn_title": "",
-      "year": "2024",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/337837446/s332/nobody-wants-this.jpg",
-        "https://m.media-amazon.com/images/M/MV5BM2ExMmE3YTgtY2RmNC00ZWIzLWJlNGYtYmViNWVjM2Q1MjNjXkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt26933824",
-      "tmdb_id": "250923",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 8,
-      "title": "Dead-End Job",
-      "weeks_in_top_10": 1,
-      "season": "Dead-End Job: Limited Series",
-      "cn_title": "",
-      "year": "2026",
-      "poster_candidates": [
-        "https://m.media-amazon.com/images/M/MV5BMzRiOWExZWItOTlmOS00N2FjLWFiOWQtYTdkNGY4NjBjMGJiXkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt36458668",
-      "tmdb_id": "",
-      "metadata_match_version": 2,
-      "metadata_confidence": "medium",
-      "metadata_evidence": [
-        "imdb_strict_title"
-      ]
-    },
-    {
-      "rank": 9,
       "title": "A Couple of Lies",
-      "weeks_in_top_10": 1,
+      "weeks_in_top_10": 2,
       "season": "A Couple of Lies: Limited Series",
       "cn_title": "",
       "year": "2026",
@@ -407,20 +251,168 @@
       ]
     },
     {
-      "rank": 10,
-      "title": "Below",
-      "weeks_in_top_10": 4,
-      "season": "Below: Limited Series",
+      "rank": 3,
+      "title": "Djadel Show",
+      "weeks_in_top_10": 3,
+      "season": "Djadel Show: Season 2",
       "cn_title": "",
-      "year": "2026",
+      "year": "2025",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/355537031/s332/below.jpg",
-        "https://m.media-amazon.com/images/M/MV5BYzRjZjU3NTktOTY5My00YTEzLTliYjAtMDNjYjhiN2MyYjllXkEyXkFqcGc@._V1_.jpg"
+        "https://images.justwatch.com/poster/355783809/s332/djadel-show.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt35934755",
-      "tmdb_id": "285322",
+      "imdb_id": "",
+      "tmdb_id": "339290",
+      "metadata_match_version": 2,
+      "metadata_confidence": "medium",
+      "metadata_evidence": [
+        "justwatch_strict_title"
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Anne Rice's Mayfair Witches",
+      "weeks_in_top_10": 1,
+      "season": "Anne Rice's Mayfair Witches: Season 1",
+      "cn_title": "",
+      "year": "",
+      "poster_candidates": [],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "",
+      "tmdb_id": "",
+      "metadata_match_version": 2,
+      "metadata_confidence": "none",
+      "metadata_evidence": []
+    },
+    {
+      "rank": 5,
+      "title": "Dead-End Job",
+      "weeks_in_top_10": 2,
+      "season": "Dead-End Job: Limited Series",
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://m.media-amazon.com/images/M/MV5BMzRiOWExZWItOTlmOS00N2FjLWFiOWQtYTdkNGY4NjBjMGJiXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt36458668",
+      "tmdb_id": "",
+      "metadata_match_version": 2,
+      "metadata_confidence": "medium",
+      "metadata_evidence": [
+        "imdb_strict_title"
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "Taken: Natalee Holloway",
+      "weeks_in_top_10": 1,
+      "season": "Taken: Natalee Holloway: Season 1",
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/355784537/s332/taken-natalee-holloway.jpg",
+        "https://m.media-amazon.com/images/M/MV5BNDU1MjVkODMtOGJjYi00Y2IxLWFkOGYtOTc2ODA4OTZkMWUxXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt43681696",
+      "tmdb_id": "338684",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "Lupin",
+      "weeks_in_top_10": 11,
+      "season": "Lupin: Part 3",
+      "cn_title": "",
+      "year": "2021",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/356434719/s332/Lupin.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMzk4MTc0NWUtZjk3Mi00ODkzLTlkYjItOWRhMTc5MmRiNjI0XkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt2531336",
+      "tmdb_id": "96677",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 8,
+      "title": "Lupin",
+      "weeks_in_top_10": 7,
+      "season": "Lupin: Part 1",
+      "cn_title": "",
+      "year": "2021",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/356434719/s332/Lupin.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMzk4MTc0NWUtZjk3Mi00ODkzLTlkYjItOWRhMTc5MmRiNjI0XkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt2531336",
+      "tmdb_id": "96677",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 9,
+      "title": "The Rainmaker",
+      "weeks_in_top_10": 1,
+      "season": "The Rainmaker: Season 1",
+      "cn_title": "",
+      "year": "2025",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/356387814/s332/the-rainmaker.jpg",
+        "https://m.media-amazon.com/images/M/MV5BNTc5YTljMWMtMmQ5Ni00NjA5LTg5ZjctMTdhYzI2YWUyOGI1XkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt6151526",
+      "tmdb_id": "256711",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 10,
+      "title": "Black Doves",
+      "weeks_in_top_10": 1,
+      "season": "Black Doves: Season 2",
+      "cn_title": "",
+      "year": "2024",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/323408786/s332/black-doves.jpg",
+        "https://m.media-amazon.com/images/M/MV5BZTEwYTVlNmItOGUyYi00MTRjLTliNmItZmZjOTBlMTc2NGMyXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt27995113",
+      "tmdb_id": "225385",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
       "metadata_evidence": [
@@ -431,5 +423,5 @@
     }
   ],
   "metadata_version": 2,
-  "metadata_enriched_at": "2026-11-10T02:07:02.618512+00:00"
+  "metadata_enriched_at": "2026-11-10T21:54:00.374772+00:00"
 }

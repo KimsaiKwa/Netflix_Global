@@ -1,12 +1,112 @@
 {
-  "week": "2026-11-01",
+  "week": "2026-11-08",
   "country_iso2": "JP",
   "country_name": "Japan",
   "films": [
     {
       "rank": 1,
-      "title": "Black Showman",
+      "title": "One Year to Live, Buy a Man",
+      "weeks_in_top_10": 1,
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://m.media-amazon.com/images/M/MV5BNTg3ZjZmODAtNTZjYS00NDMzLTg3NjYtZWYyMzkyY2VlZjRhXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt39400541",
+      "tmdb_id": "",
+      "metadata_match_version": 2,
+      "metadata_confidence": "medium",
+      "metadata_evidence": [
+        "imdb_strict_title"
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "The Ice Ruts",
+      "weeks_in_top_10": 1,
+      "cn_title": "",
+      "year": "2016",
+      "poster_candidates": [
+        "https://m.media-amazon.com/images/M/MV5BZTRlY2UwZjMtZmRjNy00MDE4LTkyYzktOTI4OTNjNmM5YWVhXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt6215868",
+      "tmdb_id": "",
+      "metadata_match_version": 2,
+      "metadata_confidence": "medium",
+      "metadata_evidence": [
+        "imdb_strict_title"
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Ride On",
+      "weeks_in_top_10": 1,
+      "cn_title": "",
+      "year": "2013",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/343568237/s332/.jpg",
+        "https://m.media-amazon.com/images/M/MV5BOThiY2M5OTAtYmNjMS00YmE5LThlNzItNzY1NjY5N2E4ZWZjXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt4781984",
+      "tmdb_id": "",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Godzilla Minus One",
       "weeks_in_top_10": 3,
+      "cn_title": "",
+      "year": "2023",
+      "poster_candidates": [
+        "https://m.media-amazon.com/images/M/MV5BMjc5MjllMGUtMDIwMS00ZDVkLWEzODQtM2NlMTMwMTZhNThmXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt23289160",
+      "tmdb_id": "",
+      "metadata_match_version": 2,
+      "metadata_confidence": "medium",
+      "metadata_evidence": [
+        "imdb_strict_title"
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "Collision Course",
+      "weeks_in_top_10": 1,
+      "cn_title": "",
+      "year": "2012",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/302581310/s332/nonseutob-aegsideonteu.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt2327245",
+      "tmdb_id": "151092",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "Black Showman",
+      "weeks_in_top_10": 4,
       "cn_title": "",
       "year": "2025",
       "poster_candidates": [
@@ -26,9 +126,9 @@
       ]
     },
     {
-      "rank": 2,
-      "title": "What if Shogun Ieyasu Tokugawa Was To Become the Prime Minister",
-      "weeks_in_top_10": 2,
+      "rank": 7,
+      "title": "Brave: Gunjo Senki",
+      "weeks_in_top_10": 1,
       "cn_title": "",
       "year": "",
       "poster_candidates": [],
@@ -41,47 +141,31 @@
       "metadata_evidence": []
     },
     {
-      "rank": 3,
-      "title": "Shylock's Children",
-      "weeks_in_top_10": 2,
-      "cn_title": "",
-      "year": "2023",
-      "poster_candidates": [
-        "https://m.media-amazon.com/images/M/MV5BYmUxNDI0OWUtZjNjYy00ODRkLTg1MzEtMjg2OThjZDRlODQ4XkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt21944604",
-      "tmdb_id": "",
-      "metadata_match_version": 2,
-      "metadata_confidence": "medium",
-      "metadata_evidence": [
-        "imdb_strict_title"
-      ]
-    },
-    {
-      "rank": 4,
-      "title": "Surviving Hurricane Otis",
+      "rank": 8,
+      "title": "Heist",
       "weeks_in_top_10": 1,
       "cn_title": "",
-      "year": "2026",
+      "year": "2001",
       "poster_candidates": [
-        "https://m.media-amazon.com/images/M/MV5BYTYzNzc5NjctZjg5OC00NzRmLWFkODAtZDU2NDBhNmRkNzhjXkEyXkFqcGc@._V1_.jpg"
+        "https://images.justwatch.com/poster/327798592/s332/heist-2001.jpg",
+        "https://m.media-amazon.com/images/M/MV5BY2M4YWQ5NDAtNjAwZC00NmM2LWJiNWUtOWEwNmE1Mjc5OGMyXkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt37961714",
-      "tmdb_id": "",
+      "imdb_id": "tt0252503",
+      "tmdb_id": "11088",
       "metadata_match_version": 2,
-      "metadata_confidence": "medium",
+      "metadata_confidence": "high",
       "metadata_evidence": [
-        "imdb_strict_title"
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
       ]
     },
     {
-      "rank": 5,
+      "rank": 9,
       "title": "The Guardian",
-      "weeks_in_top_10": 1,
+      "weeks_in_top_10": 2,
       "cn_title": "",
       "year": "2006",
       "poster_candidates": [
@@ -101,101 +185,19 @@
       ]
     },
     {
-      "rank": 6,
-      "title": "The Last House on the Left",
-      "weeks_in_top_10": 1,
-      "cn_title": "",
-      "year": "2009",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/323123870/s332/the-last-house-on-the-left.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMjExMTM4MDAwOF5BMl5BanBnXkFtZTcwODcyMDIzMg@@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt0844708",
-      "tmdb_id": "18405",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 7,
-      "title": "Godzilla Minus One",
-      "weeks_in_top_10": 2,
-      "cn_title": "",
-      "year": "2023",
-      "poster_candidates": [
-        "https://m.media-amazon.com/images/M/MV5BMjc5MjllMGUtMDIwMS00ZDVkLWEzODQtM2NlMTMwMTZhNThmXkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt23289160",
-      "tmdb_id": "",
-      "metadata_match_version": 2,
-      "metadata_confidence": "medium",
-      "metadata_evidence": [
-        "imdb_strict_title"
-      ]
-    },
-    {
-      "rank": 8,
-      "title": "The Addams Family",
-      "weeks_in_top_10": 1,
-      "cn_title": "",
-      "year": "1991",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/339561173/s332/adamusuhuamiri.jpg",
-        "https://m.media-amazon.com/images/M/MV5BZWY0MzVlNGEtYzM1MC00OTI4LWE3ZTQtNWJjYzk2Y2MyNjVkXkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt0101272",
-      "tmdb_id": "2907",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 9,
-      "title": "Black Night Parade",
-      "weeks_in_top_10": 1,
-      "cn_title": "",
-      "year": "2022",
-      "poster_candidates": [
-        "https://m.media-amazon.com/images/M/MV5BZjlmMmEzMTQtMmJiNy00MDMzLWExYzAtZGU0YTY5NzMwZGJjXkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt21434474",
-      "tmdb_id": "",
-      "metadata_match_version": 2,
-      "metadata_confidence": "medium",
-      "metadata_evidence": [
-        "imdb_strict_title"
-      ]
-    },
-    {
       "rank": 10,
-      "title": "Land of Happiness",
+      "title": "The Hobbit: An Unexpected Journey",
       "weeks_in_top_10": 1,
       "cn_title": "",
-      "year": "2018",
+      "year": "2012",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/344630032/s332/.jpg",
-        "https://m.media-amazon.com/images/M/MV5BOGMzMGFhYjItNTYxNC00ZmJlLTk1MzAtYTg4MWYyOWY3MDBhXkEyXkFqcGc@._V1_.jpg"
+        "https://images.justwatch.com/poster/309946241/s332/the-hobbit-an-unexpected-journey.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMTcwNTE4MTUxMl5BMl5BanBnXkFtZTcwMDIyODM4OA@@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt7048970",
-      "tmdb_id": "528962",
+      "imdb_id": "tt0903624",
+      "tmdb_id": "49051",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
       "metadata_evidence": [
@@ -209,7 +211,7 @@
     {
       "rank": 1,
       "title": "Extraordinary Attorney Minami",
-      "weeks_in_top_10": 2,
+      "weeks_in_top_10": 3,
       "season": "Extraordinary Attorney Minami: Season 1",
       "cn_title": "",
       "year": "2026",
@@ -229,7 +231,7 @@
     {
       "rank": 2,
       "title": "Did Someone Happen to Mention Me?",
-      "weeks_in_top_10": 2,
+      "weeks_in_top_10": 3,
       "season": "Did Someone Happen to Mention Me?: Season 1",
       "cn_title": "",
       "year": "2026",
@@ -249,7 +251,7 @@
     {
       "rank": 3,
       "title": "LOST10",
-      "weeks_in_top_10": 3,
+      "weeks_in_top_10": 4,
       "season": "LOST10: Season 1",
       "cn_title": "",
       "year": "2026",
@@ -272,7 +274,7 @@
     {
       "rank": 4,
       "title": "The Apothecary Diaries",
-      "weeks_in_top_10": 4,
+      "weeks_in_top_10": 5,
       "season": "The Apothecary Diaries: Season 3",
       "cn_title": "",
       "year": "2023",
@@ -293,7 +295,7 @@
     {
       "rank": 5,
       "title": "Love Village",
-      "weeks_in_top_10": 4,
+      "weeks_in_top_10": 5,
       "season": "Love Village: Season 3",
       "cn_title": "",
       "year": "2022",
@@ -313,7 +315,7 @@
     {
       "rank": 6,
       "title": "PoliticaLupin",
-      "weeks_in_top_10": 4,
+      "weeks_in_top_10": 5,
       "season": "PoliticaLupin: Season 1",
       "cn_title": "",
       "year": "",
@@ -328,8 +330,64 @@
     },
     {
       "rank": 7,
+      "title": "Dead-End Job",
+      "weeks_in_top_10": 1,
+      "season": "Dead-End Job: Limited Series",
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://m.media-amazon.com/images/M/MV5BMzRiOWExZWItOTlmOS00N2FjLWFiOWQtYTdkNGY4NjBjMGJiXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt36458668",
+      "tmdb_id": "",
+      "metadata_match_version": 2,
+      "metadata_confidence": "medium",
+      "metadata_evidence": [
+        "imdb_strict_title"
+      ]
+    },
+    {
+      "rank": 8,
+      "title": "The Apothecary Diaries - The Compilation -",
+      "weeks_in_top_10": 1,
+      "season": "The Apothecary Diaries - The Compilation -: Season 1",
+      "cn_title": "",
+      "year": "",
+      "poster_candidates": [],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "",
+      "tmdb_id": "",
+      "metadata_match_version": 2,
+      "metadata_confidence": "none",
+      "metadata_evidence": []
+    },
+    {
+      "rank": 9,
+      "title": "Pandorobo",
+      "weeks_in_top_10": 1,
+      "season": "Pandorobo: Season 1",
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/355343205/s332/.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "",
+      "tmdb_id": "309202",
+      "metadata_match_version": 2,
+      "metadata_confidence": "medium",
+      "metadata_evidence": [
+        "justwatch_strict_title"
+      ]
+    },
+    {
+      "rank": 10,
       "title": "Firefly Wedding",
-      "weeks_in_top_10": 3,
+      "weeks_in_top_10": 4,
       "season": "Firefly Wedding: Season 1",
       "cn_title": "",
       "year": "2026",
@@ -345,74 +403,8 @@
       "metadata_evidence": [
         "imdb_strict_title"
       ]
-    },
-    {
-      "rank": 8,
-      "title": "Midnight Diner",
-      "weeks_in_top_10": 1,
-      "season": "Midnight Diner: Season 6",
-      "cn_title": "",
-      "year": "2009",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/310149083/s332/shen-ye-shi-tang.jpg",
-        "https://m.media-amazon.com/images/M/MV5BNDAzNTIzY2EtZmU1ZS00YTkxLWEzYzUtZDRiMjliNDA1NjMyXkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt1882928",
-      "tmdb_id": "47008",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 9,
-      "title": "Plastic Beauty",
-      "weeks_in_top_10": 7,
-      "season": "Plastic Beauty: Season 1",
-      "cn_title": "",
-      "year": "2026",
-      "poster_candidates": [
-        "https://m.media-amazon.com/images/M/MV5BYTg4YWY0NmYtYTI4NC00ZWQ1LWFlZTMtMTk2N2RjZmU2YTc4XkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt37884325",
-      "tmdb_id": "",
-      "metadata_match_version": 2,
-      "metadata_confidence": "medium",
-      "metadata_evidence": [
-        "imdb_strict_title"
-      ]
-    },
-    {
-      "rank": 10,
-      "title": "STEEL BALL RUN JoJo’s Bizarre Adventure",
-      "weeks_in_top_10": 3,
-      "season": "STEEL BALL RUN JoJo’s Bizarre Adventure: 2nd-3rd STAGE",
-      "cn_title": "",
-      "year": "2026",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/356421612/s332/.jpg",
-        "https://m.media-amazon.com/images/M/MV5BZDFmY2JjYmYtNjZhOC00ODJkLTliMjYtM2Y4YzBjMWE0ZGZjXkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt38268282",
-      "tmdb_id": "340524",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
     }
   ],
   "metadata_version": 2,
-  "metadata_enriched_at": "2026-11-10T02:07:02.618512+00:00"
+  "metadata_enriched_at": "2026-11-10T21:54:00.374772+00:00"
 }
