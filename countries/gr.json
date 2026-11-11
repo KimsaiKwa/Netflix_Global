@@ -10,11 +10,12 @@
       "cn_title": "",
       "year": "2012",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/302581310/s332/nonseutob-aegsideonteu.jpg"
+        "https://images.justwatch.com/poster/302581310/s332/nonseutob-aegsideonteu.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMTEwMjM4MjgwMDZeQTJeQWpwZ15BbWU4MDUxMjg3NzEx._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt2327245",
+      "imdb_id": "tt2474984",
       "tmdb_id": "151092",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
@@ -255,8 +256,8 @@
       "cn_title": "",
       "year": "2026",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/355553777/s332/a-couple-of-lies.jpg",
-        "https://m.media-amazon.com/images/M/MV5BNzdiOGJlZWYtN2MwMS00OTRiLTlhMWUtODBjMDUyN2E2YTM1XkEyXkFqcGc@._V1_.jpg"
+        "https://m.media-amazon.com/images/M/MV5BNzdiOGJlZWYtN2MwMS00OTRiLTlhMWUtODBjMDUyN2E2YTM1XkEyXkFqcGc@._V1_.jpg",
+        "https://images.justwatch.com/poster/355553777/s332/a-couple-of-lies.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
@@ -265,8 +266,8 @@
       "metadata_match_version": 2,
       "metadata_confidence": "high",
       "metadata_evidence": [
-        "justwatch_strict_title",
         "imdb_strict_title",
+        "justwatch_strict_title",
         "year_consensus"
       ]
     },
@@ -324,8 +325,9 @@
       "cn_title": "",
       "year": "2026",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/355270562/s332/the-one-about-matthew-perry.jpg",
-        "https://m.media-amazon.com/images/M/MV5BODNiYmZlNmMtNDFmNC00YThkLTk4ZWItZTYzYTMwODg3MjIzXkEyXkFqcGc@._V1_.jpg"
+        "https://images.justwatch.com/poster/356513758/s332/the-one-about-matthew-perry.jpg",
+        "https://m.media-amazon.com/images/M/MV5BODNiYmZlNmMtNDFmNC00YThkLTk4ZWItZTYzYTMwODg3MjIzXkEyXkFqcGc@._V1_.jpg",
+        "https://images.justwatch.com/poster/355270562/s332/the-one-about-matthew-perry.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
@@ -453,5 +455,5 @@
     }
   ],
   "metadata_version": 2,
-  "metadata_enriched_at": "2026-11-10T21:54:00.374772+00:00"
+  "metadata_enriched_at": "2026-11-11T00:03:18.796568+00:00"
 }

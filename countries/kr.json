@@ -29,11 +29,12 @@
       "cn_title": "",
       "year": "2012",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/302581310/s332/nonseutob-aegsideonteu.jpg"
+        "https://images.justwatch.com/poster/302581310/s332/nonseutob-aegsideonteu.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMTEwMjM4MjgwMDZeQTJeQWpwZ15BbWU4MDUxMjg3NzEx._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt2327245",
+      "imdb_id": "tt2474984",
       "tmdb_id": "151092",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
@@ -369,21 +370,22 @@
       "weeks_in_top_10": 5,
       "season": "Marriage of Convenience: Season 1",
       "cn_title": "",
-      "year": "2026",
+      "year": "1998",
       "poster_candidates": [
+        "https://m.media-amazon.com/images/M/MV5BYmU2MDkzN2QtYWRhOS00MGE5LThiNTAtYzgyZWZhNWYxNzE2XkEyXkFqcGc@._V1_.jpg",
         "https://images.justwatch.com/poster/355142065/s332/gyeyaggyeolhon.jpg",
         "https://images.justwatch.com/poster/355142065/s332/.jpg",
         "https://m.media-amazon.com/images/M/MV5BNjdjMzI2NjEtMjRmYy00NzIyLTg5ZTQtNDgxMzNmZjYzYmVlXkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt19726762",
+      "imdb_id": "tt0165587",
       "tmdb_id": "336844",
       "metadata_match_version": 2,
       "metadata_confidence": "medium",
       "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title"
+        "imdb_strict_title",
+        "justwatch_strict_title"
       ]
     },
     {
@@ -408,5 +410,5 @@
     }
   ],
   "metadata_version": 2,
-  "metadata_enriched_at": "2026-11-10T21:54:00.374772+00:00"
+  "metadata_enriched_at": "2026-11-11T00:03:18.796568+00:00"
 }

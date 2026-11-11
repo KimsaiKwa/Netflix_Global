@@ -7,19 +7,21 @@
       "rank": 1,
       "title": "The Day After Tomorrow",
       "weeks_in_top_10": 2,
-      "cn_title": "",
+      "cn_title": "后天",
       "year": "2004",
       "poster_candidates": [
+        "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2209602029.jpg",
         "https://images.justwatch.com/poster/310572606/s332/the-day-after-tomorrow.jpg",
         "https://m.media-amazon.com/images/M/MV5BOGZmNDYyNmMtNDQyNy00OTkzLTg1OGUtYWJiNmQ5Y2Q5ZGU3XkEyXkFqcGc@._V1_.jpg"
       ],
-      "douban_id": "",
-      "douban_url": "",
+      "douban_id": "1308779",
+      "douban_url": "https://movie.douban.com/subject/1308779/?suggest=The+Day+After+Tomorrow",
       "imdb_id": "tt0319262",
       "tmdb_id": "435",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
       "metadata_evidence": [
+        "douban_strict_title",
         "justwatch_strict_title",
         "imdb_strict_title",
         "year_consensus"
@@ -98,11 +100,12 @@
       "cn_title": "",
       "year": "2012",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/302581310/s332/nonseutob-aegsideonteu.jpg"
+        "https://images.justwatch.com/poster/302581310/s332/nonseutob-aegsideonteu.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMTEwMjM4MjgwMDZeQTJeQWpwZ15BbWU4MDUxMjg3NzEx._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt2327245",
+      "imdb_id": "tt2474984",
       "tmdb_id": "151092",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
@@ -256,8 +259,9 @@
       "cn_title": "",
       "year": "2026",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/355270562/s332/the-one-about-matthew-perry.jpg",
-        "https://m.media-amazon.com/images/M/MV5BODNiYmZlNmMtNDFmNC00YThkLTk4ZWItZTYzYTMwODg3MjIzXkEyXkFqcGc@._V1_.jpg"
+        "https://images.justwatch.com/poster/356513758/s332/the-one-about-matthew-perry.jpg",
+        "https://m.media-amazon.com/images/M/MV5BODNiYmZlNmMtNDFmNC00YThkLTk4ZWItZTYzYTMwODg3MjIzXkEyXkFqcGc@._V1_.jpg",
+        "https://images.justwatch.com/poster/355270562/s332/the-one-about-matthew-perry.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
@@ -440,8 +444,9 @@
       "cn_title": "",
       "year": "2026",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/356372700/s332/der-fall-von-el-mayo.jpg",
-        "https://m.media-amazon.com/images/M/MV5BZWZmMzRhZmMtZDViYi00MmNkLTg4ZTktZGFjMDA1YzgyMjUzXkEyXkFqcGc@._V1_.jpg"
+        "https://images.justwatch.com/poster/356372700/s332/the-fall-of-el-mayo.jpg",
+        "https://m.media-amazon.com/images/M/MV5BZWZmMzRhZmMtZDViYi00MmNkLTg4ZTktZGFjMDA1YzgyMjUzXkEyXkFqcGc@._V1_.jpg",
+        "https://images.justwatch.com/poster/356372700/s332/der-fall-von-el-mayo.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
@@ -457,5 +462,5 @@
     }
   ],
   "metadata_version": 2,
-  "metadata_enriched_at": "2026-11-10T21:54:00.374772+00:00"
+  "metadata_enriched_at": "2026-11-11T00:03:18.796568+00:00"
 }
