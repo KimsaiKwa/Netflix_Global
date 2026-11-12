@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-11-11T00:03:18.796568+00:00",
+  "updated_at": "2026-11-12T01:31:59.993555+00:00",
   "items": {
     "movie|unabomber": {
       "saved_at": 1793742788.8034124,
@@ -3384,7 +3384,7 @@
       }
     },
     "movie|tummy tom and the lost teddy bear": {
-      "saved_at": 1794347623.4606175,
+      "saved_at": 1794447117.0844607,
       "title": "Tummy Tom and the Lost Teddy Bear",
       "media_type": "movie",
       "match_version": 2,
@@ -6648,7 +6648,7 @@
       }
     },
     "tv|the ballad of us": {
-      "saved_at": 1794347618.7392187,
+      "saved_at": 1794447115.5544763,
       "title": "The Ballad of Us",
       "media_type": "tv",
       "match_version": 2,
@@ -6766,7 +6766,7 @@
       }
     },
     "tv|politicalupin": {
-      "saved_at": 1794347602.5370717,
+      "saved_at": 1794447105.0934258,
       "title": "PoliticaLupin",
       "media_type": "tv",
       "match_version": 2,
@@ -7823,7 +7823,7 @@
       }
     },
     "tv|doctor x mafia in white": {
-      "saved_at": 1794347525.9561512,
+      "saved_at": 1794447081.2470448,
       "title": "Doctor X: Mafia in White",
       "media_type": "tv",
       "match_version": 2,
@@ -8467,7 +8467,7 @@
       }
     },
     "tv|world dice tour": {
-      "saved_at": 1794347619.349961,
+      "saved_at": 1794447111.0622733,
       "title": "World Dice Tour",
       "media_type": "tv",
       "match_version": 2,
@@ -8492,7 +8492,7 @@
       }
     },
     "tv|sheriff labrador": {
-      "saved_at": 1794347549.893281,
+      "saved_at": 1794447085.4982266,
       "title": "Sheriff Labrador",
       "media_type": "tv",
       "match_version": 2,
@@ -9289,7 +9289,7 @@
       }
     },
     "movie|ice age 5 collision course": {
-      "saved_at": 1794347631.8185825,
+      "saved_at": 1794447119.9932318,
       "title": "Ice Age 5: Collision Course",
       "media_type": "movie",
       "match_version": 2,
@@ -10201,7 +10201,7 @@
       }
     },
     "movie|the people upstairs": {
-      "saved_at": 1794347557.9088402,
+      "saved_at": 1794447089.4591317,
       "title": "The People Upstairs",
       "media_type": "movie",
       "match_version": 2,
@@ -10354,7 +10354,7 @@
       }
     },
     "movie|mon garçon": {
-      "saved_at": 1794347566.2086866,
+      "saved_at": 1794447094.3122752,
       "title": "Mon garçon",
       "media_type": "movie",
       "match_version": 2,
@@ -10868,7 +10868,7 @@
       }
     },
     "movie|pídeme lo que quieras": {
-      "saved_at": 1794347568.6354735,
+      "saved_at": 1794447095.481049,
       "title": "Pídeme lo que quieras",
       "media_type": "movie",
       "match_version": 2,
@@ -10925,7 +10925,7 @@
       }
     },
     "movie|brave gunjo senki": {
-      "saved_at": 1794347595.6001866,
+      "saved_at": 1794447103.603434,
       "title": "Brave: Gunjo Senki",
       "media_type": "movie",
       "match_version": 2,
@@ -11293,7 +11293,7 @@
       }
     },
     "tv|wwe crown jewel": {
-      "saved_at": 1794347577.497831,
+      "saved_at": 1794447098.0702353,
       "title": "WWE Crown Jewel",
       "media_type": "tv",
       "match_version": 2,
@@ -11414,7 +11414,7 @@
       }
     },
     "tv|the maid s daughters": {
-      "saved_at": 1794347563.5699935,
+      "saved_at": 1794447093.0136526,
       "title": "The Maid’s Daughters",
       "media_type": "tv",
       "match_version": 2,
@@ -11628,7 +11628,7 @@
       }
     },
     "tv|anne rice s mayfair witches": {
-      "saved_at": 1794347572.8456967,
+      "saved_at": 1794447098.6052122,
       "title": "Anne Rice's Mayfair Witches",
       "media_type": "tv",
       "match_version": 2,
@@ -11685,7 +11685,7 @@
       }
     },
     "movie|deaf": {
-      "saved_at": 1794347559.3193817,
+      "saved_at": 1794447088.0646627,
       "title": "Deaf",
       "media_type": "movie",
       "match_version": 2,
@@ -11806,7 +11806,7 @@
       }
     },
     "tv|the apothecary diaries the compilation": {
-      "saved_at": 1794347601.8972733,
+      "saved_at": 1794447109.656815,
       "title": "The Apothecary Diaries - The Compilation -",
       "media_type": "tv",
       "match_version": 2,
@@ -12020,28 +12020,33 @@
       }
     },
     "movie|the perfect storm": {
-      "saved_at": 1794347552.044016,
+      "saved_at": 1794447084.848748,
       "title": "The Perfect Storm",
       "media_type": "movie",
       "match_version": 2,
       "identity_revision": "",
       "meta": {
-        "cn_title": "",
-        "year": "2015",
-        "poster_candidates": [],
-        "douban_matched": false,
+        "cn_title": "完美风暴",
+        "year": "2000",
+        "poster_candidates": [
+          "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2164583922.jpg",
+          "https://images.justwatch.com/poster/348062047/s332/Der-Sturm-2000.jpg",
+          "https://m.media-amazon.com/images/M/MV5BZmYyZjJiMTQtMzQyNi00ZjBkLTg4MjAtNWYxOWVlNmFlMGNhXkEyXkFqcGc@._V1_.jpg"
+        ],
+        "douban_matched": true,
         "justwatch_matched": true,
         "imdb_matched": true,
-        "douban_id": "",
-        "douban_url": "",
-        "imdb_id": "tt4800288",
-        "tmdb_id": "",
-        "douban_poster": "",
-        "justwatch_poster": "",
-        "imdb_poster": "",
-        "localized_alias": "",
+        "douban_id": "1293815",
+        "douban_url": "https://movie.douban.com/subject/1293815/?suggest=The+Perfect+Storm",
+        "imdb_id": "tt0177971",
+        "tmdb_id": "2133",
+        "douban_poster": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2164583922.jpg",
+        "justwatch_poster": "https://images.justwatch.com/poster/348062047/s332/Der-Sturm-2000.jpg",
+        "imdb_poster": "https://m.media-amazon.com/images/M/MV5BZmYyZjJiMTQtMzQyNi00ZjBkLTg4MjAtNWYxOWVlNmFlMGNhXkEyXkFqcGc@._V1_.jpg",
+        "localized_alias": "完美风暴",
         "confidence": "high",
         "evidence": [
+          "douban_strict_title",
           "justwatch_strict_title",
           "imdb_strict_title",
           "year_consensus"
@@ -12174,7 +12179,7 @@
       }
     },
     "tv|the golden hour": {
-      "saved_at": 1794347541.6850204,
+      "saved_at": 1794447079.4371727,
       "title": "The Golden Hour",
       "media_type": "tv",
       "match_version": 2,

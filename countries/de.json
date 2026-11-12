@@ -208,16 +208,21 @@
       "rank": 10,
       "title": "The Perfect Storm",
       "weeks_in_top_10": 1,
-      "cn_title": "",
-      "year": "2015",
-      "poster_candidates": [],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt4800288",
-      "tmdb_id": "",
+      "cn_title": "完美风暴",
+      "year": "2000",
+      "poster_candidates": [
+        "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2164583922.jpg",
+        "https://images.justwatch.com/poster/348062047/s332/Der-Sturm-2000.jpg",
+        "https://m.media-amazon.com/images/M/MV5BZmYyZjJiMTQtMzQyNi00ZjBkLTg4MjAtNWYxOWVlNmFlMGNhXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "1293815",
+      "douban_url": "https://movie.douban.com/subject/1293815/?suggest=The+Perfect+Storm",
+      "imdb_id": "tt0177971",
+      "tmdb_id": "2133",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
       "metadata_evidence": [
+        "douban_strict_title",
         "justwatch_strict_title",
         "imdb_strict_title",
         "year_consensus"
@@ -453,5 +458,5 @@
     }
   ],
   "metadata_version": 2,
-  "metadata_enriched_at": "2026-11-11T00:03:18.796568+00:00"
+  "metadata_enriched_at": "2026-11-12T01:31:59.993555+00:00"
 }
