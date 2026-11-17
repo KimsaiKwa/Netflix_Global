@@ -1,22 +1,70 @@
 {
-  "week": "2026-11-08",
+  "week": "2026-11-15",
   "country_iso2": "DK",
   "country_name": "Denmark",
   "films": [
     {
       "rank": 1,
-      "title": "Heist",
+      "title": "Heartland",
+      "weeks_in_top_10": 1,
+      "cn_title": "心乡迷踪",
+      "year": "2026",
+      "poster_candidates": [
+        "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2936441107.jpg",
+        "https://images.justwatch.com/poster/357150126/s332/hateuraendeu.jpg",
+        "https://m.media-amazon.com/images/M/MV5BYWEzOTg5ZWQtODE1Mi00NzFiLTllYWQtYzk4ZTQ0NjI4YzVjXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "37515883",
+      "douban_url": "https://movie.douban.com/subject/37515883/?suggest=Heartland",
+      "imdb_id": "tt38213251",
+      "tmdb_id": "1543469",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "douban_strict_title",
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "The Christmas Switch",
+      "weeks_in_top_10": 1,
+      "cn_title": "圣诞变身",
+      "year": "2014",
+      "poster_candidates": [
+        "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2603515935.jpg",
+        "https://images.justwatch.com/poster/11621522/s332/.jpg",
+        "https://m.media-amazon.com/images/M/MV5BOThiZmE1ODgtMzkzOC00MTYxLTk2ZGYtMGZlNzBhOTU3N2Y5XkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "34677447",
+      "douban_url": "https://movie.douban.com/subject/34677447/?suggest=%E5%9C%A3%E8%AF%9E%E5%8F%98%E8%BA%AB",
+      "imdb_id": "tt3786326",
+      "tmdb_id": "313093",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "douban_strict_title",
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "In the Heart of the Sea",
       "weeks_in_top_10": 1,
       "cn_title": "",
-      "year": "2001",
+      "year": "2015",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/327798592/s332/heist-2001.jpg",
-        "https://m.media-amazon.com/images/M/MV5BY2M4YWQ5NDAtNjAwZC00NmM2LWJiNWUtOWEwNmE1Mjc5OGMyXkEyXkFqcGc@._V1_.jpg"
+        "https://images.justwatch.com/poster/309976505/s332/in-the-heart-of-the-sea.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMjA5NzUwODExM15BMl5BanBnXkFtZTgwNjM0MzE4NjE@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt0252503",
-      "tmdb_id": "11088",
+      "imdb_id": "tt1390411",
+      "tmdb_id": "205775",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
       "metadata_evidence": [
@@ -26,9 +74,9 @@
       ]
     },
     {
-      "rank": 2,
+      "rank": 4,
       "title": "Christmas at the Palace",
-      "weeks_in_top_10": 1,
+      "weeks_in_top_10": 2,
       "cn_title": "",
       "year": "2018",
       "poster_candidates": [
@@ -48,80 +96,15 @@
       ]
     },
     {
-      "rank": 3,
-      "title": "A Dog's Perfect Christmas",
-      "weeks_in_top_10": 1,
-      "cn_title": "",
-      "year": "2026",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/356525646/s332/winstead-ein-hund-feiert-weihnachten.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMWYzMGYxZjgtZjc2Yy00YzQ2LThhMWItZmU5Y2FjNjRkYjRmXkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt38515310",
-      "tmdb_id": "1570488",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 4,
-      "title": "Sing 2",
-      "weeks_in_top_10": 7,
-      "cn_title": "",
-      "year": "2021",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/292179048/s332/Sing-2.jpg",
-        "https://m.media-amazon.com/images/M/MV5BNzZkZmMzNzItYzBhOS00ZGEwLWFiNWYtMWRjNzM4MjRjZTRjXkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt6467266",
-      "tmdb_id": "438695",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
       "rank": 5,
-      "title": "Rush Hour",
-      "weeks_in_top_10": 1,
-      "cn_title": "",
-      "year": "1998",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/293374240/s332/rush-hour.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMGZiMzViNmEtNTNlZi00MzFmLTk5NTEtNDE2OTUzNmNlMTY4XkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt0120812",
-      "tmdb_id": "2109",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 6,
       "title": "Return to Christmas Creek",
-      "weeks_in_top_10": 1,
+      "weeks_in_top_10": 2,
       "cn_title": "",
       "year": "2018",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/146354197/s332/return-to-christmas-creek.jpg",
-        "https://m.media-amazon.com/images/M/MV5BNWU4ODAzZWQtZWJlNi00OTYyLThlNjQtMmRjOGYxYzYyZTRkXkEyXkFqcGc@._V1_.jpg"
+        "https://images.justwatch.com/poster/146354197/s332/.jpg",
+        "https://m.media-amazon.com/images/M/MV5BNWU4ODAzZWQtZWJlNi00OTYyLThlNjQtMmRjOGYxYzYyZTRkXkEyXkFqcGc@._V1_.jpg",
+        "https://images.justwatch.com/poster/146354197/s332/return-to-christmas-creek.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
@@ -136,59 +119,15 @@
       ]
     },
     {
-      "rank": 7,
-      "title": "Rush Hour 2",
-      "weeks_in_top_10": 1,
-      "cn_title": "",
-      "year": "2001",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/305050072/s332/rush-hour-2.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMGM0OTM4NGYtYzkzMC00OGZmLWEwZTItOTg4ZTdkYTIxOTc0XkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt0266915",
-      "tmdb_id": "5175",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 8,
-      "title": "Evil Dead Burn",
-      "weeks_in_top_10": 1,
-      "cn_title": "",
-      "year": "2026",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/346673389/s332/evil-dead-burn.jpg",
-        "https://m.media-amazon.com/images/M/MV5BZTljMTZjZTItZjMzZi00NDBhLWFmMzAtOGNiNTlhY2MxMzg5XkEyXkFqcGc@._V1_.jpg",
-        "https://images.justwatch.com/poster/346673389/s332/ibeul-dedeu-beon.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt31170389",
-      "tmdb_id": "1212763",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 9,
+      "rank": 6,
       "title": "Christmas in Love",
-      "weeks_in_top_10": 1,
+      "weeks_in_top_10": 2,
       "cn_title": "",
       "year": "2018",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/301803218/s332/Christmas-in-Love.jpg",
-        "https://m.media-amazon.com/images/M/MV5BYTM1Y2JkNWUtZDU4NC00ZGJlLWI0M2EtMWFjNTBkNmJlODUwXkEyXkFqcGc@._V1_.jpg"
+        "https://images.justwatch.com/poster/301803218/s332/.jpg",
+        "https://m.media-amazon.com/images/M/MV5BYTM1Y2JkNWUtZDU4NC00ZGJlLWI0M2EtMWFjNTBkNmJlODUwXkEyXkFqcGc@._V1_.jpg",
+        "https://images.justwatch.com/poster/301803218/s332/Christmas-in-Love.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
@@ -203,19 +142,91 @@
       ]
     },
     {
-      "rank": 10,
-      "title": "Sing",
-      "weeks_in_top_10": 3,
+      "rank": 7,
+      "title": "The Unthinkable Daughter",
+      "weeks_in_top_10": 1,
       "cn_title": "",
-      "year": "2016",
+      "year": "2026",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/347742414/s332/Sing.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMTYzODYzODU2Ml5BMl5BanBnXkFtZTgwNTc1MTA2NzE@._V1_.jpg"
+        "https://images.justwatch.com/poster/357106233/s332/the-unthinkable-daughter.jpg",
+        "https://m.media-amazon.com/images/M/MV5BYjhhM2EzNmQtY2E2Zi00MzEyLWEwOWQtMmU3ODY5Yjk4NWMwXkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt3470600",
-      "tmdb_id": "335797",
+      "imdb_id": "tt50817930",
+      "tmdb_id": "1664682",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 8,
+      "title": "A Dog's Perfect Christmas",
+      "weeks_in_top_10": 2,
+      "cn_title": "狗狗的完美圣诞节",
+      "year": "2026",
+      "poster_candidates": [
+        "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2937207031.jpg",
+        "https://images.justwatch.com/poster/356525646/s332/a-dogs-perfect-christmas.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMWYzMGYxZjgtZjc2Yy00YzQ2LThhMWItZmU5Y2FjNjRkYjRmXkEyXkFqcGc@._V1_.jpg",
+        "https://images.justwatch.com/poster/356525646/s332/winstead-ein-hund-feiert-weihnachten.jpg"
+      ],
+      "douban_id": "37811556",
+      "douban_url": "https://movie.douban.com/subject/37811556/?suggest=A+Dog%27s+Perfect+Christmas",
+      "imdb_id": "tt38515310",
+      "tmdb_id": "1570488",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "douban_strict_title",
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 9,
+      "title": "Sing 2",
+      "weeks_in_top_10": 8,
+      "cn_title": "欢乐好声音2",
+      "year": "2021",
+      "poster_candidates": [
+        "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2732782860.jpg",
+        "https://images.justwatch.com/poster/292179048/s332/zpivej-2.jpg",
+        "https://m.media-amazon.com/images/M/MV5BNzZkZmMzNzItYzBhOS00ZGEwLWFiNWYtMWRjNzM4MjRjZTRjXkEyXkFqcGc@._V1_.jpg",
+        "https://images.justwatch.com/poster/292179048/s332/Sing-2.jpg"
+      ],
+      "douban_id": "26962981",
+      "douban_url": "https://movie.douban.com/subject/26962981/?suggest=Sing+2",
+      "imdb_id": "tt6467266",
+      "tmdb_id": "438695",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "douban_strict_title",
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 10,
+      "title": "Heist",
+      "weeks_in_top_10": 2,
+      "cn_title": "",
+      "year": "2001",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/327798592/s332/heist-2001.jpg",
+        "https://m.media-amazon.com/images/M/MV5BY2M4YWQ5NDAtNjAwZC00NmM2LWJiNWUtOWEwNmE1Mjc5OGMyXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt0252503",
+      "tmdb_id": "11088",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
       "metadata_evidence": [
@@ -228,8 +239,33 @@
   "tv": [
     {
       "rank": 1,
+      "title": "Black Doves",
+      "weeks_in_top_10": 2,
+      "season": "Black Doves: Season 2",
+      "cn_title": "",
+      "year": "2024",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/357114526/s332/black-doves.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMDQyNzE2NmYtMzExMy00NTBjLWE4ODItNjI1OTNkZWVjNDUyXkEyXkFqcGc@._V1_.jpg",
+        "https://images.justwatch.com/poster/323408786/s332/black-doves.jpg",
+        "https://m.media-amazon.com/images/M/MV5BZTEwYTVlNmItOGUyYi00MTRjLTliNmItZmZjOTBlMTc2NGMyXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt27995113",
+      "tmdb_id": "225385",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 2,
       "title": "Taken: Natalee Holloway",
-      "weeks_in_top_10": 1,
+      "weeks_in_top_10": 2,
       "season": "Taken: Natalee Holloway: Season 1",
       "cn_title": "",
       "year": "2026",
@@ -250,9 +286,32 @@
       ]
     },
     {
-      "rank": 2,
+      "rank": 3,
+      "title": "Doozie's Doghouse",
+      "weeks_in_top_10": 1,
+      "season": "Doozie's Doghouse: Season 1",
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/355067100/s332/doozies-doghouse.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMzUyNzBjYjMtOWRhZS00OWVjLWJkMDgtODRlYzk3YjAzZmZmXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt47596905",
+      "tmdb_id": "336478",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 4,
       "title": "A Couple of Lies",
-      "weeks_in_top_10": 2,
+      "weeks_in_top_10": 3,
       "season": "A Couple of Lies: Limited Series",
       "cn_title": "",
       "year": "2026",
@@ -273,9 +332,34 @@
       ]
     },
     {
-      "rank": 3,
+      "rank": 5,
+      "title": "Black Doves",
+      "weeks_in_top_10": 7,
+      "season": "Black Doves: Season 1",
+      "cn_title": "",
+      "year": "2024",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/357114526/s332/black-doves.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMDQyNzE2NmYtMzExMy00NTBjLWE4ODItNjI1OTNkZWVjNDUyXkEyXkFqcGc@._V1_.jpg",
+        "https://images.justwatch.com/poster/323408786/s332/black-doves.jpg",
+        "https://m.media-amazon.com/images/M/MV5BZTEwYTVlNmItOGUyYi00MTRjLTliNmItZmZjOTBlMTc2NGMyXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt27995113",
+      "tmdb_id": "225385",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 6,
       "title": "The One About Matthew Perry",
-      "weeks_in_top_10": 2,
+      "weeks_in_top_10": 3,
       "season": "The One About Matthew Perry: Season 1",
       "cn_title": "",
       "year": "2026",
@@ -297,20 +381,20 @@
       ]
     },
     {
-      "rank": 4,
-      "title": "Black Doves",
+      "rank": 7,
+      "title": "Power Book IV: Force",
       "weeks_in_top_10": 1,
-      "season": "Black Doves: Season 2",
+      "season": "Power Book IV: Force: Season 1",
       "cn_title": "",
-      "year": "2024",
+      "year": "2022",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/323408786/s332/black-doves.jpg",
-        "https://m.media-amazon.com/images/M/MV5BZTEwYTVlNmItOGUyYi00MTRjLTliNmItZmZjOTBlMTc2NGMyXkEyXkFqcGc@._V1_.jpg"
+        "https://images.justwatch.com/poster/259373034/s332/power-book-iv-force.jpg",
+        "https://m.media-amazon.com/images/M/MV5BNzk3NjQzNjctMDdkMS00ODljLTlmM2MtMTJlMDJhMWQ5YzlmXkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt27995113",
-      "tmdb_id": "225385",
+      "imdb_id": "tt11761194",
+      "tmdb_id": "119845",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
       "metadata_evidence": [
@@ -320,9 +404,9 @@
       ]
     },
     {
-      "rank": 5,
+      "rank": 8,
       "title": "Lupin",
-      "weeks_in_top_10": 3,
+      "weeks_in_top_10": 4,
       "season": "Lupin: Part 4",
       "cn_title": "",
       "year": "2021",
@@ -343,90 +427,20 @@
       ]
     },
     {
-      "rank": 6,
-      "title": "Nobody Wants This",
-      "weeks_in_top_10": 3,
-      "season": "Nobody Wants This: Season 3",
-      "cn_title": "",
-      "year": "2024",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/337837446/s332/nobody-wants-this.jpg",
-        "https://m.media-amazon.com/images/M/MV5BM2ExMmE3YTgtY2RmNC00ZWIzLWJlNGYtYmViNWVjM2Q1MjNjXkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt26933824",
-      "tmdb_id": "250923",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 7,
-      "title": "The Rainmaker",
-      "weeks_in_top_10": 1,
-      "season": "The Rainmaker: Season 1",
-      "cn_title": "",
-      "year": "2025",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/356387814/s332/the-rainmaker.jpg",
-        "https://m.media-amazon.com/images/M/MV5BNTc5YTljMWMtMmQ5Ni00NjA5LTg5ZjctMTdhYzI2YWUyOGI1XkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt6151526",
-      "tmdb_id": "256711",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 8,
-      "title": "The Diplomat",
-      "weeks_in_top_10": 4,
-      "season": "The Diplomat: Season 4",
-      "cn_title": "",
-      "year": "2023",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/355789175/s332/the-diplomat.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMmY4YWMyOGItMzA1MC00ZjY0LWEyM2QtZWFmNGNhNDZlZjk5XkEyXkFqcGc@._V1_.jpg",
-        "https://images.justwatch.com/poster/338464486/s332/the-diplomat.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt17491088",
-      "tmdb_id": "203857",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
       "rank": 9,
-      "title": "Will Trent",
+      "title": "The Body",
       "weeks_in_top_10": 1,
-      "season": "Will Trent: Season 1",
+      "season": "The Body: Season 1",
       "cn_title": "",
-      "year": "2023",
+      "year": "2026",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/304248554/s332/will-trent.jpg",
-        "https://m.media-amazon.com/images/M/MV5BYzI4ZmJhOGItY2UxMS00MjJhLThmZmYtZTQ3MmI3Nzk3YjE0XkEyXkFqcGc@._V1_.jpg"
+        "https://images.justwatch.com/poster/356944726/s332/the-body.jpg",
+        "https://m.media-amazon.com/images/M/MV5BY2QzYzRkYzctNDI3Zi00MWFmLWJhOTYtMDA4MzQ3YzZmNjg3XkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt17543592",
-      "tmdb_id": "208569",
+      "imdb_id": "tt8014982",
+      "tmdb_id": "291507",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
       "metadata_evidence": [
@@ -437,20 +451,19 @@
     },
     {
       "rank": 10,
-      "title": "East of Eden",
-      "weeks_in_top_10": 6,
-      "season": "East of Eden: Limited Series",
+      "title": "The Empress",
+      "weeks_in_top_10": 1,
+      "season": "The Empress: Season 3",
       "cn_title": "",
-      "year": "2026",
+      "year": "2011",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/355253707/s332/east-of-eden-2026.jpg",
-        "https://m.media-amazon.com/images/M/MV5BNmI2ODMyNjctZTA1MS00ODNhLWI3ZjAtMmE4MDE4OWRjMWZlXkEyXkFqcGc@._V1_.jpg",
-        "https://images.justwatch.com/poster/355131667/s332/east-of-eden-2026.jpg"
+        "https://images.justwatch.com/poster/304100872/s332/.jpg",
+        "https://m.media-amazon.com/images/M/MV5BNTRhODZiOTktYmE4MC00NzgyLWE3NzctOGRhOTVjNzMwNzQ2XkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt21097264",
-      "tmdb_id": "258165",
+      "imdb_id": "tt6357238",
+      "tmdb_id": "94815",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
       "metadata_evidence": [
@@ -461,5 +474,5 @@
     }
   ],
   "metadata_version": 2,
-  "metadata_enriched_at": "2026-11-17T02:28:53.244920+00:00"
+  "metadata_enriched_at": "2026-11-17T23:37:49.126836+00:00"
 }
