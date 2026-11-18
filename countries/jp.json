@@ -237,8 +237,9 @@
       "cn_title": "",
       "year": "2026",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/355574856/s332/lost10.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMjc3ZDhkMmMtYWIwOS00M2Y0LTg2OGQtMmZmOTBkNGIxNjBkXkEyXkFqcGc@._V1_.jpg"
+        "https://images.justwatch.com/poster/357154645/s332/lost10.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMjc3ZDhkMmMtYWIwOS00M2Y0LTg2OGQtMmZmOTBkNGIxNjBkXkEyXkFqcGc@._V1_.jpg",
+        "https://images.justwatch.com/poster/355574856/s332/lost10.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
@@ -397,5 +398,5 @@
     }
   ],
   "metadata_version": 2,
-  "metadata_enriched_at": "2026-11-17T23:37:49.126836+00:00"
+  "metadata_enriched_at": "2026-11-18T01:36:57.041939+00:00"
 }

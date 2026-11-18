@@ -207,8 +207,9 @@
       "cn_title": "",
       "year": "2009",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/355389176/s332/doba-ledova-3-usvit-dinosauru.jpg",
+        "https://images.justwatch.com/poster/355389176/s332/ice-age-dawn-of-the-dinosaurs.jpg",
         "https://m.media-amazon.com/images/M/MV5BZWJjZDYwMjgtZDZiMy00YzcyLThjN2YtYjI1ZDQ2ZDJkOTVmXkEyXkFqcGc@._V1_.jpg",
+        "https://images.justwatch.com/poster/355389176/s332/doba-ledova-3-usvit-dinosauru.jpg",
         "https://images.justwatch.com/poster/355389176/s332/Ice-Age-3-Die-Dinosaurier-sind-los.jpg"
       ],
       "douban_id": "",
@@ -447,5 +448,5 @@
     }
   ],
   "metadata_version": 2,
-  "metadata_enriched_at": "2026-11-17T23:37:49.126836+00:00"
+  "metadata_enriched_at": "2026-11-18T01:36:57.041939+00:00"
 }

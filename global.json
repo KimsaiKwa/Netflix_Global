@@ -642,19 +642,21 @@
       "runtime_hours": 1.9,
       "weeks_in_top_10": 1,
       "source_category": "Films (English)",
-      "cn_title": "",
+      "cn_title": "你留下的痕迹",
       "year": "2026",
       "poster_candidates": [
+        "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2926393077.jpg",
         "https://images.justwatch.com/poster/348284894/s332/reminders-of-him.jpg",
         "https://m.media-amazon.com/images/M/MV5BNjI4OGM1NDEtYzA1NS00ZDg3LWFmZjUtMjg1MGQ4MTk3NjQzXkEyXkFqcGc@._V1_.jpg"
       ],
-      "douban_id": "",
-      "douban_url": "",
+      "douban_id": "37062611",
+      "douban_url": "https://movie.douban.com/subject/37062611/?suggest=Reminders+of+Him",
       "imdb_id": "tt33714084",
       "tmdb_id": "1367642",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
       "metadata_evidence": [
+        "douban_strict_title",
         "justwatch_strict_title",
         "imdb_strict_title",
         "year_consensus"
@@ -935,5 +937,5 @@
     }
   ],
   "metadata_version": 2,
-  "metadata_enriched_at": "2026-11-17T23:37:49.126836+00:00"
+  "metadata_enriched_at": "2026-11-18T01:36:57.041939+00:00"
 }

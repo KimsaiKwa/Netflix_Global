@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-11-17T23:37:49.126836+00:00",
+  "updated_at": "2026-11-18T01:36:57.041939+00:00",
   "items": {
     "movie|unabomber": {
       "saved_at": 1793742788.8034124,
@@ -5414,7 +5414,7 @@
       }
     },
     "tv|east of eden": {
-      "saved_at": 1794355338.07582,
+      "saved_at": 1794965812.0023212,
       "title": "East of Eden",
       "media_type": "tv",
       "match_version": 2,
@@ -6242,7 +6242,7 @@
       }
     },
     "tv|firefly wedding": {
-      "saved_at": 1794355374.3617141,
+      "saved_at": 1794965805.9481199,
       "title": "Firefly Wedding",
       "media_type": "tv",
       "match_version": 2,
@@ -7383,7 +7383,7 @@
       }
     },
     "tv|the wonder coach": {
-      "saved_at": 1794355376.627851,
+      "saved_at": 1794965808.6203191,
       "title": "The Wonder Coach",
       "media_type": "tv",
       "match_version": 2,
@@ -7666,7 +7666,7 @@
       }
     },
     "tv|100 days of deception": {
-      "saved_at": 1794355375.9380198,
+      "saved_at": 1794965809.7204456,
       "title": "100 Days of Deception",
       "media_type": "tv",
       "match_version": 2,
@@ -7695,7 +7695,7 @@
       }
     },
     "movie|evil dead burn": {
-      "saved_at": 1794355335.8498287,
+      "saved_at": 1794965787.358177,
       "title": "Evil Dead Burn",
       "media_type": "movie",
       "match_version": 2,
@@ -7728,7 +7728,7 @@
       }
     },
     "tv|lost10": {
-      "saved_at": 1794355363.3560188,
+      "saved_at": 1794965798.4243188,
       "title": "LOST10",
       "media_type": "tv",
       "match_version": 2,
@@ -7737,8 +7737,9 @@
         "cn_title": "",
         "year": "2026",
         "poster_candidates": [
-          "https://images.justwatch.com/poster/355574856/s332/lost10.jpg",
-          "https://m.media-amazon.com/images/M/MV5BMjc3ZDhkMmMtYWIwOS00M2Y0LTg2OGQtMmZmOTBkNGIxNjBkXkEyXkFqcGc@._V1_.jpg"
+          "https://images.justwatch.com/poster/357154645/s332/lost10.jpg",
+          "https://m.media-amazon.com/images/M/MV5BMjc3ZDhkMmMtYWIwOS00M2Y0LTg2OGQtMmZmOTBkNGIxNjBkXkEyXkFqcGc@._V1_.jpg",
+          "https://images.justwatch.com/poster/355574856/s332/lost10.jpg"
         ],
         "douban_matched": false,
         "justwatch_matched": true,
@@ -7748,7 +7749,7 @@
         "imdb_id": "tt49276654",
         "tmdb_id": "329490",
         "douban_poster": "",
-        "justwatch_poster": "https://images.justwatch.com/poster/355574856/s332/lost10.jpg",
+        "justwatch_poster": "https://images.justwatch.com/poster/357154645/s332/lost10.jpg",
         "imdb_poster": "https://m.media-amazon.com/images/M/MV5BMjc3ZDhkMmMtYWIwOS00M2Y0LTg2OGQtMmZmOTBkNGIxNjBkXkEyXkFqcGc@._V1_.jpg",
         "localized_alias": "",
         "confidence": "high",
@@ -7849,7 +7850,7 @@
       }
     },
     "tv|the apothecary diaries": {
-      "saved_at": 1794355368.3445961,
+      "saved_at": 1794965804.4503212,
       "title": "The Apothecary Diaries",
       "media_type": "tv",
       "match_version": 2,
@@ -7940,7 +7941,7 @@
       }
     },
     "movie|ice age dawn of the dinosaurs": {
-      "saved_at": 1794355333.6374688,
+      "saved_at": 1794965812.4513576,
       "title": "Ice Age: Dawn of the Dinosaurs",
       "media_type": "movie",
       "match_version": 2,
@@ -7949,8 +7950,9 @@
         "cn_title": "",
         "year": "2009",
         "poster_candidates": [
-          "https://images.justwatch.com/poster/355389176/s332/doba-ledova-3-usvit-dinosauru.jpg",
+          "https://images.justwatch.com/poster/355389176/s332/ice-age-dawn-of-the-dinosaurs.jpg",
           "https://m.media-amazon.com/images/M/MV5BZWJjZDYwMjgtZDZiMy00YzcyLThjN2YtYjI1ZDQ2ZDJkOTVmXkEyXkFqcGc@._V1_.jpg",
+          "https://images.justwatch.com/poster/355389176/s332/doba-ledova-3-usvit-dinosauru.jpg",
           "https://images.justwatch.com/poster/355389176/s332/Ice-Age-3-Die-Dinosaurier-sind-los.jpg"
         ],
         "douban_matched": false,
@@ -7961,7 +7963,7 @@
         "imdb_id": "tt1080016",
         "tmdb_id": "8355",
         "douban_poster": "",
-        "justwatch_poster": "https://images.justwatch.com/poster/355389176/s332/doba-ledova-3-usvit-dinosauru.jpg",
+        "justwatch_poster": "https://images.justwatch.com/poster/355389176/s332/ice-age-dawn-of-the-dinosaurs.jpg",
         "imdb_poster": "https://m.media-amazon.com/images/M/MV5BZWJjZDYwMjgtZDZiMy00YzcyLThjN2YtYjI1ZDQ2ZDJkOTVmXkEyXkFqcGc@._V1_.jpg",
         "localized_alias": "冰川时代3：恐龙的黎明",
         "confidence": "high",
@@ -8439,7 +8441,7 @@
       }
     },
     "tv|extraordinary attorney minami": {
-      "saved_at": 1794355361.171687,
+      "saved_at": 1794965795.6071918,
       "title": "Extraordinary Attorney Minami",
       "media_type": "tv",
       "match_version": 2,
@@ -8551,7 +8553,7 @@
       }
     },
     "tv|dead end job": {
-      "saved_at": 1794355323.0067177,
+      "saved_at": 1794965782.1037269,
       "title": "Dead-End Job",
       "media_type": "tv",
       "match_version": 2,
@@ -8580,7 +8582,7 @@
       }
     },
     "tv|the one about matthew perry": {
-      "saved_at": 1794355328.2120934,
+      "saved_at": 1794965786.4730296,
       "title": "The One About Matthew Perry",
       "media_type": "tv",
       "match_version": 2,
@@ -8603,7 +8605,7 @@
         "douban_poster": "",
         "justwatch_poster": "https://images.justwatch.com/poster/356513758/s332/the-one-about-matthew-perry.jpg",
         "imdb_poster": "https://m.media-amazon.com/images/M/MV5BODNiYmZlNmMtNDFmNC00YThkLTk4ZWItZTYzYTMwODg3MjIzXkEyXkFqcGc@._V1_.jpg",
-        "localized_alias": "马修·派瑞：老友最后的传记",
+        "localized_alias": "馬修派瑞的那集",
         "confidence": "high",
         "evidence": [
           "justwatch_strict_title",
@@ -8645,7 +8647,7 @@
       }
     },
     "tv|the mothers of penguins": {
-      "saved_at": 1794355389.1488883,
+      "saved_at": 1794965817.0413914,
       "title": "The Mothers of Penguins",
       "media_type": "tv",
       "match_version": 2,
@@ -8763,7 +8765,7 @@
       }
     },
     "tv|nobody wants this": {
-      "saved_at": 1794355328.899496,
+      "saved_at": 1794965789.0157962,
       "title": "Nobody Wants This",
       "media_type": "tv",
       "match_version": 2,
@@ -9194,7 +9196,7 @@
       }
     },
     "tv|from": {
-      "saved_at": 1794355398.7960856,
+      "saved_at": 1794965815.9688451,
       "title": "From",
       "media_type": "tv",
       "match_version": 2,
@@ -9531,7 +9533,7 @@
       }
     },
     "movie|godzilla minus one": {
-      "saved_at": 1794355355.9355063,
+      "saved_at": 1794965794.979678,
       "title": "Godzilla Minus One",
       "media_type": "movie",
       "match_version": 2,
@@ -9744,7 +9746,7 @@
       }
     },
     "tv|lupin": {
-      "saved_at": 1794355326.157004,
+      "saved_at": 1794965776.9821606,
       "title": "Lupin",
       "media_type": "tv",
       "match_version": 2,
@@ -9930,7 +9932,7 @@
       }
     },
     "tv|did someone happen to mention me": {
-      "saved_at": 1794355363.8754668,
+      "saved_at": 1794965800.2223022,
       "title": "Did Someone Happen to Mention Me?",
       "media_type": "tv",
       "match_version": 2,
@@ -10077,31 +10079,33 @@
       }
     },
     "movie|reminders of him": {
-      "saved_at": 1794355332.9250698,
+      "saved_at": 1794965777.6084664,
       "title": "Reminders of Him",
       "media_type": "movie",
       "match_version": 2,
       "identity_revision": "",
       "meta": {
-        "cn_title": "",
+        "cn_title": "你留下的痕迹",
         "year": "2026",
         "poster_candidates": [
+          "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2926393077.jpg",
           "https://images.justwatch.com/poster/348284894/s332/reminders-of-him.jpg",
           "https://m.media-amazon.com/images/M/MV5BNjI4OGM1NDEtYzA1NS00ZDg3LWFmZjUtMjg1MGQ4MTk3NjQzXkEyXkFqcGc@._V1_.jpg"
         ],
-        "douban_matched": false,
+        "douban_matched": true,
         "justwatch_matched": true,
         "imdb_matched": true,
-        "douban_id": "",
-        "douban_url": "",
+        "douban_id": "37062611",
+        "douban_url": "https://movie.douban.com/subject/37062611/?suggest=Reminders+of+Him",
         "imdb_id": "tt33714084",
         "tmdb_id": "1367642",
-        "douban_poster": "",
+        "douban_poster": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2926393077.jpg",
         "justwatch_poster": "https://images.justwatch.com/poster/348284894/s332/reminders-of-him.jpg",
         "imdb_poster": "https://m.media-amazon.com/images/M/MV5BNjI4OGM1NDEtYzA1NS00ZDg3LWFmZjUtMjg1MGQ4MTk3NjQzXkEyXkFqcGc@._V1_.jpg",
         "localized_alias": "你留下的痕迹",
         "confidence": "high",
         "evidence": [
+          "douban_strict_title",
           "justwatch_strict_title",
           "imdb_strict_title",
           "year_consensus"
@@ -10323,7 +10327,7 @@
       }
     },
     "tv|a couple of lies": {
-      "saved_at": 1794355325.9812574,
+      "saved_at": 1794965783.6521268,
       "title": "A Couple of Lies",
       "media_type": "tv",
       "match_version": 2,
@@ -10437,7 +10441,7 @@
       }
     },
     "tv|djadel show": {
-      "saved_at": 1794355347.7762842,
+      "saved_at": 1794965789.2463348,
       "title": "Djadel Show",
       "media_type": "tv",
       "match_version": 2,
@@ -10584,7 +10588,7 @@
       }
     },
     "movie|collision course": {
-      "saved_at": 1794355319.0697794,
+      "saved_at": 1794965784.7636695,
       "title": "Collision Course",
       "media_type": "movie",
       "match_version": 2,
