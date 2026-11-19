@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-11-18T01:36:57.041939+00:00",
+  "updated_at": "2026-11-19T01:12:51.882067+00:00",
   "items": {
     "movie|unabomber": {
       "saved_at": 1793742788.8034124,
@@ -3385,7 +3385,7 @@
       }
     },
     "movie|tummy tom and the lost teddy bear": {
-      "saved_at": 1794958655.2271047,
+      "saved_at": 1795050766.291768,
       "title": "Tummy Tom and the Lost Teddy Bear",
       "media_type": "movie",
       "match_version": 2,
@@ -6649,7 +6649,7 @@
       }
     },
     "tv|the ballad of us": {
-      "saved_at": 1794958647.95242,
+      "saved_at": 1795050759.3082626,
       "title": "The Ballad of Us",
       "media_type": "tv",
       "match_version": 2,
@@ -6767,7 +6767,7 @@
       }
     },
     "tv|politicalupin": {
-      "saved_at": 1794958628.3955786,
+      "saved_at": 1795050757.8058603,
       "title": "PoliticaLupin",
       "media_type": "tv",
       "match_version": 2,
@@ -7825,7 +7825,7 @@
       }
     },
     "tv|doctor x mafia in white": {
-      "saved_at": 1794958549.1641858,
+      "saved_at": 1795050739.0261278,
       "title": "Doctor X: Mafia in White",
       "media_type": "tv",
       "match_version": 2,
@@ -9292,7 +9292,7 @@
       }
     },
     "movie|ice age 5 collision course": {
-      "saved_at": 1794958659.9988155,
+      "saved_at": 1795050770.1003444,
       "title": "Ice Age 5: Collision Course",
       "media_type": "movie",
       "match_version": 2,
@@ -10876,7 +10876,7 @@
       }
     },
     "movie|pídeme lo que quieras": {
-      "saved_at": 1794958590.0791981,
+      "saved_at": 1795050747.7946193,
       "title": "Pídeme lo que quieras",
       "media_type": "movie",
       "match_version": 2,
@@ -10933,7 +10933,7 @@
       }
     },
     "movie|brave gunjo senki": {
-      "saved_at": 1794958616.490577,
+      "saved_at": 1795050752.2222435,
       "title": "Brave: Gunjo Senki",
       "media_type": "movie",
       "match_version": 2,
@@ -11422,7 +11422,7 @@
       }
     },
     "tv|the maid s daughters": {
-      "saved_at": 1794958582.0133393,
+      "saved_at": 1795050745.6176813,
       "title": "The Maid’s Daughters",
       "media_type": "tv",
       "match_version": 2,
@@ -12194,7 +12194,7 @@
       }
     },
     "tv|the golden hour": {
-      "saved_at": 1794958655.9604442,
+      "saved_at": 1795050764.697717,
       "title": "The Golden Hour",
       "media_type": "tv",
       "match_version": 2,
@@ -12597,28 +12597,32 @@
       }
     },
     "movie|badh": {
-      "saved_at": 1794958584.9227057,
+      "saved_at": 1795050745.1650538,
       "title": "Badh",
       "media_type": "movie",
       "match_version": 2,
       "identity_revision": "",
       "meta": {
-        "cn_title": "",
-        "year": "",
-        "poster_candidates": [],
-        "douban_matched": false,
+        "cn_title": "代号巴德",
+        "year": "2025",
+        "poster_candidates": [
+          "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2923890323.jpg"
+        ],
+        "douban_matched": true,
         "justwatch_matched": false,
         "imdb_matched": false,
-        "douban_id": "",
-        "douban_url": "",
+        "douban_id": "37113225",
+        "douban_url": "https://movie.douban.com/subject/37113225/?suggest=Badh",
         "imdb_id": "",
         "tmdb_id": "",
-        "douban_poster": "",
+        "douban_poster": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2923890323.jpg",
         "justwatch_poster": "",
         "imdb_poster": "",
         "localized_alias": "",
-        "confidence": "none",
-        "evidence": []
+        "confidence": "medium",
+        "evidence": [
+          "douban_strict_title"
+        ]
       }
     },
     "movie|17 again": {
@@ -12744,7 +12748,7 @@
       }
     },
     "movie|oskars kleid": {
-      "saved_at": 1794958569.104459,
+      "saved_at": 1795050741.4312975,
       "title": "Oskars Kleid",
       "media_type": "movie",
       "match_version": 2,
@@ -12833,7 +12837,7 @@
       }
     },
     "movie|the good lawyer": {
-      "saved_at": 1794958533.9395285,
+      "saved_at": 1795050739.9274,
       "title": "The Good Lawyer",
       "media_type": "movie",
       "match_version": 2,
@@ -12894,7 +12898,7 @@
       }
     },
     "movie|st nick and friends animals on the loose": {
-      "saved_at": 1794958653.398047,
+      "saved_at": 1795050762.1485584,
       "title": "St. Nick & Friends: animals on the loose",
       "media_type": "movie",
       "match_version": 2,
@@ -13014,7 +13018,7 @@
       }
     },
     "movie|million dollar man": {
-      "saved_at": 1794958617.1252081,
+      "saved_at": 1795050751.3883555,
       "title": "Million Dollar Man",
       "media_type": "movie",
       "match_version": 2,
@@ -13100,7 +13104,7 @@
       }
     },
     "tv|the diagnosis": {
-      "saved_at": 1794958664.2414334,
+      "saved_at": 1795050771.8816016,
       "title": "The Diagnosis",
       "media_type": "tv",
       "match_version": 2,
@@ -13566,7 +13570,7 @@
       }
     },
     "movie|knock knock it s mom": {
-      "saved_at": 1794958589.7640002,
+      "saved_at": 1795050747.5208383,
       "title": "Knock, Knock, It’s Mom!",
       "media_type": "movie",
       "match_version": 2,
@@ -13620,7 +13624,7 @@
       }
     },
     "tv|last one standing": {
-      "saved_at": 1794958624.152234,
+      "saved_at": 1795050753.0583656,
       "title": "Last One Standing",
       "media_type": "tv",
       "match_version": 2,

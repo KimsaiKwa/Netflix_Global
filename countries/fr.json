@@ -48,16 +48,20 @@
       "rank": 3,
       "title": "Badh",
       "weeks_in_top_10": 1,
-      "cn_title": "",
-      "year": "",
-      "poster_candidates": [],
-      "douban_id": "",
-      "douban_url": "",
+      "cn_title": "代号巴德",
+      "year": "2025",
+      "poster_candidates": [
+        "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2923890323.jpg"
+      ],
+      "douban_id": "37113225",
+      "douban_url": "https://movie.douban.com/subject/37113225/?suggest=Badh",
       "imdb_id": "",
       "tmdb_id": "",
       "metadata_match_version": 2,
-      "metadata_confidence": "none",
-      "metadata_evidence": []
+      "metadata_confidence": "medium",
+      "metadata_evidence": [
+        "douban_strict_title"
+      ]
     },
     {
       "rank": 4,
@@ -432,5 +436,5 @@
     }
   ],
   "metadata_version": 2,
-  "metadata_enriched_at": "2026-11-18T01:36:57.041939+00:00"
+  "metadata_enriched_at": "2026-11-19T01:12:51.882067+00:00"
 }
