@@ -276,10 +276,12 @@
       "season": "The Diagnosis: Season 1",
       "cn_title": "",
       "year": "2008",
-      "poster_candidates": [],
+      "poster_candidates": [
+        "https://m.media-amazon.com/images/M/MV5BMzdhZjYxZTMtMzlkMy00M2NkLTg2Y2QtM2RkOGIyNmQ0ZWE1XkEyXkFqcGc@._V1_.jpg"
+      ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt1534348",
+      "imdb_id": "tt21220472",
       "tmdb_id": "",
       "metadata_match_version": 2,
       "metadata_confidence": "medium",
@@ -448,5 +450,5 @@
     }
   ],
   "metadata_version": 2,
-  "metadata_enriched_at": "2026-11-23T00:18:04.273734+00:00"
+  "metadata_enriched_at": "2026-11-24T04:17:48.445140+00:00"
 }
