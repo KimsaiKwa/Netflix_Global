@@ -1,23 +1,23 @@
 {
-  "week": "2026-11-15",
+  "week": "2026-11-22",
   "country_iso2": "US",
   "country_name": "United States",
   "films": [
     {
       "rank": 1,
-      "title": "Reminders of Him",
+      "title": "Guarding Stars",
       "weeks_in_top_10": 1,
-      "cn_title": "你留下的痕迹",
+      "cn_title": "守护星",
       "year": "2026",
       "poster_candidates": [
-        "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2926393077.jpg",
-        "https://images.justwatch.com/poster/348284894/s332/reminders-of-him.jpg",
-        "https://m.media-amazon.com/images/M/MV5BNjI4OGM1NDEtYzA1NS00ZDg3LWFmZjUtMjg1MGQ4MTk3NjQzXkEyXkFqcGc@._V1_.jpg"
+        "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2937626548.jpg",
+        "https://images.justwatch.com/poster/357367247/s332/seutayi-bodigadeu.jpg",
+        "https://m.media-amazon.com/images/M/MV5BODcwOTdjZTItZDA5Zi00YzgwLTkwMmQtNTk2Zjc2ZDc1ZjlkXkEyXkFqcGc@._V1_.jpg"
       ],
-      "douban_id": "37062611",
-      "douban_url": "https://movie.douban.com/subject/37062611/?suggest=Reminders+of+Him",
-      "imdb_id": "tt33714084",
-      "tmdb_id": "1367642",
+      "douban_id": "37862971",
+      "douban_url": "https://movie.douban.com/subject/37862971/?suggest=Guarding+Stars",
+      "imdb_id": "tt6611324",
+      "tmdb_id": "1551025",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
       "metadata_evidence": [
@@ -29,18 +29,18 @@
     },
     {
       "rank": 2,
-      "title": "The Gospel of Christmas",
+      "title": "Obsession",
       "weeks_in_top_10": 1,
       "cn_title": "",
       "year": "2026",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/357177763/s332/tyler-perrys-the-gospel-of-christmas.jpg",
-        "https://m.media-amazon.com/images/M/MV5BODEzYWUyMTItZWUzYi00YWE1LTg2NjItYTk2Y2RmMGJjYzdlXkEyXkFqcGc@._V1_.jpg"
+        "https://images.justwatch.com/poster/347228209/s332/obsession-2026.jpg",
+        "https://m.media-amazon.com/images/M/MV5BYzc1NWUwMDgtNGZlMS00ZmYzLWIzMzktNmMxMmY1MTUzNWExXkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt38420997",
-      "tmdb_id": "1559980",
+      "imdb_id": "tt37287335",
+      "tmdb_id": "1339713",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
       "metadata_evidence": [
@@ -52,7 +52,7 @@
     {
       "rank": 3,
       "title": "Heartland",
-      "weeks_in_top_10": 1,
+      "weeks_in_top_10": 2,
       "cn_title": "心乡迷踪",
       "year": "2026",
       "poster_candidates": [
@@ -75,42 +75,19 @@
     },
     {
       "rank": 4,
-      "title": "Funny Money: The Dane Cook Story",
+      "title": "Steps",
       "weeks_in_top_10": 1,
-      "cn_title": "",
+      "cn_title": "童话继姐妹",
       "year": "2026",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/350236456/s332/funny-money-the-dane-cook-story.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMjdlYzM5OWItNWUyZi00ZGY3LWFjM2ItNTcyNjg1ZjQ0NWUyXkEyXkFqcGc@._V1_.jpg"
+        "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2936552187.jpg",
+        "https://images.justwatch.com/poster/357720487/s332/seutebseu.jpg",
+        "https://m.media-amazon.com/images/M/MV5BZTQyNjk2NmUtZWZlYi00ZDY4LWExYzgtNDY1ZGY3YTA2NDhlXkEyXkFqcGc@._V1_.jpg"
       ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt23148884",
-      "tmdb_id": "1757386",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 5,
-      "title": "A Dog's Perfect Christmas",
-      "weeks_in_top_10": 2,
-      "cn_title": "狗狗的完美圣诞节",
-      "year": "2026",
-      "poster_candidates": [
-        "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2937207031.jpg",
-        "https://images.justwatch.com/poster/356525646/s332/a-dogs-perfect-christmas.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMWYzMGYxZjgtZjc2Yy00YzQ2LThhMWItZmU5Y2FjNjRkYjRmXkEyXkFqcGc@._V1_.jpg",
-        "https://images.justwatch.com/poster/356525646/s332/winstead-ein-hund-feiert-weihnachten.jpg"
-      ],
-      "douban_id": "37811556",
-      "douban_url": "https://movie.douban.com/subject/37811556/?suggest=A+Dog%27s+Perfect+Christmas",
-      "imdb_id": "tt38515310",
-      "tmdb_id": "1570488",
+      "douban_id": "37383586",
+      "douban_url": "https://movie.douban.com/subject/37383586/?suggest=Steps",
+      "imdb_id": "tt14413964",
+      "tmdb_id": "1595124",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
       "metadata_evidence": [
@@ -121,19 +98,42 @@
       ]
     },
     {
-      "rank": 6,
-      "title": "Carolina Caroline",
+      "rank": 5,
+      "title": "Russell Brand: Open Secret",
       "weeks_in_top_10": 1,
       "cn_title": "",
       "year": "2026",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/346644424/s332/carolina-caroline.jpg",
-        "https://m.media-amazon.com/images/M/MV5BOTZkZDI1ZjYtOTZhYi00YWNjLTkxNGQtYmMyMWRhYWNiMmRjXkEyXkFqcGc@._V1_.jpg"
+        "https://images.justwatch.com/poster/357154878/s332/russell-brand-open-secret.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMTk2ZGIwZDctNTNlMS00M2MyLWFhNzAtNGEyMTExYTJmNGQzXkEyXkFqcGc@._V1_.jpg",
+        "https://images.justwatch.com/poster/357154878/s332/.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt33365126",
-      "tmdb_id": "1329471",
+      "imdb_id": "tt50969289",
+      "tmdb_id": "1823907",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "The Gospel of Christmas",
+      "weeks_in_top_10": 2,
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/357177763/s332/tyler-perrys-the-gospel-of-christmas.jpg",
+        "https://m.media-amazon.com/images/M/MV5BODEzYWUyMTItZWUzYi00YWE1LTg2NjItYTk2Y2RmMGJjYzdlXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt38420997",
+      "tmdb_id": "1559980",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
       "metadata_evidence": [
@@ -144,21 +144,23 @@
     },
     {
       "rank": 7,
-      "title": "The Croods",
-      "weeks_in_top_10": 10,
-      "cn_title": "",
-      "year": "2013",
+      "title": "Reminders of Him",
+      "weeks_in_top_10": 2,
+      "cn_title": "你留下的痕迹",
+      "year": "2026",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/335784397/s332/the-croods.jpg",
-        "https://m.media-amazon.com/images/M/MV5BODU3NzI5ODc1NV5BMl5BanBnXkFtZTcwODQ2NDU1OA@@._V1_.jpg"
+        "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2926393077.jpg",
+        "https://images.justwatch.com/poster/348284894/s332/reminders-of-him.jpg",
+        "https://m.media-amazon.com/images/M/MV5BNjI4OGM1NDEtYzA1NS00ZDg3LWFmZjUtMjg1MGQ4MTk3NjQzXkEyXkFqcGc@._V1_.jpg"
       ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt0481499",
-      "tmdb_id": "49519",
+      "douban_id": "37062611",
+      "douban_url": "https://movie.douban.com/subject/37062611/?suggest=Reminders+of+Him",
+      "imdb_id": "tt33714084",
+      "tmdb_id": "1367642",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
       "metadata_evidence": [
+        "douban_strict_title",
         "justwatch_strict_title",
         "imdb_strict_title",
         "year_consensus"
@@ -167,7 +169,7 @@
     {
       "rank": 8,
       "title": "Never Surrender",
-      "weeks_in_top_10": 1,
+      "weeks_in_top_10": 2,
       "cn_title": "",
       "year": "2012",
       "poster_candidates": [
@@ -188,23 +190,21 @@
     },
     {
       "rank": 9,
-      "title": "The Day After Tomorrow",
-      "weeks_in_top_10": 3,
-      "cn_title": "后天",
-      "year": "2004",
+      "title": "Insidious: Out of the Further",
+      "weeks_in_top_10": 1,
+      "cn_title": "",
+      "year": "2026",
       "poster_candidates": [
-        "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2209602029.jpg",
-        "https://images.justwatch.com/poster/310572606/s332/the-day-after-tomorrow.jpg",
-        "https://m.media-amazon.com/images/M/MV5BOGZmNDYyNmMtNDQyNy00OTkzLTg1OGUtYWJiNmQ5Y2Q5ZGU3XkEyXkFqcGc@._V1_.jpg"
+        "https://images.justwatch.com/poster/346517775/s332/insidious-the-bleeding-world.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMTY4YjM1OGItMDlmMi00OTU1LWEzM2MtZGMyZTQ1NzhiM2VhXkEyXkFqcGc@._V1_.jpg"
       ],
-      "douban_id": "1308779",
-      "douban_url": "https://movie.douban.com/subject/1308779/?suggest=The+Day+After+Tomorrow",
-      "imdb_id": "tt0319262",
-      "tmdb_id": "435",
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt32393988",
+      "tmdb_id": "1291595",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
       "metadata_evidence": [
-        "douban_strict_title",
         "justwatch_strict_title",
         "imdb_strict_title",
         "year_consensus"
@@ -213,7 +213,7 @@
     {
       "rank": 10,
       "title": "The Christmas Switch",
-      "weeks_in_top_10": 1,
+      "weeks_in_top_10": 2,
       "cn_title": "圣诞变身",
       "year": "2014",
       "poster_candidates": [
@@ -238,8 +238,55 @@
   "tv": [
     {
       "rank": 1,
-      "title": "Taken: Natalee Holloway",
+      "title": "The Body",
       "weeks_in_top_10": 2,
+      "season": "The Body: Season 1",
+      "cn_title": "",
+      "year": "2026",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/356944726/s332/the-body.jpg",
+        "https://m.media-amazon.com/images/M/MV5BZWYwZTZiZGEtNjBlOS00MGEzLWI3MmUtMTRhMWM4NzAwYTQ1XkEyXkFqcGc@._V1_.jpg",
+        "https://m.media-amazon.com/images/M/MV5BY2QzYzRkYzctNDI3Zi00MWFmLWJhOTYtMDA4MzQ3YzZmNjg3XkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt8014982",
+      "tmdb_id": "291507",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Raw",
+      "weeks_in_top_10": 1,
+      "season": "Raw: November 16, 2026",
+      "cn_title": "",
+      "year": "2008",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/321050063/s332/raw.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMWMzY2RmM2UtNzZlOS00NDI2LWFmYzctZWI2NDFmNjAxOTliXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt1233560",
+      "tmdb_id": "7449",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Taken: Natalee Holloway",
+      "weeks_in_top_10": 3,
       "season": "Taken: Natalee Holloway: Season 1",
       "cn_title": "",
       "year": "2026",
@@ -260,103 +307,9 @@
       ]
     },
     {
-      "rank": 2,
-      "title": "The Body",
-      "weeks_in_top_10": 1,
-      "season": "The Body: Season 1",
-      "cn_title": "",
-      "year": "2026",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/356944726/s332/the-body.jpg",
-        "https://m.media-amazon.com/images/M/MV5BY2QzYzRkYzctNDI3Zi00MWFmLWJhOTYtMDA4MzQ3YzZmNjg3XkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt8014982",
-      "tmdb_id": "291507",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 3,
-      "title": "Doozie's Doghouse",
-      "weeks_in_top_10": 1,
-      "season": "Doozie's Doghouse: Season 1",
-      "cn_title": "",
-      "year": "2026",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/355067100/s332/doozies-doghouse.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMzUyNzBjYjMtOWRhZS00OWVjLWJkMDgtODRlYzk3YjAzZmZmXkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt47596905",
-      "tmdb_id": "336478",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
       "rank": 4,
-      "title": "Raw",
-      "weeks_in_top_10": 1,
-      "season": "Raw: November 9, 2026",
-      "cn_title": "",
-      "year": "2008",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/321050063/s332/raw.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMWMzY2RmM2UtNzZlOS00NDI2LWFmYzctZWI2NDFmNjAxOTliXkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt1233560",
-      "tmdb_id": "7449",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 5,
-      "title": "Black Doves",
-      "weeks_in_top_10": 1,
-      "season": "Black Doves: Season 2",
-      "cn_title": "",
-      "year": "2024",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/357114526/s332/black-doves.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMDQyNzE2NmYtMzExMy00NTBjLWE4ODItNjI1OTNkZWVjNDUyXkEyXkFqcGc@._V1_.jpg",
-        "https://images.justwatch.com/poster/323408786/s332/black-doves.jpg",
-        "https://m.media-amazon.com/images/M/MV5BZTEwYTVlNmItOGUyYi00MTRjLTliNmItZmZjOTBlMTc2NGMyXkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt27995113",
-      "tmdb_id": "225385",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 6,
       "title": "From",
-      "weeks_in_top_10": 4,
+      "weeks_in_top_10": 5,
       "season": "From: Season 1",
       "cn_title": "",
       "year": "2022",
@@ -377,55 +330,32 @@
       ]
     },
     {
-      "rank": 7,
-      "title": "Nobody Wants This",
+      "rank": 5,
+      "title": "Danny Go!",
+      "weeks_in_top_10": 8,
+      "season": "Danny Go!: Season 2",
+      "cn_title": "",
+      "year": "2020",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/344211336/s332/danny-go.jpg",
+        "https://m.media-amazon.com/images/M/MV5BOTY3OTZlZTEtMzRjOC00OWQxLTkwOTEtMmRkNTFmMzE1MTA2XkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt13158394",
+      "tmdb_id": "258124",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "From",
       "weeks_in_top_10": 4,
-      "season": "Nobody Wants This: Season 3",
-      "cn_title": "",
-      "year": "2024",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/337837446/s332/nobody-wants-this.jpg",
-        "https://m.media-amazon.com/images/M/MV5BM2ExMmE3YTgtY2RmNC00ZWIzLWJlNGYtYmViNWVjM2Q1MjNjXkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt26933824",
-      "tmdb_id": "250923",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 8,
-      "title": "From",
-      "weeks_in_top_10": 3,
-      "season": "From: Season 2",
-      "cn_title": "",
-      "year": "2022",
-      "poster_candidates": [
-        "https://images.justwatch.com/poster/355221682/s332/from.jpg",
-        "https://m.media-amazon.com/images/M/MV5BNDAwNDljNWEtNWE1Zi00YjFlLWEzM2UtY2E3ZTM1MTcxMTcyXkEyXkFqcGc@._V1_.jpg"
-      ],
-      "douban_id": "",
-      "douban_url": "",
-      "imdb_id": "tt9813792",
-      "tmdb_id": "124364",
-      "metadata_match_version": 2,
-      "metadata_confidence": "high",
-      "metadata_evidence": [
-        "justwatch_strict_title",
-        "imdb_strict_title",
-        "year_consensus"
-      ]
-    },
-    {
-      "rank": 9,
-      "title": "From",
-      "weeks_in_top_10": 3,
       "season": "From: Season 3",
       "cn_title": "",
       "year": "2022",
@@ -446,20 +376,91 @@
       ]
     },
     {
-      "rank": 10,
-      "title": "Power",
-      "weeks_in_top_10": 1,
-      "season": "Power: Season 1",
+      "rank": 7,
+      "title": "From",
+      "weeks_in_top_10": 4,
+      "season": "From: Season 2",
       "cn_title": "",
-      "year": "2014",
+      "year": "2022",
       "poster_candidates": [
-        "https://images.justwatch.com/poster/308684625/s332/Power.jpg",
-        "https://m.media-amazon.com/images/M/MV5BMTg0NDMyMzEzOF5BMl5BanBnXkFtZTgwNTIzODQxMjI@._V1_.jpg"
+        "https://images.justwatch.com/poster/355221682/s332/from.jpg",
+        "https://m.media-amazon.com/images/M/MV5BNDAwNDljNWEtNWE1Zi00YjFlLWEzM2UtY2E3ZTM1MTcxMTcyXkEyXkFqcGc@._V1_.jpg"
       ],
       "douban_id": "",
       "douban_url": "",
-      "imdb_id": "tt3281796",
-      "tmdb_id": "54650",
+      "imdb_id": "tt9813792",
+      "tmdb_id": "124364",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 8,
+      "title": "Ms. Rachel",
+      "weeks_in_top_10": 66,
+      "season": "Ms. Rachel: Season 1",
+      "cn_title": "",
+      "year": "2025",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/324853793/s332/ms-rachel.jpg",
+        "https://m.media-amazon.com/images/M/MV5BYmM2OGYxNDItMTdjZi00MTRmLTk0NGItYjFkMDBkZTZlZDVkXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt35406274",
+      "tmdb_id": "282238",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 9,
+      "title": "Danny Go!",
+      "weeks_in_top_10": 13,
+      "season": "Danny Go!: Season 1",
+      "cn_title": "",
+      "year": "2020",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/344211336/s332/danny-go.jpg",
+        "https://m.media-amazon.com/images/M/MV5BOTY3OTZlZTEtMzRjOC00OWQxLTkwOTEtMmRkNTFmMzE1MTA2XkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt13158394",
+      "tmdb_id": "258124",
+      "metadata_match_version": 2,
+      "metadata_confidence": "high",
+      "metadata_evidence": [
+        "justwatch_strict_title",
+        "imdb_strict_title",
+        "year_consensus"
+      ]
+    },
+    {
+      "rank": 10,
+      "title": "Black Doves",
+      "weeks_in_top_10": 2,
+      "season": "Black Doves: Season 2",
+      "cn_title": "",
+      "year": "2024",
+      "poster_candidates": [
+        "https://images.justwatch.com/poster/357114526/s332/black-doves.jpg",
+        "https://m.media-amazon.com/images/M/MV5BMDQyNzE2NmYtMzExMy00NTBjLWE4ODItNjI1OTNkZWVjNDUyXkEyXkFqcGc@._V1_.jpg",
+        "https://images.justwatch.com/poster/323408786/s332/black-doves.jpg",
+        "https://m.media-amazon.com/images/M/MV5BZTEwYTVlNmItOGUyYi00MTRjLTliNmItZmZjOTBlMTc2NGMyXkEyXkFqcGc@._V1_.jpg"
+      ],
+      "douban_id": "",
+      "douban_url": "",
+      "imdb_id": "tt27995113",
+      "tmdb_id": "225385",
       "metadata_match_version": 2,
       "metadata_confidence": "high",
       "metadata_evidence": [
@@ -470,5 +471,5 @@
     }
   ],
   "metadata_version": 2,
-  "metadata_enriched_at": "2026-11-24T04:17:48.445140+00:00"
+  "metadata_enriched_at": "2026-11-25T00:58:52.900031+00:00"
 }
